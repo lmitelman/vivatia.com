@@ -1,0 +1,267 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@include mat-core();
+
+$app-color: (
+    50: #ccffd9,
+    100: #99ffb3,
+    200: #aaddbb,
+    300: #7986cb,
+    400: #5c6bc0,
+    500: #65AD88,
+    600: #3949ab,
+    700: #303f9f,
+    800: #283593,
+    900: #1a237e,
+    A100: #8c9eff,
+    A200: #536dfe,
+    A400: #3d5afe,
+    A700: #304ffe,
+    contrast: (
+        50: black,
+        100: black,
+        200: black,
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: black,
+        A200: white,
+        A400: white,
+        A700: white
+    )
+);
+
+$app-dark-color: (
+    50: #ccffd9,
+    100: #99ffb3,
+    200: #aaddbb,
+    300: #7986cb,
+    400: #5c6bc0,
+    500: #65AD88,
+    600: #3949ab,
+    700: #303f9f,
+    800: #283593,
+    900: #1a237e,
+    A100: #8c9eff,
+    A200: #536dfe,
+    A400: #3d5afe,
+    A700: #304ffe,
+    contrast: (
+        50: black,
+        100: black,
+        200: black,
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: black,
+        A200: white,
+        A400: white,
+        A700: white
+    )
+);
+
+/* MATERIAL THEMES */
+$custom-typography: mat-typography-config(
+    $font-family: "Exo"
+);
+
+$my-theme-primary: mat-palette($app-color, 500);
+$my-theme-accent: mat-palette($app-color, 100);
+$my-theme-warn: mat-palette($app-color, 50);
+
+$my-dark-theme-primary: mat-palette($app-dark-color, 500);
+$my-dark-theme-accent: mat-palette($app-dark-color, 100);
+$my-dark-theme-warn: mat-palette($app-dark-color, 500);
+
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+
+$my-dark-theme: mat-dark-theme($my-dark-theme-primary, $my-dark-theme-accent, $my-dark-theme-warn);
+
+// themes for notifications
+$my-theme-info: mat-palette($mat-blue);
+$my-theme-success: mat-palette($mat-green);
+$my-theme-warning: mat-palette($mat-yellow);
+$my-theme-error: mat-palette($mat-red);
+
+@mixin toolbar-color($palette) {
+    background: mat-color($palette);
+    //color: mat-color($palette, default-contrast);
+}
+
+@mixin app-component-theme($theme) {
+    // retrieve variables from theme
+    // (all possible variables, use only what you really need)
+
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $foreground: map-get($theme, foreground);
+    //$background: map-get($theme, background);
+
+    .my-theme {
+        .mat-mini-fab {
+            color: mat-color($foreground, text) !important;
+
+            &.mat-warn {
+                color: mat-color($foreground, text) !important;
+            }
+        }
+    }
+}
+
+@mixin sidenav-component-theme($theme) {
+    // retrieve variables from theme
+    // (all possible variables, use only what you really need)
+
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $foreground: map-get($theme, foreground);
+    //$background: map-get($theme, background);
+
+    .mat-drawer {
+        // let's take mat-toolbar's default theme
+        // ref: https://github.com/angular/material2/blob/88601fa51d581f538468a9b63890b0e285e519cb/src/lib/toolbar/_toolbar-theme.scss#L39
+        background-color: mat-color($background, app-bar);
+        color: mat-color($foreground, text);
+
+        // now, mat-toolbar's colored themes
+        &[color="primary"] {
+            @include toolbar-color($primary);
+        }
+        &[color="accent"] {
+            @include toolbar-color($accent);
+        }
+        &[color="warn"] {
+            @include toolbar-color($warn);
+        }
+    }
+}
+
+@mixin dialog-component-theme($theme) {
+    // retrieve variables from theme
+    // (all possible variables, use only what you really need)
+
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $foreground: map-get($theme, foreground);
+    //$background: map-get($theme, background);
+    .custom-dialog {
+        .mat-dialog-container {
+            padding-top: 0px;
+            .mat-dialog-title {
+                padding: 24px 24px 24px 20px;
+                margin-bottom: 0;
+                margin-left: -24px;
+                margin-right: -24px;
+                // let's take mat-toolbar's default theme
+                background-color: mat-color($background, app-bar);
+                color: mat-color($foreground, text);
+                // now, mat-toolbar's colored themes
+                &[color="primary"] {
+                    @include toolbar-color($primary);
+                }
+                &[color="accent"] {
+                    @include toolbar-color($accent);
+                }
+                &[color="warn"] {
+                    @include toolbar-color($warn);
+                }
+            }
+        }
+    }
+}
+
+@mixin notification-theme($my-theme-info, $my-theme-success, $my-theme-warning, $my-theme-error) {
+    .success-notification-overlay,
+    .info-notification-overlay,
+    .warning-notification-overlay,
+    .error-notification-overlay,
+    .default-notification-overlay {
+        border-left: 4px solid;
+        &::before {
+            font-family: "Material Icons";
+            float: left;
+            font-size: 24px;
+            // because we want spaces to be considered in content
+            // https://stackoverflow.com/questions/5467605/add-a-space-after-an-element-using-after
+            white-space: pre;
+        }
+    }
+    .success-notification-overlay {
+        border-left-color: mat-color($my-theme-success, 400);
+        &::before {
+            content: "\e86c  ";
+            color: mat-color($my-theme-success, 400);
+        }
+    }
+    .info-notification-overlay {
+        border-left-color: mat-color($my-theme-info, 400);
+        &::before {
+            content: "\e88e  ";
+            color: mat-color($my-theme-info, 400);
+        }
+    }
+    .default-notification-overlay {
+        border-left-color: #fff;
+        &::before {
+            color: #fff;
+        }
+    }
+    .warning-notification-overlay {
+        border-left-color: mat-color($my-theme-warning, 400);
+        &::before {
+            color: mat-color($my-theme-warning, 400);
+        }
+    }
+    .error-notification-overlay {
+        border-left-color: mat-color($my-theme-error, 400);
+        &::before {
+            color: mat-color($my-theme-error, 400);
+        }
+    }
+    .warning-notification-overlay::before {
+        content: "\e002  ";
+    }
+    .error-notification-overlay::before {
+        content: "\e000  ";
+    }
+}
+
+@mixin custom-components-theme($theme, $theme-info, $theme-success, $theme-warnig, $theme-error) {
+    @include app-component-theme($theme);
+    @include sidenav-component-theme($theme);
+    @include dialog-component-theme($theme);
+    @include notification-theme($theme-info, $theme-success, $theme-warnig, $theme-error);
+}
+/* /MATERIAL THEMES/ */
+
+// specify theme class eg: <body class="my-theme"> ... </body>
+.my-theme {
+    // use our theme with angular-material-theme mixin
+    @include angular-material-theme($my-theme);
+
+    @include custom-components-theme($my-theme, $my-theme-info, $my-theme-success, $my-theme-warning, $my-theme-error);
+    .mat-ripple {
+        background-color: transparent !important;
+    }
+}
+
+.my-dark-theme {
+    // use our theme with angular-material-theme mixin
+    @include angular-material-theme($my-dark-theme);
+
+    @include custom-components-theme($my-dark-theme, $my-theme-info, $my-theme-success, $my-theme-warning, $my-theme-error);
+    .mat-ripple {
+        background-color: transparent !important;
+    }
+}

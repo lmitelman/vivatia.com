@@ -1,0 +1,189 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+html,
+body {
+  height: 100%;
+  margin:0;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: small;
+  width: 100%;
+
+  .title-main {
+    max-width: 32rem;
+  }
+
+  .logo-main {
+    max-width: 8rem;
+  }
+
+  .transparent {
+    background: rgba(255, 255, 255, 0.5);
+    transition-duration: 2s;
+  }
+
+  .white {
+    background: white;
+    transition-duration: 2s;
+  }
+
+  .rulerBlue {
+    border: 2px solid #145FA3;
+    margin-left: initial;
+    background-color: #145FA3;
+    width: 4rem;
+  }
+
+  .rulerGreen{
+    border: 2px solid #98BF2F;
+    margin-left: initial;
+    background-color: #98BF2F;
+    width: 4rem;
+  }
+
+
+  ////////////////////////////////////////////////////// Estilos SideNav
+
+  .sideNavContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+  ////////////////////////////////////////////////////// Estilos NavBar
+
+  .navItem button:hover {
+    background-color: rgba(255, 255, 255, 0.143);
+  }
+
+
+  ////////////////////////////////////////////////////// 
+  .boton {
+    background-color: #29c351;
+  }
+  .boton2{
+    background-color: #98BF2F;
+  }
+  .boton-blue{
+    background-color: #145FA3;
+  }
+
+
+  .letra {
+    color: #2c773f !important;
+  }
+  .letra2 {
+    color: #24b54a !important;
+  }
+  .letra3 {
+    color: #808080;
+  }
+  .letra4{
+    color: #98BF2F;
+  }
+  .blue{
+    color: #145FA3;
+  }
+
+
+  .home-logo {
+    max-width: 20rem;
+  }
+  .home-small-logo {
+    max-width: 4rem;
+  }
+  .home-small-logo2 {
+    max-width: 6rem;
+  }
+  .home-small-logo3 {
+    max-height: 1rem;
+  }
+
+
+
+  .footer {
+    background-color: #f0f0f0;
+  }
+  .footer1 {
+    background-color: #e6e6e6;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .text-dark {
+    color: black;
+  }
+}
+
+a:active {
+  text-decoration: none;
+}
+button:focus {
+  outline: 0;
+}
+textarea {
+  resize: none;
+  outline:none;
+  width:90%;
+  max-width:90%;
+}
+
+////////////////////////////////////////////////////// Estilos de producto captika y thuban
+.grid2x2 {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid2x2 > div {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box { margin: 20px; }
+
+//////////////////////////////////////////////////////  
+
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf) format("opentype");
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+////////////////////////////////////////////////////// Responsive
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+  .title-main {height: auto;}
+  .title-main {width: 80%;}
+  .subtitle {font-size: 90%;}
+  .mkITwk p {display: none;}
+}
+
+// @media only screen and (min-width: 480px) and (max-width: 767px){ 
+
+// }
+
+// @media only screen and (min-width: 768px) and (max-width: 991px){ 
+
+// }
+
+// @media only screen and (min-width: 992px){ 
+
+// }

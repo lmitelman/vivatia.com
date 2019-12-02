@@ -1,0 +1,96 @@
+//////////////////////////////////////////////////////  Fondos Home
+.bg-home1 {
+    background-image: url(/assets/bg-main1.png);
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65%;
+}
+
+.bg-home2 {
+    background-image: url(/assets/bg-main5.png);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+}
+
+.bg-home3 {
+    background-image: url(/assets/rectangle-main.png);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25%;
+}
+
+.colorGris {
+    background-color: #212529;
+}
+
+//////////////////////////////////////////////////////  Responsive
+
+//////////////////////////////////////////////////////  iPhone X
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .bg-home1 {
+        background-image: url(/assets/bg-main1.png);
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 65%;
+    }
+
+    .bg-home3 {
+        height: 15%;
+    }
+
+    .bg-home3 h5 {
+        font-size: 1rem;
+    }
+
+    .bg-home2 {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bg-home2 h5 {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .bg-home2 p {
+      font-size: 0px;
+    }
+
+    .VivíTuExperiencia {
+      font-size: 90%;
+    }
+
+    .objectsViviTuExperiencia img{
+      width: 50px;
+      height: 50px;
+    } 
+
+    .letra .process {
+      padding: 0%;
+      margin: 0%;
+    }
+
+
+    h6 {
+      font-size: 0px;
+    }
+
+    .letra {
+      width: 50%;
+    } 
+
+    .letra h5 {
+      font-size: 100%;
+    } 
+
+
+}

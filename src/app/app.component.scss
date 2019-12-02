@@ -1,0 +1,29 @@
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    ul {
+        display: none;
+    }
+
+    li {
+        display: none;
+    }
+
+    li a {
+        display: none;
+    }
+
+    .references img {
+        display: none;
+    }
+
+    .home-small-logo2 {
+        margin-bottom: 30px;
+    }
+
+    footer .rounded-pill {
+        justify-content: center;;
+    }
+
+    footer .rounded-pill {
+        display: none;
+    }
+}

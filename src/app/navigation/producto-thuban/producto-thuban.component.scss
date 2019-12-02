@@ -1,0 +1,39 @@
+.logo-thuban {
+  max-width: 9rem;
+}
+
+.thubanView{
+  max-width: 55rem;
+}
+
+.bg-main1 {
+  background-image: url(/assets/bg-main9.png);
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 90%;
+}
+
+.bg-main2 {
+  background-image: url(/assets/bg-main8.png);  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 30%;
+}
+
+.bg-main3{
+  height: 90%;
+}
+
+.videoThuban {
+  height: 90%;
+}
+
+#myVideo {
+  position: center;
+  width: 70%; 
+}

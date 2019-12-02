@@ -1,0 +1,72 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport="false">
+        <mat-toolbar>Menu</mat-toolbar>
+        <mat-nav-list>
+
+            <!-- menu para sidebar hecho con css y html -->
+            <div *ngIf="isMobileLayout">
+                <ul>
+                    <div class="d-flex flex-column justify-content-start align-items-center">
+
+                        <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/home">Home</a></li>
+                        <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/nosotros">Nosotros</a></li>
+                        <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/soluciones">Soluciones</a></li>
+                        <li><a mat-list-item class="text-dark fontNavBar px-1">Productos</a>
+                            <ul class="mb-5">
+                                <li> <a mat-list-item class="text-dark fontNavBar px-1" routerLink="/Thuban">Thuban</a></li>
+                                <li> <a mat-list-item class="text-dark fontNavBar px-1" routerLink="/Captika">Captika</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="mt-5"><a mat-list-item class="text-dark fontNavBar pt-5 mt-5">Idiomas</a>
+                            <ul class="mt-5">
+                                <li><a mat-list-item class="text-dark fontNavBar px-1">Español</a></li>
+                                <li><a mat-list-item class="text-dark fontNavBar px-1">Ingles</a></li>
+                                <li><a mat-list-item class="text-dark fontNavBar px-1">Portugués</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar class="transparent fontNavBar text-white navbar dropdown-content fixed-top">
+
+            <img src="/assets/vivatia-logo-navbar-transparent.png" class="logo-main ml-3" id="logo-transparent">
+            <img src="/assets/vivatia-logo-navbar-white.png" class="logo-main mt-2" id="logo-white">
+            <span class="spacer"></span>
+
+            <div role="navigation" *ngIf="!isMobileLayout">
+                <ul>
+                    <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/home">Home</a></li>
+                    <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/nosotros">Nosotros</a></li>
+                    <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/soluciones">Soluciones</a></li>
+                    <li><a mat-list-item class="text-white fontNavBar px-1">Productos</a>
+                        <ul>
+                            <li> <a mat-list-item class="text-white fontNavBar pl-1" routerLink="/Thuban">Thuban</a></li>
+                            <li> <a mat-list-item class="text-white fontNavBar pl-1" routerLink="/Captika">Captika</a></li>
+                        </ul>
+                    </li>
+                    <li><a mat-list-item class="text-white fontNavBar px-2">Idiomas</a>
+                        <ul>
+                            <li><a mat-list-item class="text-white fontNavBar pl-1">Español</a></li>
+                            <li><a mat-list-item class="text-white fontNavBar pl-1">Ingles</a></li>
+                            <li><a mat-list-item class="text-white fontNavBar pl-1">Portugués</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" mat-icon-button (click)="drawer.toggle()" *ngIf="isMobileLayout">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+        </mat-toolbar>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+
+
+</mat-sidenav-container>
