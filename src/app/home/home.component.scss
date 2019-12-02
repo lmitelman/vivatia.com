@@ -5,7 +5,7 @@
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 65%;
+    height: 60%;
 }
 
 .bg-home2 {
@@ -48,7 +48,7 @@
     }
 
     .bg-home3 h5 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .bg-home2 {
@@ -65,7 +65,15 @@
       font-size: 0px;
     }
 
-    .VivíTuExperiencia {
+    .VivíTuExperiencia h6 {
+      font-size: 90%;
+    }
+
+    .VivíTuExperiencia h1 {
+      font-size: 20px;
+    }
+
+    .LetraVivíTuExperiencia {
       font-size: 90%;
     }
 
@@ -91,6 +99,4 @@
     .letra h5 {
       font-size: 100%;
     } 
-
-
 }

@@ -1,29 +1,30 @@
-<section class="bg-main1 d-flex flex-column text-white justify-content-center align-items-center">
+<!-- <section class="bg-main1 d-flex flex-column text-white justify-content-center align-items-center">
     <h3 class="font-weight-light">Desarrollamos soluciones para multiples industrias y procesos</h3>
     <button mat-raised-button class="mt-3 rounded-pill boton text-white"
         (click)="openDialogContact()">Contactanos</button>
-</section>
+</section> -->
 
-<section class="bg-main2 d-flex flex-column align-items-center">
-    <h2 class="my-4 font-weight-bold">Nuestras Soluciones</h2>
-    <ul class="p-0">
-        <li *ngFor="let solucion of solutions, let i = index" class="grid">
-            <button mat-raised-button class="box d-flex align-items-center justify-content-center" (click)="openDialogSolutions(solutions[i])">
-                <h6 class="letra font-weight-bold">{{solucion}}</h6>
-            </button>
-        </li>
-    </ul>
-</section>
+<div class="bg-main2">
+    <section class=" d-flex flex-column align-items-center">
+        <h2 class="my-4 font-weight-bold">Nuestras Soluciones</h2>
+        <ul class="p-0">
+            <li *ngFor="let solucion of solutions, let i = index" class="grid">
+                <button mat-raised-button class="box d-flex align-items-center justify-content-center" (click)="openDialogSolutions(solutions[i])">
+                    <h6 class="letra font-weight-bold">{{solucion}}</h6>
+                </button>
+            </li>
+        </ul>
+    </section>
 
-<section class="py-5 d-flex flex-column align-items-center">
-    <div class="d-flex justify-content-flex-end">
-        <div class=" d-flex flex-column align-items-center">
-            <!-- <img class="logo-plus" src="assets/logo-plus.png"> -->
-            <h4 class="font-weight-light letra">Nuestro laboratorio se encuentra creando nuevas soluciones tú a medida</h4>
-            <h4 class="font-weight-bold letra">¡Contanos tú proceso!</h4>
-            <button mat-raised-button class="mt-3 rounded-pill boton text-white"
-                (click)="openDialogContact()">Contactanos</button>
+    <section class="py-5 d-flex flex-column align-items-center">
+        <div class="d-flex justify-content-flex-end">
+            <div class=" d-flex flex-column align-items-center">
+                <!-- <img class="logo-plus" src="assets/logo-plus.png"> -->
+                <h4 class="font-weight-light letra">Nuestro laboratorio se encuentra creando nuevas soluciones tú a medida</h4>
+                <h4 class="font-weight-bold letra">¡Contanos tú proceso!</h4>
+                <button mat-raised-button class="mt-3 rounded-pill boton text-white"
+                    (click)="openDialogContact()">Contactanos</button>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
+</div>
