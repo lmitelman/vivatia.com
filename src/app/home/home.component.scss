@@ -1,33 +1,37 @@
 //////////////////////////////////////////////////////  Fondos Home
 .bg-home1 {
-    background-image: url(/assets/bg-main1.png);
-    /* Center and scale the image nicely */
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 60%;
+  background-image: url(/assets/bg-main1.png);
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60%;
 }
 
 .bg-home2 {
-    background-image: url(/assets/bg-main5.png);
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40%;
+  background-image: url(/assets/bg-main5.png);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40%;
 }
 
 .bg-home3 {
-    background-image: url(/assets/rectangle-main.png);
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25%;
+  background-image: url(/assets/rectangle-main.png);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25%;
 }
 
 .colorGris {
-    background-color: #212529;
+  background-color: #212529;
+}
+
+.clientsMobile {
+  display: none;
 }
 
 //////////////////////////////////////////////////////  Responsive
@@ -35,12 +39,20 @@
 //////////////////////////////////////////////////////  iPhone X
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .bg-home1 {
-        background-image: url(/assets/bg-main1.png);
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 65%;
+      background-image: url(/assets/bg-main1.png);
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 65%;
+    }
+
+    .clientsDesktop {
+      display: none;
+    }
+
+    .clientsMobile {
+      display: flex;
     }
 
     .bg-home3 {
