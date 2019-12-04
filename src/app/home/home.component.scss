@@ -46,7 +46,11 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 65%;
+      height: 60%;
+    }
+
+    .bg-home1 h2{
+      font-size: 20px;
     }
 
     .clientsDesktop {
@@ -55,6 +59,10 @@
 
     .clientsMobile {
       display: flex;
+    }
+
+    .VivíTuExperiencia h4 {
+      font-size: 15px;
     }
 
     .bg-home3 {
@@ -77,18 +85,6 @@
 
     .bg-home2 p {
       font-size: 0px;
-    }
-
-    .VivíTuExperiencia h6 {
-      font-size: 90%;
-    }
-
-    .VivíTuExperiencia h1 {
-      font-size: 20px;
-    }
-
-    .LetraVivíTuExperiencia {
-      font-size: 90%;
     }
 
     .objectsViviTuExperiencia img{
