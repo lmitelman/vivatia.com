@@ -27,13 +27,13 @@ import { DialogSolutionsComponent } from './navigation/soluciones/dialog-solutio
 import { ProductoThubanComponent } from './navigation/producto-thuban/producto-thuban.component';
 import { ProductoCaptikaComponent } from './navigation/producto-captika/producto-captika.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
-import { DropDownMenuComponent } from './drop-down-menu/drop-down-menu.component';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { PartnersComponent } from './navigation/partners/partners.component';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -60,9 +60,8 @@ export const MY_FORMATS = {
     ProductoThubanComponent,
     ProductoCaptikaComponent,
     DropdownComponent,
-    DropDownMenuComponent,
     MenuComponent,
-  
+    PartnersComponent,
   ],
   entryComponents: [DialogContactComponent, DialogSolutionsComponent],
   imports: [

@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { NosotrosComponent } from './navigation/nosotros/nosotros.component';
 import { SolucionesComponent } from './navigation/soluciones/soluciones.component';
 import { TrabajaComponent } from './navigation/trabaja/trabaja.component';
+import { PartnersComponent } from './navigation/partners/partners.component';
+
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -16,6 +18,7 @@ const routes: Routes = [
   {path: 'Captika', component: ProductoCaptikaComponent},
   {path: 'soluciones', component: SolucionesComponent},
   {path: 'trabaja', component: TrabajaComponent},
+  {path: 'partners', component: PartnersComponent},
   {path:'**', redirectTo:'home', pathMatch: 'full'}
 ];
 
