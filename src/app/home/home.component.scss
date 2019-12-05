@@ -61,9 +61,14 @@
       display: flex;
     }
 
-    .VivíTuExperiencia h4 {
+    .EncontraTuSolucion h4 {
       font-size: 15px;
     }
+
+    .EncontraTuSolucion img{
+      width: 50px;
+      height: 50px;
+    } 
 
     .bg-home3 {
         height: 15%;
@@ -86,11 +91,6 @@
     .bg-home2 p {
       font-size: 0px;
     }
-
-    .objectsViviTuExperiencia img{
-      width: 50px;
-      height: 50px;
-    } 
 
     .letra .process {
       padding: 0%;

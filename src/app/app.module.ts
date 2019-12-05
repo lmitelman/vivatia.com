@@ -6,11 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material';
+import { MatInputModule } from '@angular/material';
 
 // Ng-Bootstrap
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+// MDB Angular
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 //modules
 import { AppRoutingModule } from './app-routing.module';
@@ -78,7 +80,8 @@ export const MY_FORMATS = {
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    NgbModule
+    NgbModule,
+    MDBBootstrapModule
   ],
   providers: [
     AdminService
