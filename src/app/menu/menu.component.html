@@ -1,23 +1,27 @@
+<!-- navbar mobile -->
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer class="sidenav" fixedInViewport="false">
         <mat-toolbar>Menu</mat-toolbar>
         <mat-nav-list>
-
             <!-- menu para sidebar hecho con css y html -->
             <div *ngIf="isMobileLayout">
                 <ul>
                     <div class="d-flex flex-column justify-content-start align-items-center">
-
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/home">Home</a></li>
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/nosotros">Nosotros</a></li>
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/soluciones">Soluciones</a></li>
                         <li><a mat-list-item class="text-dark fontNavBar px-1">Productos</a>
+                            <!-- <mat-select #mode value="seleccionar">
+                                <mat-option value="side">Thuban Software</mat-option>
+                                <mat-option value="over">Captika Software</mat-option>
+                            </mat-select> -->
+                            
                             <ul class="mb-5">
                                 <li> <a mat-list-item class="text-dark fontNavBar px-1" routerLink="/Thuban">Thuban</a></li>
                                 <li> <a mat-list-item class="text-dark fontNavBar px-1" routerLink="/Captika">Captika</a></li>
                             </ul>
                         </li>
-                        <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/partners">Partners</a></li>
+                        <li> <a mat-list-item class="text-dark fontNavBar px-1" routerLink="/partners">Partners</a></li>
                         <li class="mt-5"><a mat-list-item class="text-dark fontNavBar pt-5 mt-5">Idiomas</a>
                             <ul class="mt-5">
                                 <li><a mat-list-item class="text-dark fontNavBar px-1">Español</a></li>
@@ -25,13 +29,14 @@
                                 <li><a mat-list-item class="text-dark fontNavBar px-1">Portugués</a></li>
                             </ul>
                         </li>
+
                     </div>
                 </ul>
             </div>
-
         </mat-nav-list>
     </mat-sidenav>
 
+    <!-- navbar web -->
     <mat-sidenav-content>
         <mat-toolbar class="transparent fontNavBar text-white navbar dropdown-content fixed-top" style="background-color: rgba(94, 94, 94, 0.4)">
 
@@ -44,18 +49,18 @@
                     <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/home">Home</a></li>
                     <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/nosotros">Nosotros</a></li>
                     <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/soluciones">Soluciones</a></li>
-                    <li><a mat-list-item class="text-white fontNavBar px-1">Productos</a>
+                    <li> <a mat-list-item class="text-white fontNavBar px-2">Productos</a>
                         <ul>
-                            <li> <a mat-list-item class="text-white fontNavBar pl-1" routerLink="/Thuban">Thuban</a></li>
-                            <li> <a mat-list-item class="text-white fontNavBar pl-1" routerLink="/Captika">Captika</a></li>
+                            <li> <a mat-list-item class="text-white fontNavBar pl-1" routerLink="/Thuban">Thuban Software</a></li>
+                            <li> <a mat-list-item class="text-white fontNavBar pl-1" routerLink="/Captika">Captika Software</a></li>
                         </ul>
                     </li>
                     <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/partners">Partners</a></li>
-                    <li><a mat-list-item class="text-white fontNavBar px-2">Idiomas</a>
+                    <li> <a mat-list-item class="text-white fontNavBar px-2">Idiomas</a>
                         <ul>
-                            <li><a mat-list-item class="text-white fontNavBar pl-1">Español</a></li>
-                            <li><a mat-list-item class="text-white fontNavBar pl-1">Ingles</a></li>
-                            <li><a mat-list-item class="text-white fontNavBar pl-1">Portugués</a></li>
+                            <li> <a mat-list-item class="text-white fontNavBar pl-1">Español</a></li>
+                            <li> <a mat-list-item class="text-white fontNavBar pl-1">Ingles</a></li>
+                            <li> <a mat-list-item class="text-white fontNavBar pl-1">Portugués</a></li>
                         </ul>
                     </li>
                 </ul>
