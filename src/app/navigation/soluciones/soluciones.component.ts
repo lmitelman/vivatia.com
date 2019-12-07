@@ -15,12 +15,13 @@ export class SolucionesComponent implements OnInit {
     private dialog: MatDialog,
   ) { }
 
+  solutions: string[] = ['Banca', 'Seguros', 'Salud', 'Industria']
+
   ngOnInit() {
     
   }
-
-  solutions: string[] = ['Banca', 'Seguros', 'Salud', 'Industria']
   // ['Legajos Digitales', 'Recibos de Sueldo', 'Cuentas a Pagar', 'Onboarding', 'Recursos Humanos', 'Gestión de Contratos']
+  // tslint:disable-next-line: max-line-length
   // 'Solicitudes y Licencias', 'Compras', 'Rendición de Gastos', 'Comercio Exterior', 'Préstamos', 'Busqueda y Consulta', 'Siniestros', 'Emisión de Pólizas', 'Originación de Tramites', 'Mesa de Entrada', 'Gestión de Auditorías', 'Gestión de Pasantías', 'E-Government', 'Solicitud de Préstamo Prendario', 'Actuaciones', 'CRM', 'Entrega de EPP', 'Reintegros'];
   
 
