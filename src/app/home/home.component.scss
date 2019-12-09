@@ -70,6 +70,23 @@
       height: 50px;
     } 
 
+    .EncontraTuSolucion .letra {
+      flex-direction: column;
+    }
+
+    .process {
+      padding: 0%;
+    }
+
+    .EncontraTuSolucion .letra img {
+      width: 40%;
+      height: 40%;
+    }
+
+    .EncontraTuSolucion .letra h5 {
+      font-size: 20px;
+    }
+
     .bg-home3 {
         height: 15%;
     }
@@ -97,14 +114,9 @@
       margin: 0%;
     }
 
-
     h6 {
       font-size: 0px;
     }
-
-    .letra {
-      width: 50%;
-    } 
 
     .letra h5 {
       font-size: 100%;

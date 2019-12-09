@@ -36,6 +36,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { PartnersComponent } from './navigation/partners/partners.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -81,7 +82,8 @@ export const MY_FORMATS = {
     MatSidenavModule,
     MatListModule,
     NgbModule,
-    MDBBootstrapModule
+    MDBBootstrapModule,
+    MatExpansionModule
   ],
   providers: [
     AdminService

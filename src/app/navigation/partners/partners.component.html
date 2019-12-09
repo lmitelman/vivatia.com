@@ -17,14 +17,34 @@
     </section>
 
     <section class="py-5 d-flex flex-column align-items-center">
-        <div class="d-flex justify-content-flex-end">
-            <div class=" d-flex flex-column align-items-center">
-                <!-- <img class="logo-plus" src="assets/logo-plus.png"> -->
-                <!-- <h4 class="font-weight-light letra">¿Estas interesado en trabajar con nosotros?</h4> -->
+        <div class="d-flex justify-content-flex-end partners">
+            <div class="d-flex flex-column align-items-center">
                 <h4 class="font-weight-light letra">Potenciá tu empresa junto a nosotros</h4>
                 <h4 class="font-weight-bold letra">¡Convertite en partner!</h4>
-                <button mat-raised-button class="mt-3 rounded-pill boton text-white"
+                <button mat-raised-button class="my-4 rounded-pill boton text-white"
                     (click)="openDialogContact()">Contactanos</button>
+                <mat-expansion-panel class="w-75">
+                    <!-- TITULO DE EXPANSION PANEL -->
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            ¡Conocé más sobre nuestros partners!
+                        </mat-panel-title>
+                        <!-- DESCRIPCION E ICONO DE EXPANSION PANEL -->
+                        <mat-panel-description>
+                            <!-- <mat-icon>account_circle</mat-icon> -->
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+
+                    <div>
+                        <p class="text-justify">
+                            Hemos desarrollado una extensa red de distribuidores y representantes que nos permite tener una cobertura global que hoy es absolutamente necesaria para el desarrollo de los negocios.
+                            la empresa posee un sólido equipo de trabajo que brinda soluciones globales a organizaciones en Argentina, Chile, Peru, Ecuador y España.
+                        </p>
+                    </div>
+                
+                    <!-- CONTENIDO DE EXPANSION PANEL -->
+
+                </mat-expansion-panel>
             </div>
         </div>
     </section>
