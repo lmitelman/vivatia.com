@@ -101,7 +101,7 @@ button:focus {
 
 ///////////////////////////////// RESPONSIVE
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 100px) and (max-width: 900px) {
     .bg-main1 {
         height: 30%;
         padding-top: 50px;

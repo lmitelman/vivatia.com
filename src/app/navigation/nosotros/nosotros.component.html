@@ -46,7 +46,7 @@
 <section>
     <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center" style="background-color: #f2f2f2;">
         <h2 class="my-4 font-weight-bold">¿Por qué elegirnos?</h2>
-        <ngb-carousel>
+        <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false'> 
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/logo-save.png">

@@ -15,7 +15,7 @@ export class SolucionesComponent implements OnInit {
     private dialog: MatDialog,
   ) { }
 
-  solutions: string[] = ['Banca', 'Seguros', 'Salud', 'Industria']
+  solutions: string[] = ['Banca', 'Seguros', 'Salud', 'Industria', 'Gobierno']
 
   ngOnInit() {
     

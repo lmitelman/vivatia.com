@@ -5,15 +5,29 @@
 </section> -->
 
 <div class="bg-main2">
-    <section class=" d-flex flex-column align-items-center">
-        <h2 class="my-4 font-weight-bold">Nuestras Soluciones</h2>
-        <ul class="p-0">
-            <li *ngFor="let solucion of solutions, let i = index" class="grid">
-                <button mat-raised-button class="box d-flex align-items-center justify-content-center" (click)="openDialogSolutions(solutions[i])">
-                    <h6 class="letra font-weight-bold">{{solucion}}</h6>
-                </button>
-            </li>
-        </ul>
+    <section class="d-flex flex-column align-items-center justify-content-center">
+        <h2 class="mb-4 mt-2 font-weight-bold">Nuestras Soluciones</h2>
+        <div class="d-flex industrias w-100 align-items-center justify-content-center">
+            <button mat-raised-button class="box d-flex align-items-center justify-content-center">
+                <h6 class="letra font-weight-bold">Banca</h6>
+            </button>
+            <button mat-raised-button class="box d-flex align-items-center justify-content-center">
+                <h6 class="letra font-weight-bold">Seguros</h6>
+            </button>
+            <button mat-raised-button class="box d-flex align-items-center justify-content-center">
+                <h6 class="letra font-weight-bold">Salud</h6>
+            </button>
+            <button mat-raised-button class="box d-flex align-items-center justify-content-center">
+                <h6 class="letra font-weight-bold">Industria</h6>
+            </button>
+            <button mat-raised-button class="box d-flex align-items-center justify-content-center">
+                <h6 class="letra font-weight-bold">Gobierno</h6>
+            </button>
+            <!-- <button mat-raised-button class="letra box d-flex align-items-center justify-content-center">
+                <mat-icon>add_box</mat-icon>
+            </button> -->
+        </div>
+
     </section>
 
     <section class="py-5 d-flex flex-column align-items-center">
