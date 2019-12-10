@@ -14,6 +14,7 @@ import { MatSnackBar } from '@angular/material';
 export class NosotrosComponent implements OnInit {
 
   contactForm: FormGroup;
+  public isMobileLayout = false;
 
   constructor(
     private formBuilder: FormBuilder,

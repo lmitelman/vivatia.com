@@ -63,16 +63,17 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: justify;
 }
 
 .bg-main2 .mision {
-    width: 25%;
-    height: 188px;
+    width: 24%;
+    height: 60%;
 }
 
 .bg-main2 .vision {
-    width: 25%;
-    height: 188px;
+    width: 24%;
+    height: 60%;
 }
 
 .bg-main3 {
@@ -96,6 +97,17 @@ button:focus {
     outline: 0;
 }
 
+// ¿POR QUE ELEGIRNOS?
+
+.benefitsMobile {
+    display: none;
+}
+
+.benefitsDesktop {
+    display: flex;
+}
+
+
 ////////////////////////// RESPOSIVE //////////////////////
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .bg-main1 {
@@ -114,13 +126,65 @@ button:focus {
         flex-direction: column;
     }
 
+    .bg-main2 {
+        font-size: 12px;
+    }
+
     .bg-main2 .mision {
-        width: 100%;
+        width: 80%;
         text-align: justify;
     }
 
+    .bg-main2 .mision h3{
+        font-size: 20px;
+    }
+
     .bg-main2 .vision {
-        width: 100%;
+        width: 80%;
         text-align: justify;
+    }
+
+    .bg-main2 .vision h3{
+        font-size: 20px;
+    }
+
+    // ¿POR QUE ELEGIRNOS?
+
+    .benefitsDesktop {
+        display: none;
+    }
+  
+    .benefitsMobile {
+        display: flex;
+        font-size: 110%;
+    }
+
+    .benefitsMobile h2 {
+        font-size: 20px;
+    }
+
+    // NOSOTROS
+
+    .nosotros h2 {
+        font-size: 20px;
+    }
+
+    .nosotros .text-nosotros {
+        font-size: 10px;
+    }
+
+    // CERTIFICADOS
+
+    .certificados h2 {
+        font-size: 20px;
+    }
+
+    .certificados img {
+        width: 10%;
+        height: 10%;
+    }
+
+    .certificados p {
+        font-size: 10px;
     }
 }
