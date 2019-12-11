@@ -4,6 +4,7 @@ import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.co
 import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms';
 import { AdminService } from '../../services/admin.service';
 import { MatSnackBar } from '@angular/material';
+import { CountoModule }  from 'angular2-counto';
 
 
 @Component({
