@@ -86,7 +86,7 @@ export const MY_FORMATS = {
     NgbModule,
     MDBBootstrapModule,
     MatExpansionModule,
-    CountoModule
+    CountoModule,
   ],
   providers: [
     AdminService

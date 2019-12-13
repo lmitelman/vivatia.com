@@ -21,7 +21,7 @@
     </div> -->
 </section>
 
-<section class="bg-main3 py-5 benefitsDesktop flex-column justify-content-center align-items-center" style="background-color: #f2f2f2;">
+<section class="bg-main3 py-5 benefitsDesktop flex-column justify-content-center align-items-center" style="background-color: #F3F3F3">
     <h2 class="mb-4 font-weight-bold">¿Por qué elegirnos?</h2>
     <div class="d-flex mt-3 justify-content-between align-items-center text-center">
         <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
@@ -44,7 +44,7 @@
 </section>
 
 <section>
-    <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center" style="background-color: #948989;">
+    <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center" style="background-color: #F3F3F3;">
         <h2 class="my-4 font-weight-bold">¿Por qué elegirnos?</h2>
         <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false'> 
             <ng-template ngbSlide>
@@ -72,22 +72,6 @@
                 </div>
             </ng-template>
         </ngb-carousel>
-    </div>
-</section>
-
-<section class="text-center d-flex align-items-center justify-content-center border border-success" style="background-color: #f2f2f2;">
-    <div class="p-2">
-        <div style="font-size: 20px;"  counto [step]="40" [countTo]="1500" [countFrom]="10" [duration]="4" (countoChange)="counto = $event">{{counto | currency:'+':'symbol':'1.0'}}</div>
-        <h5 class="text-dark font-weight-light">Imagenes gestionadas</h5>
-    </div>
-    <div class="p-2">
-        <h5 class="text-dark font-weight-light">Colaboradores</h5>
-    </div>
-    <div class="p-2">
-        <h5 class="text-dark font-weight-light">Proyectos implementados</h5>
-    </div>
-    <div class="p-2">
-        <h5 class="text-dark font-weight-light">Soluciones implementadas</h5>
     </div>
 </section>
 

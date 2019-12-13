@@ -9,7 +9,7 @@
 
 <!-- CLIENTES WEB -->
 <section class="clientsDesktop">
-    <div class="py-5 d-flex align-items-center justify-content-center clients" style="background-color: rgba(34, 38, 42, 0.9);">
+    <div class="py-5 d-flex align-items-center justify-content-center clients" style="background-color: #F3F3F3">
         <img class="mr-5" src="assets/bbva.png">
         <img class="mr-5" src="assets/Galicia.png">
         <img class="mr-5" src="assets/havas.png">
@@ -20,7 +20,8 @@
 
 <!-- CLIENTES MOBILE -->
 <section>
-    <div class="clientsMobile pb-1 align-items-center justify-content-center" style="background-color: rgba(34, 38, 42, 0.9)">
+    <div class="clientsMobile pb-1 align-items-center justify-content-center" style="background-color: #F3F3F3">
+        <!-- style="background-color: rgba(34, 38, 42, 0.9)" -->
         <ngb-carousel [showNavigationArrows] = 'false' [interval] = '3000'>
             <ng-template ngbSlide>
                 <img src="assets/bbva2.png" alt="Random first slide">
@@ -57,12 +58,28 @@
           </mdb-carousel>
     </div>
 </section> -->
+<section class="text-center d-flex align-items-center justify-content-center border-success stats">
+    <div class="stat">
+        <h2 class="letra font-weight-bold">+1500m</h2>
+        <h5 class="text-dark font-weight-light">Imagenes gestionadas</h5>
+    </div>
+    <div class="stat">
+        <h2 class="letra font-weight-bold">+100</h2>
+        <h5 class="text-dark font-weight-light">Colaboradores</h5>
+    </div>
+    <div class="stat">
+        <h2 class="letra font-weight-bold">+1600</h2>
+        <h5 class="text-dark font-weight-light">Proyectos implementados</h5>
+    </div>
+    <div class="stat">
+        <h2 class="letra font-weight-bold">+560</h2>
+        <h5 class="text-dark font-weight-light">Soluciones implementadas</h5>
+    </div>
+</section>
 
-
-
-<section class="EncontraTuSolucion" style="background-color: #f2f2f2;">
+<section class="EncontraTuSolucion" style="background-color: #F3F3F3">
     <div class="d-flex flex-column justify-content-center align-items-center">
-        <h4 class="py-4 font-weight-light">Encontrá la solución ideal para <span class="font-weight-bold">tus</span> procesos.</h4>
+        <h4 class="py-5 font-weight-light">Encontrá tu <span class="font-weight-bold">solución</span> ideal</h4>
     </div>
 
     <div class="py-3 letra d-flex justify-content-center">
@@ -88,8 +105,8 @@
         </div>
     </div>
 
-    <div class="d-flex flex-column justify-content-center align-items-center py-3">
-        <button mat-raised-button class="rounded-pill boton text-white align-self-center" routerLink="/soluciones">Encontrá tu solución</button>
+    <div class="d-flex flex-column justify-content-center align-items-center py-5">
+        <button mat-raised-button class="rounded-pill boton text-white align-self-center py-1 px-3" style="font-size: medium;" routerLink="/soluciones">Encontrá tu solución</button>
     </div>
 </section>
 

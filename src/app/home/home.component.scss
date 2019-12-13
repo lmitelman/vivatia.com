@@ -35,6 +35,30 @@
   display: none;
 }
 
+h5 {
+  font-size: 15px;
+}
+
+.EncontraTuSolucion h5 {
+  font-size: 20px;
+}
+
+.EncontraTuSolucion {
+  background-image: url(/assets/trazado.png);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stats {
+  height: 30%;
+}
+
+.stat {
+  width: 18%;
+}
+
 
 //////////////////////////////////////////////////////  Responsive
 
@@ -62,7 +86,8 @@
     }
 
     .EncontraTuSolucion h4 {
-      font-size: 15px;
+      font-size: 25px;
+      text-align: center;
     }
 
     .EncontraTuSolucion img{
