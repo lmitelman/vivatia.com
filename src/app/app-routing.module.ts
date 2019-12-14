@@ -9,6 +9,7 @@ import { NosotrosComponent } from './navigation/nosotros/nosotros.component';
 import { SolucionesComponent } from './navigation/soluciones/soluciones.component';
 import { TrabajaComponent } from './navigation/trabaja/trabaja.component';
 import { PartnersComponent } from './navigation/partners/partners.component';
+import { BancaComponent } from './navigation/soluciones/banca/banca.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'soluciones', component: SolucionesComponent},
   {path: 'trabaja', component: TrabajaComponent},
   {path: 'partners', component: PartnersComponent},
-  {path:'**', redirectTo:'home', pathMatch: 'full'}
+  {path: 'banca', component: BancaComponent},
+  {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({

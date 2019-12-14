@@ -37,7 +37,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { PartnersComponent } from './navigation/partners/partners.component';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { CountoModule }  from 'angular2-counto';
+import { CountoModule } from 'angular2-counto';
+import { BancaComponent } from './navigation/soluciones/banca/banca.component';
 
 
 
@@ -67,6 +68,7 @@ export const MY_FORMATS = {
     DropdownComponent,
     MenuComponent,
     PartnersComponent,
+    BancaComponent,
   ],
   entryComponents: [DialogContactComponent, DialogSolutionsComponent],
   imports: [

@@ -6,6 +6,7 @@ import { AdminService } from '../services/admin.service';
 import { MatSnackBar } from '@angular/material';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CountoModule } from 'angular2-counto';
 
 
 @Component({
@@ -24,7 +25,6 @@ export class HomeComponent implements OnInit {
     private adminService: AdminService,
     private snackBar: MatSnackBar,
     private dialog: MatDialog,
-    private _sanitizer: DomSanitizer,
   ) { }
 
 
@@ -45,9 +45,6 @@ export class HomeComponent implements OnInit {
   openDialog() {
     this.dialog.open(DialogContactComponent);
   }
-
-  productos: string[] = ['Thuban', 'Captika'];
-
 }
 
 

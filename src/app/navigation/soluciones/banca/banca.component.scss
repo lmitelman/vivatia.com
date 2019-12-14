@@ -1,0 +1,31 @@
+h1 {
+    font-size: 140px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    background-image: url(/assets/banco-header.png);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    opacity: 1.47;
+}
+
+.box {
+    transition: box-shadow 0.3s;
+    // border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    white-space: normal !important;
+    background: #fff;
+    margin: 2rem;
+}
+
+.box:hover {
+    box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
