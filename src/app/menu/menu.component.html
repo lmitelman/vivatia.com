@@ -38,29 +38,23 @@
 
     <!-- navbar web -->
     <mat-sidenav-content>
-        <mat-toolbar class="transparent fontNavBar text-white navbar dropdown-content fixed-top" style="background-color: rgba(94, 94, 94, 0.4)">
+        <mat-toolbar class="transparent fontNavBar text-white navbar dropdown-content fixed-top" style="background-color: #F3F3F3">
 
-            <img src="/assets/vivatia-logo-navbar-transparent.png" class="logo-main ml-3" id="logo-transparent">
-            <img src="/assets/vivatia-logo-navbar-white.png" class="logo-main mt-2" id="logo-white">
+            <img src="/assets/vivatia-logo-navbar-white.png" class="logo-main ml-3" id="logo-transparent">
             <span class="spacer"></span>
 
             <div role="navigation" *ngIf="!isMobileLayout">
                 <ul>
-                    <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/home">Home</a></li>
-                    <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/nosotros">Nosotros</a></li>
-                    <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/soluciones">Soluciones</a></li>
-                    <li> <a mat-list-item class="text-white fontNavBar px-2">Productos</a>
+                    <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/home">Home</a></li>
+                    <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/nosotros">Nosotros</a></li>
+                    <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/soluciones">Soluciones</a></li>
+                    <li> <a mat-list-item class="fontNavBar px-2 letra">Productos</a>
+                    <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/partners">Partners</a></li>
+                    <li> <a mat-list-item class="fontNavBar px-2 letra">Idiomas</a>
                         <ul>
-                            <li> <a mat-list-item class="text-white fontNavBar pl-1" routerLink="/Thuban">Thuban Software</a></li>
-                            <li> <a mat-list-item class="text-white fontNavBar pl-1" routerLink="/Captika">Captika Software</a></li>
-                        </ul>
-                    </li>
-                    <li> <a mat-list-item class="text-white fontNavBar px-1" routerLink="/partners">Partners</a></li>
-                    <li> <a mat-list-item class="text-white fontNavBar px-2">Idiomas</a>
-                        <ul>
-                            <li> <a mat-list-item class="text-white fontNavBar pl-1">Español</a></li>
-                            <li> <a mat-list-item class="text-white fontNavBar pl-1">Ingles</a></li>
-                            <li> <a mat-list-item class="text-white fontNavBar pl-1">Portugués</a></li>
+                            <li> <a mat-list-item class="fontNavBar pl-1 letra">Español</a></li>
+                            <li> <a mat-list-item class="fontNavBar pl-1 letra">Ingles</a></li>
+                            <li> <a mat-list-item class="fontNavBar pl-1 letra">Portugués</a></li>
                         </ul>
                     </li>
                 </ul>

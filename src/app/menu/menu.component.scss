@@ -51,13 +51,12 @@ li a {
 }
 
 li:hover {
-    background: rgba(255, 255, 255, 0.143);
+    background:rgba(44, 119, 63, 0.143);
     cursor: pointer;
 }
 
 ul li ul {
     visibility: hidden;
-    opacity: 0;
     // min-width: 5rem;
     position: absolute;
     transition: all 0.5s ease;
@@ -68,7 +67,7 @@ ul li ul {
 
 ul li:hover>ul,
 ul li ul:hover {
-    background: rgba(255, 255, 255, 0.143);
+    background: #F3F3F3;
     visibility: visible;
     opacity: 1;
     display: block;

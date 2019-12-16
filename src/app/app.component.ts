@@ -15,13 +15,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     let navLogo = document.getElementById('logo-white');
-    navLogo.style.display = 'none';
+    // navLogo.style.display = 'none';
   }
 
   @HostListener('window:scroll', ['$event'])
 
   onWindowScroll(e) {
-
     let element = document.querySelector('.navbar');
     // let element1 = document.querySelector('.dropdown-content');
 
