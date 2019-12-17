@@ -1,7 +1,7 @@
 <!-- navbar mobile -->
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer class="sidenav" fixedInViewport="false">
-        <mat-toolbar>Menu</mat-toolbar>
+        <mat-toolbar class="text-dark">Menu</mat-toolbar>
         <mat-nav-list>
             <!-- menu para sidebar hecho con css y html -->
             <div *ngIf="isMobileLayout">
@@ -10,17 +10,7 @@
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/home">Home</a></li>
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/nosotros">Nosotros</a></li>
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/soluciones">Soluciones</a></li>
-                        <li><a mat-list-item class="text-dark fontNavBar px-1">Productos</a>
-                            <!-- <mat-select #mode value="seleccionar">
-                                <mat-option value="side">Thuban Software</mat-option>
-                                <mat-option value="over">Captika Software</mat-option>
-                            </mat-select> -->
-                            
-                            <ul class="mb-5">
-                                <li> <a mat-list-item class="text-dark fontNavBar px-1" routerLink="/Thuban">Thuban</a></li>
-                                <li> <a mat-list-item class="text-dark fontNavBar px-1" routerLink="/Captika">Captika</a></li>
-                            </ul>
-                        </li>
+                        <li><a mat-list-item class="text-dark fontNavBar px-1">Productos</a></li>
                         <li> <a mat-list-item class="text-dark fontNavBar px-1" routerLink="/partners">Partners</a></li>
                         <li class="mt-5"><a mat-list-item class="text-dark fontNavBar pt-5 mt-5">Idiomas</a>
                             <ul class="mt-5">
@@ -48,7 +38,7 @@
                     <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/home">Home</a></li>
                     <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/nosotros">Nosotros</a></li>
                     <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/soluciones">Soluciones</a></li>
-                    <li> <a mat-list-item class="fontNavBar px-2 letra">Productos</a>
+                    <li> <a mat-list-item class="fontNavBar px-2 letra" routerLink="/productos">Productos</a>
                     <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/partners">Partners</a></li>
                     <li> <a mat-list-item class="fontNavBar px-2 letra">Idiomas</a>
                         <ul>

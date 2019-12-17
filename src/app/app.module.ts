@@ -39,7 +39,9 @@ import { PartnersComponent } from './navigation/partners/partners.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CountoModule } from 'angular2-counto';
 import { BancaComponent } from './navigation/soluciones/banca/banca.component';
-
+import { SolucionesHorizontalesComponent } from './navigation/soluciones/soluciones-horizontales/soluciones-horizontales.component';
+import { SegurosComponent } from './navigation/soluciones/seguros/seguros.component';
+import { ProductosComponent } from './navigation/productos/productos.component';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -69,6 +71,9 @@ export const MY_FORMATS = {
     MenuComponent,
     PartnersComponent,
     BancaComponent,
+    SolucionesHorizontalesComponent,
+    SegurosComponent,
+    ProductosComponent,
   ],
   entryComponents: [DialogContactComponent, DialogSolutionsComponent],
   imports: [
