@@ -1,15 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-productos',
-  templateUrl: './productos.component.html',
-  styleUrls: ['./productos.component.scss']
+	selector: 'app-productos',
+	templateUrl: './productos.component.html',
+	styleUrls: ['./productos.component.scss']
 })
 export class ProductosComponent implements OnInit {
 
-  constructor() { }
+	captika: String = 'assets/captika-bw.png';
+	thuban: String = 'assets/thuban-bw.png';
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() {
+	}
+
+	changeImageIcon(type, mode) {
+		if(type == 'captika'){
+			if(mode == 'in'){
+				this.captika = 'assets/captika-color.png';
+			} else {
+				this.captika = 'assets/captika-bw.png';
+			}
+		} else {
+			if(mode == 'in'){
+				this.thuban = 'assets/thuban-color.png';
+			} else {
+				this.thuban = 'assets/thuban-bw.png';
+			}
+		}
+	}
 
 }

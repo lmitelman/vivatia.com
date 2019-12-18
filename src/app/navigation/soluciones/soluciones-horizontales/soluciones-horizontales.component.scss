@@ -6,16 +6,6 @@ h1 {
     font-family: "Montserrat", sans-serif;
 }
 
-.header {
-    background-image: url(/assets/banco-header.png);
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50%;
-    opacity: 1.47;
-}
-
 .box {
     transition: box-shadow 0.3s;
     // border-radius: 50%;
@@ -47,4 +37,47 @@ h1 {
 .logo-industria {
     height: 100%;
     width: 100%;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 900px) {
+    .header {
+        padding-top: 10%;
+        height: 18%;
+        opacity: 1.47;
+    }
+
+    h5 {
+        font-size: 17px;
+        text-align: center;
+        margin-top: 0%;
+    }
+
+    .solucionescore {
+        height: 40%;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 0%;
+    }
+
+    .soluciones{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        transition: box-shadow 0.3s;
+        // border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        white-space: normal !important;
+        background: #fff;
+        margin: 10px 15px 10px 15px;
+    }
+
+    h6 {
+        font-size: 11px;
+    }
 }

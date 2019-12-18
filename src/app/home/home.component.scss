@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////  Fondos Home
 
 .bg-home1 {
-  background-image: url(/assets/bg-main1.png);
+  background-image: url('../../assets/bg-main1.png');
   /* Center and scale the image nicely */
   background-position: left;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 }
 
 .bg-home2 {
-  background-image: url(/assets/bg-main5.png);
+  background-image: url('../../assets/bg-main5.png');
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ h5 {
 }
 
 .EncontraTuSolucion {
-  background-image: url(/assets/trazado.png);
+  background-image: url('../../assets/trazado.png');
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +73,7 @@ h5 {
 //////////////////////////////////////////////////////  iPhone X
 @media only screen and (min-width: 100px) and (max-width: 900px) {
     .bg-home1 {
-      background-image: url(/assets/bg-main1.png);
+      background-image: url('../../assets/bg-main1.png');
       /* Center and scale the image nicely */
       background-position: center;
       background-repeat: no-repeat;
