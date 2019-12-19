@@ -29,10 +29,10 @@ h1 {
 .box2 {
     transition: box-shadow 0.3s;
     // border-radius: 50%;
-    height: 140px;
+    height: 100px;
     width: 140px;
     white-space: normal !important;
-    background: #fff;
+    background: #2C773F;
     margin: 2rem;
 }
 
@@ -41,7 +41,7 @@ h1 {
 }
 
 .box2:hover {
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    background: #2F7E43;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 900px) {
