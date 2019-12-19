@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
 
 @Component({
   selector: 'app-soluciones-horizontales',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SolucionesHorizontalesComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private dialog: MatDialog,
+  ) { }
 
   ngOnInit() {
   }
-
+  
+  openDialog() {
+    this.dialog.open(DialogContactComponent);
+  }
 }

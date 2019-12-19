@@ -1,21 +1,16 @@
 //////////////////////////////////////////////////////  Fondos Home
 
 .bg-home1 {
-  background-image: url('../../assets/bg-main1.png');
+  background-image: url('../../assets/test-home.png');
   /* Center and scale the image nicely */
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 55%;
+  height: 53%;
 }
 
-.bg-home2 {
-  background-image: url('../../assets/bg-main5.png');
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40%;
+.clientsDesktop {
+  height: 20%;
 }
 
 .bg-home3 {

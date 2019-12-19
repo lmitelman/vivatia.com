@@ -1,20 +1,26 @@
-<section class="pt-5 d-flex flex-column align-items-center justify-content-center bg-home1 mkITwk">
+<!-- <section class="pt-5 d-flex flex-column align-items-center justify-content-center bg-home1 mkITwk">
     <div class="d-flex flex-column align-items-center justify-content-center">
         <img src="assets/title-main.png" class="title-main">
         <h2 class="font-weight-light text-white my-3 subtitle animated pulse">Viví tu experiencia digital</h2>
-        <!-- <p class="text-white">Vivimos en un contexto en el cual los papeles dejen de ser protagonistas en tus procesos. Te ayudamos a<br>emprender el camino de la transformación digital de manera innovadora aplicando nuevas tecnologías.</p> -->
+        <button mat-raised-button class="mt-2 rounded-pill boton text-white" (click)="openDialog()">Contactanos</button>
+    </div>
+</section> -->
+<section class="d-flex align-items-center justify-content-start bg-home1">
+    <div class="d-flex flex-column align-items-center" style="padding: 50px 0px 0px 150px;">
+        <img src="assets/mkitwk.png" class="title-main mb-2">
+        <h2 class="font-weight-bold text-dark subtitle animated pulse" style="font-size: 60px; font-family: 'Montserrat';">Viví tu experiencia digital</h2>
         <button mat-raised-button class="mt-2 rounded-pill boton text-white" (click)="openDialog()">Contactanos</button>
     </div>
 </section>
 
 <!-- CLIENTES WEB -->
 <section class="clientsDesktop">
-    <div class="py-5 d-flex align-items-center justify-content-center clients" style="background-color: #F3F3F3">
-        <img class="mr-5" src="assets/bbva.png">
-        <img class="mr-5" src="assets/Galicia.png">
-        <img class="mr-5" src="assets/havas.png">
-        <img class="mr-5" src="assets/prisma.png">
-        <img class="mr-5" src="assets/Santander.png">
+    <div class="py-5 d-flex align-items-center align-content-center justify-content-center clients h-100" style="background-color: #F3F3F3">
+        <img class="mr-5 animated zoomIn" src="assets/bbva.png">
+        <img class="mr-5 animated zoomIn" src="assets/Galicia.png">
+        <img class="mr-5 animated zoomIn" src="assets/havas.png">
+        <img class="mr-5 animated zoomIn" src="assets/prisma.png">
+        <img class="mr-5 animated zoomIn" src="assets/Santander.png">
     </div>
 </section>
 
@@ -42,22 +48,6 @@
     </div>
 </section>
 
-<!-- TEST MDB -->
-<!-- <section>
-    <div class="clientsMobile pb-1 align-items-center justify-content-center" style="background-color: rgba(34, 38, 42, 0.9)">
-        <mdb-carousel class="carousel slide carousel-fade" [isControls]="false" [animation]="'fade'">
-            <mdb-carousel-item>
-              <img class="w-30" src="assets/bbva2.png" alt="First slide">
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-              <img class="w-30" src="assets/Galicia2.png" alt="Second slide">
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-              <img class="w-30" src="assets/havas2.png" alt="Third slide">
-            </mdb-carousel-item>
-          </mdb-carousel>
-    </div>
-</section> -->
 <section class="text-center d-flex align-items-center justify-content-center border-success stats">
     <div class="stat animated fadeInDown" style="animation-delay: 0.7s">
         <h2 class="letra font-weight-bold">+1500m</h2>
@@ -86,12 +76,12 @@
         <div class="py-3 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-elegi.png">
             <h5 class="font-weight-bold" style="margin-top: 15px;">Elegí</h5>
-            <p class="pt-1 text-center text-dark w-75">Brindamos soluciones optimas para cualquier necesidad</p>
+            <p class="pt-1 text-center text-dark w-75">Soluciones optimas para cualquier necesidad</p>
         </div>
         <div class="py-3 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-implementa.png">
             <h5 class="font-weight-bold" style="margin-top: 15px;">Implementá</h5>
-            <p class="pt-1 text-center text-dark w-75">Ofrecemos implementaciones rápidas, Onpremise y Cloud</p>
+            <p class="pt-1 text-center text-dark w-75">Implementaciones rápidas, Onpremise y Cloud</p>
         </div>
         <div class="py-3 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-transforma.png">
@@ -109,26 +99,6 @@
         <button mat-raised-button class="rounded-pill boton text-white align-self-center py-1 px-3" style="font-size: medium;" routerLink="/soluciones">Encontrá tu solución</button>
     </div>
 </section>
-
-<!-- <section>
-    <div class="d-flex justify-content-center bg-home2">
-        <div class="d-flex flex-column align-items-center mx-5 mt-3 bg-homeObjects w-25">
-            <img src="assets/digit.png" class="logo-main mb-3">
-            <h5 class="mb-3">Implementá nuevas tecnologías</h5>
-            <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-        </div>
-        <div class="d-flex flex-column align-items-center mx-5 mt-3 bg-homeObjects w-25">
-            <img src="assets/lightbulb.png" class="logo-main mb-3">
-            <h5 class="mb-3">Generá ahorros</h5>
-            <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-        </div>
-        <div class="d-flex flex-column align-items-center mx-5 mt-3 bg-homeObjects w-25">
-            <img src="assets/rocket.png" class="logo-main mb-3">
-            <h5 class="mb-3">Potencia tu empresa</h5>
-            <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-        </div>
-    </div>
-</section> -->
 
 <section class="bg-home3 text-center d-flex flex-column align-items-center justify-content-center">
     <div class="d-flex flex-column align-items-center">
