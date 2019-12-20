@@ -6,7 +6,17 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 62%;
+  height: 60%;
+}
+
+.bg-home1 div {
+  padding-left: 10%;
+}
+
+
+.bg-home1 h2 {
+  font-size: 60px; 
+  font-family: 'Montserrat';
 }
 
 .clientsDesktop {
@@ -68,7 +78,7 @@ h5 {
 //////////////////////////////////////////////////////  iPhone X
 @media only screen and (min-width: 100px) and (max-width: 900px) {
     .bg-home1 {
-      background-image: url('../../assets/bg-main1.png');
+      background-image: url('../../assets/test-home.png');
       /* Center and scale the image nicely */
       background-position: center;
       background-repeat: no-repeat;
@@ -77,7 +87,7 @@ h5 {
     }
 
     .bg-home1 h2{
-      font-size: 20px;
+      font-size: 40px;
     }
 
     .clientsDesktop {

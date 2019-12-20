@@ -12,6 +12,7 @@ import { PartnersComponent } from './navigation/partners/partners.component';
 import { BancaComponent } from './navigation/soluciones/banca/banca.component';
 import { SegurosComponent } from './navigation/soluciones/seguros/seguros.component';
 import { ProductosComponent } from './navigation/productos/productos.component';
+import { SaludComponent } from './navigation/soluciones/salud/salud.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'banca', component: BancaComponent},
   {path: 'seguros', component: SegurosComponent},
   {path: 'productos', component: ProductosComponent},
+  {path: 'salud', component: SaludComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
