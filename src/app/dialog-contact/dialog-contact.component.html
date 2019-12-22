@@ -5,16 +5,16 @@
 
 <mat-dialog-content>
     <form [formGroup]="contactForm">
-        <h3 class="mt-3 mx-5 letra font-weight-bold">Nos encantaría ayudarte</h3>
+        <h3 class="mt-3 mx-3 letra font-weight-bold">Nos encantaría ayudarte</h3>
         <div class="py-2 my-3 d-flex flex-column align-items-center justify-content-center">
             <mat-form-field class="input-group">
-                <input matInput required class="form-control border-0" placeholder="Ingresa tu nombre" formControlName="userName" autocomplete="off">
+                <input matInput required class="form-control border-0" placeholder="Nombre" formControlName="userName" autocomplete="off">
             </mat-form-field>
             <mat-form-field class="input-group">
-                <input matInput required class="form-control border-0" placeholder="Ingresa tu email" formControlName="userMail" autocomplete="off">
+                <input matInput required class="form-control border-0" placeholder="E-mail" formControlName="userMail" autocomplete="off">
             </mat-form-field>
             <mat-form-field class="input-group">
-                <textarea matInput required name="" id="" cols="90" rows="5" placeholder="Contanos tus dudas" class="mb-3" formControlName="userMessage" autocomplete="off" autocomplete="off"></textarea>
+                <textarea matInput required name="" id="" cols="90" rows="5" placeholder="Comentarios" class="mb-3" formControlName="userMessage" autocomplete="off" autocomplete="off"></textarea>
             </mat-form-field>
         </div>
         <div class="mb-4 d-flex justify-content-center">

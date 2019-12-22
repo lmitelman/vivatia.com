@@ -13,6 +13,9 @@ import { BancaComponent } from './navigation/soluciones/banca/banca.component';
 import { SegurosComponent } from './navigation/soluciones/seguros/seguros.component';
 import { ProductosComponent } from './navigation/productos/productos.component';
 import { SaludComponent } from './navigation/soluciones/salud/salud.component';
+import { IndustriaComponent } from './navigation/soluciones/industria/industria.component';
+import { GobiernoComponent } from './navigation/soluciones/gobierno/gobierno.component';
+import { EducacionComponent } from './navigation/soluciones/educacion/educacion.component';
 
 
 const routes: Routes = [
@@ -27,6 +30,9 @@ const routes: Routes = [
   {path: 'seguros', component: SegurosComponent},
   {path: 'productos', component: ProductosComponent},
   {path: 'salud', component: SaludComponent},
+  {path: 'industria', component: IndustriaComponent},
+  {path: 'gobierno', component: GobiernoComponent},
+  {path: 'educacion', component: EducacionComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

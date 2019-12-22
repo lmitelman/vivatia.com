@@ -11,17 +11,7 @@ export class AdminService {
     constructor(
         private http: HttpClient,
     ) { }
-    /**
-    * Gets a temporary token to be used for all interactions with server
-    * @param params: email: usuario de thuban,
-    *                password: password del usuario de thuban    
-    * @returns response 
-    *   {
-    *       data: {
-    *           msg: "string"
-    *       }
-    *   }
-    */
+
 
     createDocument(params): Observable<any> {
         return this.http.post(environment.thubanUrl + '/createDocument', {

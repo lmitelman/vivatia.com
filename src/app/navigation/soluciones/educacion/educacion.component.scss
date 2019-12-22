@@ -1,0 +1,85 @@
+h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    background-image: url('../../../../assets/educacion-header.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    opacity: 1.47;
+}
+
+.box {
+    transition: box-shadow 0.3s;
+    // border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    white-space: normal !important;
+    background: #fff;
+    margin: 2rem;
+}
+
+.box2 {
+    transition: box-shadow 0.3s;
+    // border-radius: 50%;
+    height: 100px;
+    width: 140px;
+    white-space: normal !important;
+    background: #2C773F;
+    margin: 2rem;
+}
+
+.box:hover {
+    box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
+
+.box2:hover {
+    background: #2F7E43;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 900px) {
+    .header {
+        padding-top: 10%;
+        height: 18%;
+        opacity: 1.47;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .solucionescore {
+        height: 40%;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding: 0%;
+    }
+
+    .soluciones{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box2 {
+        transition: box-shadow 0.3s;
+        // border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        white-space: normal !important;
+        background: #fff;
+        margin: 10px 15px 10px 15px;
+    }
+
+    h6 {
+        font-size: 13px;
+    }
+}

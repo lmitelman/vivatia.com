@@ -43,6 +43,9 @@ import { SolucionesHorizontalesComponent } from './navigation/soluciones/solucio
 import { SegurosComponent } from './navigation/soluciones/seguros/seguros.component';
 import { ProductosComponent } from './navigation/productos/productos.component';
 import { SaludComponent } from './navigation/soluciones/salud/salud.component';
+import { IndustriaComponent } from './navigation/soluciones/industria/industria.component';
+import { GobiernoComponent } from './navigation/soluciones/gobierno/gobierno.component';
+import { EducacionComponent } from './navigation/soluciones/educacion/educacion.component';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -76,6 +79,9 @@ export const MY_FORMATS = {
     SegurosComponent,
     ProductosComponent,
     SaludComponent,
+    IndustriaComponent,
+    GobiernoComponent,
+    EducacionComponent,
   ],
   entryComponents: [DialogContactComponent, DialogSolutionsComponent],
   imports: [

@@ -13,7 +13,6 @@
   padding-left: 10%;
 }
 
-
 .bg-home1 h2 {
   font-size: 60px; 
   font-family: 'Montserrat';
@@ -23,26 +22,16 @@
   height: 18%;
 }
 
-.bg-home3 {
-  // background-image: url(/assets/rectangle-main.png);
-  background-color: white;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 48%;
-}
-
-.colorGris {
-  background-color: #212529;
-}
-
 .clientsMobile {
   display: none;
 }
 
-h5 {
-  font-size: 17px;
+.stats {
+  height: 30%;
+}
+
+.stat {
+  width: 20%;
 }
 
 .EncontraTuSolucion h5 {
@@ -57,12 +46,23 @@ h5 {
   background-size: cover;
 }
 
-.stats {
-  height: 30%;
+.process {
+  width: 20%;
 }
 
-.stat {
-  width: 20%;
+.process img {
+  max-width: 22%;
+  height: auto;
+}
+
+.bg-home3 {
+  // background-image: url(/assets/rectangle-main.png);
+  background-color: white;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 48%;
 }
 
 .bg-home3 .img-pvc {
@@ -72,6 +72,14 @@ h5 {
   box-shadow: 7px 7px 3px grey;
 }
 
+.colorGris {
+  background-color: #212529;
+}
+
+
+h5 {
+  font-size: 17px;
+}
 
 //////////////////////////////////////////////////////  Responsive
 
@@ -113,6 +121,7 @@ h5 {
     }
 
     .process {
+      width: 90%;
       padding: 0%;
     }
 
