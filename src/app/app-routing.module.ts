@@ -21,8 +21,8 @@ import { EducacionComponent } from './navigation/soluciones/educacion/educacion.
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'nosotros', component: NosotrosComponent},
-  {path: 'Thuban', component: ProductoThubanComponent},
-  {path: 'Captika', component: ProductoCaptikaComponent},
+  {path: 'thuban', component: ProductoThubanComponent},
+  {path: 'captika', component: ProductoCaptikaComponent},
   {path: 'soluciones', component: SolucionesComponent},
   {path: 'trabaja', component: TrabajaComponent},
   {path: 'partners', component: PartnersComponent},

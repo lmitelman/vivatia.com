@@ -1,79 +1,35 @@
-.boton {
-    background-color: #29c351;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat';
 }
 
-.letra {
-    color: #2c773f !important;
-}
-
-.letra2 {
-    color: #24b54a !important;
-}
-
-.letra3 {
-    color: #808080;
-}
-
-.home-logo {
-    max-width: 20rem;
-}
-
-.home-small-logo {
-    max-width: 4rem;
-}
-
-.home-small-logo2 {
-    max-width: 8rem;
-}
-
-.footer {
-    background-color: #F0F0F0;
-}
-
-.footer1 {
-    background-color: #e6e6e6;
-}
-
-ul {
-    list-style-type: none;
-}
-
-hr {
-    border: 1px solid #379750;
-    width: 20px;
-    margin-left: 0px;
-}
-
-.small-logo {
-    max-width: 8rem;
-}
+// HEADER
 
 .bg-main1 {
-    background-image: url('../../../assets/bg-main6.png');
+    background-image: url('../../../assets/nosotros-header.png');
     /* Center and scale the image nicely */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 48%;
+    height: 50%;
 }
 
-.bg-main2 {
-    background-image: url('../../../assets/bg-main7.png');
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: justify;
+h1 {
+    font-family: 'Montserrat';
+    padding-left: 10%;
 }
 
-.bg-main2 .mision {
-    width: 24%;
-    height: 60%;
+h5 {
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    padding-left: 10%;
 }
 
-.bg-main2 .vision {
-    width: 24%;
-    height: 60%;
-}
+
+// ¿POR QUE ELEGIRNOS?
 
 .bg-main3 {
     background-image: url('../../../assets/bg-main5.png');
@@ -84,19 +40,9 @@ hr {
     height: auto;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    width: 100%;
+.small-logo {
+    max-width: 8rem;
 }
-
-button:focus {
-    outline: 0;
-}
-
-// ¿POR QUE ELEGIRNOS?
 
 .benefitsMobile {
     display: none;
@@ -107,44 +53,27 @@ button:focus {
 }
 
 
-////////////////////////// RESPOSIVE //////////////////////
+////////////////////////// RESPONSIVE //////////////////////
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .bg-main1 {
-        background-image: url('../../../assets/bg-main6.png');
+        background-image: url('../../../assets/nosotros-header.png');
         /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
-        align-items: center;
         height: 30%;
+        padding-left: 0%;
     }
-    .bg-main1 h3 {
-        font-size: 0.9rem;
+    
+    h1 {
+        font-size: 20px;
+        padding-left: 6%;
     }
-
-    .bg-main2 {
-        flex-direction: column;
-    }
-
-    .bg-main2 {
+    
+    h5 {
         font-size: 12px;
-    }
-
-    .bg-main2 .mision {
-        width: 80%;
-        text-align: justify;
-    }
-
-    .bg-main2 .mision h3{
-        font-size: 20px;
-    }
-
-    .bg-main2 .vision {
-        width: 80%;
-        text-align: justify;
-    }
-
-    .bg-main2 .vision h3{
-        font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        padding-left: 6%;
     }
 
     // ¿POR QUE ELEGIRNOS?

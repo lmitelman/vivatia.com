@@ -7,17 +7,16 @@
 }
 
 .bg-main1 {
-  background-image: url(/assets/bg-main10.png);
-  
+  background-image: url('../../../assets/bg-main10.png');
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
-  height: 90%;
+  height: 70%;
 }
 
 .bg-main2 {
-  background-image: url(/assets/bg-main11.png);  
+  background-image: url('../../../assets/bg-main11.png');  
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
