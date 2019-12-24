@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, share } from 'rxjs/operators';
+import { TranslateModule, TranslateService } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-menu',
@@ -13,14 +14,24 @@ export class MenuComponent implements OnInit {
   private mobile: boolean = false;
   public isMobileLayout = false;
   // private web : boolean = false;
+  langs: string[] = []; 
 
-  constructor(private breakpointObserver: BreakpointObserver) { }
+  constructor(private breakpointObserver: BreakpointObserver, private translate: TranslateService) {
+    this.translate.setDefaultLang('es');
+    this.translate.use('es');
+    this.translate.addLangs(['es', 'en', 'pt']);
+    this.langs = this.translate.getLangs();
+  }
+
+  useLanguage(lang: string) {
+    this.translate.use(lang);
+  }
 
   ngOnInit() {
     window.onload = () => this.isMobileLayout = window.innerWidth <= 991;
     window.onresize = () => this.isMobileLayout = window.innerWidth <= 991;   
   }
-  
+
 }
 
 

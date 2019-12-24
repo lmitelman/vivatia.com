@@ -8,7 +8,7 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
     <div class="d-flex flex-column align-items-start">
         <img src="assets/mkitwk.png" class="title-main mb-2">
-        <h2 class="font-weight-bold text-dark subtitle animated pulse">Viví tu <br> experiencia <br> digital</h2>
+        <h2 class="font-weight-bold text-dark subtitle animated pulse" [innerHTML]="'TITULO' | translate"></h2>
         <button mat-raised-button class="mt-2 rounded-pill boton text-white" (click)="openDialog()">Contactanos</button>
     </div>
 </section>

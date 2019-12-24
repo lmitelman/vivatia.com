@@ -7,6 +7,7 @@ import { MatSnackBar } from '@angular/material';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CountoModule } from 'angular2-counto';
+import { TranslateModule } from '@ngx-translate/core'
 
 
 @Component({

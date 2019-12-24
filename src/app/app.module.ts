@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AdminService } from './services/admin.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material';
@@ -13,6 +13,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // MDB Angular
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+//ngx-translate
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core'
+import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 
 //modules
 import { AppRoutingModule } from './app-routing.module';
@@ -60,6 +64,10 @@ export const MY_FORMATS = {
   },
 };
 
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -89,7 +97,6 @@ export const MY_FORMATS = {
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    AppRoutingModule,
     HttpClientModule,
     MatIconModule,
     MatInputModule,
@@ -102,6 +109,14 @@ export const MY_FORMATS = {
     MDBBootstrapModule,
     MatExpansionModule,
     CountoModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    }),
+    AppRoutingModule
   ],
   providers: [
     AdminService

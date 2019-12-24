@@ -10,27 +10,12 @@
                 <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/productos">Productos</button></p>
                 <mat-form-field class="text-dark fontNavBar">
                     <mat-label>Idioma</mat-label>
-                    <mat-select #mode value="side">
-                      <mat-option value="es" (click)="sidenav.close()">Español</mat-option>
-                      <mat-option value="en" (click)="sidenav.close()">Inglés</mat-option>
-                      <mat-option value="br" (click)="sidenav.close()">Portugués</mat-option>
+                    <mat-select #mode #langSelect>
+                      <mat-option (click)="sidenav.close()" (click)="useLanguage('es')">Español</mat-option>
+                      <mat-option (click)="sidenav.close()" (click)="useLanguage('en')">Inglés</mat-option>
+                      <mat-option (click)="sidenav.close()" (click)="useLanguage('pt')">Portugués</mat-option>
                     </mat-select>
                 </mat-form-field>
-                <!-- <ul>
-                    <div class="d-flex flex-column justify-content-start align-items-center">
-                        <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/home">Home</a></li>
-                        <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/nosotros">Nosotros</a></li>
-                        <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/soluciones">Soluciones</a></li>
-                        <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/productos">Productos</a></li>
-                        <li><a mat-list-item class="text-dark fontNavBar">Idiomas</a>
-                            <ul>
-                                <li><a mat-list-item class="text-dark fontNavBar px-1">Español</a></li>
-                                <li><a mat-list-item class="text-dark fontNavBar px-1">Inglés</a></li>
-                                <li><a mat-list-item class="text-dark fontNavBar px-1">Portugués</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                </ul> -->
             </div>
         </mat-nav-list>
     </mat-sidenav> 
@@ -48,12 +33,11 @@
                     <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/nosotros">Nosotros</a></li>
                     <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/soluciones">Soluciones</a></li>
                     <li> <a mat-list-item class="fontNavBar px-2 letra" routerLink="/productos">Productos</a>
-                    <!-- <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/partners">Partners</a></li> -->
                     <li> <a mat-list-item class="fontNavBar px-2 letra">Idiomas</a>
                         <ul>
-                            <li> <a mat-list-item class="fontNavBar pl-1 letra">Español</a></li>
-                            <li> <a mat-list-item class="fontNavBar pl-1 letra">Inglés</a></li>
-                            <li> <a mat-list-item class="fontNavBar pl-1 letra">Portugués</a></li>
+                            <li> <a mat-list-item class="fontNavBar pl-1 letra" (click)="useLanguage('es')">Español</a></li>
+                            <li> <a mat-list-item class="fontNavBar pl-1 letra" (click)="useLanguage('en')">Inglés</a></li>
+                            <li> <a mat-list-item class="fontNavBar pl-1 letra" (click)="useLanguage('pt')">Portugués</a></li>
                         </ul>
                     </li>
                 </ul>
