@@ -1,17 +1,27 @@
 <!-- navbar mobile -->
 <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #drawer class="sidenav" fixedInViewport="false">
+    <mat-sidenav #drawer #sidenav class="sidenav" fixedInViewport="false">
         <mat-toolbar class="text-dark">Menu</mat-toolbar>
         <mat-nav-list>
-            <!-- menu para sidebar hecho con css y html -->
-            <div *ngIf="isMobileLayout">
-                <ul>
+            <div class="d-flex flex-column justify-content-start align-items-center">
+                <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/home">Home</button></p>
+                <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/nosotros">Nosotros</button></p>
+                <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/soluciones">Soluciones</button></p>
+                <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/productos">Productos</button></p>
+                <mat-form-field class="text-dark fontNavBar">
+                    <mat-label>Idioma</mat-label>
+                    <mat-select #mode value="side">
+                      <mat-option value="es" (click)="sidenav.close()">Español</mat-option>
+                      <mat-option value="en" (click)="sidenav.close()">Inglés</mat-option>
+                      <mat-option value="br" (click)="sidenav.close()">Portugués</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <!-- <ul>
                     <div class="d-flex flex-column justify-content-start align-items-center">
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/home">Home</a></li>
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/nosotros">Nosotros</a></li>
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/soluciones">Soluciones</a></li>
                         <li><a mat-list-item class="text-dark fontNavBar px-1" routerLink="/productos">Productos</a></li>
-                        <!-- <li> <a mat-list-item class="text-dark fontNavBar px-1" routerLink="/partners">Partners</a></li> -->
                         <li><a mat-list-item class="text-dark fontNavBar">Idiomas</a>
                             <ul>
                                 <li><a mat-list-item class="text-dark fontNavBar px-1">Español</a></li>
@@ -19,12 +29,11 @@
                                 <li><a mat-list-item class="text-dark fontNavBar px-1">Portugués</a></li>
                             </ul>
                         </li>
-
                     </div>
-                </ul>
+                </ul> -->
             </div>
         </mat-nav-list>
-    </mat-sidenav>
+    </mat-sidenav> 
 
     <!-- navbar web -->
     <mat-sidenav-content>

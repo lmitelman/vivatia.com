@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 60%;
+  justify-content: start;
 }
 
 .bg-home1 div {
@@ -84,14 +85,15 @@ h5 {
 //////////////////////////////////////////////////////  Responsive
 
 //////////////////////////////////////////////////////  iPhone X
-@media only screen and (min-width: 100px) and (max-width: 900px) {
+@media only screen and (min-width: 100px) and (max-width: 426px) {
     .bg-home1 {
-      background-image: url('../../assets/test-home.png');
+      background-image: url('../../assets/bg-main5.png');
       /* Center and scale the image nicely */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 40%;
+      height: 50%;
+      justify-content: center;
     }
 
     .bg-home1 h2{
