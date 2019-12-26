@@ -13,7 +13,6 @@ export class MenuComponent implements OnInit {
 
   private mobile: boolean = false;
   public isMobileLayout = false;
-  // private web : boolean = false;
   langs: string[] = []; 
 
   constructor(private breakpointObserver: BreakpointObserver, private translate: TranslateService) {
@@ -28,12 +27,11 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    window.onload = () => this.isMobileLayout = window.innerWidth <= 820;
-    window.onresize = () => this.isMobileLayout = window.innerWidth <= 820;   
+    window.onload = () => this.isMobileLayout = window.innerWidth <= 820; 
+    window.onresize = () => this.isMobileLayout = window.innerWidth <= 820; 
   }
 
 }
-
 
 //poner logica para ver de que el sidenav se cierre cuando picas en una opcion del menu
 //que ademas haga scroll to the top cuando picas en una opcion

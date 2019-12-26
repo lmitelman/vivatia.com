@@ -36,6 +36,13 @@ export class DialogContactComponent implements OnInit {
     this.snackBar.open(message, action, { duration: 3000 });
   }
 
+  login() {
+    this.adminService.login('admin', 'thuban', true)
+      .subscribe(
+        data => {}
+      )
+  }
+
   createDocument() {
     if (this.contactForm.valid) {
       this.openSnackBar('Su consulta ha sido enviada', 'Aceptar');
