@@ -86,6 +86,12 @@ h5 {
 
 //////////////////////////////////////////////////////  iPhone X
 @media only screen and (min-width: 100px) and (max-width: 426px) {
+
+    .title-main {
+      max-width: 50%;
+      height: auto;
+    }
+
     .bg-home1 {
       background-image: url('../../assets/bg-main5.png');
       /* Center and scale the image nicely */

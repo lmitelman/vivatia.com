@@ -28,8 +28,8 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    window.onload = () => this.isMobileLayout = window.innerWidth <= 991;
-    window.onresize = () => this.isMobileLayout = window.innerWidth <= 991;   
+    window.onload = () => this.isMobileLayout = window.innerWidth <= 820;
+    window.onresize = () => this.isMobileLayout = window.innerWidth <= 820;   
   }
 
 }

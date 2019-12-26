@@ -1,23 +1,25 @@
 <!-- navbar mobile -->
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer #sidenav class="sidenav" fixedInViewport="false">
-        <mat-toolbar class="text-dark">Menu</mat-toolbar>
-        <mat-nav-list>
-            <div class="d-flex flex-column justify-content-start align-items-center">
-                <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/home">Home</button></p>
-                <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/nosotros">Nosotros</button></p>
-                <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/soluciones">Soluciones</button></p>
-                <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/productos">Productos</button></p>
-                <mat-form-field class="text-dark fontNavBar">
-                    <mat-label>Idioma</mat-label>
-                    <mat-select #mode #langSelect>
-                      <mat-option (click)="sidenav.close()" (click)="useLanguage('es')">Español</mat-option>
-                      <mat-option (click)="sidenav.close()" (click)="useLanguage('en')">Inglés</mat-option>
-                      <mat-option (click)="sidenav.close()" (click)="useLanguage('pt')">Portugués</mat-option>
-                    </mat-select>
-                </mat-form-field>
-            </div>
-        </mat-nav-list>
+        <mat-sidenav-content>
+            <mat-toolbar class="text-dark">Menu</mat-toolbar>
+            <mat-nav-list>
+                <div class="d-flex flex-column justify-content-start align-items-center">
+                    <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/home">Home</button></p>
+                    <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/nosotros">Nosotros</button></p>
+                    <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/soluciones">Soluciones</button></p>
+                    <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/productos">Productos</button></p>
+                    <mat-form-field class="text-dark fontNavBar">
+                        <mat-label>Idioma</mat-label>
+                        <mat-select #mode #langSelect>
+                          <mat-option (click)="sidenav.close()" (click)="useLanguage('es')">Español</mat-option>
+                          <mat-option (click)="sidenav.close()" (click)="useLanguage('en')">Inglés</mat-option>
+                          <mat-option (click)="sidenav.close()" (click)="useLanguage('pt')">Portugués</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </mat-nav-list>
+        </mat-sidenav-content>
     </mat-sidenav> 
 
     <!-- navbar web -->

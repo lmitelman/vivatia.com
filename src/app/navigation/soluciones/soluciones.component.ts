@@ -20,10 +20,6 @@ export class SolucionesComponent implements OnInit {
   ngOnInit() {
     
   }
-  // ['Legajos Digitales', 'Recibos de Sueldo', 'Cuentas a Pagar', 'Onboarding', 'Recursos Humanos', 'Gestión de Contratos']
-  // tslint:disable-next-line: max-line-length
-  // 'Solicitudes y Licencias', 'Compras', 'Rendición de Gastos', 'Comercio Exterior', 'Préstamos', 'Busqueda y Consulta', 'Siniestros', 'Emisión de Pólizas', 'Originación de Tramites', 'Mesa de Entrada', 'Gestión de Auditorías', 'Gestión de Pasantías', 'E-Government', 'Solicitud de Préstamo Prendario', 'Actuaciones', 'CRM', 'Entrega de EPP', 'Reintegros'];
-  
 
   openDialogSolutions(data) {
     this.dialog.open(DialogSolutionsComponent, {
@@ -31,7 +27,7 @@ export class SolucionesComponent implements OnInit {
     });
   }
 
-  openDialogContact() {
+  openDialog() {
     this.dialog.open(DialogContactComponent);
   }
 }
