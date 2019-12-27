@@ -11,11 +11,6 @@
     background: inherit;
 }
 
-// .mat-toolbar.mat-primary {
-//   position: sticky;
-//   top: 0;
-//   z-index: 1;
-// }
 .mat-toolbar a {
     display: inline-block;
     margin: 0 10px;
@@ -28,7 +23,7 @@
     flex: 1 1 auto;
 }
 
-//////////////////////////////////////////////////////// estilos dropdown
+
 ul {
     list-style: none;
     margin: 0;
@@ -36,7 +31,7 @@ ul {
 }
 
 li {
-    color: #fff;
+    // color: #fff;
     // background: rgba(41, 38, 38, 0.143);
     display: block;
     float: left;
@@ -46,9 +41,9 @@ li {
     transition-duration: 0.5s;
 }
 
-li a {
-    color: #fff;
-}
+// li a {
+//     color: #fff;
+// }
 
 li:hover {
     background:rgba(44, 119, 63, 0.143);
@@ -67,7 +62,7 @@ ul li ul {
 
 ul li:hover>ul,
 ul li ul:hover {
-    background: #F3F3F3;
+    // background: #F3F3F3;
     visibility: visible;
     opacity: 1;
     display: block;
@@ -78,4 +73,18 @@ ul li ul li {
     width: 100%;
 }
 
+.collapse {
+    margin-left: 60%;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(44, 119, 63)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 //////////////////////////////////////////////////////// estilos dropdown
+
+@media only screen and (min-width: 100px) and (max-width: 426px) {
+    .collapse {
+        margin-left: 0%;
+    }
+}

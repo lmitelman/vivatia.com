@@ -1,5 +1,6 @@
 .bg-main2 {
-    background-image: url('../../../assets/bg-main4.png');
+    // background-image: url('../../../assets/bg-main4.png');
+    background-color: white;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -9,6 +10,12 @@
 }
 
 .contacto {
+    // background-image: url('../../../assets/bg-main4.png');
+    background-color: white;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 30%;
 }
 

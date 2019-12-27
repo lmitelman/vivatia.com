@@ -1,38 +1,15 @@
+.header-captika {
+  padding-top: 5%;
+  height: 60%;
+  background-color: #7FAA30;
+}
+
 .logo-captika {
-  max-width: 9rem;
+    max-width: 380px;
+    height: 380px;
 }
 
-.thubanView{
-  max-width: 55rem;
-}
-
-.bg-main1 {
-  background-image: url('../../../assets/bg-main10.png');
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  height: 70%;
-}
-
-.bg-main2 {
-  background-image: url('../../../assets/bg-main11.png');  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  height: 30%;
-}
-
-.bg-main3{
-  height: 90%;
-}
-
-.videoCaptika {
-  height: 90%;
-}
-
-#myVideo {
-  position: center;
-  width: 70%; 
+.text-header {
+  width: 30%;
+  font: Light 25px/46px Montserrat;
 }

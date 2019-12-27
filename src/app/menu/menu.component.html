@@ -1,5 +1,36 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top py-1" style="background-color: rgb(231, 231, 231)">
+    <img routerLink="/home" src="assets/vivatia-logo-navbar-white.png" style="cursor: pointer; margin-left: 10px;">
+    <button class="navbar-toggler hidden-sm-up custom-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/soluciones">Soluciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/productos">Productos</a>
+            </li>
+            <li class="nav-item dropdown" ngbDropdown>
+                <a class="nav-link dropdown-toggle text-dark" id="id01" ngbDropdownToggle>Idioma</a>
+                <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+                    <a class="dropdown-item text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" (click)="useLanguage('es')">Español</a>
+                    <a class="dropdown-item text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" (click)="useLanguage('en')">Inglés</a>
+                    <a class="dropdown-item text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed">Portugués</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <!-- navbar mobile -->
-<mat-sidenav-container class="sidenav-container">
+<!-- <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer #sidenav class="sidenav" fixedInViewport="false">
         <mat-sidenav-content>
             <mat-toolbar class="text-dark">Menu</mat-toolbar>
@@ -20,10 +51,10 @@
                 </div>
             </mat-nav-list>
         </mat-sidenav-content>
-    </mat-sidenav> 
+    </mat-sidenav>  -->
 
     <!-- navbar web -->
-    <mat-sidenav-content>
+    <!-- <mat-sidenav-content>
         <mat-toolbar class="transparent fontNavBar text-white navbar dropdown-content fixed-top" style="background-color: rgb(231, 231, 231)">
             <img routerLink="/home" src="assets/vivatia-logo-navbar-white.png" class="logo-main ml-3" style="cursor: pointer;" id="logo-transparent">
             <span class="spacer"></span>
@@ -48,9 +79,9 @@
                 <mat-icon>menu</mat-icon>
             </button>
 
-        </mat-toolbar>
+        </mat-toolbar> -->
         <ng-content></ng-content>
-    </mat-sidenav-content>
+    <!-- </mat-sidenav-content> -->
 
 
-</mat-sidenav-container>
+<!-- </mat-sidenav-container> -->

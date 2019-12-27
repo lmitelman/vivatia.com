@@ -11,11 +11,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core'
 })
 export class MenuComponent implements OnInit {
 
-  private mobile: boolean = false;
   public isMobileLayout = false;
+  isNavbarCollapsed = true;
   langs: string[] = []; 
 
-  constructor(private breakpointObserver: BreakpointObserver, private translate: TranslateService) {
+  constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('es');
     this.translate.use('es');
     this.translate.addLangs(['es', 'en', 'pt']);
@@ -32,6 +32,3 @@ export class MenuComponent implements OnInit {
   }
 
 }
-
-//poner logica para ver de que el sidenav se cierre cuando picas en una opcion del menu
-//que ademas haga scroll to the top cuando picas en una opcion
