@@ -36,8 +36,12 @@ const routes: Routes = [
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
+// useHash: true PARA PODER ARREGLAR LA PAGINACIÓN AL RECARGAR
+// scrollPositionRestoration: 'enabled' PARA SCROLLEAR AL TOP AL NAVEGAR ENTRE COMPONENTES
+
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes, {useHash: true, scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
