@@ -4,7 +4,7 @@
 
 .header-captika {
   padding-top: 6%;
-  height: 70%;
+  height: 90%;
   background-color: #7FAA30;
 }
 
@@ -22,21 +22,21 @@ h6 {
 }
 
 .descripcion {
-  width: 42%; 
+  width: 38%; 
   font-family: 'Montserrat';
 }
 
 .item1 {
-  height: 65%;
+  height: 70%;
 }
 
 .item2 {
   background-color: #F3F3F3; 
-  height: 70%;
+  height: 80%;
 }
 
 .item3 {
-  height: 55%;
+  height: 65%;
 }
 
 .img-captika1 {
@@ -57,7 +57,7 @@ h6 {
 }
 
 .stats {
-  height: 30%;
+  height: 40%;
   background-color: #F3F3F3;
 }
 
@@ -65,12 +65,16 @@ h6 {
   width: 20%;
 }
 
+.green {
+  color: #7FAA30;
+}
+
 @media only screen and (min-width: 100px) and (max-width: 426px) {
 
   .header-captika {
     flex-direction: column;
     align-items: center;
-    height: 50%;
+    height: 60%;
   }
 
   .logo-captika {
@@ -88,7 +92,7 @@ h6 {
   }
 
   h5 {
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
   }
 
@@ -104,16 +108,16 @@ h6 {
   }
 
   .item1 {
-    height: 60%;
+    height: 65%;
   }
   
   .item2 {
     background-color: #F3F3F3; 
-    height: 65%;
+    height: 70%;
   }
   
   .item3 {
-    height: 60%;
+    height: 65%;
   }
 
   h4 {
@@ -153,7 +157,7 @@ h6 {
   }
 
   .stats h5 {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .stat {

@@ -15,6 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 5%;
 }
 
 .bg-main3 {
@@ -41,7 +42,7 @@ body {
     width: 160px;
     white-space: normal !important;
     background: #fff;
-    margin: 2rem;
+    margin: 1.5rem;
 }
 
 .box:hover {
@@ -72,6 +73,7 @@ button:focus {
 ///////////////////////////////// RESPONSIVE
 
 @media only screen and (min-width: 100px) and (max-width: 900px) {
+
     h2 {
         font-size: 20px;
     }
