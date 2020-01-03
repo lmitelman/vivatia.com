@@ -10,17 +10,7 @@ h1 {
     transition: box-shadow 0.3s;
     // border-radius: 50%;
     height: 140px;
-    width: 140px;
-    white-space: normal !important;
-    background: #fff;
-    margin: 2rem;
-}
-
-.box2 {
-    transition: box-shadow 0.3s;
-    // border-radius: 50%;
-    height: 140px;
-    width: 140px;
+    width: 180px;
     white-space: normal !important;
     background: #fff;
     margin: 2rem;
@@ -30,13 +20,13 @@ h1 {
     box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
 }
 
-.box2:hover {
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+.logo-industria {
+    height: 80%;
+    width: 80%;
 }
 
-.logo-industria {
-    height: 100%;
-    width: 100%;
+h6 {
+    font-size: 14px;
 }
 
 
@@ -70,8 +60,8 @@ h1 {
     .box {
         transition: box-shadow 0.3s;
         // border-radius: 50%;
-        height: 120px;
-        width: 120px;
+        height: 125px;
+        width: 150px;
         white-space: normal !important;
         background: #fff;
         margin: 10px 15px 10px 15px;

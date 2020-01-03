@@ -1,39 +1,167 @@
-.logo-thuban {
-  max-width: 9rem;
+* {
+  font-family: 'Montserrat';
 }
 
-.thubanView{
-  max-width: 55rem;
+.header-captika {
+  padding-top: 6%;
+  height: 90%;
+  background-color: #00326B;
 }
 
-.bg-main1 {
-  background-image: url(/assets/bg-main9.png);
+.logo-captika {
+    max-width: 380px;
+    height: 380px;
+}
+
+.text-header {
+  width: 30%;
+}
+
+h6 {
+  line-height: 1.8;
+}
+
+.descripcion {
+  width: 38%; 
+  font-family: 'Montserrat';
+}
+
+.item1 {
+  height: 70%;
+}
+
+.item2 {
+  background-color: #F3F3F3; 
+  height: 80%;
+}
+
+.item3 {
+  height: 65%;
+}
+
+.img-captika1 {
+  max-width: 380px;
+  height: 380px;
+  margin-left: 15px;
+}
+
+.img-captika2 {
+  max-width: 600px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.img-captika3 {
+  max-width: 600px;
+  height: auto;
+}
+
+.stats {
+  height: 40%;
+  background-color: #F3F3F3;
+}
+
+.stat {
+  width: 20%;
+}
+
+.green {
+  color: #7FAA30;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 426px) {
+
+  .header-captika {
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+  }
+
+  .logo-captika {
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .text-header {
+    width: 100%;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .descripcionItem {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .descripcion {
+    width: 100%;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .item1 {
+    height: 65%;
+  }
   
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  height: 90%;
+  .item2 {
+    background-color: #F3F3F3; 
+    height: 70%;
+  }
+  
+  .item3 {
+    height: 65%;
+  }
+
+  h4 {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  h6 {
+    font-size: 14px;
+    // margin: 0px 10px 0px 10px;
+  }
+
+  .img-captika1 {
+    max-width: 160px;
+    height: 160px;
+  }
+  
+  .img-captika2 {
+    max-width: 340px;
+    height: auto;
+  }
+  
+  .img-captika3 {
+    max-width: 275px;
+    height: auto;
+  }
+
+  .stats {
+    height: 30%;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .stats h2 {
+    font-size: 22px;
+  }
+
+  .stats h5 {
+    font-size: 14px;
+  }
+
+  .stat {
+    width: 50%;
+  }
 }
 
-.bg-main2 {
-  background-image: url(/assets/bg-main8.png);  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  height: 30%;
-}
-
-.bg-main3{
-  height: 90%;
-}
-
-.videoThuban {
-  height: 90%;
-}
-
-#myVideo {
-  position: center;
-  width: 70%; 
-}

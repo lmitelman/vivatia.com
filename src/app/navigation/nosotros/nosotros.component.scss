@@ -14,18 +14,21 @@ body {
     /* Center and scale the image nicely */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70%;
+    height: 60%;
+}
+
+.text-header {
+    width: 50%;
+    padding-left: 10%;
 }
 
 h1 {
     font-family: 'Montserrat';
-    padding-left: 10%;
 }
 
 h5 {
     line-height: 1.6;
     letter-spacing: 0.5px;
-    padding-left: 10%;
 }
 
 
@@ -37,7 +40,7 @@ h5 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 60%;
 }
 
 .small-logo {
@@ -52,6 +55,42 @@ h5 {
     display: flex;
 }
 
+.benefit {
+    width: 25%;
+}
+
+p {
+    font-size: 17px;
+}
+
+// NUESTRA HISTORIA
+
+.descripcion {
+    width: 35%; 
+    font-family: 'Montserrat';
+}
+
+.item2 {
+    background-color: #F3F3F3; 
+    height: 75%;
+}
+
+.descripcionItem h5 {
+    padding-left: 0%;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.img-nosotros {
+    max-width: 600px;
+    height: auto;
+    margin-left: 15px;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 2.0;
+}
 
 ////////////////////////// RESPONSIVE //////////////////////
 @media only screen and (min-width: 320px) and (max-width: 479px) {
@@ -63,17 +102,21 @@ h5 {
         height: 40%;
         padding-left: 0%;
     }
+
+    
+    .text-header {
+        width: 100%;
+        padding: 12px;
+    }
     
     h1 {
         font-size: 20px;
-        padding-left: 6%;
     }
     
     h5 {
         font-size: 15px;
         line-height: 1.6;
         letter-spacing: 0.5px;
-        padding-left: 6%;
     }
 
     // ¿POR QUE ELEGIRNOS?
@@ -99,6 +142,44 @@ h5 {
 
     .nosotros .text-nosotros {
         font-size: 10px;
+    }
+
+    // NUESTRA HISTORIA
+
+    .descripcionItem {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .descripcion {
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .item2 {
+        background-color: #F3F3F3; 
+        height: 70%;
+    }
+
+    .img-nosotros {
+        max-width: 340px;
+        height: auto;
+    }
+
+    h4 {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .descripcionItem h5 {
+        padding-left: 0%;
+        font-size: 10px;
+        font-style: italic;
+    }
+    
+    h6 {
+        font-size: 12px;
     }
 
     // CERTIFICADOS

@@ -39,7 +39,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { PartnersComponent } from './navigation/partners/partners.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CountoModule } from 'angular2-counto';
 import { BancaComponent } from './navigation/soluciones/banca/banca.component';
@@ -50,6 +49,7 @@ import { SaludComponent } from './navigation/soluciones/salud/salud.component';
 import { IndustriaComponent } from './navigation/soluciones/industria/industria.component';
 import { GobiernoComponent } from './navigation/soluciones/gobierno/gobierno.component';
 import { EducacionComponent } from './navigation/soluciones/educacion/educacion.component';
+import { SolucionesModalComponent } from './navigation/soluciones/soluciones-modal/soluciones-modal.component';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -81,7 +81,6 @@ export function createTranslateLoader(http: HttpClient) {
     ProductoCaptikaComponent,
     DropdownComponent,
     MenuComponent,
-    PartnersComponent,
     BancaComponent,
     SolucionesHorizontalesComponent,
     SegurosComponent,
@@ -90,8 +89,9 @@ export function createTranslateLoader(http: HttpClient) {
     IndustriaComponent,
     GobiernoComponent,
     EducacionComponent,
+    SolucionesModalComponent,
   ],
-  entryComponents: [DialogContactComponent, DialogSolutionsComponent],
+  entryComponents: [DialogContactComponent, DialogSolutionsComponent, SolucionesModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
