@@ -26,6 +26,12 @@ h6 {
   font-family: 'Montserrat';
 }
 
+.descripcion2 {
+  width: 38%; 
+  font-family: 'Montserrat';
+  order: 1;
+}
+
 .item1 {
   height: 70%;
 }
@@ -40,15 +46,15 @@ h6 {
 }
 
 .img-captika1 {
-  max-width: 380px;
-  height: 380px;
+  max-width: 500px;
+  height: auto;
   margin-left: 15px;
 }
 
 .img-captika2 {
   max-width: 600px;
   height: auto;
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .img-captika3 {
@@ -105,6 +111,13 @@ h6 {
     width: 100%;
     align-items: center;
     text-align: justify;
+  }
+
+  .descripcion2 {
+    width: 100%;
+    align-items: center;
+    text-align: justify;
+    order: 0;
   }
 
   .item1 {

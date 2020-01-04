@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialogRef, MatDialog } from '@angular/material';
+import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
 
 @Component({
   selector: 'app-soluciones-modal',
@@ -9,6 +10,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 export class SolucionesModalComponent implements OnInit {
 
   constructor(
+    private dialog: MatDialog,
     public dialogRef: MatDialogRef<SolucionesModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) { }
@@ -18,6 +20,10 @@ export class SolucionesModalComponent implements OnInit {
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  openDialog() {
+    this.dialog.open(DialogContactComponent);
   }
 
 }

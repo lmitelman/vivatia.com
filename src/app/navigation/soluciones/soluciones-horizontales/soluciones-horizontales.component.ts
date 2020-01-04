@@ -49,7 +49,7 @@ export class SolucionesHorizontalesComponent implements OnInit {
         ],
         benefits: [
           'Repositorio centralizado',
-          'Optima búsqueda de información mediante campo índices',
+          'Búsqueda de información mediante campos índices',
           'Documentación 100% digital'
         ],
         image: 'assets/legajo-digital.png'
@@ -76,8 +76,8 @@ export class SolucionesHorizontalesComponent implements OnInit {
           'Excesivos volúmenes de papel'
         ],
         benefits: [
-          'Reducción de tiempos de procesamiento y rápido retorno de la inversión inicial',
-          'Seguridad y confiabilidad mediante diferentes perfiles de usuarios',
+          'Reducción de tiempos de procesamiento',
+          'Diferentes perfiles de usuarios',
           'Personalización completa'
         ],
         image: 'assets/onboarding.png'
@@ -97,6 +97,8 @@ export class SolucionesHorizontalesComponent implements OnInit {
 
   openSolutionsModal(value): void {
     const dialogRef = this.dialog.open(SolucionesModalComponent, {
+      height: '380px',
+      width: '550px',
       data: this.dataCards[value]
     });
 

@@ -70,6 +70,11 @@ p {
     font-family: 'Montserrat';
 }
 
+.item1 {
+    background-color: #F3F3F3; 
+    height: 70%;
+}
+
 .item2 {
     background-color: #F3F3F3; 
     height: 75%;
@@ -157,6 +162,11 @@ h6 {
         text-align: justify;
     }
 
+    .item1 {
+        background-color: #F3F3F3; 
+        height: 90%;
+    }
+
     .item2 {
         background-color: #F3F3F3; 
         height: 70%;
@@ -174,7 +184,7 @@ h6 {
 
     .descripcionItem h5 {
         padding-left: 0%;
-        font-size: 10px;
+        font-size: 12px;
         font-style: italic;
     }
     
