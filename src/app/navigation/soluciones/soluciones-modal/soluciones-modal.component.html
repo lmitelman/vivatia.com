@@ -1,1 +1,23 @@
-<p>{{data.name}}</p>
+<mat-tab-group>
+    <mat-tab label="Problemas"> 
+        <div class="p-5">
+            <p>{{data.name}}</p>
+            <h5>Problemas</h5> 
+            <ul>
+                <li *ngFor="let problem of data.problems">{{problem}}</li>
+            </ul>
+        </div>
+    </mat-tab>
+    <mat-tab label="Solución"> 
+        <div class="p-5">
+            <p>{{data.name}}</p>
+            <h5>Solución</h5> 
+            <ul>
+                <li *ngFor="let benefit of data.benefits">{{benefit}}</li>
+            </ul>
+        </div>
+    </mat-tab>
+    <mat-tab label="Contactános"> 
+        Content 3 
+    </mat-tab>
+</mat-tab-group>

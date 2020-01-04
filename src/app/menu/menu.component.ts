@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, share } from 'rxjs/operators';
-import { TranslateModule, TranslateService } from '@ngx-translate/core'
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-menu',
@@ -24,6 +24,10 @@ export class MenuComponent implements OnInit {
 
   useLanguage(lang: string) {
     this.translate.use(lang);
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
   ngOnInit() {
