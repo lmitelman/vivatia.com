@@ -86,10 +86,15 @@ p {
     font-style: italic;
 }
 
-.img-nosotros {
+.img-historia {
     max-width: 600px;
     height: auto;
-    margin-left: 15px;
+    margin-left: 50px;
+}
+
+.img-equipo {
+    max-width: 600px;
+    height: auto;
 }
 
 h6 {
@@ -172,7 +177,13 @@ h6 {
         height: 70%;
     }
 
-    .img-nosotros {
+    .img-historia {
+        margin-left: 0%;
+        max-width: 340px;
+        height: auto;
+    }
+    
+    .img-equipo {
         max-width: 340px;
         height: auto;
     }

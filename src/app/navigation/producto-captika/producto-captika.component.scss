@@ -2,6 +2,8 @@
   font-family: 'Montserrat';
 }
 
+// HEADER
+
 .header-captika {
   padding-top: 6%;
   height: 90%;
@@ -17,6 +19,8 @@
   width: 30%;
 }
 
+// ITEMS FUNCIONALIDADES DE CAPTIKA
+
 h6 {
   line-height: 1.8;
 }
@@ -26,23 +30,12 @@ h6 {
   font-family: 'Montserrat';
 }
 
-.descripcion2 {
-  width: 38%; 
-  font-family: 'Montserrat';
-  order: 1;
-}
+
+
+// /¿Cómo puede beneficiar tus procesos?
 
 .item1 {
   height: 70%;
-}
-
-.item2 {
-  background-color: #F3F3F3; 
-  height: 80%;
-}
-
-.item3 {
-  height: 65%;
 }
 
 .img-captika1 {
@@ -51,16 +44,37 @@ h6 {
   margin-left: 15px;
 }
 
+// /¿Cómo reconóce tu información?
+
+.item2 {
+  background-color: #F3F3F3; 
+  height: 80%;
+}
+
 .img-captika2 {
   max-width: 600px;
   height: auto;
-  margin-right: 30px;
+  margin-right: 50px;
+}
+
+.descripcion2 {
+  width: 38%; 
+  font-family: 'Montserrat';
+  order: 1;
+}
+
+// /¿Cómo publica tu información?
+
+.item3 {
+  height: 65%;
 }
 
 .img-captika3 {
   max-width: 600px;
   height: auto;
 }
+
+// NUMEROS 
 
 .stats {
   height: 40%;
@@ -73,6 +87,30 @@ h6 {
 
 .green {
   color: #7FAA30;
+}
+
+// ¿Sabías que podes publicar tu información en Thuban Software?
+
+.img-conoce-thuban {
+  max-width: 300px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.img-conoce-thuban:hover {
+  max-width: 310px;
+  height: auto;
+  cursor: pointer;
+}
+
+.thuban {
+  height: 70%;
+  background-color: #F3F3F3; 
+}
+
+.descripcionthuban {
+  width: 38%; 
+  font-family: 'Montserrat';
 }
 
 @media only screen and (min-width: 100px) and (max-width: 426px) {
@@ -177,5 +215,30 @@ h6 {
   .stat {
     width: 50%;
   }
+
+  // ¿Sabías que podes publicar tu información en Thuban Software?
+
+  .img-conoce-thuban {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .thuban {
+    height: 50%;
+  }
+
+  .descripcionthuban {
+    width: 100%; 
+    font-family: 'Montserrat';
+  }
+
+  .descripcionthuban h2 {
+    font-size: 20px;
+  }
+
+  .descripcionthuban h5 {
+    font-size: 12px;
+  }
+
 }
 
