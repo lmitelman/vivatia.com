@@ -5,14 +5,8 @@
 <section class="d-flex flex-column align-items-center justify-content-center py-3 solucionescore" style="background-color: #2C773F;">
     <h2 class="py-3 font-weight-bold text-white">Soluciones Core</h2>
     <div class="d-flex industrias w-100 align-items-center justify-content-center soluciones">
-        <button mat-raised-button class="box2 d-flex align-items-center justify-content-center animated fadeInRight" style="animation-delay: 0.3s">
-            <h6 class="text-white font-weight-light m-0">Pasantías</h6>
-        </button>
-        <button mat-raised-button class="box2 d-flex align-items-center justify-content-center animated fadeInRight" style="animation-delay: 0.5s">
-            <h6 class="text-white font-weight-light m-0">Reclutamiento de alumnos</h6>
-        </button>
-        <button mat-raised-button class="box2 d-flex align-items-center justify-content-center animated fadeInRight" style="animation-delay: 0.7s">
-            <h6 class="text-white font-weight-light m-0">Admisiones</h6>
+        <button *ngFor="let data of dataCardsEducacion, let i = index" mat-raised-button class="box2 d-flex align-items-center justify-content-center animated fadeInRight" style="animation-delay: 0.3s" (click)="openSolutionsModal(i)">
+            <h6 class="text-white font-weight-light m-0">{{data.name}}</h6>
         </button>
         <!-- <button mat-raised-button class="letra box d-flex align-items-center justify-content-center">
             <mat-icon>add_box</mat-icon>

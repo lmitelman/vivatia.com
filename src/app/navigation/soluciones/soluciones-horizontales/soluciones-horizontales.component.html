@@ -1,7 +1,7 @@
 <section class="d-flex flex-column align-items-center justify-content-center pt-4" style="background-color: #F3F3F3;">
     <h5 class="mt-3 mb-3 font-weight-bold letra">¿Sabías que tenemos soluciones que se aplican a todas las industrias?</h5>
     <div class="d-flex industrias w-100 align-items-center justify-content-center soluciones pb-2">
-        <button *ngFor="let data of dataCards, let i = index" mat-raised-button class="box d-flex align-items-center justify-content-center" (click)="openSolutionsModal(i)">
+        <button *ngFor="let data of dataCards, let i = index" mat-raised-button class="box d-flex align-items-center justify-content-center" (click)="openSolutionsCrossModal(i)">
             <img [src]="data.image" alt="contratos" class="logo-industria">
             <h6 class="letra font-weight-bold">{{data.name}}</h6>
         </button>

@@ -95,7 +95,7 @@ export class SolucionesHorizontalesComponent implements OnInit {
     this.dialog.open(DialogContactComponent);
   }
 
-  openSolutionsModal(value): void {
+  openSolutionsCrossModal(value): void {
     const dialogRef = this.dialog.open(SolucionesModalComponent, {
       height: '380px',
       width: '550px',
