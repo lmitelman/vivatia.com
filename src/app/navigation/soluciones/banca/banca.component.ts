@@ -31,8 +31,8 @@ export class BancaComponent implements OnInit {
         'Falta de espacio físico para el almacenamiento documental.'
       ],
       benefits: [
-        'Reducción de hasta un 25% en tiempos de procesamiento',
-        'Alertas electrónicas a clientes',
+        'Reducción de hasta un 25% en tiempos de procesamiento.',
+        'Alertas electrónicas a clientes.',
         'Reducicción en costos de almacenamiento de archivos.'
       ],
     },

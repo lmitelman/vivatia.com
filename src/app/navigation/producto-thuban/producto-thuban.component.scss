@@ -14,7 +14,7 @@
 }
 
 .text-header {
-  width: 30%;
+  width: 26%;
 }
 
 h6 {
@@ -28,14 +28,18 @@ h6 {
 }
 
 .descripcion {
-  width: 38%; 
+  width: 35%; 
   font-family: 'Montserrat';
 }
 
 .img-thuban1 {
-  max-width: 450px;
+  max-width: 550px;
   height: auto;
   margin-left: 15px;
+}
+
+.versoluciones:hover {
+  text-decoration: underline;
 }
 
 // /¿Cómo puede beneficiar tus procesos?
@@ -64,7 +68,7 @@ h6 {
 }
 
 .img-thuban3 {
-  max-width: 300px;
+  max-width: 450px;
   height: auto;
 }
 
@@ -84,19 +88,19 @@ h6 {
 // ¿Sabías que podes publicar tu información en Thuban Software?
 
 .img-conoce-captika{
-  max-width: 300px;
+  max-width: 280px;
   height: auto;
   transition: 0.3s;
 }
 
 .img-conoce-captika:hover {
-  max-width: 310px;
+  max-width: 300px;
   height: auto;
   cursor: pointer;
 }
 
 .captika {
-  height: 70%;
+  height: 75%;
   background-color: #F3F3F3; 
 }
 
