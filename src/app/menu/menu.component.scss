@@ -1,28 +1,16 @@
-.sidenav-container {
-    height: 100%;
-}
-
-.sidenav {
-    width: 200px;
-    //agregar shadow aca si quiero que el navbar tenga shadpow
-}
-
-.sidenav .mat-toolbar {
-    background: inherit;
-}
-
-.mat-toolbar a {
-    display: inline-block;
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-}
-
 .spacer {
     flex: 1 1 auto;
 }
 
+.navbar {
+    box-shadow: -2px 6px 16px -6px rgba(0,0,0,0.61);
+}
+
+.logo-navbar {
+    max-width: 200px;
+    height: auto;
+
+}
 
 ul {
     list-style: none;
@@ -31,8 +19,6 @@ ul {
 }
 
 li {
-    // color: #fff;
-    // background: rgba(41, 38, 38, 0.143);
     display: block;
     float: left;
     padding: 1rem;
@@ -40,10 +26,6 @@ li {
     text-decoration: none;
     transition-duration: 0.5s;
 }
-
-// li a {
-//     color: #fff;
-// }
 
 li:hover {
     background:rgba(44, 119, 63, 0.143);

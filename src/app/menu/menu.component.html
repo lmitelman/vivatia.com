@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top py-1" style="background-color: rgb(231, 231, 231)">
-    <img routerLink="/home" src="assets/vivatia-logo-navbar-white.png" style="cursor: pointer; margin-left: 100px;">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top py-1" style="background-color: white">
+    <img routerLink="/home" src="assets/vivatia-logo-navbar.png" class="logo-navbar" style="cursor: pointer; margin-left: 45px;">
     <button class="navbar-toggler hidden-sm-up custom-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,59 +29,4 @@
     </div>
 </nav>
 
-<!-- navbar mobile -->
-<!-- <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #drawer #sidenav class="sidenav" fixedInViewport="false">
-        <mat-sidenav-content>
-            <mat-toolbar class="text-dark">Menu</mat-toolbar>
-            <mat-nav-list>
-                <div class="d-flex flex-column justify-content-start align-items-center" *ngIf="isMobileLayout">
-                    <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/home">Home</button></p>
-                    <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/nosotros">Nosotros</button></p>
-                    <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/soluciones">Soluciones</button></p>
-                    <p><button mat-button (click)="sidenav.close()" class="text-dark fontNavBar px-1 py-2" routerLink="/productos">Productos</button></p>
-                    <mat-form-field class="text-dark fontNavBar">
-                        <mat-label>Idioma</mat-label>
-                        <mat-select #mode #langSelect>
-                          <mat-option (click)="sidenav.close()" (click)="useLanguage('es')">Español</mat-option>
-                          <mat-option (click)="sidenav.close()" (click)="useLanguage('en')">Inglés</mat-option>
-                          <mat-option (click)="sidenav.close()" (click)="useLanguage('pt')">Portugués</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                </div>
-            </mat-nav-list>
-        </mat-sidenav-content>
-    </mat-sidenav>  -->
-
-    <!-- navbar web -->
-    <!-- <mat-sidenav-content>
-        <mat-toolbar class="transparent fontNavBar text-white navbar dropdown-content fixed-top" style="background-color: rgb(231, 231, 231)">
-            <img routerLink="/home" src="assets/vivatia-logo-navbar-white.png" class="logo-main ml-3" style="cursor: pointer;" id="logo-transparent">
-            <span class="spacer"></span>
-
-            <div role="navigation" *ngIf="!isMobileLayout">
-                <ul>
-                    <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/home">Home</a></li>
-                    <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/nosotros">Nosotros</a></li>
-                    <li> <a mat-list-item class="fontNavBar px-1 letra" routerLink="/soluciones">Soluciones</a></li>
-                    <li> <a mat-list-item class="fontNavBar px-2 letra" routerLink="/productos">Productos</a>
-                    <li> <a mat-list-item class="fontNavBar px-2 letra">Idiomas</a>
-                        <ul>
-                            <li> <a mat-list-item class="fontNavBar pl-1 letra" (click)="useLanguage('es')">Español</a></li>
-                            <li> <a mat-list-item class="fontNavBar pl-1 letra" (click)="useLanguage('en')">Inglés</a></li>
-                            <li> <a mat-list-item class="fontNavBar pl-1 letra" (click)="useLanguage('pt')">Portugués</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <button type="button" mat-icon-button (click)="drawer.toggle()" *ngIf="isMobileLayout">
-                <mat-icon>menu</mat-icon>
-            </button>
-
-        </mat-toolbar> -->
-        <ng-content></ng-content>
-    <!-- </mat-sidenav-content> -->
-
-
-<!-- </mat-sidenav-container> -->
+<ng-content></ng-content>
