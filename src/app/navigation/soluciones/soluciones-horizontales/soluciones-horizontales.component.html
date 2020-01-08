@@ -1,5 +1,5 @@
-<section class="d-flex flex-column align-items-center justify-content-center pt-4" style="background-color: #F3F3F3;">
-    <h5 class="mt-3 mb-3 font-weight-bold letra">¿Sabías que tenemos soluciones que se aplican a todas las industrias?</h5>
+<section class="d-flex flex-column align-items-center justify-content-center mt-4">
+    <h4 class="mt-3 mb-3 font-weight-bold">Nuestras soluciones</h4>
     <div class="d-flex industrias w-100 align-items-center justify-content-center soluciones pb-2">
         <button *ngFor="let data of dataCards, let i = index" mat-raised-button class="box d-flex align-items-center justify-content-center" (click)="openSolutionsCrossModal(i)">
             <img [src]="data.image" alt="contratos" class="logo-industria">
@@ -7,15 +7,13 @@
         </button>
     </div>
 </section>
-
-<section class="pb-5 d-flex flex-column align-items-center" style="background-color: #F3F3F3;">
+<!-- <section class="pb-5 d-flex flex-column align-items-center" style="background-color: #F3F3F3;">
     <div class="d-flex justify-content-flex-end">
         <div class="d-flex flex-column align-items-center">
-            <!-- <img class="logo-plus" src="assets/logo-plus.png"> -->
             <h5 class="font-weight-light letra">Nuestro laboratorio se encuentra creando nuevas soluciones tú a medida</h5>
             <h5 class="font-weight-bold letra">¡Contanos tú proceso!</h5>
             <button mat-raised-button class="mt-3 rounded-pill boton text-white"
             (click)="openDialog()">Contactanos</button>
         </div>
     </div>
-</section>
+</section> -->

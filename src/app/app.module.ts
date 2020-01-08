@@ -14,6 +14,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // MDB Angular
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
+// Texto que se escribe y se borra
+// https://github.com/thevladeffect/ngx-typed-js
+import { NgxTypedJsModule } from 'ngx-typed-js';
+
 //ngx-translate
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
@@ -109,6 +113,7 @@ export function createTranslateLoader(http: HttpClient) {
     MDBBootstrapModule,
     MatExpansionModule,
     CountoModule,
+    NgxTypedJsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

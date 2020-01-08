@@ -8,6 +8,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CountoModule } from 'angular2-counto';
 import { TranslateModule } from '@ngx-translate/core'
+import Typed from 'typed.js';
 
 
 @Component({
@@ -18,19 +19,19 @@ import { TranslateModule } from '@ngx-translate/core'
 export class HomeComponent implements OnInit {
 
   contactForm: FormGroup;
-  private stream;
   public isMobileLayout = false;
+  typed: any;
 
   constructor(
     private formBuilder: FormBuilder,
     private adminService: AdminService,
     private snackBar: MatSnackBar,
     private dialog: MatDialog,
-  ) { }
+  ) {}
 
 
   ngOnInit() {
-    this.createContactForm();  
+    this.createContactForm();
   }
 
   private createContactForm() {

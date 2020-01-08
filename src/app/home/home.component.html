@@ -1,14 +1,24 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
     <div class="d-flex flex-column align-items-start">
         <img src="assets/mkitwk.png" class="title-main mb-2">
-        <h2 class="font-weight-bold text-dark subtitle animated pulse" [innerHTML]="'TITULO' | translate"></h2>
+        <!-- <h2 class="font-weight-bold text-dark subtitle animated pulse" [innerHTML]="'TITULO' | translate"></h2> -->
+        <h2 class="font-weight-bold text-dark subtitle animated pulse m-0">Viví tu <br> experiencia</h2>
+        
+        <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="['digital.', 'paperless.', 'tecnológica.',  'vivatia.']">
+            <h2 class="typing font-weight-bold"></h2>
+        </ngx-typed-js>
+
+        <!-- <ngx-typed-js [typeSpeed]="50" 	[backSpeed]="70" [loop]="true" [strings]="['digital.', 'paperless.', 'tecnológica.',  'vivatia.']">
+            <h2 class="typing font-weight-bold">Viví tu <br> experiencia</h2><span class="typing"></span>
+        </ngx-typed-js> -->   
         <button mat-raised-button class="mt-2 rounded-pill boton text-white" (click)="openDialog()">Contactanos</button>
     </div>
 </section>
 
 <!-- CLIENTES WEB -->
 <section class="clientsDesktop">
-    <div class="py-5 d-flex align-items-center align-content-center justify-content-center clients h-100" style="background-color: #F3F3F3">
+    <div class="py-5 d-flex align-items-center align-content-center justify-content-center clients h-100"
+        style="background-color: #F3F3F3">
         <img class="mr-5 animated zoomIn" src="assets/bbva.png">
         <img class="mr-5 animated zoomIn" src="assets/Galicia.png">
         <img class="mr-5 animated zoomIn" src="assets/havas.png">
@@ -74,7 +84,7 @@
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-implementa.png">
             <h5 class="font-weight-bold" style="margin-top: 15px;">Personalizá</h5>
-            <p class="pt-1 text-center text-dark w-75">de forma rápida y simple, <br> en diferentes infraestrtucturas</p>
+            <p class="pt-1 text-center text-dark w-75">de forma rápida y simple, <br> en diferentes infraestructuras</p>
         </div>
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-transforma.png">
@@ -89,7 +99,8 @@
     </div>
 
     <div class="d-flex flex-column justify-content-center align-items-center pt-2 pb-5">
-        <button mat-raised-button class="rounded-pill boton text-white align-self-center py-1 px-3" style="font-size: medium;" routerLink="/soluciones">Iniciá tu búsqueda</button>
+        <button mat-raised-button class="rounded-pill boton text-white align-self-center py-1 px-3"
+            style="font-size: medium;" routerLink="/soluciones">Iniciá tu búsqueda</button>
     </div>
 </section>
 

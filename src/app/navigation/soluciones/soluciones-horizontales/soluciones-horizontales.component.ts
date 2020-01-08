@@ -24,7 +24,8 @@ export class SolucionesHorizontalesComponent implements OnInit {
           'Firma masiva de manera digital con validéz legal',
           'Mayor capacidad de monitoreo y seguimiento'
         ],
-        image: 'assets/recibo-de-sueldo.png'
+        image: 'assets/recibo-de-sueldo.png',
+        path: '/recibo-sueldo'
     },
     {
         name: 'Cuentas a Pagar',
@@ -38,7 +39,8 @@ export class SolucionesHorizontalesComponent implements OnInit {
           'Alertas por correo',
           'Creación de legajos digitales de documentación'
         ],
-        image: 'assets/cuentas-a-pagar.png'
+        image: 'assets/cuentas-a-pagar.png',
+        path: '/cuentas-a-pagar'
     },
     {
         name: 'Legajos Digitales',
@@ -52,10 +54,11 @@ export class SolucionesHorizontalesComponent implements OnInit {
           'Búsqueda de información mediante campos índices',
           'Documentación 100% digital'
         ],
-        image: 'assets/legajo-digital.png'
+        image: 'assets/legajo-digital.png',
+        path: '/legajos-digitales'
     },
     {
-        name: 'Gestión de Contratos',
+        name: 'Contratos',
         problems: [
           'Falta de alertas por próximos vencimientos',
           'Sin seguimiento de ciclo de vida de contratos',
@@ -66,7 +69,8 @@ export class SolucionesHorizontalesComponent implements OnInit {
           'Integración con firma digital y electrónica',
           'Creación de legajos digitales de documentación'
         ],
-        image: 'assets/contratos.png'
+        image: 'assets/contratos.png',
+        path: '/contratos'
     },
     {
         name: 'OnBoarding',
@@ -80,8 +84,24 @@ export class SolucionesHorizontalesComponent implements OnInit {
           'Diferentes perfiles de usuarios',
           'Personalización completa'
         ],
-        image: 'assets/onboarding.png'
-    }
+        image: 'assets/onboarding.png',
+        path: '/onboarding'
+    },
+    {
+      name: 'Compras',
+      problems: [
+        'Descentralización de la información ',
+        'Generación de cuellos de botella',
+        'Excesivos volúmenes de papel'
+      ],
+      benefits: [
+        'Reducción de tiempos de procesamiento',
+        'Diferentes perfiles de usuarios',
+        'Personalización completa'
+      ],
+      image: 'assets/onboarding.png',
+      path: '/onboarding'
+  }
 ];
 
   constructor(private dialog: MatDialog, private translate: TranslateService) {
