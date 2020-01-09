@@ -27,6 +27,11 @@ p {
   height: 18%;
 }
 
+.clientsDesktop img {
+  max-width: 120px;
+  height: auto;
+}
+
 .clientsMobile {
   display: none;
 }

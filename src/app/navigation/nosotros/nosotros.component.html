@@ -14,7 +14,7 @@
         </div>
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-4 small-logo" src="assets/logoGrow.png">
-            <p>Reducimos el costo<br>de los procesos.</p>
+            <p>Incrementamos la <br>productividad</p>
         </div>
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-4 small-logo" src="assets/logo-recicle.png">
@@ -22,7 +22,11 @@
         </div>
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-4 small-logo" src="assets/logo-shield.png">
-            <p>Incrementamos la seguridad<br>en la información</p>
+            <p>Incrementamos la<br>seguridad</p>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-4 small-logo" src="assets/logo-shield.png">
+            <p>Llevamos tu negocio<br>al mundo digital </p>
         </div>
     </div>
 </section>
@@ -30,17 +34,17 @@
 <section>
     <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center animated fadeIn" style="background-color: #F3F3F3;">
         <h2 class="my-4 font-weight-bold">¿Por qué elegirnos?</h2>
-        <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false'> 
+        <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false' [showNavigationIndicators]="false"> 
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/logo-save.png">
-                    <p class="mb-5">Generamos ahorros<br>operativos.</p>
+                    <p class="mb-5">Generamos ahorros<br>operativos</p>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/logoGrow.png">
-                    <p class="mb-5">Reducimos el costo<br>de los procesos.</p>
+                    <p>Incrementamos la <br>productividad</p>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
@@ -52,7 +56,13 @@
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/logo-shield.png">
-                    <p class="mb-5">Incrementamos la seguridad<br>en la información</p>
+                    <p class="mb-5">Incrementamos la<br>seguridad</p>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
+                    <img class="mb-3 small-logo" src="assets/logo-shield.png">
+                    <p class="mb-5">Llevamos tu negocio<br>al mundo digital </p>
                 </div>
             </ng-template>
         </ngb-carousel>
@@ -91,9 +101,9 @@
     <div class="d-flex flex-column descripcion">
         <h4 class="font-weight-bold">/ Nuestra historia</h4>
         <br>
-        <h6>Vivatia surge en 1999 con el objetivo y la necesidad de expandir los negocios en la República Argentina, donde nos hemos consolidado como <span class="font-weight-bold">empresa líder en la provisión de soluciones para la gestión digital de la información.</span></h6>
+        <h6>Nuestra historia Vivatia surge en 1999 con el objetivo de crear soluciones para posibilitar la gestión digital de la información en las organizaciones, de volverlas más eficientes y productivas, y juntos contribuir con el cuidado del medio ambiente, disminuyendo el uso de papel. De esta manera nuestros clientes pueden vivir la "experiencia Vivatia", respaldándose en la tecnologia, conocimiento y capacidades de la empresa, mientras los acompañamos en el camino de la transformación digital y mejora continua de sus procesos.</h6>
         <br>
-        <h5 class="letra font-weight-bold">El principal objetivo de Vivatia consiste en lograr que sus clientes satisfagan e, incluso, superen las exigencias de los mercados modernos, eleven su eficiencia y se vuelvan esencialmente competitivos.</h5>
+        <!-- <h5 class="letra font-weight-bold">El principal objetivo de Vivatia consiste en lograr que sus clientes satisfagan e, incluso, superen las exigencias de los mercados modernos, eleven su eficiencia y se vuelvan esencialmente competitivos.</h5> -->
     </div>
     <div>
         <img src="assets/logo-secundario.png" class="img-historia" alt="">
