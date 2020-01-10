@@ -1,19 +1,13 @@
-<section class="d-flex flex-column align-items-center justify-content-center mt-4">
-    <h4 class="mt-3 mb-3 font-weight-bold">Nuestras soluciones</h4>
-    <div class="d-flex industrias w-100 align-items-center justify-content-center soluciones pb-2">
+<section class="d-flex align-items-center justify-content-center contenedor" style="background-color: #D8EBDD; padding-top: 5%; padding-bottom: 5%;">
+    <div class="d-flex texto align-items-left animated fadeInDown" style="animation-delay: 0.4s;">
+        <h1 class="letra5 font-weight-bold">Soluciones de transformación digital</h1>
+        <h5 class="letra5 font-weight-light mb-4">Diseñamos soluciones que facilitan los procesos de tu empresa</h5>
+    </div>
+    <!-- w-50 + flex wrap para agrupar de a 3 -->
+    <div class="d-flex industrias flex-wrap align-items-center justify-content-center soluciones pb-2 animated fadeInDown" style="animation-delay: 0.6s;">
         <button *ngFor="let data of dataCards, let i = index" mat-raised-button class="box d-flex align-items-center justify-content-center" (click)="openSolutionsCrossModal(i)">
             <img [src]="data.image" alt="contratos" class="logo-industria">
-            <h6 class="letra font-weight-bold">{{data.name}}</h6>
+            <h6 class="letra5 font-weight-bold mt-3">{{data.name}}</h6>
         </button>
     </div>
 </section>
-<!-- <section class="pb-5 d-flex flex-column align-items-center" style="background-color: #F3F3F3;">
-    <div class="d-flex justify-content-flex-end">
-        <div class="d-flex flex-column align-items-center">
-            <h5 class="font-weight-light letra">Nuestro laboratorio se encuentra creando nuevas soluciones tú a medida</h5>
-            <h5 class="font-weight-bold letra">¡Contanos tú proceso!</h5>
-            <button mat-raised-button class="mt-3 rounded-pill boton text-white"
-            (click)="openDialog()">Contactanos</button>
-        </div>
-    </div>
-</section> -->

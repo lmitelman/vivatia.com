@@ -99,8 +99,8 @@ export class SolucionesHorizontalesComponent implements OnInit {
         'Diferentes perfiles de usuarios',
         'Personalización completa'
       ],
-      image: 'assets/onboarding.png',
-      path: '/onboarding'
+      image: 'assets/compras.png',
+      path: '/compras'
   }
 ];
 

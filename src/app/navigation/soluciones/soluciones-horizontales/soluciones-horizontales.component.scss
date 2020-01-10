@@ -1,9 +1,17 @@
-h1 {
-    font-size: 100px;
-    font-weight: bold;
-    color: white;
-    margin-left: 10%;
-    font-family: "Montserrat", sans-serif;
+.contenedor {
+    flex-direction: row;
+    background-image: url('../../../../assets/bg-soluciones.png');
+    background-position: center;
+}
+
+.texto {
+    flex-direction: column;
+    width: 520px;
+    margin-left: 5%;
+}
+
+.industrias {
+    width: 780px;
 }
 
 .box {
@@ -13,7 +21,7 @@ h1 {
     width: 180px;
     white-space: normal !important;
     background: #fff;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .box:hover {
@@ -21,12 +29,12 @@ h1 {
 }
 
 .logo-industria {
-    height: 80%;
-    width: 80%;
+    height: 55px;
+    width: 55px;
 }
 
 h6 {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 
@@ -37,8 +45,22 @@ h6 {
         opacity: 1.47;
     }
 
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .industrias {
+        width: 100%;
+    }
+
+    .texto {
+        
+        width: 100%;
+        margin-left: 0%;
+    }
+
     h5 {
-        font-size: 15px;
+        font-size: 12px;
         text-align: center;
         margin: 0px 10px 5px 10px;
     }
@@ -47,8 +69,9 @@ h6 {
         height: 40%;
     }
 
-    h2 {
-        font-size: 20px;
+    h1 {
+        text-align: center;
+        font-size: 17px;
         padding: 0%;
     }
 

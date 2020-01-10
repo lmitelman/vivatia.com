@@ -1,3 +1,7 @@
+.margen {
+    margin-top: 3%;
+}
+
 .bg-main2 {
     // background-image: url('../../../assets/bg-main4.png');
     background-color: white;
@@ -35,13 +39,18 @@ body {
 
 .box {
     transition: box-shadow 0.3s;
-    // border-radius: 50%;
     height: 140px;
     width: 140px;
     white-space: normal !important;
     background: #fff;
     margin: 1.5rem;
 }
+
+hr {
+    width: 25%;
+    margin: 0%;
+    border: 1px solid white;
+  }
 
 .box:hover {
     box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
@@ -71,6 +80,9 @@ button:focus {
 ///////////////////////////////// RESPONSIVE
 
 @media only screen and (min-width: 100px) and (max-width: 900px) {
+    .margen {
+        margin-top: 20%;
+    }
 
     h2 {
         font-size: 20px;

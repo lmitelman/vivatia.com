@@ -43,6 +43,36 @@ h1 {
     background: #2F7E43;
 }
 
+// Beneficios
+
+.bg-main3 {
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+}
+
+.small-logo {
+    max-width: 6rem;
+}
+
+.benefitsMobile {
+    display: none;
+}
+
+.benefitsDesktop {
+    display: flex;
+}
+
+.benefit {
+    width: 22%;
+}
+
+p {
+    font-size: 13px;
+}
+
 
 @media only screen and (min-width: 100px) and (max-width: 900px) {
     .header {
@@ -81,5 +111,18 @@ h1 {
 
     h6 {
         font-size: 17px;
+    }
+
+    .benefitsDesktop {
+        display: none;
+    }
+  
+    .benefitsMobile {
+        display: flex;
+        font-size: 110%;
+    }
+
+    .benefitsMobile h2 {
+        font-size: 20px;
     }
 }
