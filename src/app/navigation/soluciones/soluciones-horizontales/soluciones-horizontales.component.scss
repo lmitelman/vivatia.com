@@ -1,7 +1,12 @@
 .contenedor {
     flex-direction: row;
-    background-image: url('../../../../assets/bg-soluciones.png');
+    background-image: url('../../../../assets/prueba.png');
     background-position: center;
+    // background-color: #D8EBDD; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8%; 
+    padding-bottom: 8%;
 }
 
 .texto {
@@ -71,7 +76,7 @@ h6 {
 
     h1 {
         text-align: center;
-        font-size: 17px;
+        font-size: 28px;
         padding: 0%;
     }
 

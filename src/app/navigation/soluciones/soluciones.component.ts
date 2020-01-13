@@ -10,6 +10,53 @@ import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.co
 })
 export class SolucionesComponent implements OnInit {
 
+  dataCards: any[] = [
+    {
+        name: 'Banca',
+        image: 'assets/icon-banca.png',
+        path: '/banca'
+    },
+    {
+        name: 'Seguros',
+        image: 'assets/icon-seguros.png',
+        path: '/cuentas-a-pagar'
+    },
+    {
+        name: 'Salud',
+        image: 'assets/icon-salud.png',
+        path: '/legajos-digitales'
+    },
+    {
+        name: 'Industria',
+        image: 'assets/icon-industria.png',
+        path: '/contratos'
+    },
+    {
+        name: 'Retail',
+        image: 'assets/icon-retail.png',
+        path: '/onboarding'
+    },
+    {
+      name: 'Gobierno',
+      image: 'assets/icon-gobierno.png',
+      path: '/compras'
+    },
+    {
+      name: 'Educacion',
+      image: 'assets/icon-educacion.png',
+      path: '/compras'
+    },
+    {
+      name: 'Servicios',
+      image: 'assets/icon-servicios.png',
+      path: '/compras'
+    },
+    {
+      name: 'IT',
+      image: 'assets/icon-it.png',
+      path: '/compras'
+    }
+  ];
 
   constructor(
     private dialog: MatDialog,
