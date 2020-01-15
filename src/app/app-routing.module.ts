@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 //importar los componentes que se generen
-import { ProductoCaptikaComponent } from './navigation/producto-captika/producto-captika.component';
-import { ProductoThubanComponent } from './navigation/producto-thuban/producto-thuban.component';
+import { ProductoCaptikaComponent } from './navigation/productos/producto-captika/producto-captika.component';
+import { ProductoThubanComponent } from './navigation/productos/producto-thuban/producto-thuban.component';
 import { HomeComponent } from './home/home.component';
 import { NosotrosComponent } from './navigation/nosotros/nosotros.component';
 import { SolucionesComponent } from './navigation/soluciones/soluciones.component';
-import { TrabajaComponent } from './navigation/trabaja/trabaja.component';
 import { BancaComponent } from './navigation/soluciones/banca/banca.component';
 import { SegurosComponent } from './navigation/soluciones/seguros/seguros.component';
 import { ProductosComponent } from './navigation/productos/productos.component';
@@ -23,7 +22,6 @@ const routes: Routes = [
   {path: 'thuban', component: ProductoThubanComponent},
   {path: 'captika', component: ProductoCaptikaComponent},
   {path: 'soluciones', component: SolucionesComponent},
-  {path: 'trabaja', component: TrabajaComponent},
   {path: 'banca', component: BancaComponent},
   {path: 'seguros', component: SegurosComponent},
   {path: 'productos', component: ProductosComponent},

@@ -1,3 +1,5 @@
+// HEADER
+
 h1 {
     font-size: 100px;
     font-weight: bold;
@@ -21,37 +23,72 @@ h1 {
 
 h5 {
     line-height: 1.6;
-    letter-spacing: 0.5px;
     font-weight: 100;
 }
 
-.box {
-    transition: box-shadow 0.3s;
-    // border-radius: 50%;
-    height: 140px;
-    width: 140px;
-    white-space: normal !important;
-    background: #fff;
-    margin: 2rem;
+// BENEFICIOS 
+
+.bg-main3 {
+    background-image: url('../../../../assets/bg-main5.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
 }
 
-.box2 {
-    transition: box-shadow 0.3s;
-    // border-radius: 50%;
-    height: 100px;
-    width: 140px;
-    white-space: normal !important;
-    background: #2C773F;
-    margin: 2rem;
+.small-logo {
+    max-width: 6rem;
 }
 
-.box:hover {
-    box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+.benefitsMobile {
+    display: none;
 }
 
-.box2:hover {
-    background: #2F7E43;
+.benefitsDesktop {
+    display: flex;
 }
+
+.benefit {
+    width: 20%;
+}
+
+.benefit h5 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 13px;
+    width: 75%;
+}
+
+// .box {
+//     transition: box-shadow 0.3s;
+//     // border-radius: 50%;
+//     height: 140px;
+//     width: 140px;
+//     white-space: normal !important;
+//     background: #fff;
+//     margin: 2rem;
+// }
+
+// .box2 {
+//     transition: box-shadow 0.3s;
+//     // border-radius: 50%;
+//     height: 100px;
+//     width: 140px;
+//     white-space: normal !important;
+//     background: #2C773F;
+//     margin: 2rem;
+// }
+
+// .box:hover {
+//     box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+// }
+
+// .box2:hover {
+//     background: #2F7E43;
+// }
 
 @media only screen and (min-width: 100px) and (max-width: 900px) {
     .header {
@@ -76,31 +113,49 @@ h5 {
         letter-spacing: 0.5px;
     }
 
-    .solucionescore {
-        height: 55%;
-    }
+
 
     h2 {
         font-size: 25px;
         padding: 0%;
     }
 
-    .soluciones{
-        flex-direction: row;
-        flex-wrap: wrap;
+    // BENEFICIOS
+
+    .benefitsDesktop {
+        display: none;
+    }
+  
+    .benefitsMobile {
+        display: flex;
+        font-size: 110%;
     }
 
-    .box2 {
-        transition: box-shadow 0.3s;
-        // border-radius: 50%;
-        height: 100px;
-        width: 140px;
-        white-space: normal !important;
-        background: #2C773F;
-        margin: 10px 15px 10px 15px;
+    .benefitsMobile h2 {
+        font-size: 20px;
     }
 
-    h6 {
-        font-size: 17px;
-    }
+    
+    // .soluciones{
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    // }
+
+    // .solucionescore {
+    //     height: 55%;
+    // }
+
+    // .box2 {
+    //     transition: box-shadow 0.3s;
+    //     // border-radius: 50%;
+    //     height: 100px;
+    //     width: 140px;
+    //     white-space: normal !important;
+    //     background: #2C773F;
+    //     margin: 10px 15px 10px 15px;
+    // }
+
+    // h6 {
+    //     font-size: 17px;
+    // }
 }

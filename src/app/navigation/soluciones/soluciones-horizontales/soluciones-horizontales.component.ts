@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { MatDialog, MatSnackBar } from '@angular/material';
 import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
 import { SolucionesModalComponent } from '../soluciones-modal/soluciones-modal.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -104,8 +104,11 @@ export class SolucionesHorizontalesComponent implements OnInit {
   }
 ];
 
-  constructor(private dialog: MatDialog, private translate: TranslateService) {
-  }
+  constructor(
+    private dialog: MatDialog, 
+    private translate: TranslateService,
+    private snackBar : MatSnackBar,
+    ) {}
 
   currentLanguage() {
     console.log(this.translate.currentLang);
@@ -125,6 +128,10 @@ export class SolucionesHorizontalesComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
+  }
+
+  openSnackBar(message, action){
+    this.snackBar.open(message, action,{duration:3000});
   }
 
   ngOnInit() {
