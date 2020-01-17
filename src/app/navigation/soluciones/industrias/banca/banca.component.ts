@@ -1,72 +1,71 @@
 import { Component, OnInit } from '@angular/core';
+import { SolucionesModalComponent } from '../../soluciones-modal/soluciones-modal.component';
 import { MatDialog } from '@angular/material';
-import { SolucionesModalComponent } from '../soluciones-modal/soluciones-modal.component';
 
 @Component({
-  selector: 'app-salud',
-  templateUrl: './salud.component.html',
-  styleUrls: ['./salud.component.scss']
+  selector: 'app-banca',
+  templateUrl: './banca.component.html',
+  styleUrls: ['./banca.component.scss']
 })
-export class SaludComponent implements OnInit {
+export class BancaComponent implements OnInit {
 
-  dataCardsSalud: any[] = [
+  dataCardsBanca: any[] = [
     {
-      name: 'Mesa de entrada',
+      name: 'Gestión de compras',
       problems: [
         'Falta de controles y alertas.',
         'Excesivos tiempos de respuesta.',
-        'Falta de espacio físico para el almacenamiento documental.'
+        'Falta de información para la toma de desiciones.'
       ],
       benefits: [
-        'Captura de información y extracción de datos',
+        'Reducción de hasta un 25% en tiempo de procesamiento.',
         'Aumento de un 30% en productividad.',
         'Mayor capacidad de monitoreo, validación y seguimiento.'
       ],
     },
     {
-      name: 'Reintegros',
-      problems: [
-        'Falta de controles y alertas.',
-        'Excesivos tiempos de respuesta.',
-        'Atraso en los reintegros hacia los clientes.'
-      ],
-      benefits: [
-        'Terminales de autogestión.',
-        'Repositorio digital centralizado.',
-        'Reducicción en costos de almacenamiento de archivos.'
-      ],
-    },
-    {
-      name: 'Reclamos',
+      name: 'Comercio exterior',
       problems: [
         'Falta de controles y alertas.',
         'Excesivos tiempos de respuesta.',
         'Falta de espacio físico para el almacenamiento documental.'
       ],
       benefits: [
-        'Único repositorio.',
-        'Respuestas instantáneas.',
+        'Reducción de hasta un 25% en tiempos de procesamiento.',
         'Alertas electrónicas a clientes.',
+        'Reducicción en costos de almacenamiento de archivos.'
+      ],
+    },
+    {
+      name: 'Oficios judiciales',
+      problems: [
+        'Falta de controles y alertas.',
+        'Excesivos tiempos de respuesta.',
+        'Falta de espacio físico para el almacenamiento documental.'
+      ],
+      benefits: [
+        'Reducción de hasta un 25% en tiempos de procesamiento',
+        'Alertas electrónicas a clientes',
+        'Reducicción en costos de almacenamiento de archivos.'
       ],
     },
   ];
 
   constructor(private dialog: MatDialog) {}
 
-
-  ngOnInit() {
-  }
-
   openSolutionsModal(value): void {
     const dialogRef = this.dialog.open(SolucionesModalComponent, {
       height: '380px',
       width: '550px',
-      data: this.dataCardsSalud[value]
+      data: this.dataCardsBanca[value]
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
+  }
+
+  ngOnInit() {
   }
 
 }

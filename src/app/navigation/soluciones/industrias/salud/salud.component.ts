@@ -1,71 +1,72 @@
 import { Component, OnInit } from '@angular/core';
-import { SolucionesModalComponent } from '../soluciones-modal/soluciones-modal.component';
 import { MatDialog } from '@angular/material';
+import { SolucionesModalComponent } from '../../soluciones-modal/soluciones-modal.component';
 
 @Component({
-  selector: 'app-banca',
-  templateUrl: './banca.component.html',
-  styleUrls: ['./banca.component.scss']
+  selector: 'app-salud',
+  templateUrl: './salud.component.html',
+  styleUrls: ['./salud.component.scss']
 })
-export class BancaComponent implements OnInit {
+export class SaludComponent implements OnInit {
 
-  dataCardsBanca: any[] = [
+  dataCardsSalud: any[] = [
     {
-      name: 'Gestión de compras',
+      name: 'Mesa de entrada',
       problems: [
         'Falta de controles y alertas.',
         'Excesivos tiempos de respuesta.',
-        'Falta de información para la toma de desiciones.'
+        'Falta de espacio físico para el almacenamiento documental.'
       ],
       benefits: [
-        'Reducción de hasta un 25% en tiempo de procesamiento.',
+        'Captura de información y extracción de datos',
         'Aumento de un 30% en productividad.',
         'Mayor capacidad de monitoreo, validación y seguimiento.'
       ],
     },
     {
-      name: 'Comercio exterior',
+      name: 'Reintegros',
       problems: [
         'Falta de controles y alertas.',
         'Excesivos tiempos de respuesta.',
-        'Falta de espacio físico para el almacenamiento documental.'
+        'Atraso en los reintegros hacia los clientes.'
       ],
       benefits: [
-        'Reducción de hasta un 25% en tiempos de procesamiento.',
-        'Alertas electrónicas a clientes.',
+        'Terminales de autogestión.',
+        'Repositorio digital centralizado.',
         'Reducicción en costos de almacenamiento de archivos.'
       ],
     },
     {
-      name: 'Oficios judiciales',
+      name: 'Reclamos',
       problems: [
         'Falta de controles y alertas.',
         'Excesivos tiempos de respuesta.',
         'Falta de espacio físico para el almacenamiento documental.'
       ],
       benefits: [
-        'Reducción de hasta un 25% en tiempos de procesamiento',
-        'Alertas electrónicas a clientes',
-        'Reducicción en costos de almacenamiento de archivos.'
+        'Único repositorio.',
+        'Respuestas instantáneas.',
+        'Alertas electrónicas a clientes.',
       ],
     },
   ];
 
   constructor(private dialog: MatDialog) {}
 
+
+  ngOnInit() {
+  }
+
   openSolutionsModal(value): void {
     const dialogRef = this.dialog.open(SolucionesModalComponent, {
       height: '380px',
       width: '550px',
-      data: this.dataCardsBanca[value]
+      data: this.dataCardsSalud[value]
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
-  }
-
-  ngOnInit() {
   }
 
 }

@@ -2,19 +2,27 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 //importar los componentes que se generen
+
+// Producto
 import { ProductoCaptikaComponent } from './navigation/productos/producto-captika/producto-captika.component';
 import { ProductoThubanComponent } from './navigation/productos/producto-thuban/producto-thuban.component';
-import { HomeComponent } from './home/home.component';
-import { NosotrosComponent } from './navigation/nosotros/nosotros.component';
-import { SolucionesComponent } from './navigation/soluciones/soluciones.component';
-import { BancaComponent } from './navigation/soluciones/banca/banca.component';
-import { SegurosComponent } from './navigation/soluciones/seguros/seguros.component';
-import { ProductosComponent } from './navigation/productos/productos.component';
-import { SaludComponent } from './navigation/soluciones/salud/salud.component';
-import { IndustriaComponent } from './navigation/soluciones/industria/industria.component';
-import { GobiernoComponent } from './navigation/soluciones/gobierno/gobierno.component';
-import { EducacionComponent } from './navigation/soluciones/educacion/educacion.component';
 
+// Home
+import { HomeComponent } from './home/home.component';
+
+// Nosotros
+import { NosotrosComponent } from './navigation/nosotros/nosotros.component';
+
+// Soluciones
+import { SolucionesComponent } from './navigation/soluciones/soluciones.component';
+import { BancaComponent } from './navigation/soluciones/industrias/banca/banca.component';
+import { SegurosComponent } from './navigation/soluciones/industrias/seguros/seguros.component';
+import { ProductosComponent } from './navigation/productos/productos.component';
+import { SaludComponent } from './navigation/soluciones/industrias/salud/salud.component';
+import { IndustriaComponent } from './navigation/soluciones/industrias/industria/industria.component';
+import { GobiernoComponent } from './navigation/soluciones/industrias/gobierno/gobierno.component';
+import { EducacionComponent } from './navigation/soluciones/industrias/educacion/educacion.component';
+import { CuentasPagarComponent } from './navigation/soluciones/soluciones-horizontales/cuentas-pagar/cuentas-pagar.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -29,6 +37,7 @@ const routes: Routes = [
   {path: 'industria', component: IndustriaComponent},
   {path: 'gobierno', component: GobiernoComponent},
   {path: 'educacion', component: EducacionComponent},
+  {path: 'cuentas-a-pagar', component: CuentasPagarComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

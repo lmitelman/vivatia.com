@@ -44,17 +44,17 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CountoModule } from 'angular2-counto';
-import { BancaComponent } from './navigation/soluciones/banca/banca.component';
+import { BancaComponent } from './navigation/soluciones/industrias/banca/banca.component';
 import { SolucionesHorizontalesComponent } from './navigation/soluciones/soluciones-horizontales/soluciones-horizontales.component';
-import { SegurosComponent } from './navigation/soluciones/seguros/seguros.component';
+import { SegurosComponent } from './navigation/soluciones/industrias/seguros/seguros.component';
 import { ProductosComponent } from './navigation/productos/productos.component';
-import { SaludComponent } from './navigation/soluciones/salud/salud.component';
-import { IndustriaComponent } from './navigation/soluciones/industria/industria.component';
-import { GobiernoComponent } from './navigation/soluciones/gobierno/gobierno.component';
-import { EducacionComponent } from './navigation/soluciones/educacion/educacion.component';
+import { SaludComponent } from './navigation/soluciones/industrias/salud/salud.component';
+import { IndustriaComponent } from './navigation/soluciones/industrias/industria/industria.component';
+import { GobiernoComponent } from './navigation/soluciones/industrias/gobierno/gobierno.component';
+import { EducacionComponent } from './navigation/soluciones/industrias/educacion/educacion.component';
 import { SolucionesModalComponent } from './navigation/soluciones/soluciones-modal/soluciones-modal.component';
-import { ReciboSueldoComponent } from './navigation/soluciones/soluciones-horizontales/soluciones/recibo-sueldo/recibo-sueldo.component';
-import { CuentasPagarComponent } from './navigation/soluciones/soluciones-horizontales/soluciones/cuentas-pagar/cuentas-pagar.component';
+import { ReciboSueldoComponent } from './navigation/soluciones/soluciones-horizontales/recibo-sueldo/recibo-sueldo.component';
+import { CuentasPagarComponent } from './navigation/soluciones/soluciones-horizontales/cuentas-pagar/cuentas-pagar.component';
 
 
 // See the Moment.js docs for the meaning of these formats:

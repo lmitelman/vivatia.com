@@ -1,0 +1,215 @@
+// HEADER
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin: 0%;
+}
+
+.header {
+    background-image: url('../../../../../assets/banco-header.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 62%;
+    opacity: 1.47;
+}
+
+.text-header {
+    width: 60%;
+    padding-left: 10%;
+}
+
+h5 {
+    font-size: 17px;
+    line-height: 2.0;
+    font-weight: 100;
+    margin: 0%;
+}
+
+// BENEFICIOS 
+
+.bg-main3 {
+    background-image: url('../../../../../assets/bg-main5.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+}
+
+.small-logo {
+    max-width: 6rem;
+}
+
+.benefitsMobile {
+    display: none;
+}
+
+.benefitsDesktop {
+    display: flex;
+}
+
+.benefit {
+    width: 22%;
+}
+
+.benefit h5 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 13px;
+    width: 75%;
+}
+
+// COMO PERSONALIZAMOS TU PROCESO
+
+h6 {
+    line-height: 1.8;
+}
+
+.green-borderh4 {
+    border: 6px solid #98BF2F;
+    background-color: #98BF2F;
+}
+
+.blue-borderh4 {
+    border: 6px solid #145FA36E;
+    background-color: #145FA36E;
+}
+
+.descripcion {
+    width: 25%; 
+    font-family: 'Montserrat';
+    text-align: left;
+}
+
+// DIGITALIZACION
+
+.item1 {
+    height: 45%;
+}
+  
+.img-cap1 {
+    max-width: 200px;
+    height: auto;
+    margin-left: 15px;
+}
+
+// IDENTIFICACION Y EXTRACCION
+
+.item2 {
+    background-color: #F3F3F3; 
+    height: 45%;
+}
+  
+.img-cap2 {
+    max-width: 200px;
+    height: auto;
+    margin-right: 50px;
+}
+  
+.descripcion2 {
+    width: 30%; 
+    font-family: 'Montserrat';
+    order: 1;
+    text-align: right;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 900px) {
+    // HEADER
+
+    .header {
+        padding-top: 20%;
+        height: 40%;
+        opacity: 1.47;
+    }
+
+    .text-header {
+        width: 100%;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h5 {
+        font-size: 15px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
+
+    // BENEFICIOS
+
+    .benefitsDesktop {
+        display: none;
+    }
+    
+    .benefitsMobile {
+        display: flex;
+        font-size: 110%;
+    }
+
+    .benefitsMobile h2 {
+        font-size: 20px;
+    }
+
+    // 
+
+    h4 {
+        font-size: 17px;
+        text-align: center;
+      }
+    
+    h6 {
+        font-size: 14px;
+        // margin: 0px 10px 0px 10px;
+    }
+
+    // DIGITALIZACION
+    
+    .item1 {
+        height: 65%;
+    }
+
+    .descripcionItem {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .descripcion {
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .img-cap1 {
+        max-width: 160px;
+        height: 160px;
+    }
+
+    // IDENTIFICACION Y EXTRACCION
+    
+    .descripcion2 {
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+        order: 0;
+    }
+    
+    .item2 {
+        background-color: #F3F3F3; 
+        height: 80%;
+    }
+      
+    .img-cap2 {
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}

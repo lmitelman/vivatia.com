@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { SolucionesModalComponent } from '../soluciones-modal/soluciones-modal.component';
+import { SolucionesModalComponent } from '../../soluciones-modal/soluciones-modal.component';
 
 @Component({
   selector: 'app-educacion',
