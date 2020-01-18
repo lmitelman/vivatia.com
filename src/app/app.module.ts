@@ -32,7 +32,6 @@ import { HomeComponent } from './home/home.component';
 import { NosotrosComponent } from './navigation/nosotros/nosotros.component';
 import { SolucionesComponent } from './navigation/soluciones/soluciones.component';
 import { DialogContactComponent } from './dialog-contact/dialog-contact.component';
-import { DialogSolutionsComponent } from './navigation/soluciones/dialog-solutions/dialog-solutions.component';
 import { ProductoThubanComponent } from './navigation/productos/producto-thuban/producto-thuban.component';
 import { ProductoCaptikaComponent } from './navigation/productos/producto-captika/producto-captika.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
@@ -53,8 +52,9 @@ import { IndustriaComponent } from './navigation/soluciones/industrias/industria
 import { GobiernoComponent } from './navigation/soluciones/industrias/gobierno/gobierno.component';
 import { EducacionComponent } from './navigation/soluciones/industrias/educacion/educacion.component';
 import { SolucionesModalComponent } from './navigation/soluciones/soluciones-modal/soluciones-modal.component';
-import { ReciboSueldoComponent } from './navigation/soluciones/soluciones-horizontales/recibo-sueldo/recibo-sueldo.component';
 import { CuentasPagarComponent } from './navigation/soluciones/soluciones-horizontales/cuentas-pagar/cuentas-pagar.component';
+import { SumateComponent } from './navigation/soluciones/sumate/sumate.component';
+import { LegajosDigitalesComponent } from './navigation/soluciones/soluciones-horizontales/legajos-digitales/legajos-digitales.component';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -80,7 +80,6 @@ export function createTranslateLoader(http: HttpClient) {
     NosotrosComponent,
     SolucionesComponent,
     DialogContactComponent,
-    DialogSolutionsComponent,
     ProductoThubanComponent,
     ProductoCaptikaComponent,
     DropdownComponent,
@@ -94,10 +93,11 @@ export function createTranslateLoader(http: HttpClient) {
     GobiernoComponent,
     EducacionComponent,
     SolucionesModalComponent,
-    ReciboSueldoComponent,
-    CuentasPagarComponent
+    CuentasPagarComponent,
+    SumateComponent,
+    LegajosDigitalesComponent
   ],
-  entryComponents: [DialogContactComponent, DialogSolutionsComponent, SolucionesModalComponent],
+  entryComponents: [DialogContactComponent, SolucionesModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

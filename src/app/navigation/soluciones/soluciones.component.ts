@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { DialogSolutionsComponent } from 'src/app/navigation/soluciones/dialog-solutions/dialog-solutions.component';
 import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
 
 @Component({
@@ -66,12 +65,6 @@ export class SolucionesComponent implements OnInit {
 
   ngOnInit() {
     
-  }
-
-  openDialogSolutions(data) {
-    this.dialog.open(DialogSolutionsComponent, {
-      data
-    });
   }
 
   openDialog() {

@@ -1,19 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatSnackBar } from '@angular/material';
 import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
-import { SolucionesModalComponent } from '../soluciones-modal/soluciones-modal.component';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { MatDialog } from '@angular/material';
 
 @Component({
-  selector: 'app-soluciones-horizontales',
-  templateUrl: './soluciones-horizontales.component.html',
-  styleUrls: ['./soluciones-horizontales.component.scss']
+  selector: 'app-sumate',
+  templateUrl: './sumate.component.html',
+  styleUrls: ['./sumate.component.scss']
 })
-export class SolucionesHorizontalesComponent implements OnInit {
+export class SumateComponent implements OnInit {
 
   dataCards: any[] = [
     {
-        name: 'Recursos humanos',
+        name: 'Recibo de sueldo',
         problems: [
           'Fallas de seguridad en el manejo de información',
           'Grandes costos y pérdida de tiempo en la distribución',
@@ -105,36 +103,14 @@ export class SolucionesHorizontalesComponent implements OnInit {
 ];
 
   constructor(
-    private dialog: MatDialog, 
-    private translate: TranslateService,
-    private snackBar : MatSnackBar,
-    ) {}
+    private dialog: MatDialog,
+  ) {}
 
-  currentLanguage() {
-    console.log(this.translate.currentLang);
+  ngOnInit() {
   }
 
   openDialog() {
     this.dialog.open(DialogContactComponent);
   }
 
-  openSolutionsCrossModal(value): void {
-    const dialogRef = this.dialog.open(SolucionesModalComponent, {
-      height: '380px',
-      width: '550px',
-      data: this.dataCards[value]
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-  }
-
-  openSnackBar(message, action){
-    this.snackBar.open(message, action,{duration:3000});
-  }
-
-  ngOnInit() {
-    console.log(this.currentLanguage())
-  }
 }

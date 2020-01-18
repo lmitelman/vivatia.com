@@ -1,0 +1,98 @@
+.margen {
+    margin-top: 3%;
+}
+
+.contenedor {
+    flex-direction: column;
+    // background-image: url('../../../assets/bg-soluciones.png');
+    background-position: center;
+    background-color: #FFFFFF; 
+    padding-top: 0%; 
+    padding-bottom: 5%;
+}
+
+.texto {
+    flex-direction: column;
+    width: 520px;
+    margin-left: 5%;
+}
+
+.industrias {
+    width: 780px;
+}
+
+.box {
+    transition: box-shadow 0.3s;
+    // border-radius: 50%;
+    height: 140px;
+    width: 180px;
+    white-space: normal !important;
+    background: #fff;
+    margin: 1rem;
+}
+
+.box:hover {
+    box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+}
+
+.logo-industria {
+    height: 55px;
+    width: 55px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 812px) {
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .margen {
+        margin-top: 20%;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .industrias {
+        width: 100%;
+    }
+
+    .texto {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    h5 {
+        font-size: 12px;
+        text-align: center;
+        margin: 0px 10px 5px 10px;
+    }
+
+    .solucionescore {
+        height: 40%;
+    }
+
+    .soluciones{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        transition: box-shadow 0.3s;
+        // border-radius: 50%;
+        height: 125px;
+        width: 150px;
+        white-space: normal !important;
+        background: #fff;
+        margin: 10px 15px 10px 15px;
+    }
+
+    h6 {
+        font-size: 15px;
+    }
+}
