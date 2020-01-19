@@ -18,42 +18,42 @@ export class SolucionesComponent implements OnInit {
     {
         name: 'Seguros',
         image: 'assets/icon-seguros.png',
-        path: '/cuentas-a-pagar'
+        path: '/nopath'
     },
     {
         name: 'Salud',
         image: 'assets/icon-salud.png',
-        path: '/legajos-digitales'
+        path: '/nopath'
     },
     {
         name: 'Industria',
         image: 'assets/icon-industria.png',
-        path: '/contratos'
+        path: '/nopath'
     },
     {
         name: 'Retail',
         image: 'assets/icon-retail.png',
-        path: '/onboarding'
+        path: '/nopath'
     },
     {
       name: 'Gobierno',
       image: 'assets/icon-gobierno.png',
-      path: '/compras'
+      path: '/nopath'
     },
     {
       name: 'Educacion',
       image: 'assets/icon-educacion.png',
-      path: '/compras'
+      path: '/nopath'
     },
     {
       name: 'Servicios',
       image: 'assets/icon-servicios.png',
-      path: '/compras'
+      path: '/nopath'
     },
     {
       name: 'IT',
       image: 'assets/icon-it.png',
-      path: '/compras'
+      path: '/nopath'
     }
   ];
 

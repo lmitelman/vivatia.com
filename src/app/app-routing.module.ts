@@ -24,6 +24,7 @@ import { GobiernoComponent } from './navigation/soluciones/industrias/gobierno/g
 import { EducacionComponent } from './navigation/soluciones/industrias/educacion/educacion.component';
 import { CuentasPagarComponent } from './navigation/soluciones/soluciones-horizontales/cuentas-pagar/cuentas-pagar.component';
 import { LegajosDigitalesComponent } from './navigation/soluciones/soluciones-horizontales/legajos-digitales/legajos-digitales.component';
+import { ContratosComponent } from './navigation/soluciones/soluciones-horizontales/contratos/contratos.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path: 'educacion', component: EducacionComponent},
   {path: 'cuentas-a-pagar', component: CuentasPagarComponent},
   {path: 'legajos-digitales', component: LegajosDigitalesComponent},
+  {path: 'contratos', component: ContratosComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
