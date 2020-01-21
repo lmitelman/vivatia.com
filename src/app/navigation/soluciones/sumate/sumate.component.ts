@@ -11,7 +11,7 @@ export class SumateComponent implements OnInit {
 
   dataCards: any[] = [
     {
-        name: 'Recibo de sueldo',
+        name: 'Recursos humanos',
         problems: [
           'Fallas de seguridad en el manejo de información',
           'Grandes costos y pérdida de tiempo en la distribución',
@@ -23,7 +23,7 @@ export class SumateComponent implements OnInit {
           'Mayor capacidad de monitoreo y seguimiento'
         ],
         image: 'assets/recibo-de-sueldo.png',
-        path: '/recibo-sueldo'
+        path: '/recursos-humanos'
     },
     {
         name: 'Cuentas a Pagar',

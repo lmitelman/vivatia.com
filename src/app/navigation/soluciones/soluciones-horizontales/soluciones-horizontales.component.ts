@@ -25,7 +25,7 @@ export class SolucionesHorizontalesComponent implements OnInit {
           'Mayor capacidad de monitoreo y seguimiento'
         ],
         image: 'assets/recibo-de-sueldo.png',
-        path: '/recibo-sueldo'
+        path: '/recursos-humanos'
     },
     {
         name: 'Cuentas a Pagar',

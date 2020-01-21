@@ -57,6 +57,7 @@ import { SumateComponent } from './navigation/soluciones/sumate/sumate.component
 import { LegajosDigitalesComponent } from './navigation/soluciones/soluciones-horizontales/legajos-digitales/legajos-digitales.component';
 import { ContratosComponent } from './navigation/soluciones/soluciones-horizontales/contratos/contratos.component';
 import { PersonalizacionComponent } from './navigation/soluciones/industrias/personalizacion/personalizacion.component';
+import { RecursosHumanosComponent } from './navigation/soluciones/soluciones-horizontales/recursos-humanos/recursos-humanos.component';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -99,7 +100,8 @@ export function createTranslateLoader(http: HttpClient) {
     SumateComponent,
     LegajosDigitalesComponent,
     ContratosComponent,
-    PersonalizacionComponent
+    PersonalizacionComponent,
+    RecursosHumanosComponent
   ],
   entryComponents: [DialogContactComponent, SolucionesModalComponent],
   imports: [

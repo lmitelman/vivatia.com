@@ -8,7 +8,7 @@ h1 {
 }
 
 .header {
-    background-image: url('../../../../../assets/header-cap.png');
+    background-image: url('../../../../../assets/header-rrhh.png');
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ h1 {
 }
 
 .text-header {
-    width: 62%;
+    width: 90%;
     padding-left: 10%;
     animation-delay: 0.3s;
 }
@@ -66,72 +66,69 @@ p {
     width: 60%;
 }
 
-// ------ COMO PERSONALIZAMOS TU PROCESO -------
+// ITEMS RRHH
 
 h6 {
     line-height: 1.8;
-}
-
-.green-borderh4 {
-    border: 6px solid #98BF2F;
-    background-color: #98BF2F;
-}
-
-.blue-borderh4 {
-    border: 6px solid #69adec;
-    background-color: #69adec;
-}
-
+  }
+  
 .descripcion {
-    width: 25%; 
+    width: 38%; 
     font-family: 'Montserrat';
-    text-align: left;
-}
-
-// DIGITALIZACION
-
-.item1 {
-    height: 35%;
-}
-
-.descripcion {
-    width: 30%; 
-    font-family: 'Montserrat';
-    text-align: left;
 }
   
-.img-cap1 {
-    max-width: 150px;
-    height: auto;
-    margin-left: 0px;
+.item1 {
+    height: 45%;
 }
-
-// IDENTIFICACION Y EXTRACCION
-
+  
+.img-captika1 {
+    max-width: 370px;
+    height: auto;
+}
+  
 .item2 {
     background-color: #F3F3F3; 
-    height: 35%;
-}
-
-.descripcion2 {
-    width: 30%; 
-    font-family: 'Montserrat';
-    order: 1;
-    text-align: right;
-} 
-
-.img-cap2 {
-    max-width: 150px;
-    height: auto;
-    margin-right: 0px;
+    height: 50%;
 }
   
+.img-captika2 {
+    max-width: 370px;
+    height: auto;
+}
+  
+.descripcion2 {
+    width: 38%; 
+    font-family: 'Montserrat';
+    order: 1;
+}
+
+//
+
+.stats {
+    height: 20%;
+}
+  
+.stat {
+    width: 20%;
+}
+
+.stat h5 {
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.stat h5:hover {
+    font-size: 30px;
+    cursor: pointer;
+}
+  
+
 @media only screen and (min-width: 100px) and (max-width: 900px) {
     // HEADER
 
     .header {
         padding-top: 20%;
-        height: 40%;
+        height: 52%;
         opacity: 1.47;
     }
 
@@ -144,7 +141,7 @@ h6 {
         font-size: 52px;
     }
 
-    h5 {
+    .text-header h5 {
         font-size: 12px;
         line-height: 1.6;
         letter-spacing: 0.5px;
@@ -165,24 +162,12 @@ h6 {
         font-size: 20px;
     }
 
-    // ------ COMO PERSONALIZAMOS TU PROCESO -------
+    //
 
-    h4 {
-        font-size: 17px;
-        text-align: center;
-      }
-    
-    h6 {
-        font-size: 14px;
-        // margin: 0px 10px 0px 10px;
+    h2 {
+        font-size: 25px;
     }
-
-    // DIGITALIZACION
     
-    .item1 {
-        height: 40%;
-    }
-
     .descripcionItem {
         flex-direction: column;
         padding: 10px;
@@ -193,13 +178,6 @@ h6 {
         align-items: center;
         text-align: justify;
     }
-
-    .img-cap1 {
-        max-width: 80px;
-        height: 80px;
-    }
-
-    // IDENTIFICACION Y EXTRACCION
     
     .descripcion2 {
         width: 100%;
@@ -208,14 +186,60 @@ h6 {
         order: 0;
     }
     
-    .item2 {
-        background-color: #F3F3F3; 
-        height: 40%;
+    .item1 {
+        height: 50%;
     }
       
-    .img-cap2 {
-        max-width: 80px;
+    .item2 {
+        background-color: #F3F3F3; 
+        height: 50%;
+    }
+    
+    h4 {
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    h6 {
+        font-size: 14px;
+    }
+    
+    .img-captika1 {
+        max-width: 160px;
         height: auto;
-        margin-bottom: 20px;
+    }
+      
+    .img-captika2 {
+        max-width: 160px;
+        height: auto;
+        margin: 0%;
+    }
+
+    //
+
+    .stats {
+        height: 20%;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  
+    .stats h2 {
+        font-size: 22px;
+    }
+  
+    .stats h5 {
+        font-size: 14px;
+    }
+      
+    .stat {
+        width: 50%;
+    }
+
+    h3 {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 20px;
+        text-align: center;
     }
 }
