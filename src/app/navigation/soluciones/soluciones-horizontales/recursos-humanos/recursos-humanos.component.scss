@@ -13,12 +13,12 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 62%;
+    height: 55%;
     opacity: 1.47;
 }
 
 .text-header {
-    width: 90%;
+    width: 70%;
     padding-left: 10%;
     animation-delay: 0.3s;
 }
@@ -120,6 +120,20 @@ h6 {
 .stat h5:hover {
     font-size: 30px;
     cursor: pointer;
+}
+
+// Notebook
+@media (min-width: 900px) and (max-width: 1920px) {
+    h1 {
+        font-size: 65px;
+    }
+
+    h5 {
+        font-size: 15px;
+        font-weight: lighter;
+        line-height: 1.8;
+        letter-spacing: 0.5px;
+    }
 }
   
 
