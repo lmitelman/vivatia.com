@@ -66,18 +66,21 @@ p {
 // NUESTRA HISTORIA
 
 .descripcion {
+    margin-left: 3%;
     width: 35%; 
     font-family: 'Montserrat';
 }
 
 .item1 {
-    background-color: #F3F3F3; 
-    height: 70%;
+    height: 62%;
 }
 
 .item2 {
-    background-color: #F3F3F3; 
-    height: 75%;
+    height: 62%;
+}
+
+.item2 .descripcion {
+    order: 1;
 }
 
 .descripcionItem h5 {
@@ -89,12 +92,25 @@ p {
 .img-historia {
     max-width: 600px;
     height: auto;
-    margin-left: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .img-equipo {
     max-width: 600px;
     height: auto;
+}
+
+.img-paises {
+    max-width: 500px;
+    height: auto;
+    margin-left: 25%;
+}
+
+.descripcion .paises {
+    color: #194324;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 h6 {
@@ -168,22 +184,27 @@ h6 {
     }
 
     .item1 {
-        background-color: #F3F3F3; 
         height: 80%;
     }
 
-    .item2 {
-        background-color: #F3F3F3; 
-        height: 70%;
-    }
-
     .img-historia {
-        margin-left: 0%;
+        margin: 0%;
         max-width: 340px;
         height: auto;
     }
-    
+
+    // NUESTRO EQUIPO
+
+    .item2 {
+        height: 70%;
+    }
+
+    .item2 .descripcion {
+        order: 0;
+    }
+
     .img-equipo {
+        margin: 0%;
         max-width: 340px;
         height: auto;
     }
@@ -201,6 +222,12 @@ h6 {
     
     h6 {
         font-size: 12px;
+    }
+
+    .img-paises {
+        margin-left: 0%;
+        max-width: 240px;
+        height: auto;
     }
 
     // CERTIFICADOS

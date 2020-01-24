@@ -11,7 +11,7 @@ export class SolucionesComponent implements OnInit {
 
   dataCards: any[] = [
     {
-        name: 'Banca',
+        name: 'Financiera',
         image: 'assets/icon-banca.png',
         path: '/banca'
     },
@@ -26,7 +26,7 @@ export class SolucionesComponent implements OnInit {
         path: '/nopath'
     },
     {
-        name: 'Industria',
+        name: 'Manufactura',
         image: 'assets/icon-industria.png',
         path: '/nopath'
     },

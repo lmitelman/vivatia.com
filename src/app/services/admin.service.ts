@@ -3,7 +3,6 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { map } from 'rxjs/operators'
-import { TransitiveCompileNgModuleMetadata } from '@angular/compiler';
 
 @Injectable()
 export class AdminService {
@@ -35,12 +34,22 @@ export class AdminService {
     createDocument(params): Observable<any> {
         return this.http.post(environment.thubanUrl + '/createDocument', {
             "tokenAuthentication": (<any>window).token,
-            "documentClass": "HLT_COMPROBANTES",
+            "documentClass": "CONTACTO_WEB",
             "fields": [
                 {
-                    "key": "T_FACTURA",
-                    "value": params.billType,
-                    "dataType": "email"
+                    "key": "T_NOMBRE",
+                    "value": params.userName,
+                    "dataType": "string"
+                },
+                {
+                    "key": "T_MAIL",
+                    "value": params.userMail,
+                    "dataType": "string"
+                },
+                {
+                    "key": "T_COMENTARIO",
+                    "value": params.userMessage,
+                    "dataType": "string"
                 }
             ]
         }).pipe(

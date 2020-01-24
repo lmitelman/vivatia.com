@@ -38,9 +38,9 @@ export class DialogContactComponent implements OnInit {
 
   login() {
     this.adminService.login('admin', 'thuban', true)
-      .subscribe(
-        data => {}
-      )
+    .subscribe(
+      data => {}
+    )
   }
 
   createDocument() {

@@ -18,7 +18,7 @@ h1 {
 }
 
 .text-header {
-    width: 60%;
+    width: 70%;
     padding-left: 10%;
     animation-delay: 0.3s;
 }
@@ -67,6 +67,10 @@ p {
 }
 
 // ------ COMO PERSONALIZAMOS TU PROCESO -------
+
+.text-personalizacion {
+    width: 30%;
+}
 
 h6 {
     line-height: 1.8;
@@ -121,11 +125,25 @@ h6 {
 } 
 
 .img-cap2 {
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
-    margin-right: 0px;
+    margin-right: 8%;
 }
   
+// Notebook
+@media (min-width: 900px) and (max-width: 1920px) {
+    h1 {
+        font-size: 65px;
+    }
+
+    h5 {
+        font-size: 15px;
+        font-weight: lighter;
+        line-height: 1.8;
+        letter-spacing: 0.5px;
+    }
+}
+
 @media only screen and (min-width: 100px) and (max-width: 900px) {
     // HEADER
 
@@ -166,6 +184,12 @@ h6 {
     }
 
     // ------ COMO PERSONALIZAMOS TU PROCESO -------
+
+    .text-personalizacion {
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 
     h4 {
         font-size: 17px;

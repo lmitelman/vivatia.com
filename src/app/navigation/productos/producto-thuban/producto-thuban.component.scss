@@ -21,55 +21,38 @@ h6 {
   line-height: 1.8;
 }
 
-// /Creamos soluciones para cada industria
-
-.item1 {
-  height: 70%;
+h4 {
+  font-size: 35px;
 }
 
 .descripcion {
-  width: 35%; 
+  width: 38%; 
   font-family: 'Montserrat';
 }
 
-.img-thuban1 {
-  max-width: 550px;
+.item1 {
+  height: 45%;
+}
+
+.img-captika1 {
+  max-width: 370px;
   height: auto;
-  margin-left: 15px;
 }
 
-.versoluciones:hover {
-  text-decoration: underline;
+.item2 {
+  background-color: #F3F3F3; 
+  height: 50%;
 }
 
-// /¿Cómo puede beneficiar tus procesos?
+.img-captika2 {
+  max-width: 370px;
+  height: auto;
+}
 
 .descripcion2 {
   width: 38%; 
   font-family: 'Montserrat';
   order: 1;
-}
-
-.item2 {
-  background-color: #F3F3F3; 
-  height: 90%;
-}
-
-.img-thuban2 {
-  max-width: 500px;
-  height: auto;
-  margin-right: 30px;
-}
-
-// /Optimizamos tu gestión digital
-
-.item3 {
-  height: 65%;
-}
-
-.img-thuban3 {
-  max-width: 450px;
-  height: auto;
 }
 
 .stats {
