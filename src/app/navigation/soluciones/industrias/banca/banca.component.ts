@@ -9,49 +9,18 @@ import { MatDialog } from '@angular/material';
 })
 export class BancaComponent implements OnInit {
 
+  constructor(private dialog: MatDialog) {}
+
   dataCardsBanca: any[] = [
     {
-      name: 'Gestión de compras',
-      problems: [
-        'Falta de controles y alertas.',
-        'Excesivos tiempos de respuesta.',
-        'Falta de información para la toma de desiciones.'
-      ],
-      benefits: [
-        'Reducción de hasta un 25% en tiempo de procesamiento.',
-        'Aumento de un 30% en productividad.',
-        'Mayor capacidad de monitoreo, validación y seguimiento.'
-      ],
+      name: 'Gestión de solicitudes de aperturas y mantenimiento de cuentas',
+      icon: 'none'
     },
     {
-      name: 'Comercio exterior',
-      problems: [
-        'Falta de controles y alertas.',
-        'Excesivos tiempos de respuesta.',
-        'Falta de espacio físico para el almacenamiento documental.'
-      ],
-      benefits: [
-        'Reducción de hasta un 25% en tiempos de procesamiento.',
-        'Alertas electrónicas a clientes.',
-        'Reducicción en costos de almacenamiento de archivos.'
-      ],
-    },
-    {
-      name: 'Oficios judiciales',
-      problems: [
-        'Falta de controles y alertas.',
-        'Excesivos tiempos de respuesta.',
-        'Falta de espacio físico para el almacenamiento documental.'
-      ],
-      benefits: [
-        'Reducción de hasta un 25% en tiempos de procesamiento',
-        'Alertas electrónicas a clientes',
-        'Reducicción en costos de almacenamiento de archivos.'
-      ],
+      name: 'Solicitudes de créditos personales, hipotecarios y/o prendarios',
+      icon: 'none'
     },
   ];
-
-  constructor(private dialog: MatDialog) {}
 
   openSolutionsModal(value): void {
     const dialogRef = this.dialog.open(SolucionesModalComponent, {

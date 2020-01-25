@@ -26,6 +26,7 @@ import { CuentasPagarComponent } from './navigation/soluciones/soluciones-horizo
 import { LegajosDigitalesComponent } from './navigation/soluciones/soluciones-horizontales/legajos-digitales/legajos-digitales.component';
 import { ContratosComponent } from './navigation/soluciones/soluciones-horizontales/contratos/contratos.component';
 import { RecursosHumanosComponent } from './navigation/soluciones/soluciones-horizontales/recursos-humanos/recursos-humanos.component';
+import { PartnersComponent } from './navigation/partners/partners.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -44,6 +45,7 @@ const routes: Routes = [
   {path: 'legajos-digitales', component: LegajosDigitalesComponent},
   {path: 'contratos', component: ContratosComponent},
   {path: 'recursos-humanos', component: RecursosHumanosComponent},
+  {path: 'partners', component: PartnersComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

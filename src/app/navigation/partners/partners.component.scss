@@ -1,0 +1,77 @@
+.bg-home1 {
+    margin-top: 5%;
+    background-image: url('../../../assets/gpp.png');
+    /* Center and scale the image nicely */
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75%;
+    justify-content: start;
+}
+  
+.bg-home1 div {
+    padding-left: 10%;
+    align-items: flex-start;
+}
+  
+.bg-home1 h2 {
+    font-size: 48px; 
+    font-family: 'Montserrat', Helvetica;
+}
+  
+p {
+    font-size: 25px;
+}
+
+// 
+
+.text-personalizacion {
+    width: 50%;
+    line-height: 2.4;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 812px) {
+
+    .title-main {
+      max-width: 50%;
+      height: auto;
+    }
+
+    .bg-home1 {
+      background-image: url('../../../assets/header-mobile.png');
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 40%;
+      justify-content: center;
+    }
+
+    .bg-home1 div {
+        padding-left: 0%;
+        align-items: center;
+    }
+
+    .bg-home1 h2{
+      font-size: 35px;
+      text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+        display: none;
+    }
+
+    //
+
+    .text-personalizacion {
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    h6 {
+        font-size: 14px;
+        text-align: center;
+    }
+}
