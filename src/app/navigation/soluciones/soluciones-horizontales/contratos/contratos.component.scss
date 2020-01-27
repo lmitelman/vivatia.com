@@ -54,19 +54,18 @@ h5 {
 }
 
 .benefit {
-    width: 22%;
+    width: 25%;
 }
 
 .benefit h5 {
     font-weight: bold;
 }
 
-p {
-    font-size: 13px;
-    width: 60%;
-}
-
 // ------ COMO PERSONALIZAMOS TU PROCESO -------
+
+.text-personalizacion {
+    width: 35%;
+}
 
 h6 {
     line-height: 1.8;
@@ -95,15 +94,15 @@ h6 {
 }
 
 .descripcion {
-    width: 30%; 
+    width: 25%; 
     font-family: 'Montserrat';
     text-align: left;
 }
   
 .img-cap1 {
-    max-width: 220px;
+    max-width: 150px;
     height: auto;
-    margin-left: 0px;
+    margin: 0px 15px 0px 15px;
 }
 
 // IDENTIFICACION Y EXTRACCION
@@ -114,16 +113,16 @@ h6 {
 }
 
 .descripcion2 {
-    width: 30%; 
+    width: 25%; 
     font-family: 'Montserrat';
     order: 1;
     text-align: right;
 } 
 
 .img-cap2 {
-    max-width: 220px;
+    max-width: 160px;
     height: auto;
-    margin-right: 0px;
+    margin: 0px 15px 0px 15px;
 }
 
 // Notebook
@@ -179,7 +178,23 @@ h6 {
         font-size: 20px;
     }
 
+    .benefitsMobile h5 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .benefitsMobile h6 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
     // ------ COMO PERSONALIZAMOS TU PROCESO -------
+
+    .text-personalizacion {
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 
     h4 {
         font-size: 17px;
@@ -209,7 +224,7 @@ h6 {
     }
 
     .img-cap1 {
-        max-width: 130px;
+        max-width: 110px;
         height: auto;
     }
 
@@ -228,7 +243,7 @@ h6 {
     }
       
     .img-cap2 {
-        max-width: 150px;
+        max-width: 120px;
         height: auto;
     }
 }

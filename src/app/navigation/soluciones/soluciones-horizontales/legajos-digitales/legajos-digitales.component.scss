@@ -38,7 +38,7 @@ h5 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 55%;
+    height: 50%;
 }
 
 .small-logo {
@@ -69,7 +69,7 @@ p {
 // ------ COMO PERSONALIZAMOS TU PROCESO -------
 
 .text-personalizacion {
-    width: 30%;
+    width: 35%;
 }
 
 h6 {
@@ -95,11 +95,11 @@ h6 {
 // DIGITALIZACION
 
 .item1 {
-    height: 45%;
+    height: 38%;
 }
 
 .descripcion {
-    width: 25%; 
+    width: 23%; 
     font-family: 'Montserrat';
     text-align: left;
 }
@@ -114,11 +114,11 @@ h6 {
 
 .item2 {
     background-color: #F3F3F3; 
-    height: 45%;
+    height: 38%;
 }
 
 .descripcion2 {
-    width: 30%; 
+    width: 25%; 
     font-family: 'Montserrat';
     order: 1;
     text-align: right;
@@ -132,6 +132,16 @@ h6 {
   
 // Notebook
 @media (min-width: 900px) and (max-width: 1920px) {
+    .header {
+        background-image: url('../../../../../assets/header-legajos.png');
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60%;
+        opacity: 1.47;
+    }
+
     h1 {
         font-size: 65px;
     }
@@ -149,7 +159,7 @@ h6 {
 
     .header {
         padding-top: 20%;
-        height: 45%;
+        height: 58%;
         opacity: 1.47;
     }
 
@@ -183,6 +193,11 @@ h6 {
         font-size: 20px;
     }
 
+    .benefitsMobile h5 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
     // ------ COMO PERSONALIZAMOS TU PROCESO -------
 
     .text-personalizacion {
@@ -198,7 +213,6 @@ h6 {
     
     h6 {
         font-size: 14px;
-        // margin: 0px 10px 0px 10px;
     }
 
     // DIGITALIZACION
@@ -219,8 +233,8 @@ h6 {
     }
 
     .img-cap1 {
-        max-width: 80px;
-        height: 80px;
+        max-width: 120px;
+        height: auto;
     }
 
     // IDENTIFICACION Y EXTRACCION
@@ -238,7 +252,7 @@ h6 {
     }
       
     .img-cap2 {
-        max-width: 80px;
+        max-width: 130px;
         height: auto;
         margin-bottom: 20px;
     }

@@ -6,15 +6,15 @@
 </div>
 
 <div class="d-flex py-4 flex-column text-center align-items-center">
-    <h4 class="font-weight-bold mt-4 mb-3">¿Como personalizamos tu proceso?</h4>
-    <h6 class="text-personalizacion">Proponemos la captura, edición y publicación electrónica de los documentos, dejandolos en <span class="letra6 font-weight-bold">Thuban Software</span> para que desde allí puedan ser consultados por usuarios previamente habilitados.</h6>
+    <h4 class="font-weight-bold mt-4 mb-3 animated fadeInRight">¿Como personalizamos tu proceso?</h4>
+    <h6 class="text-personalizacion animated fadeInRight">Como resultado de análisis de la problemática en diferentes empresas, hemos pensando la mejor solución para resolver esto, te lo contamos a continuación.</h6>
 </div>
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item1 animated fadeInLeft">
-    <div class="d-flex flex-column descripcion">
+    <div class="d-flex flex-column descripcion animated fadeInLeft">
         <h4 class="font-weight-bold letra5"><span class="green-borderh4">1. Digitalización</span></h4>
         <br>
-        <h6>Utilizando <span class="letra4 font-weight-bold">Captika Software</span>, se identificarán los diferentes tipos de documentos, indexando y asociando los datos que permitan vincularlas con los diferentes legajos.</h6>
+        <h6>Identificaremos los diferente documentos pudiendo asociar los datos con los diferentes legajos.</h6>
         <br>
     </div>
     <div>
@@ -26,7 +26,7 @@
     <div class="d-flex flex-column descripcion2">
         <h4 class="font-weight-bold letra6"><span class="blue-borderh4">2. Publicación de imágenes</span></h4>
         <br>
-        <h6>Al liberar el lote con las imágenes digitalizadas, se conformarán nuevos legajos o se completarán legajos ya existentes, los cuales contendrán toda la documentación y podrán organizarse en sub-carpetas, de acuerdo al tipo de documento.</h6>
+        <h6>Se conformarán legajos, conteniendo toda la documentación de la persona.</h6>
         <br>
     </div>
     <div>
@@ -38,7 +38,7 @@
     <div class="d-flex flex-column descripcion">
         <h4 class="font-weight-bold letra6"><span class="blue-borderh4">3. Búsqueda y consulta</span></h4>
         <br>
-        <h6>En cualquier momento, personas autorizadas podrán realizar búsquedas de de documentos y visualizar las imágenes correspondientes.</h6>
+        <h6>En cualquier momento podremos realizar búsquedas de legajos, documentos y visualizar los documentos correspondientes.</h6>
         <br>
     </div>
     <div>
@@ -46,6 +46,58 @@
     </div>
 </div>
 
+<section class="bg-main3 benefitsDesktop flex-column justify-content-center align-items-center" style="background-color: white">
+    <h2 class="mb-4 font-weight-bold animated fadeInDown">Beneficios</h2>
+    <div class="d-flex mt-4 justify-content-center align-items-start text-center w-75 animated fadeInDown">
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-ld1.png">
+            <h5 class="mb-1">Administración <br> proactiva</h5>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-ld2.png">
+            <h5 class="mb-1">Reducción de errores <br> humanos manuales</h5>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-ld3.png">
+            <h5 class="mb-1">Seguridad <br> y confiabilidad</h5>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-ld4.png">
+            <h5 class="mb-1">Fácil búsqueda <br> y administración</h5>
+        </div>
+    </div>
+</section>
 
+<section>
+    <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center animated fadeIn" style="background-color: white">
+        <h2 class="my-4 font-weight-bold">Beneficios</h2>
+        <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false' [showNavigationIndicators]="false"> 
+            <ng-template ngbSlide>
+                <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
+                    <img class="mb-3 small-logo" src="assets/benefit-ld1.png">
+                    <h5 class="mb-4">Administración <br> proactiva</h5>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
+                    <img class="mb-3 small-logo" src="assets/benefit-ld2.png">
+                    <h5 class="mb-4">Reducción de errores <br> humanos manuales</h5>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
+                    <img class="mb-3 small-logo" src="assets/benefit-ld3.png">
+                    <h5 class="mb-4">Seguridad <br> y confiabilidad</h5>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
+                    <img class="mb-3 small-logo" src="assets/benefit-ld4.png">
+                    <h5 class="mb-4">Fácil búsqueda <br> y administración</h5>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</section>
 
 <app-sumate></app-sumate>

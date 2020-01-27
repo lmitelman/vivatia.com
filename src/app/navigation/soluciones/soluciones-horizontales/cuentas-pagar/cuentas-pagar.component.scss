@@ -30,6 +30,16 @@ h5 {
     margin: 0%;
 }
 
+// ------ COMO PERSONALIZAMOS TU PROCESO -------
+
+.text-personalizacion {
+    width: 35%;
+}
+
+h6 {
+    line-height: 1.8;
+}
+
 // BENEFICIOS 
 
 .bg-main3 {
@@ -95,15 +105,15 @@ h6 {
 }
 
 .descripcion {
-    width: 30%; 
+    width: 28%; 
     font-family: 'Montserrat';
     text-align: left;
 }
   
 .img-cap1 {
-    max-width: 180px;
+    max-width: 150px;
     height: auto;
-    margin-left: 5px;
+    margin: 0px 10px 0px 10px;
 }
 
 // IDENTIFICACION Y EXTRACCION
@@ -121,9 +131,9 @@ h6 {
 } 
 
 .img-cap2 {
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
-    margin-right: 0px;
+    margin: 0px 10px 0px 10px;
 }
 
 // Notebook
@@ -145,7 +155,7 @@ h6 {
 
     .header {
         padding-top: 20%;
-        height: 45%;
+        height: 55%;
         opacity: 1.47;
     }
 
@@ -186,6 +196,12 @@ h6 {
 
     // ------ COMO PERSONALIZAMOS TU PROCESO -------
 
+    .text-personalizacion {
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
     h4 {
         font-size: 17px;
         text-align: center;
@@ -195,6 +211,7 @@ h6 {
         font-size: 14px;
         // margin: 0px 10px 0px 10px;
     }
+    
 
     // DIGITALIZACION
     
@@ -215,7 +232,7 @@ h6 {
 
     .img-cap1 {
         max-width: 120px;
-        height: 80px;
+        height: auto;
     }
 
     // IDENTIFICACION Y EXTRACCION

@@ -50,21 +50,13 @@ export class SolucionesComponent implements OnInit {
       image: 'assets/icon-servicios.png',
       path: '/nopath'
     },
-    {
-      name: 'IT',
-      image: 'assets/icon-it.png',
-      path: '/nopath'
-    }
   ];
 
   constructor(
     private dialog: MatDialog,
   ) { }
 
-  solutions: string[] = ['Banca', 'Seguros', 'Salud', 'Industria', 'Gobierno']
-
-  ngOnInit() {
-    
+  ngOnInit() {  
   }
 
   openDialog() {

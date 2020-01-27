@@ -99,7 +99,37 @@ export class SumateComponent implements OnInit {
       ],
       image: 'assets/compras.png',
       path: '/compras'
-  }
+    },
+    {
+      name: 'Firma Digital',
+      problems: [
+        'Descentralización de la información ',
+        'Generación de cuellos de botella',
+        'Excesivos volúmenes de papel'
+      ],
+      benefits: [
+        'Reducción de tiempos de procesamiento',
+        'Diferentes perfiles de usuarios',
+        'Personalización completa'
+      ],
+      image: 'assets/firma-digital.png',
+      path: '/firma-digital'
+    },
+    {
+      name: 'Digitalización',
+      problems: [
+        'Descentralización de la información ',
+        'Generación de cuellos de botella',
+        'Excesivos volúmenes de papel'
+      ],
+      benefits: [
+        'Reducción de tiempos de procesamiento',
+        'Diferentes perfiles de usuarios',
+        'Personalización completa'
+      ],
+      image: 'assets/digitalizacion.png',
+      path: '/digitalizacion'
+    }
 ];
 
   constructor(

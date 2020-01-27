@@ -54,72 +54,75 @@ h5 {
 }
 
 .benefit {
-    width: 22%;
+    width: 25%;
 }
 
 .benefit h5 {
     font-weight: bold;
 }
 
-p {
-    font-size: 13px;
-    width: 60%;
-}
+// ------ COMO PERSONALIZAMOS TU PROCESO -------
 
-// ITEMS RRHH
+.text-personalizacion {
+    width: 35%;
+}
 
 h6 {
     line-height: 1.8;
-  }
-  
+}
+
+.green-borderh4 {
+    border: 6px solid #98BF2F;
+    background-color: #98BF2F;
+}
+
+.blue-borderh4 {
+    border: 6px solid #69adec;
+    background-color: #69adec;
+}
+
 .descripcion {
-    width: 38%; 
+    width: 22%; 
     font-family: 'Montserrat';
+    text-align: left;
 }
-  
+
+// DIGITALIZACION
+
 .item1 {
-    height: 45%;
+    height: 40%;
+}
+
+.descripcion {
+    width: 25%; 
+    font-family: 'Montserrat';
+    text-align: left;
 }
   
-.img-captika1 {
-    max-width: 370px;
+.img-cap1 {
+    max-width: 110px;
     height: auto;
+    margin: 0px 10px 0px 10px;
 }
-  
+
+// IDENTIFICACION Y EXTRACCION
+
 .item2 {
     background-color: #F3F3F3; 
-    height: 50%;
+    height: 40%;
 }
-  
-.img-captika2 {
-    max-width: 370px;
-    height: auto;
-}
-  
+
 .descripcion2 {
-    width: 38%; 
+    width: 30%; 
     font-family: 'Montserrat';
     order: 1;
-}
+    text-align: right;
+} 
 
-//
-
-.stats {
-    height: 20%;
-}
-  
-.stat {
-    width: 20%;
-}
-
-.stat h5 {
-    font-size: 25px;
-    transition: 0.2s;
-}
-
-.stat h5:hover {
-    font-size: 30px;
-    cursor: pointer;
+.img-cap2 {
+    max-width: 150px;
+    height: auto;
+    margin: 0px 10px 0px 10px;
 }
 
 // Notebook
@@ -136,13 +139,12 @@ h6 {
     }
 }
   
-
 @media only screen and (min-width: 100px) and (max-width: 900px) {
     // HEADER
 
     .header {
         padding-top: 20%;
-        height: 52%;
+        height: 50%;
         opacity: 1.47;
     }
 
@@ -155,7 +157,7 @@ h6 {
         font-size: 52px;
     }
 
-    .text-header h5 {
+    h5 {
         font-size: 12px;
         line-height: 1.6;
         letter-spacing: 0.5px;
@@ -176,12 +178,40 @@ h6 {
         font-size: 20px;
     }
 
-    //
-
-    h2 {
-        font-size: 25px;
+    .benefitsMobile h5 {
+        font-size: 20px;
+        font-weight: bold;
     }
+
+    .benefitsMobile h6 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    // ------ COMO PERSONALIZAMOS TU PROCESO -------
+
+    .text-personalizacion {
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    h4 {
+        font-size: 17px;
+        text-align: center;
+      }
     
+    h6 {
+        font-size: 14px;
+        // margin: 0px 10px 0px 10px;
+    }
+
+    // DIGITALIZACION
+    
+    .item1 {
+        height: 40%;
+    }
+
     .descripcionItem {
         flex-direction: column;
         padding: 10px;
@@ -192,6 +222,13 @@ h6 {
         align-items: center;
         text-align: justify;
     }
+
+    .img-cap1 {
+        max-width: 80px;
+        height: auto;
+    }
+
+    // IDENTIFICACION Y EXTRACCION
     
     .descripcion2 {
         width: 100%;
@@ -200,60 +237,13 @@ h6 {
         order: 0;
     }
     
-    .item1 {
-        height: 50%;
-    }
-      
     .item2 {
         background-color: #F3F3F3; 
-        height: 50%;
-    }
-    
-    h4 {
-        font-size: 17px;
-        text-align: center;
-    }
-    
-    h6 {
-        font-size: 14px;
-    }
-    
-    .img-captika1 {
-        max-width: 160px;
-        height: auto;
+        height: 40%;
     }
       
-    .img-captika2 {
-        max-width: 160px;
+    .img-cap2 {
+        max-width: 90px;
         height: auto;
-        margin: 0%;
-    }
-
-    //
-
-    .stats {
-        height: 20%;
-        flex-wrap: wrap;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-  
-    .stats h2 {
-        font-size: 22px;
-    }
-  
-    .stats h5 {
-        font-size: 14px;
-    }
-      
-    .stat {
-        width: 50%;
-    }
-
-    h3 {
-        margin-left: 5px;
-        margin-right: 5px;
-        font-size: 20px;
-        text-align: center;
     }
 }
