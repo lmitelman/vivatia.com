@@ -59,6 +59,10 @@ import { ContratosComponent } from './navigation/soluciones/soluciones-horizonta
 import { PersonalizacionComponent } from './navigation/soluciones/industrias/personalizacion/personalizacion.component';
 import { RecursosHumanosComponent } from './navigation/soluciones/soluciones-horizontales/recursos-humanos/recursos-humanos.component';
 import { PartnersComponent } from './navigation/partners/partners.component';
+import { OnboardingComponent } from './navigation/soluciones/soluciones-horizontales/onboarding/onboarding.component';
+import { ComprasComponent } from './navigation/soluciones/soluciones-horizontales/compras/compras.component';
+import { FirmaDigitalComponent } from './navigation/soluciones/soluciones-horizontales/firma-digital/firma-digital.component';
+import { DigitalizacionComponent } from './navigation/soluciones/soluciones-horizontales/digitalizacion/digitalizacion.component';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -103,7 +107,11 @@ export function createTranslateLoader(http: HttpClient) {
     ContratosComponent,
     PersonalizacionComponent,
     RecursosHumanosComponent,
-    PartnersComponent
+    PartnersComponent,
+    OnboardingComponent,
+    ComprasComponent,
+    FirmaDigitalComponent,
+    DigitalizacionComponent
   ],
   entryComponents: [DialogContactComponent, SolucionesModalComponent],
   imports: [

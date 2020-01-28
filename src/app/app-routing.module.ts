@@ -27,6 +27,10 @@ import { LegajosDigitalesComponent } from './navigation/soluciones/soluciones-ho
 import { ContratosComponent } from './navigation/soluciones/soluciones-horizontales/contratos/contratos.component';
 import { RecursosHumanosComponent } from './navigation/soluciones/soluciones-horizontales/recursos-humanos/recursos-humanos.component';
 import { PartnersComponent } from './navigation/partners/partners.component';
+import { OnboardingComponent } from './navigation/soluciones/soluciones-horizontales/onboarding/onboarding.component';
+import { ComprasComponent } from './navigation/soluciones/soluciones-horizontales/compras/compras.component';
+import { FirmaDigitalComponent } from './navigation/soluciones/soluciones-horizontales/firma-digital/firma-digital.component';
+import { DigitalizacionComponent } from './navigation/soluciones/soluciones-horizontales/digitalizacion/digitalizacion.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -45,7 +49,11 @@ const routes: Routes = [
   {path: 'legajos-digitales', component: LegajosDigitalesComponent},
   {path: 'contratos', component: ContratosComponent},
   {path: 'recursos-humanos', component: RecursosHumanosComponent},
+  {path: 'onboarding', component: OnboardingComponent},
+  {path: 'compras', component: ComprasComponent},
   {path: 'partners', component: PartnersComponent},
+  {path: 'firma-digital', component: FirmaDigitalComponent},
+  {path: 'digitalizacion', component: DigitalizacionComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

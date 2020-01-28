@@ -1,0 +1,257 @@
+// HEADER
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin: 0%;
+}
+
+.header {
+    background-image: url('../../../../../assets/header-compras.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55%;
+    opacity: 1.47;
+}
+
+.text-header {
+    width: 70%;
+    padding-left: 10%;
+    animation-delay: 0.3s;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 2.0;
+    font-weight: 100;
+    margin: 0%;
+}
+
+// ------ COMO PERSONALIZAMOS TU PROCESO -------
+
+.text-personalizacion {
+    width: 35%;
+}
+
+h6 {
+    line-height: 1.8;
+}
+
+// BENEFICIOS 
+
+.bg-main3 {
+    background-image: url('../../../../../assets/bg-main5.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55%;
+}
+
+.small-logo {
+    max-width: 6rem;
+}
+
+.benefitsMobile {
+    display: none;
+}
+
+.benefitsDesktop {
+    display: flex;
+}
+
+.benefit {
+    width: 22%;
+}
+
+.benefit h5 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 13px;
+    width: 60%;
+}
+
+// ------ COMO PERSONALIZAMOS TU PROCESO -------
+
+h6 {
+    line-height: 1.8;
+}
+
+.green-borderh4 {
+    border: 6px solid #98BF2F;
+    background-color: #98BF2F;
+}
+
+.blue-borderh4 {
+    border: 6px solid #69adec;
+    background-color: #69adec;
+}
+
+.descripcion {
+    width: 25%; 
+    font-family: 'Montserrat';
+    text-align: left;
+}
+
+// DIGITALIZACION
+
+.item1 {
+    height: 35%;
+}
+
+.descripcion {
+    width: 30%; 
+    font-family: 'Montserrat';
+    text-align: left;
+}
+  
+.img-cap1 {
+    max-width: 160px;
+    height: auto;
+    margin: 0px 10px 0px 10px;
+}
+
+// IDENTIFICACION Y EXTRACCION
+
+.item2 {
+    background-color: #F3F3F3; 
+    height: 38%;
+}
+
+.descripcion2 {
+    width: 25%; 
+    font-family: 'Montserrat';
+    order: 1;
+    text-align: right;
+} 
+
+.img-cap2 {
+    max-width: 160px;
+    height: auto;
+    margin: 0px 10px 0px 10px;
+}
+
+// Notebook
+@media (min-width: 900px) and (max-width: 1920px) {
+    h1 {
+        font-size: 65px;
+    }
+
+    h5 {
+        font-size: 15px;
+        font-weight: lighter;
+        line-height: 1.8;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 900px) {
+    // HEADER
+
+    .header {
+        padding-top: 22%;
+        height: 48%;
+        opacity: 1.47;
+    }
+
+    .text-header {
+        width: 100%;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    h5 {
+        font-size: 12px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
+
+    // BENEFICIOS
+
+    .benefitsDesktop {
+        display: none;
+    }
+    
+    .benefitsMobile {
+        display: flex;
+        font-size: 110%;
+    }
+
+    .benefitsMobile h2 {
+        font-size: 20px;
+    }
+
+    .benefitsMobile h5 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    // ------ COMO PERSONALIZAMOS TU PROCESO -------
+
+    .text-personalizacion {
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    h4 {
+        font-size: 17px;
+        text-align: center;
+      }
+    
+    h6 {
+        font-size: 14px;
+        // margin: 0px 10px 0px 10px;
+    }
+    
+
+    // DIGITALIZACION
+    
+    .item1 {
+        height: 40%;
+    }
+
+    .descripcionItem {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .descripcion {
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .img-cap1 {
+        max-width: 120px;
+        height: auto;
+    }
+
+    // IDENTIFICACION Y EXTRACCION
+    
+    .descripcion2 {
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+        order: 0;
+    }
+    
+    .item2 {
+        background-color: #F3F3F3; 
+        height: 40%;
+    }
+      
+    .img-cap2 {
+        max-width: 130px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
