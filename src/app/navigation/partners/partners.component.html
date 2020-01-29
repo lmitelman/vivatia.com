@@ -10,3 +10,14 @@
     <h6 class="text-personalizacion animated fadeInRight">El <span class="font-weight-bold">Programa de Socios Globales de Vivatia</span> fue pensado con el objetivo de brindar a las empresas interesadas la experiencia y los conocimientos necesarios para que puedan incrementar sus ventas a partir de la comercialización e implementación de los productos y soluciones de software de Vivatia.</h6>
 </div>
 
+<section class="bg-main2 text-dark contenedor-soluciones d-flex flex-column justify-content-center align-items-center py-5" style="background-color: white;">
+    <h2 class="mb-5 animated font-weight-bold fadeInDown text-center">Podes sumarte como</h2>
+    <div class="d-flex mt-4 justify-content-center flex-wrap align-items-start text-center w-100 animated fadeInDown soluciones">
+        <div *ngFor="let data of dataCardsPartners, let i = index" class="mx-1 d-flex flex-column justify-content-center align-items-center solucion">
+            <img class="mb-2 logo-solucion" [src]=data.icon>
+            <h5 class="mb-2" [innerHTML]=data.name></h5>
+            <p class="text-center w-75">{{data.desc}}</p>
+        </div>
+    </div>
+</section>
+

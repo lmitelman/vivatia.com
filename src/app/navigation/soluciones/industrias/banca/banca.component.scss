@@ -26,8 +26,29 @@ h1 {
 h5 {
     font-size: 30px;
     line-height: 2.0;
-    font-weight: 100;
     margin: 0%;
+}
+
+// SOLUCIONES PARA TU INDUSTRIA
+
+.logo-solucion {
+    max-width: 6rem;
+}
+
+.bg-main2 {
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.soluciones {
+    flex-direction: row;
+}
+
+.solucion {
+    width: 18%;
 }
 
 // BENEFICIOS 
@@ -38,7 +59,7 @@ h5 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 55%;
+    height: auto;
 }
 
 .small-logo {
@@ -87,7 +108,7 @@ p {
 
     .header {
         padding-top: 20%;
-        height: 55%;
+        height: 58%;
         opacity: 1.47;
     }
 
@@ -106,6 +127,16 @@ p {
         letter-spacing: 0.5px;
     }
 
+    // SOLUCIONES PARA TU INDUSTRIA
+
+    .soluciones {
+        flex-direction: row;
+    }
+
+    .solucion {
+        width: 40%;
+    }
+
     // BENEFICIOS
 
     .benefitsDesktop {
@@ -119,5 +150,10 @@ p {
 
     .benefitsMobile h2 {
         font-size: 20px;
+    }
+
+    .benefitsMobile h5 {
+        font-size: 20px;
+        font-weight: bold;
     }
 }

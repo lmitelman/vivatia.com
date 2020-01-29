@@ -18,12 +18,12 @@ export class SolucionesComponent implements OnInit {
     {
         name: 'Seguros',
         image: 'assets/icon-seguros.png',
-        path: '/nopath'
+        path: '/seguros'
     },
     {
         name: 'Salud',
         image: 'assets/icon-salud.png',
-        path: '/nopath'
+        path: '/salud'
     },
     {
         name: 'Manufactura',

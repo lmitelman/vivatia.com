@@ -11,62 +11,29 @@ export class SaludComponent implements OnInit {
 
   dataCardsSalud: any[] = [
     {
-      name: 'Mesa de entrada',
-      problems: [
-        'Falta de controles y alertas.',
-        'Excesivos tiempos de respuesta.',
-        'Falta de espacio físico para el almacenamiento documental.'
-      ],
-      benefits: [
-        'Captura de información y extracción de datos',
-        'Aumento de un 30% en productividad.',
-        'Mayor capacidad de monitoreo, validación y seguimiento.'
-      ],
+      name: 'Auditoría médica <br> y pagos',
+      icon: 'assets/auditoria.png'
+    },
+    {
+      name: 'Afiliaciones',
+      icon: 'assets/afiliaciones.png'
     },
     {
       name: 'Reintegros',
-      problems: [
-        'Falta de controles y alertas.',
-        'Excesivos tiempos de respuesta.',
-        'Atraso en los reintegros hacia los clientes.'
-      ],
-      benefits: [
-        'Terminales de autogestión.',
-        'Repositorio digital centralizado.',
-        'Reducicción en costos de almacenamiento de archivos.'
-      ],
+      icon: 'assets/creditos-hipotecarios.png'
     },
     {
-      name: 'Reclamos',
-      problems: [
-        'Falta de controles y alertas.',
-        'Excesivos tiempos de respuesta.',
-        'Falta de espacio físico para el almacenamiento documental.'
-      ],
-      benefits: [
-        'Único repositorio.',
-        'Respuestas instantáneas.',
-        'Alertas electrónicas a clientes.',
-      ],
+      name: 'Facturación',
+      icon: 'assets/solicitudes-de-apertura.png'
+    },
+    {
+      name: 'Historia clínica',
+      icon: 'assets/historia-clinica.png'
     },
   ];
 
   constructor(private dialog: MatDialog) {}
 
-
   ngOnInit() {
   }
-
-  openSolutionsModal(value): void {
-    const dialogRef = this.dialog.open(SolucionesModalComponent, {
-      height: '380px',
-      width: '550px',
-      data: this.dataCardsSalud[value]
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-  }
-
 }

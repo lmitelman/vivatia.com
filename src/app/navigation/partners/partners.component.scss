@@ -30,6 +30,32 @@ p {
     line-height: 2.4;
 }
 
+// SOLUCIONES PARA TU INDUSTRIA
+
+.logo-solucion {
+    max-width: 3rem;
+}
+
+.bg-main2 {
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.soluciones {
+    flex-direction: row;
+}
+
+.solucion {
+    width: 20%;
+}
+
+.solucion p {
+    font-size: 13px;
+}
+
 @media only screen and (min-width: 100px) and (max-width: 812px) {
 
     .title-main {
@@ -73,5 +99,21 @@ p {
     h6 {
         font-size: 14px;
         text-align: center;
+    }
+
+    // SOLUCIONES PARA TU INDUSTRIA
+
+    .soluciones {
+        flex-direction: row;
+    }
+
+    .solucion {
+        width: 90%;
+        margin-bottom: 3%;
+    }
+
+    p {
+        font-size: 13px;
+        display: block;
     }
 }

@@ -13,26 +13,46 @@ export class BancaComponent implements OnInit {
 
   dataCardsBanca: any[] = [
     {
-      name: 'Gestión de solicitudes de aperturas y mantenimiento de cuentas',
-      icon: 'none'
+      name: 'Solicitudes de créditos <br> personales, hipotecarios <br> y/o prendarios',
+      icon: 'assets/creditos-hipotecarios.png'
     },
     {
-      name: 'Solicitudes de créditos personales, hipotecarios y/o prendarios',
-      icon: 'none'
+      name: 'Solicitudes de aperturas <br> y mantenimiento <br> de cuentas',
+      icon: 'assets/solicitudes-de-apertura.png'
+    },
+    {
+      name: 'Solicitudes de <br> tarjetas de créditos',
+      icon: 'assets/tarjetas.png'
+    },
+    {
+      name: 'Solicitudes <br> multiproducto',
+      icon: 'assets/solicitudes-multiproceso.png'
+    },
+    {
+      name: 'Firma <br> digital',
+      icon: 'assets/firma-digital-banca.png'
+    },
+    {
+      name: 'Solicitudes de <br> comercio exterior',
+      icon: 'assets/comercio-exterior.png'
+    },
+    {
+      name: 'Alertas de <br> lavado de dinero',
+      icon: 'assets/alertas-lavado.png'
+    },
+    {
+      name: 'Gestión de <br> Garantías',
+      icon: 'assets/gestion-de-garantias.png'
+    },
+    {
+      name: 'Gestión de <br> Flotas',
+      icon: 'assets/gestion-de-flotas.png'
+    },
+    {
+      name: 'Captura de imágenes <br> desde sucursales',
+      icon: 'assets/captura-de-imagenes.png'
     },
   ];
-
-  openSolutionsModal(value): void {
-    const dialogRef = this.dialog.open(SolucionesModalComponent, {
-      height: '380px',
-      width: '550px',
-      data: this.dataCardsBanca[value]
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-  }
 
   ngOnInit() {
   }
