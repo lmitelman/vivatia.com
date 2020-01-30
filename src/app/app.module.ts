@@ -63,6 +63,8 @@ import { OnboardingComponent } from './navigation/soluciones/soluciones-horizont
 import { ComprasComponent } from './navigation/soluciones/soluciones-horizontales/compras/compras.component';
 import { FirmaDigitalComponent } from './navigation/soluciones/soluciones-horizontales/firma-digital/firma-digital.component';
 import { DigitalizacionComponent } from './navigation/soluciones/soluciones-horizontales/digitalizacion/digitalizacion.component';
+import { RetailComponent } from './navigation/soluciones/industrias/retail/retail.component';
+import { ServiciosComponent } from './navigation/soluciones/industrias/servicios/servicios.component';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -111,7 +113,9 @@ export function createTranslateLoader(http: HttpClient) {
     OnboardingComponent,
     ComprasComponent,
     FirmaDigitalComponent,
-    DigitalizacionComponent
+    DigitalizacionComponent,
+    RetailComponent,
+    ServiciosComponent
   ],
   entryComponents: [DialogContactComponent, SolucionesModalComponent],
   imports: [

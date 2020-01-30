@@ -28,27 +28,27 @@ export class SolucionesComponent implements OnInit {
     {
         name: 'Manufactura',
         image: 'assets/icon-industria.png',
-        path: '/nopath'
+        path: '/manufactura'
     },
     {
         name: 'Retail',
         image: 'assets/icon-retail.png',
-        path: '/nopath'
+        path: '/retail'
     },
     {
       name: 'Gobierno',
       image: 'assets/icon-gobierno.png',
-      path: '/nopath'
+      path: '/gobierno'
     },
     {
       name: 'Educacion',
       image: 'assets/icon-educacion.png',
-      path: '/nopath'
+      path: '/educacion'
     },
     {
       name: 'Servicios',
       image: 'assets/icon-servicios.png',
-      path: '/nopath'
+      path: '/servicios'
     },
   ];
 

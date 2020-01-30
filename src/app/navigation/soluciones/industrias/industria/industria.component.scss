@@ -1,9 +1,10 @@
+// HEADER
+
 h1 {
     font-size: 100px;
     font-weight: bold;
     color: white;
-    margin-left: 10%;
-    font-family: "Montserrat", sans-serif;
+    margin: 0%;
 }
 
 .header {
@@ -12,74 +13,147 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50%;
+    height: 55%;
     opacity: 1.47;
 }
 
-.box {
-    transition: box-shadow 0.3s;
-    // border-radius: 50%;
-    height: 140px;
-    width: 140px;
-    white-space: normal !important;
-    background: #fff;
-    margin: 2rem;
+.text-header {
+    width: 70%;
+    padding-left: 10%;
+    animation-delay: 0.3s;
 }
 
-.box2 {
-    transition: box-shadow 0.3s;
-    // border-radius: 50%;
-    height: 100px;
-    width: 140px;
-    white-space: normal !important;
-    background: #2C773F;
-    margin: 2rem;
+h5 {
+    font-size: 30px;
+    line-height: 2.0;
+    margin: 0%;
 }
 
-.box:hover {
-    box-shadow: 0 0 30px rgba(33, 33, 33, 0.2);
+// SOLUCIONES PARA TU INDUSTRIA
+
+.logo-solucion {
+    max-width: 6rem;
 }
 
-.box2:hover {
-    background: #2F7E43;
+.bg-main2 {
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
 }
 
+.soluciones {
+    flex-direction: row;
+}
+
+.solucion {
+    width: 18%;
+}
+
+// BENEFICIOS 
+
+.bg-main3 {
+    background-image: url('../../../../../assets/bg-main5.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.small-logo {
+    max-width: 6rem;
+}
+
+.benefitsMobile {
+    display: none;
+}
+
+.benefitsDesktop {
+    display: flex;
+}
+
+.benefit {
+    width: 22%;
+}
+
+.benefit h5 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 13px;
+    width: 60%;
+}
+
+
+// Notebook
+@media (min-width: 900px) and (max-width: 1920px) {
+    h1 {
+        font-size: 65px;
+    }
+
+    h5 {
+        font-size: 15px;
+        font-weight: lighter;
+        line-height: 1.8;
+        letter-spacing: 0.5px;
+    }
+}
+
+// iPhone X
 @media only screen and (min-width: 100px) and (max-width: 900px) {
+    // HEADER
+
     .header {
-        padding-top: 20%;
-        height: 30%;
+        padding-top: 22%;
+        height: 50%;
         opacity: 1.47;
     }
 
+    .text-header {
+        width: 100%;
+        padding: 12px;
+    }
+
     h1 {
-        font-size: 60px;
+        font-size: 52px;
     }
 
-    .solucionescore {
-        height: 55%;
+    h5 {
+        font-size: 12px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
     }
 
-    h2 {
-        font-size: 25px;
-        padding: 0%;
-    }
+    // SOLUCIONES PARA TU INDUSTRIA
 
-    .soluciones{
+    .soluciones {
         flex-direction: row;
-        flex-wrap: wrap;
     }
 
-    .box2 {
-        transition: box-shadow 0.3s;
-        // border-radius: 50%;
-        height: 100px;
-        width: 140px;
-        white-space: normal !important;
-        background: #2C773F;
-        margin: 10px 15px 10px 15px;
+    .solucion {
+        width: 40%;
     }
 
-    h6 {
-        font-size: 17px;
+    // BENEFICIOS
+
+    .benefitsDesktop {
+        display: none;
+    }
+    
+    .benefitsMobile {
+        display: flex;
+        font-size: 110%;
+    }
+
+    .benefitsMobile h2 {
+        font-size: 20px;
+    }
+
+    .benefitsMobile h5 {
+        font-size: 20px;
+        font-weight: bold;
     }
 }

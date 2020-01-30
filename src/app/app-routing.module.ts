@@ -31,6 +31,8 @@ import { OnboardingComponent } from './navigation/soluciones/soluciones-horizont
 import { ComprasComponent } from './navigation/soluciones/soluciones-horizontales/compras/compras.component';
 import { FirmaDigitalComponent } from './navigation/soluciones/soluciones-horizontales/firma-digital/firma-digital.component';
 import { DigitalizacionComponent } from './navigation/soluciones/soluciones-horizontales/digitalizacion/digitalizacion.component';
+import { RetailComponent } from './navigation/soluciones/industrias/retail/retail.component';
+import { ServiciosComponent } from './navigation/soluciones/industrias/servicios/servicios.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -42,7 +44,6 @@ const routes: Routes = [
   {path: 'seguros', component: SegurosComponent},
   {path: 'productos', component: ProductosComponent},
   {path: 'salud', component: SaludComponent},
-  {path: 'industria', component: IndustriaComponent},
   {path: 'gobierno', component: GobiernoComponent},
   {path: 'educacion', component: EducacionComponent},
   {path: 'cuentas-a-pagar', component: CuentasPagarComponent},
@@ -54,6 +55,9 @@ const routes: Routes = [
   {path: 'partners', component: PartnersComponent},
   {path: 'firma-digital', component: FirmaDigitalComponent},
   {path: 'digitalizacion', component: DigitalizacionComponent},
+  {path: 'manufactura', component: IndustriaComponent},
+  {path: 'retail', component: RetailComponent},
+  {path: 'servicios', component: ServiciosComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

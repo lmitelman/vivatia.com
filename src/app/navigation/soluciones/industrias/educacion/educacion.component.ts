@@ -9,61 +9,30 @@ import { SolucionesModalComponent } from '../../soluciones-modal/soluciones-moda
 })
 export class EducacionComponent implements OnInit {
 
-  dataCardsEducacion: any[] = [
+  dataCardsBanca: any[] = [
     {
-      name: 'Pasantías',
-      problems: [
-        'Falta de controles y alertas.',
-        'Excesivos tiempos de procesamiento.',
-        'Excesivos tiempos de respuesta.'
-      ],
-      benefits: [
-        'Documentación 100% digital.',
-        'Notificaciones y alertas por correo.',
-        'Mayor capacidad de monitoreo, validación y seguimiento.'
-      ],
+      name: 'Legajos de <br> alumnos',
+      icon: 'assets/alumnos.png'
     },
     {
-      name: 'Reclutamiento de alumnos',
-      problems: [
-        'Compleja búsqueda de legajos.',
-        'Pérdida de documentación.',
-        'Falta de espacio físico para el almacenamiento documental.'
-      ],
-      benefits: [
-        'Documentación 100% digital.',
-        'Búsqueda de información mediante campos índices.',
-        'Reducicción en costos de almacenamiento de archivos.'
-      ],
+      name: 'Legajos de <br> profesores',
+      icon: 'assets/profesores.png'
     },
     {
-      name: 'Admisiones',
-      problems: [
-        'Falta de controles y alertas.',
-        'Excesivos tiempos de procesamiento.',
-        'Falta de espacio físico para el almacenamiento documental.'
-      ],
-      benefits: [
-        'Reducción de hasta un 25% en tiempos de procesamiento.',
-        'Notificaciones y alertas por correo.',
-        'Repositorio centralizado.'
-      ],
+      name: 'Inscripcioness',
+      icon: 'assets/incripciones.png'
+    },
+    {
+      name: 'Gestión de exámenes <br> y calificaciones',
+      icon: 'assets/examenes.png'
+    },
+    {
+      name: 'Digitalización de <br> contenidos educativos',
+      icon: 'assets/contenidos.png'
     },
   ];
 
   constructor(private dialog: MatDialog) {}
-
-  openSolutionsModal(value): void {
-    const dialogRef = this.dialog.open(SolucionesModalComponent, {
-      height: '380px',
-      width: '550px',
-      data: this.dataCardsEducacion[value]
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-  }
 
   ngOnInit() {
   }

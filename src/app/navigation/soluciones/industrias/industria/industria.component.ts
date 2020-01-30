@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndustriaComponent implements OnInit {
 
+    dataCardsIndustria: any[] = [
+    {
+      name: 'Mantenimiento <br> de plantas',
+      icon: 'assets/mantenimieno-plantas.png'
+    },
+    {
+      name: 'Mantenimiento <br> de equipamiento',
+      icon: 'assets/mantenimiento-equipamiento.png'
+    },
+    {
+      name: 'Elementos para <br> el personal',
+      icon: 'assets/elementos.png'
+    },
+  ];
+
   constructor() { }
 
   ngOnInit() {

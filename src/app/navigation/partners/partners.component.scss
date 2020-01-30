@@ -19,7 +19,7 @@
     font-family: 'Montserrat', Helvetica;
 }
   
-p {
+.bg-home1 p {
     font-size: 25px;
 }
 
@@ -30,7 +30,7 @@ p {
     line-height: 2.4;
 }
 
-// SOLUCIONES PARA TU INDUSTRIA
+// PODES SUMARTE COMO
 
 .logo-solucion {
     max-width: 3rem;
@@ -55,6 +55,58 @@ p {
 .solucion p {
     font-size: 13px;
 }
+
+// OEM
+
+.item2 {
+    background-color: #F3F3F3; 
+    height: 40%;
+}
+  
+.img-captika2 {
+    max-width: 400px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.descripcion2 h6 {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.descripcion2 {
+    width: 30%; 
+    font-family: 'Montserrat';
+    order: 1;
+}
+
+// POTENCIA TU NEGOCIO
+
+p {
+    font-size: 15px;
+}
+
+.EncontraTuSolucion h5 {
+    font-size: 20px;
+}
+  
+.EncontraTuSolucion {
+    // background-image: url('../../assets/trazado.png');
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.process {
+    width: 22%;
+}
+
+.process img {
+    max-width: 22%;
+    height: auto;
+}
+
 
 @media only screen and (min-width: 100px) and (max-width: 812px) {
 
@@ -101,7 +153,7 @@ p {
         text-align: center;
     }
 
-    // SOLUCIONES PARA TU INDUSTRIA
+    // PODES SUMARTE COMO
 
     .soluciones {
         flex-direction: row;
@@ -115,5 +167,66 @@ p {
     p {
         font-size: 13px;
         display: block;
+    }
+
+    // OEM
+
+    .descripcionItem {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .descripcion2 {
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+        order: 0;
+    }
+
+    .descripcion2 h6 {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .item2 {
+        background-color: #F3F3F3; 
+        height: 30%;
+    }
+
+    .img-captika2 {
+        max-width: 280px;
+        height: auto;
+        margin: 0%;
+    }
+
+    // POTENCIA TU NEGOCIO
+
+    .EncontraTuSolucion h4 {
+        font-size: 25px;
+        text-align: center;
+        margin: 0px 10px;
+    }
+
+    .EncontraTuSolucion img{
+        width: 40px;
+        height: 40px;
+    } 
+
+    .EncontraTuSolucion .letra {
+        flex-direction: column;
+    }
+
+    .process {
+        width: 90%;
+        padding: 0%;
+    }
+
+    .EncontraTuSolucion .letra img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .EncontraTuSolucion .letra h5 {
+        font-size: 20px;
     }
 }
