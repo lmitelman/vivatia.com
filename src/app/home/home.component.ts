@@ -18,9 +18,16 @@ import Typed from 'typed.js';
 })
 export class HomeComponent implements OnInit {
 
+  fontText: String[] = [
+    'digital.',
+    'paperless.',
+    'tecnológica.',
+    'vivatia.'
+  ];
   contactForm: FormGroup;
   public isMobileLayout = false;
   typed: any;
+  positionArrayText = 0;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -46,6 +53,10 @@ export class HomeComponent implements OnInit {
 
   openDialog() {
     this.dialog.open(DialogContactComponent);
+  }
+
+  doSmth(indexOfString){
+    this.positionArrayText = indexOfString;
   }
 }
 
