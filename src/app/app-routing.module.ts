@@ -33,6 +33,7 @@ import { FirmaDigitalComponent } from './navigation/soluciones/soluciones-horizo
 import { DigitalizacionComponent } from './navigation/soluciones/soluciones-horizontales/digitalizacion/digitalizacion.component';
 import { RetailComponent } from './navigation/soluciones/industrias/retail/retail.component';
 import { ServiciosComponent } from './navigation/soluciones/industrias/servicios/servicios.component';
+import { CapacitacionComponent } from './navigation/capacitacion/capacitacion.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -58,6 +59,7 @@ const routes: Routes = [
   {path: 'manufactura', component: IndustriaComponent},
   {path: 'retail', component: RetailComponent},
   {path: 'servicios', component: ServiciosComponent},
+  {path: 'capacitacion', component: CapacitacionComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

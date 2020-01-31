@@ -26,63 +26,13 @@
 // 
 
 .text-personalizacion {
-    width: 50%;
+    width: 40%;
     line-height: 2.4;
 }
 
-// PODES SUMARTE COMO
+// CAPACITACION
 
-.logo-solucion {
-    max-width: 3rem;
-}
-
-.bg-main2 {
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-}
-
-.soluciones {
-    flex-direction: row;
-}
-
-.solucion {
-    width: 20%;
-}
-
-.solucion p {
-    font-size: 13px;
-}
-
-// OEM
-
-.item2 {
-    background-color: #F3F3F3; 
-    height: 40%;
-}
-  
-.img-captika2 {
-    max-width: 400px;
-    height: auto;
-    margin-right: 50px;
-}
-
-.descripcion2 h6 {
-    font-size: 20px;
-    line-height: 1.8;
-}
-
-.descripcion2 {
-    width: 30%; 
-    font-family: 'Montserrat';
-    order: 1;
-}
-
-// POTENCIA TU NEGOCIO
-
-.container-potencia {
+.container-capacitacion {
     align-items: flex-start;
 }
 
@@ -141,7 +91,6 @@ p {
 
     .bg-home1 p {
         font-size: 15px;
-        text-align: center;
     }
 
     //
@@ -203,9 +152,9 @@ p {
         margin: 0%;
     }
 
-    // POTENCIA TU NEGOCIO
+    // CAPACITACION
 
-    .container-potencia {
+    .container-capacitacion {
         align-items: center;
     }
 
