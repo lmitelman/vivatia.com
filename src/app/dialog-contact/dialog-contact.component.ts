@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
 import { AdminService } from '../services/admin.service';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
   selector: 'app-dialog-contact',
@@ -17,7 +18,7 @@ export class DialogContactComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private snackBar: MatSnackBar,
-    private adminService: AdminService
+    private adminService: AdminService    
   ) { }
 
   ngOnInit() {
@@ -26,9 +27,9 @@ export class DialogContactComponent implements OnInit {
 
   private createContactForm() {
     this.contactForm = this.formBuilder.group({
-      userName: ['', [Validators.required]],
-      userMail: ['', [Validators.required]],
-      userMessage: ['', [Validators.required]],
+      from_name: ['', [Validators.required]],
+      user_email: ['', [Validators.required]],
+      message: ['', [Validators.required]],
     });
   }
 
@@ -36,32 +37,22 @@ export class DialogContactComponent implements OnInit {
     this.snackBar.open(message, action, { duration: 3000 });
   }
 
-  login() {
-    this.adminService.login('admin', 'thuban', true)
-    .subscribe(
-      data => {}
-    )
+  
+  public sendContactanosEmail(e: Event) {
+    let template_params = {
+      "reply_to": "reply_to_value",
+      "user_name": "",
+      "to_name": "Lautaro",
+      "from_name": this.contactForm.get('from_name').value,
+      "message_html": this.contactForm.get('message').value
+    }
+    e.preventDefault();
+    emailjs.send('gmail', 'template_5K0dpaJj', template_params, 'user_FtQgtMf0GtAy339a8Np5O')
+      .then((result: EmailJSResponseStatus) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
   }
 
-  createDocument() {
-    if (this.contactForm.valid) {
-      this.openSnackBar('Su consulta ha sido enviada', 'Aceptar');
-      const stream = this.stream.split('base64,');
-      const params = {
-        ...this.contactForm.value,
-        stream: stream[1]
-      }
-      this.adminService.createDocument(params)
-        .subscribe(
-          data => {
-            this.openSnackBar('Su consulta ha sido enviada', 'Aceptar');
-          },
-          (error) => {
-            console.log(error);
-          }
-        )
-    } else {
-      this.openSnackBar('Completa los datos solicitados', 'Aceptar');
-    }
-  }
 }
