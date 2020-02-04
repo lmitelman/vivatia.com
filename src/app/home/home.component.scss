@@ -4,8 +4,17 @@
   color: #2c773f !important;
 }
 
+.boton{
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background-color: #24b54a;
+  cursor: pointer;
+}
+
 .bg-home1 {
-  background-image: url('../../assets/test-home3.png');
+  background-image: url('../../assets/test-home4.png');
   /* Center and scale the image nicely */
   background-position: right;
   background-repeat: no-repeat;

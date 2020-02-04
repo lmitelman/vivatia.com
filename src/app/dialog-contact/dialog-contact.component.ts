@@ -37,12 +37,11 @@ export class DialogContactComponent implements OnInit {
     this.snackBar.open(message, action, { duration: 3000 });
   }
 
-  
   public sendContactanosEmail(e: Event) {
     let template_params = {
-      "reply_to": "reply_to_value",
+      "reply_to": "",
       "user_name": "",
-      "to_name": "Lautaro",
+      "to_name": "",
       "from_name": this.contactForm.get('from_name').value,
       "message_html": this.contactForm.get('message').value
     }

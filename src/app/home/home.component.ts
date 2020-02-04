@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
   fontText: String[] = [
     'digital.',
     'paperless.',
+    'vivatia.',
     'tecnológica.',
-    'vivatia.'
   ];
   contactForm: FormGroup;
   public isMobileLayout = false;

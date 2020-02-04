@@ -56,11 +56,26 @@ h5 {
 }
 
 .benefit {
-    width: 25%;
+    width: 20%;
 }
 
 p {
     font-size: 13px;
+}
+
+// MAKING IT WORK
+
+.makingitwork {
+    background-color: #2C773F;
+}
+
+.img-makingitwork {
+    max-width: 500px;
+    height: auto;
+}
+
+.makingitwork h4 {
+    color: #FFFFFF;
 }
 
 // NUESTRA HISTORIA
@@ -81,6 +96,7 @@ p {
 
 .item2 .descripcion {
     order: 1;
+    text-align: right;
 }
 
 .descripcionItem h5 {
@@ -170,6 +186,13 @@ h6 {
         font-size: 10px;
     }
 
+    // MAKING IT WORK
+
+    .img-makingitwork {
+        max-width: 300px;
+        height: auto;
+    }
+
     // NUESTRA HISTORIA
 
     .descripcionItem {
@@ -201,6 +224,7 @@ h6 {
 
     .item2 .descripcion {
         order: 0;
+        text-align: left;
     }
 
     .img-equipo {

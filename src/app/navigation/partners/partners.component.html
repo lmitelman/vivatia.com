@@ -1,8 +1,8 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
     <div class="d-flex flex-column">
-        <h2 class="font-weight-bold text-dark subtitle animated pulse mb-2">Global Partner Program</h2> 
+        <h2 class="font-weight-bold text-dark subtitle animated pulse mb-1">Global Partner Program</h2> 
         <p>Sumáte a la experiencia Vivatia y observá <br> cómo tus ventas crecen</p>       
-        <button mat-raised-button class="mt-2 rounded-pill boton text-white">Sumate como partner</button>
+        <button mat-raised-button class="mt-1 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Sumate como partner</button>
     </div>
 </section>
 
@@ -57,5 +57,10 @@
             <p class="pt-1 text-center text-dark w-75">Comenzá a hacer<br>crecer tu negocio</p>
         </div>
     </div>
+</section>
+
+<section class="text-dark sumate d-flex flex-column justify-content-center align-items-center" style="background-color: white;">
+    <h4 class="mb-3 animated font-weight-bold fadeInDown text-center">Estás a un paso de ser nuestro partner. <br> Sumate y crecé junto a tu negocio.</h4>
+    <button mat-raised-button class="rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Quiero ser partner</button>
 </section>
 

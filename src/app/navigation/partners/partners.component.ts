@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-partners',
@@ -30,9 +32,15 @@ export class PartnersComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(
+    private dialog: MatDialog,
+  ) {}
 
   ngOnInit() {
+  }
+
+  openDialog() {
+    this.dialog.open(DialogContactComponent);
   }
 
 }
