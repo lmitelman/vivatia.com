@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
 import { MatDialog } from '@angular/material';
+import { DialogContactComponent } from '../../dialog-contact/dialog-contact.component';
+import { DialogPartnersComponent } from './dialog-partners/dialog-partners.component';
 
 @Component({
   selector: 'app-partners',
@@ -40,7 +41,7 @@ export class PartnersComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogContactComponent);
+    this.dialog.open(DialogPartnersComponent , {  height: '470px', width: '600px',});
   }
 
 }

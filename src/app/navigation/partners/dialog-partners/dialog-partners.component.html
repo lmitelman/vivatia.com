@@ -1,0 +1,45 @@
+<section class="d-flex justify-content-end">
+    <!-- <button mat-button><i class="material-icons letra2">help_outline</i></button> -->
+    <button mat-button mat mat-dialog-close><i class="material-icons letra2">close</i></button>
+</section>
+
+<mat-dialog-content>
+    <mat-horizontal-stepper #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+            <ng-template matStepLabel>Seleccioná</ng-template>
+            <div class="d-flex justify-content-center py-3">
+                <h6>Seleccióná el tipo de partner que quisieras ser</h6>
+            </div>
+            <div class="w-25 py-1">
+                <form [formGroup]="firstFormGroup">
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button *ngFor="let data of dataCardsPartners" id="{{data.name}}" value="{{data.name}}">
+                            <p class="m-0">{{data.name}}</p>
+                        </mat-radio-button>
+                    </mat-radio-group>
+                </form>
+            </div>
+            <button mat-raised-button matStepperNext class="mt-2 rounded-pill boton text-white px-3 py-1">Siguiente</button>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Contanos</ng-template>
+            <mat-form-field>
+              <input matInput placeholder="Address" formControlName="secondCtrl" required>
+            </mat-form-field>
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Finalizar</ng-template>
+          You are now done.
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </mat-step>
+      </mat-horizontal-stepper>
+</mat-dialog-content>
