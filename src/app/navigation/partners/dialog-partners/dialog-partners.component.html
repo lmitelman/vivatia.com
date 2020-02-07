@@ -13,7 +13,7 @@
             <div class="w-25 py-1">
                 <form [formGroup]="firstFormGroup">
                     <mat-radio-group aria-label="Select an option">
-                        <mat-radio-button *ngFor="let data of dataCardsPartners" id="{{data.name}}" value="{{data.name}}">
+                        <mat-radio-button *ngFor="let data of dataCardsPartners" id='tipo_partner' value="{{data.name}}">
                             <p class="m-0">{{data.name}}</p>
                         </mat-radio-button>
                     </mat-radio-group>
@@ -23,23 +23,37 @@
         </mat-step>
         <mat-step [stepControl]="secondFormGroup">
           <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Contanos</ng-template>
-            <mat-form-field>
-              <input matInput placeholder="Address" formControlName="secondCtrl" required>
-            </mat-form-field>
-            <div>
-              <button mat-button matStepperPrevious>Back</button>
-              <button mat-button matStepperNext>Next</button>
+            <ng-template matStepLabel>Empresa</ng-template>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+              <mat-form-field class="input-group">
+                  <input matInput required class="form-control border-0" placeholder="¿A qué se dedica tu empresa?" formControlName="user_company" autocomplete="off">
+              </mat-form-field>
+              <mat-form-field class="input-group">
+                  <input matInput required class="form-control border-0" placeholder="¿Cuál es tu rol en la empresa?" formControlName="user_role" autocomplete="off">
+              </mat-form-field>
+              <mat-form-field class="input-group">
+                <input matInput required class="form-control border-0" placeholder="¿En qué países operas?*" formControlName="company_countries" autocomplete="off">
+              </mat-form-field>
             </div>
           </form>
+          <button mat-raised-button matStepperNext class="rounded-pill boton text-white px-3 py-1">Siguiente</button>
         </mat-step>
-        <mat-step>
-          <ng-template matStepLabel>Finalizar</ng-template>
-          You are now done.
-          <div>
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button (click)="stepper.reset()">Reset</button>
-          </div>
+        <mat-step [stepControl]="thirdFormGroup">
+          <form [formGroup]="thirdFormGroup">
+            <ng-template matStepLabel>Empresa</ng-template>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+              <mat-form-field class="input-group">
+                  <input matInput required class="form-control border-0" placeholder="Nombre" formControlName="from_name" autocomplete="off">
+              </mat-form-field>
+              <mat-form-field class="input-group">
+                  <input matInput required class="form-control border-0" placeholder="Apellido" formControlName="from_last_name" autocomplete="off">
+              </mat-form-field>
+              <mat-form-field class="input-group">
+                <input matInput required class="form-control border-0" placeholder="Mail" formControlName="user_email" autocomplete="off">
+              </mat-form-field>
+            </div>
+          </form>
+          <input class="rounded-pill boton text-white py-2 px-4" type="submit" value="Enviar" (click)="sendPartnersEmail()">
         </mat-step>
       </mat-horizontal-stepper>
 </mat-dialog-content>

@@ -7,26 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CapacitacionComponent implements OnInit {
 
-  dataCardsPartners: any[] = [
+  itemsCapacitacionProducto: any[] = [
     {
-      name: 'Revendedor',
-      icon: 'assets/revendedor.png',
-      desc: 'Si querés revender nuestros productos y soluciones de software'
+      name: 'Instalaciones de producto.',
     },
     {
-      name: 'Integrador',
-      icon: 'assets/integrador.png',
-      desc: 'Si tu objetivo es revender nuestros productos con tu valor agregado, desarrollando soluciones'
+      name: 'Configuraciones básicas y avanzadas.',
     },
     {
-      name: 'Educador',
-      icon: 'assets/educador.png',
-      desc: 'Si buscas capacitar a otras personas o empresas en el uso de nuestros productos de software'
-    },
-    {
-      name: 'Socio tecnológico',
-      icon: 'assets/socio.png',
-      desc: 'Si consideras que tus productos y los nuestros pueden potenciarse juntos'
+      name: 'Creación de una solución de principio a fin, en base a un caso práctico.',
     },
   ];
 

@@ -26,7 +26,7 @@ h6 {
 }
 
 .descripcion {
-  width: 30%; 
+  width: 23%; 
   font-family: 'Montserrat';
 }
 
@@ -37,7 +37,7 @@ h4 {
 // CAPTURA
 
 .item1 {
-  height: auto;
+  height: 50%;
 }
 
 .img-captika1 {
@@ -60,7 +60,7 @@ h4 {
 }
 
 .descripcion2 {
-  width: 30%; 
+  width: 25%; 
   font-family: 'Montserrat';
   order: 1;
   text-align: end;
@@ -92,7 +92,7 @@ h4 {
 }
 
 .thuban {
-  height: 50%;
+  height: 70%;
   background-color: #F3F3F3; 
 }
 
@@ -170,18 +170,19 @@ h4 {
   }
 
   .img-captika1 {
-    max-width: 160px;
-    height: 160px;
+    max-width: 350px;
+    height: auto;
+    margin: 0px;
   }
   
   .img-captika2 {
-    max-width: 280px;
+    max-width: 350px;
     height: auto;
-    margin-bottom: 20px;
+    margin: 0px;
   }
   
   .img-captika3 {
-    max-width: 275px;
+    max-width: 300px;
     height: auto;
   }
 
@@ -208,11 +209,11 @@ h4 {
     font-family: 'Montserrat';
   }
 
-  .descripcionthuban h2 {
+  .descripcionthuban h3 {
     font-size: 20px;
   }
 
-  .descripcionthuban h5 {
+  .descripcionthuban h6 {
     font-size: 12px;
   }
 

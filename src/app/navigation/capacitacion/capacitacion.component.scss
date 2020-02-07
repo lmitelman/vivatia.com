@@ -15,7 +15,7 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60%;
+    height: 50%;
     justify-content: start;
 }
   
@@ -69,6 +69,15 @@ p {
 .process img {
     max-width: 22%;
     height: auto;
+}
+
+ul {
+    list-style-image: url('../../../assets/bullet.png');
+}
+
+p {
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 
 

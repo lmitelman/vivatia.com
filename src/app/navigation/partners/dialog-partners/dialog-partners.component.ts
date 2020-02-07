@@ -15,6 +15,7 @@ export class DialogPartnersComponent implements OnInit {
   error: string;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  thirdFormGroup: FormGroup;
 
   constructor(
     private _formBuilder: FormBuilder,
@@ -46,10 +47,17 @@ export class DialogPartnersComponent implements OnInit {
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
+      firstCtrl: ['', Validators.required],
     });
     this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
+      empresa: ['', Validators.required],
+      rol: ['', Validators.required],
+      paises: ['', Validators.required]
+    });
+    this.thirdFormGroup = this._formBuilder.group({
+      nombre: ['', Validators.required],
+      apellido: ['', Validators.required],
+      mail: ['', Validators.required]
     });
   }
 
@@ -57,16 +65,18 @@ export class DialogPartnersComponent implements OnInit {
     this.snackBar.open(message, action, { duration: 3000 });
   }
 
-  public sendContactanosEmail(e: Event) {
+  public sendPartnersEmail(e: Event) {
     let template_params = {
-      "reply_to": "",
-      "user_name": "",
-      "to_name": "",
-      "from_name": this.contactForm.get('from_name').value,
-      "message_html": this.contactForm.get('message').value
+      // "partner_type": ,
+      "from_name": this.thirdFormGroup.get('from_name').value,
+      "from_last_name": this.thirdFormGroup.get('from_last_name').value,
+      "user_email": this.thirdFormGroup.get('user_email').value,
+      "company_countries": this.secondFormGroup.get('company_countries').value,
+      "user_role": this.secondFormGroup.get('user_role').value,
+      "user_company": this.secondFormGroup.get('user_company').value
     }
-    e.preventDefault();
-    emailjs.send('gmail', 'template_5K0dpaJj', template_params, 'user_FtQgtMf0GtAy339a8Np5O')
+    // e.preventDefault();
+    emailjs.send('default_service', 'partners', template_params, 'user_FtQgtMf0GtAy339a8Np5O')
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
       }, (error) => {
