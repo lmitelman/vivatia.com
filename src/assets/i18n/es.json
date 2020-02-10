@@ -1,4 +1,27 @@
 {
-    "_comments":" // NOSOTROS",
-    "header_nosotros": "En un contexto en el cual los papeles dejan de ser protagonistas en los procesos, te ayudamos a emprender un camino de transformación digital aplicando nuevas tecnologías."
+    "demo": {
+        "title": "Translation demo",
+        "text": "This is a simple demonstration app for ngx-translate"
+    },
+    "HOME": {
+
+    },
+    "NOSOTROS": {
+        "DESCRIPCION_HEADER": "En un contexto en el cual los papeles dejan de ser protagonistas en los procesos, te ayudamos a emprender un camino de transformación digital aplicando nuevas tecnologías.",
+        "NUESTRA_HISTORIA": "Nuestra historia",
+        "NUESTRA_HISTORIA_DESC": "Vivatia surge en 1999 con el objetivo de crear soluciones para posibilitar la gestión digital de la información en las organizaciones, de volverlas más eficientes y productivas, y juntos contribuir con el cuidado del medio ambiente, disminuyendo el uso de papel. De esta manera nuestros clientes pueden vivir la experiencia Vivatia, respaldándose en la tecnologia, conocimiento y capacidades de la empresa, mientras los acompañamos en el camino de la transformación digital y mejora continua de sus procesos.",
+        "MAKINGITWORK1": "Creamos tecnologías de la información <br> y las aplicamos en tus procesos",
+        "MAKINGITWORK2": "y de esta manera, potenciamos a <br> tu empresa y tu negocio día a dia",
+        "DONDE_ESTAMOS": "¿Donde estamos?",
+        "DONDE_ESTAMOS_DESC": "Con más de 20 años de experiencia, a través de nuestra extensa red de socios de negocios brindamos soluciones globales para la gestión digital de la información.",
+        "PAISES_DONDE_ESTAMOS": "Argentina - España - Estados Unidos - México - Venezuela - Colombia - Ecuador - Perú - Chile - Uruguay",
+        "NUESTRO_EQUIPO": "Nuestro equipo",
+        "NUESTRO_EQUIPO_DESC": "En Vivatia nos encontramos siempre cambiando, somos innovadores y flexibles. Nos proponemos conseguir que cada uno de nuestros clientes viva una experiencia personalizada, excepcional y diferente, obteniendo los resultados esperados mientras disfruta del proceso. Enfrentamos desafíos nuevos y emocionantes, mezclando nuestros conocimientos con la pasión por el trabajo, creando nuestra propia experiencia.",
+        "PORQUE_ELEJIRNOS": "¿Por qué elegirnos?",
+        "BENEFICIO1": "Generamos ahorros <br> operativos",
+        "BENEFICIO2": "Incrementamos la <br> productividad",
+        "BENEFICIO3": "Volvemos a las empresas <br> Green Business",
+        "BENEFICIO4": "Incrementamos la <br> seguridad",
+        "IRAM": "Contamos con la certificación de<br><span class='font-weight-bold'>Gestión de Calidad IRAM RI-9000-6446<br>IQNet Management System."
+    }
 }

@@ -47,17 +47,17 @@ export class DialogPartnersComponent implements OnInit {
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required],
+      partner_type: ['', Validators.required],
     });
     this.secondFormGroup = this._formBuilder.group({
-      empresa: ['', Validators.required],
-      rol: ['', Validators.required],
-      paises: ['', Validators.required]
+      user_company: ['', Validators.required],
+      user_role: ['', Validators.required],
+      company_countries: ['', Validators.required]
     });
     this.thirdFormGroup = this._formBuilder.group({
-      nombre: ['', Validators.required],
-      apellido: ['', Validators.required],
-      mail: ['', Validators.required]
+      from_name: ['', Validators.required],
+      from_last_name: ['', Validators.required],
+      user_email: ['', Validators.required]
     });
   }
 
@@ -68,6 +68,7 @@ export class DialogPartnersComponent implements OnInit {
   public sendPartnersEmail(e: Event) {
     let template_params = {
       // "partner_type": ,
+      "partner_type": this.firstFormGroup.get('partner_type').value,
       "from_name": this.thirdFormGroup.get('from_name').value,
       "from_last_name": this.thirdFormGroup.get('from_last_name').value,
       "user_email": this.thirdFormGroup.get('user_email').value,

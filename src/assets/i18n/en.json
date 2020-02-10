@@ -1,4 +1,27 @@
 {
-    "_comments":" // NOSOTROS",
-    "header_nosotros": "In a context in which papers took a secondary role in business processes, we help you in the digital transformation journey."
+    "demo": {
+        "title": "Translation demo",
+        "text": "This is a simple demonstration app for ngx-translate"
+    },
+    "HOME": {
+
+    },
+    "NOSOTROS": {
+        "DESCRIPCION_HEADER": "In a context in which papers took a secondary role in business processes, we help you in the digital transformation journey.",
+        "NUESTRA_HISTORIA": "Our history",
+        "NUESTRA_HISTORIA_DESC": "Vivatia was founded in 1999 with the objective of creating solutions to make digital management possible for organizations, helping them to be more efficient and productive, and making them greener by reducing their use of paper. In this way, our clients can live the “Vivatia experience”, backing up on the technology, knowledge and capabilities we have. We accompany them on the path of digital transformation and continuous improvement of their processes.",
+        "MAKINGITWORK1": "We create information technologies <br> and apply them to your process.",
+        "MAKINGITWORK2": "In this way, we empower <br> your business day by day.",
+        "DONDE_ESTAMOS": "Where are we?",
+        "DONDE_ESTAMOS_DESC": "With 20 years of experience, through our extensive network of business partners we provide global solutions for digital management of information.",
+        "PAISES_DONDE_ESTAMOS": "Argentina - Spain - United States - Mexico - Venezuela - Colombia - Ecuador - Peru - Chile - Uruguay",
+        "NUESTRO_EQUIPO": "Our team",
+        "NUESTRO_EQUIPO_DESC": "In Vivatia we are in constant movement, always changing, we are innovators and flexibles. NWe aim to achieve that each one of our clients undergoes a personalized exceptional and unique experience while they get results and enjoy the process. Facing new and exciting challenges we combine our knowledge and passion creating our own experience.",
+        "PORQUE_ELEJIRNOS": "Why us?",
+        "BENEFICIO1": "We generate <br> operational costs savings",
+        "BENEFICIO2": "We reduce <br> proceses cost",
+        "BENEFICIO3": "We turn companies <br> into Green Businesses",
+        "BENEFICIO4": "We increase <br> security",
+        "IRAM": "Contamos con la certificación de<br><span class='font-weight-bold'>Gestión de Calidad IRAM RI-9000-6446<br>IQNet Management System."
+    }
 }

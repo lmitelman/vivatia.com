@@ -12,8 +12,8 @@
             </div>
             <div class="w-25 py-1">
                 <form [formGroup]="firstFormGroup">
-                    <mat-radio-group aria-label="Select an option">
-                        <mat-radio-button *ngFor="let data of dataCardsPartners" id='tipo_partner' value="{{data.name}}">
+                    <mat-radio-group aria-label="Select an option" formControlName="partner_type">
+                        <mat-radio-button *ngFor="let data of dataCardsPartners" value="{{data.name}}">
                             <p class="m-0">{{data.name}}</p>
                         </mat-radio-button>
                     </mat-radio-group>
@@ -40,7 +40,7 @@
         </mat-step>
         <mat-step [stepControl]="thirdFormGroup">
           <form [formGroup]="thirdFormGroup">
-            <ng-template matStepLabel>Empresa</ng-template>
+            <ng-template matStepLabel>Sobre vos</ng-template>
             <div class="d-flex flex-column align-items-center justify-content-center">
               <mat-form-field class="input-group">
                   <input matInput required class="form-control border-0" placeholder="Nombre" formControlName="from_name" autocomplete="off">

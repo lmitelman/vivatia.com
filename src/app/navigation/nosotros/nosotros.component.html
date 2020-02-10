@@ -1,15 +1,15 @@
 <section class="bg-main1 d-flex flex-column align-items-start justify-content-center text-white mt-5">
     <div class="text-header">
         <h1 class="font-weight-bold animated fadeInDown">Vivatia</h1>
-        <h5 class="font-weight-lighter animated fadeInDown">{{ 'header_nosotros' | translate }}</h5>
+        <h5 class="font-weight-lighter animated fadeInDown">{{ "NOSOTROS.DESCRIPCION_HEADER" | translate }}</h5>
     </div>
 </section>
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item1 h-auto py-5" style="background-color: white;">
     <div class="d-flex flex-column descripcion animated fadeInRight">
-        <h4 class="font-weight-bold">Nuestra historia</h4>
+        <h4 class="font-weight-bold">{{ "NOSOTROS.NUESTRA_HISTORIA" | translate }}</h4>
         <br>
-        <h6>Nuestra historia Vivatia surge en 1999 con el objetivo de crear soluciones para posibilitar la gestión digital de la información en las organizaciones, de volverlas más eficientes y productivas, y juntos contribuir con el cuidado del medio ambiente, disminuyendo el uso de papel. De esta manera nuestros clientes pueden vivir la "experiencia Vivatia", respaldándose en la tecnologia, conocimiento y capacidades de la empresa, mientras los acompañamos en el camino de la transformación digital y mejora continua de sus procesos.</h6>
+        <h6>{{ "NOSOTROS.NUESTRA_HISTORIA_DESC" | translate }}</h6>
         <br>
     </div>
     <div class="animated fadeInRight">
@@ -20,24 +20,24 @@
 <div class="makingitwork d-flex text-white flex-column align-items-center py-5">
     <div class="w-50">
         <div class="d-flex justify-content-start my-1 animated fadeInRight">
-            <h4 class="font-italic">Creamos tecnologías de la información <br> y las aplicamos en tus procesos</h4>
+            <h4 class="font-italic" [innerHTML]="'NOSOTROS.MAKINGITWORK1' | translate"></h4>
         </div>
         <div class="d-flex justify-content-center animated fadeIn">
             <img src="assets/itwork.png" class="img-makingitwork">
         </div>
         <div class="d-flex justify-content-end my-1 animated fadeInLeft">
-            <h4 class="font-italic">y de esta manera, potenciamos a <br> tu empresa y tu negocio día a dia</h4>
+            <h4 class="font-italic" [innerHTML]="'NOSOTROS.MAKINGITWORK2' | translate"></h4>
         </div>
     </div>
 </div>
 
 <div class="d-flex justify-content-center align-items-center descripcionItem h-auto py-5" style="background-color: #F3F3F3;">
     <div class="d-flex flex-column descripcion animated fadeInRight">
-        <h4 class="font-weight-bold">¿Donde estamos?</h4>
+        <h4 class="font-weight-bold">{{ "NOSOTROS.DONDE_ESTAMOS" | translate }}</h4>
         <br>
-        <h6>Con más de 20 años de experiencia, a través de nuestra extensa red de socios de negocios brindamos soluciones globales para la gestión digital de la información.</h6>
+        <h6>{{ "NOSOTROS.DONDE_ESTAMOS_DESC" | translate }}</h6>
         <br>
-        <h6 class="paises">Argentina - España - Estados Unidos - México - Venezuela - Colombia - Ecuador - Perú - Chile - Uruguay</h6>
+        <h6 class="paises">{{ "NOSOTROS.PAISES_DONDE_ESTAMOS" | translate }}</h6>
     </div>
     <div>
         <img src="assets/paises.png" class="img-paises" alt="">
@@ -46,9 +46,9 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item2 h-auto py-5" style="background-color: white;">
     <div class="d-flex flex-column descripcion animated fadeInRight">
-        <h4 class="font-weight-bold">Nuestro equipo</h4>
+        <h4 class="font-weight-bold">{{ "NOSOTROS.NUESTRO_EQUIPO" | translate }}</h4>
         <br>
-        <h6>En Vivatia nos encontramos siempre cambiando, somos innovadores y flexibles. Nos proponemos conseguir que cada uno de nuestros clientes viva una experiencia personalizada, excepcional y diferente, obteniendo los resultados esperados mientras disfruta del proceso. Enfrentamos desafíos nuevos y emocionantes, mezclando nuestros conocimientos con la pasión por el trabajo, creando nuestra propia experiencia.</h6>
+        <h6>{{ "NOSOTROS.NUESTRO_EQUIPO_DESC" | translate }}</h6>
     </div>
     <div>
         <img src="assets/nuestro-equipo.png" class="img-equipo" alt="">
@@ -56,59 +56,53 @@
 </div>
 
 <section class="bg-main3 h-auto py-5 benefitsDesktop flex-column justify-content-center align-items-center animated fadeIn" style="background-color: #F3F3F3">
-    <h2 class="mb-5 font-weight-bold">¿Por qué elegirnos?</h2>
+    <h2 class="mb-5 font-weight-bold">{{ "NOSOTROS.PORQUE_ELEJIRNOS" | translate }}</h2>
     <div class="d-flex mt-3 justify-content-center align-items-center text-center w-75">
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-4 small-logo" src="assets/logo-save.png">
-            <p>Generamos ahorros<br>operativos.</p>
+            <p [innerHTML]="'NOSOTROS.BENEFICIO1' | translate"></p>
         </div>
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-4 small-logo" src="assets/logoGrow.png">
-            <p>Incrementamos la <br>productividad</p>
+            <p [innerHTML]="'NOSOTROS.BENEFICIO2' | translate"></p>
         </div>
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-4 small-logo" src="assets/logo-recicle.png">
-            <p>Volvemos a las empresas<br>Green Business</p>
+            <p [innerHTML]="'NOSOTROS.BENEFICIO3' | translate"></p>
         </div>
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-4 small-logo" src="assets/logo-shield.png">
-            <p>Incrementamos la<br>seguridad</p>
+            <p [innerHTML]="'NOSOTROS.BENEFICIO4' | translate"></p>
         </div>
     </div>
 </section>
 
 <section>
     <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center animated fadeIn" style="background-color: #F3F3F3;">
-        <h2 class="my-4 font-weight-bold">¿Por qué elegirnos?</h2>
+        <h2 class="my-4 font-weight-bold">{{ "NOSOTROS.PORQUE_ELEJIRNOS" | translate }}</h2>
         <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false' [showNavigationIndicators]="false"> 
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/logo-save.png">
-                    <p class="mb-5">Generamos ahorros<br>operativos</p>
+                    <p class="mb-5" [innerHTML]="'NOSOTROS.BENEFICIO1' | translate"></p>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-5 small-logo" src="assets/logoGrow.png">
-                    <p>Incrementamos la <br>productividad</p>
+                    <p class="mb-5" [innerHTML]="'NOSOTROS.BENEFICIO2' | translate"></p>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/logo-recicle.png">
-                    <p class="mb-5">Volvemos a las empresas<br>Green Business</p>
+                    <p class="mb-5" [innerHTML]="'NOSOTROS.BENEFICIO3' | translate"></p>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/logo-shield.png">
-                    <p class="mb-5">Incrementamos la<br>seguridad</p>
-                </div>
-            </ng-template>
-            <ng-template ngbSlide>
-                <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
-                    <img class="mb-3 small-logo" src="assets/logo-shield.png">
-                    <p class="mb-5">Llevamos tu negocio<br>al mundo digital </p>
+                    <p class="mb-5" [innerHTML]="'NOSOTROS.BENEFICIO4' | translate"></p>
                 </div>
             </ng-template>
         </ngb-carousel>
