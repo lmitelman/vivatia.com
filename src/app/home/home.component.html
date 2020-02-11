@@ -1,12 +1,18 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
-    <div class="d-flex flex-column align-items-start">
+    <div class="d-flex flex-column align-items-start" *ngIf="currentLanguage() == 'es'">
         <h2 class="subtitle animated pulse m-0">Viví tu <br> experiencia</h2>
-        
-        <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontText" (preStringTyped)="doSmth($event)">
-            <h2 [ngClass]="{'font-especial': fontText[positionArrayText] == 'vivatia.'}" class="typing"></h2>
+        <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontTextEs" (preStringTyped)="doSmth($event)">
+            <h2 [ngClass]="{'font-especial': fontTextEs[positionArrayText] == 'vivatia.'}" class="typing"></h2>
         </ngx-typed-js>
-
         <button mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Contactanos</button>
+    </div>
+    <div class="d-flex flex-column align-items-start" *ngIf="currentLanguage() == 'en'">
+        <h2 class="subtitle animated pulse m-0">Live your <br></h2>
+        <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontTextEn" (preStringTyped)="doSmth($event)">
+            <h2 [ngClass]="{'font-especial': fontTextEn[positionArrayText] == 'vivatia.'}" class="typing"></h2>
+        </ngx-typed-js>
+        <h2 class="subtitle animated pulse m-0">experience</h2>
+        <button mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Contact us</button>
     </div>
 </section>
 
@@ -49,53 +55,53 @@
 <section class="text-center d-flex align-items-center justify-content-center border-success stats">
     <div class="stat animated fadeInDown" style="animation-delay: 0.7s">
         <h2 class="letra font-weight-bold">+20</h2>
-        <h5 class="text-dark font-weight-light">Años de experiencia</h5>
+        <h5 class="text-dark font-weight-light">{{ "HOME.DATOS1" | translate }}</h5>
     </div>
     <div class="stat animated fadeInDown" style="animation-delay: 0.9s">
         <h2 class="letra font-weight-bold">100%</h2>
-        <h5 class="text-dark font-weight-light">Satisfacción</h5>
+        <h5 class="text-dark font-weight-light">{{ "HOME.DATOS2" | translate }}</h5>
     </div>
     <div class="stat animated fadeInDown" style="animation-delay: 1.1s">
         <h2 class="letra font-weight-bold">+2.000</h2>
-        <h5 class="text-dark font-weight-light">Proyectos implementados</h5>
+        <h5 class="text-dark font-weight-light">{{ "HOME.DATOS3" | translate }}</h5>
     </div>
     <div class="stat animated fadeInDown" style="animation-delay: 1.3s">
         <h2 class="letra font-weight-bold">+30.000</h2>
-        <h5 class="text-dark font-weight-light">Usuarios activos</h5>
+        <h5 class="text-dark font-weight-light">{{ "HOME.DATOS4" | translate }}</h5>
     </div>
 </section>
 
 <section class="EncontraTuSolucion py-4" style="background-color: #F3F3F3">
     <div class="d-flex flex-column justify-content-center align-items-center">
-        <h4 class="py-4 font-weight-light m-0">Encontrá tu <span class="font-weight-bold">solución</span> ideal</h4>
+        <h4 class="py-4 font-weight-light m-0" [innerHTML]="'HOME.SOLUCION_IDEAL' | translate"></h4>
     </div>
 
     <div class="py-3 letra d-flex justify-content-center align-items-center">
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-elegi.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Elegí</h5>
-            <p class="pt-1 text-center text-dark w-75">la solucion que más <br> se adapte a tu necesidad</p>
+            <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "HOME.SOLUCION_IDEAL_1" | translate }}</h5>
+            <p class="pt-1 text-center text-dark w-75" [innerHTML]="'HOME.SOLUCION_IDEAL_1_DESC' | translate"></p>
         </div>
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-implementa.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Personalizá</h5>
-            <p class="pt-1 text-center text-dark w-75">de forma rápida y simple, <br> en diferentes infraestructuras</p>
+            <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "HOME.SOLUCION_IDEAL_2" | translate }}</h5>
+            <p class="pt-1 text-center text-dark w-75" [innerHTML]="'HOME.SOLUCION_IDEAL_2_DESC' | translate"></p>
         </div>
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-transforma.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Transformá</h5>
-            <p class="pt-1 text-center text-dark w-75">tus procesos y obtené <br> resultados visibles</p>
+            <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "HOME.SOLUCION_IDEAL_3" | translate }}</h5>
+            <p class="pt-1 text-center text-dark w-75" [innerHTML]="'HOME.SOLUCION_IDEAL_3_DESC' | translate"></p>
         </div>
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-escala.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Escalá</h5>
-            <p class="pt-1 text-center text-dark w-75">los beneficios y replícalos <br> en todo tu negocio</p>
+            <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "HOME.SOLUCION_IDEAL_4" | translate }}</h5>
+            <p class="pt-1 text-center text-dark w-75" [innerHTML]="'HOME.SOLUCION_IDEAL_4_DESC' | translate"></p>
         </div>
     </div>
 
     <div class="d-flex flex-column justify-content-center align-items-center pt-2 pb-5">
         <button mat-raised-button class="rounded-pill boton text-white align-self-center py-1 px-3"
-            style="font-size: medium;" routerLink="/soluciones">Iniciá tu búsqueda</button>
+            style="font-size: medium;" routerLink="/soluciones">{{ "HOME.BUSQUEDA" | translate }}</button>
     </div>
 </section>
 

@@ -4,7 +4,21 @@
         "text": "This is a simple demonstration app for ngx-translate"
     },
     "HOME": {
-
+        "DATOS1": "Años de experiencia",
+        "DATOS2": "Satisfacción",
+        "DATOS3": "Proyectos implementados",
+        "DATOS4": "Usuarios activos",
+        "CONTACTANOS": "Contactanos",
+        "SOLUCION_IDEAL": "Encontrá tu <span class='font-weight-bold'>solución</span> ideal",
+        "SOLUCION_IDEAL_1": "Elegí",
+        "SOLUCION_IDEAL_1_DESC": "la solucion que más <br> se adapte a tu necesidad",
+        "SOLUCION_IDEAL_2": "Personalizá",
+        "SOLUCION_IDEAL_2_DESC": "de forma rápida y simple, <br> en diferentes infraestructuras",
+        "SOLUCION_IDEAL_3": "Transformá",
+        "SOLUCION_IDEAL_3_DESC": "tus procesos y obtené <br> resultados visibles",
+        "SOLUCION_IDEAL_4": "Escalá",
+        "SOLUCION_IDEAL_4_DESC": "los beneficios y replícalos <br> en todo tu negocio",
+        "BUSQUEDA": "Iniciá tu búsqueda"
     },
     "NOSOTROS": {
         "DESCRIPCION_HEADER": "En un contexto en el cual los papeles dejan de ser protagonistas en los procesos, te ayudamos a emprender un camino de transformación digital aplicando nuevas tecnologías.",

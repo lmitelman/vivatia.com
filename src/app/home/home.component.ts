@@ -7,7 +7,7 @@ import { MatSnackBar } from '@angular/material';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CountoModule } from 'angular2-counto';
-import { TranslateModule } from '@ngx-translate/core'
+import { TranslateModule, TranslateService } from '@ngx-translate/core'
 import Typed from 'typed.js';
 
 
@@ -18,11 +18,17 @@ import Typed from 'typed.js';
 })
 export class HomeComponent implements OnInit {
 
-  fontText: String[] = [
+  fontTextEs: String[] = [
     'digital.',
     'paperless.',
     'vivatia.',
     'tecnológica.',
+  ];
+  fontTextEn: String[] = [
+    'digital.',
+    'paperless.',
+    'vivatia.',
+    'technological.',
   ];
   contactForm: FormGroup;
   public isMobileLayout = false;
@@ -34,6 +40,7 @@ export class HomeComponent implements OnInit {
     private adminService: AdminService,
     private snackBar: MatSnackBar,
     private dialog: MatDialog,
+    private translate: TranslateService
   ) {}
 
 
@@ -57,6 +64,10 @@ export class HomeComponent implements OnInit {
 
   doSmth(indexOfString){
     this.positionArrayText = indexOfString;
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 }
 

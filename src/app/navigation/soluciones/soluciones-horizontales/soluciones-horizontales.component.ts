@@ -165,6 +165,6 @@ export class SolucionesHorizontalesComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.currentLanguage())
+
   }
 }

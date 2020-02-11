@@ -27,6 +27,7 @@ export class MenuComponent implements OnInit {
   }
 
   currentLanguage() {
+    console.log(this.translate.currentLang);
     return this.translate.currentLang;
   }
 
