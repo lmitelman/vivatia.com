@@ -1,21 +1,21 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
     <div class="d-flex flex-column">
         <h2 class="font-weight-bold text-dark subtitle animated pulse mb-1">Global Partner Program</h2> 
-        <p>Sumáte a la experiencia Vivatia y observá <br> cómo tus ventas crecen</p>       
-        <button mat-raised-button class="mt-1 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Sumate como partner</button>
+        <p [innerHTML]="'PARTNERS.DESCRIPCION_HEADER' | translate"></p>       
+        <button mat-raised-button class="mt-1 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">{{ "PARTNERS.BOTON" | translate }}</button>
     </div>
 </section>
 
 <div class="d-flex py-4 flex-column text-center align-items-center">
-    <h6 class="text-personalizacion animated fadeInRight">El <span class="font-weight-bold">Programa de Socios Globales de Vivatia</span> fue pensado con el objetivo de brindar a las empresas interesadas la experiencia y los conocimientos necesarios para que puedan incrementar sus ventas a partir de la comercialización e implementación de los productos y soluciones de software de Vivatia.</h6>
+    <h6 class="text-personalizacion animated fadeInRight" [innerHTML]="'PARTNERS.DESCRIPCION_GPP' | translate"></h6>
 </div>
 
 <section class="bg-main2 text-dark contenedor-soluciones d-flex flex-column justify-content-center align-items-center py-5" style="background-color: white;">
-    <h2 class="mb-5 animated font-weight-bold fadeInDown text-center">Podes sumarte como</h2>
+    <h2 class="mb-5 animated font-weight-bold fadeInDown text-center">{{ "PARTNERS.TIPO_PARTNERS" | translate }}</h2>
     <div class="d-flex mt-4 justify-content-center flex-wrap align-items-start text-center w-100 animated fadeInDown soluciones">
         <div *ngFor="let data of dataCardsPartners, let i = index" class="mx-1 d-flex flex-column justify-content-center align-items-center solucion">
             <img class="mb-2 logo-solucion" [src]=data.icon>
-            <h5 class="mb-2" [innerHTML]=data.name></h5>
+            <h5 class="mb-2">{{data.name}}</h5>
             <p class="text-center w-75">{{data.desc}}</p>
         </div>
     </div>
@@ -23,7 +23,7 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item2 animated fadeInRight">
     <div class="d-flex flex-column descripcion2">
-        <h6>También podes integrar nuestras plataformas como OEM de tus soluciones y de esta manera potenciarlas fácilmente y en forma inmediata.</h6>
+        <h6>{{ "PARTNERS.OEM" | translate }}</h6>
     </div>
     <div>
         <img src="assets/oem.png" class="img-captika2" alt="">
@@ -32,35 +32,35 @@
 
 <section class="EncontraTuSolucion py-4">
     <div class="d-flex flex-column justify-content-center align-items-center">
-        <h4 class="py-4 font-weight-light">Potenciá tu <span class="font-weight-bold">negocio</span> junto con nosotros</h4>
+        <h4 class="py-4 font-weight-light" [innerHTML]="'PARTNERS.POTENCIA' | translate"></h4>
     </div>
 
     <div class="container-potencia py-3 letra d-flex justify-content-center">
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-elegi.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Solicitud</h5>
-            <p class="pt-1 text-center text-dark w-75">Completá con tus datos<br>la información solicitada</p>
+            <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "PARTNERS.SOLICITUD" | translate }}</h5>
+            <p class="pt-1 text-center text-dark w-75" [innerHTML]="'PARTNERS.SOLICITUD_DESC' | translate"></p>
         </div>
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-implementa.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Evaluación</h5>
-            <p class="pt-1 text-center text-dark w-75">Revisamos tu solicitud<br>para ponernos en contacto</p>
+            <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "PARTNERS.EVALUACION" | translate }}</h5>
+            <p class="pt-1 text-center text-dark w-75" [innerHTML]="'PARTNERS.EVALUACION_DESC' | translate"></p>
         </div>
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-transforma.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Capacitación</h5>
-            <p class="pt-1 text-center text-dark w-75">Un equipo de profesionales te dará las herramientas necesarias</p>
+            <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "PARTNERS.CAPACITACION" | translate }}</h5>
+            <p class="pt-1 text-center text-dark w-75" [innerHTML]="'PARTNERS.CAPACITACION_DESC' | translate"></p>
         </div>
         <div class="py-3 px-1 d-flex flex-column align-items-center process">
             <img class="home-small-logo" src="assets/home-escala.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Comercialización</h5>
-            <p class="pt-1 text-center text-dark w-75">Comenzá a hacer<br>crecer tu negocio</p>
+            <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "PARTNERS.COMERCIALIZACION" | translate }}</h5>
+            <p class="pt-1 text-center text-dark w-75" [innerHTML]="'PARTNERS.COMERCIALIZACION_DESC' | translate"></p>
         </div>
     </div>
 </section>
 
 <section class="text-dark sumate d-flex flex-column justify-content-center align-items-center pt-3 pb-5" style="background-color: white;">
-    <h4 class="mb-3 animated font-weight-bold fadeInDown text-center">Estás a un paso de ser nuestro partner. <br> Sumate y crecé junto a tu negocio.</h4>
-    <button mat-raised-button class="rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Quiero ser partner</button>
+    <h4 class="mb-3 animated font-weight-bold fadeInDown text-center" [innerHTML]="'PARTNERS.CRECE' | translate"></h4>
+    <button mat-raised-button class="rounded-pill boton text-white px-3 py-1" (click)="openDialog()">{{ "PARTNERS.BOTON2" | translate }}</button>
 </section>
 

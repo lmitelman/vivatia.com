@@ -6,29 +6,29 @@
     <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/home">Home</a>
+                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/home">{{ "NAVBAR.HOME" | translate }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/nosotros">Nosotros</a>
+                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/nosotros">{{ "NAVBAR.NOSOTROS" | translate }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/soluciones">Soluciones</a>
+                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/soluciones">{{ "NAVBAR.SOLUCIONES" | translate }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/productos">Productos</a>
+                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/productos">{{ "NAVBAR.PRODUCTOS" | translate }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/partners">Partners</a>
+                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/partners">{{ "NAVBAR.PARTNERS" | translate }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/capacitacion">Capacitaciones</a>
+                <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/capacitacion">{{ "NAVBAR.CAPACITACIONES" | translate }}</a>
             </li>
             <li class="nav-item dropdown" ngbDropdown>
-                <a class="nav-link dropdown-toggle letra font-weight-bold" id="id01" ngbDropdownToggle>Idioma</a>
+                <a class="nav-link dropdown-toggle letra font-weight-bold" id="id01" ngbDropdownToggle>{{ "NAVBAR.IDIOMA" | translate }}</a>
                 <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
-                    <a class="dropdown-item text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" (click)="useLanguage('es')">Español</a>
-                    <a class="dropdown-item text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" (click)="useLanguage('en')">Inglés</a>
-                    <a class="dropdown-item text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed">Portugués</a>
+                    <a class="dropdown-item text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" (click)="useLanguage('es')">{{ "NAVBAR.ESPAÑOL" | translate }}</a>
+                    <a class="dropdown-item text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed" (click)="useLanguage('en')">{{ "NAVBAR.INGLES" | translate }}</a>
+                    <a class="dropdown-item text-dark" (click)="isNavbarCollapsed = !isNavbarCollapsed">{{ "NAVBAR.PORTUGUES" | translate }}</a>
                 </div>
             </li>
         </ul>

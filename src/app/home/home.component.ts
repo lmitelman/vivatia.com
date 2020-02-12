@@ -6,7 +6,6 @@ import { AdminService } from '../services/admin.service';
 import { MatSnackBar } from '@angular/material';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CountoModule } from 'angular2-counto';
 import { TranslateModule, TranslateService } from '@ngx-translate/core'
 import Typed from 'typed.js';
 
@@ -25,10 +24,10 @@ export class HomeComponent implements OnInit {
     'tecnológica.',
   ];
   fontTextEn: String[] = [
-    'digital.',
-    'paperless.',
-    'vivatia.',
-    'technological.',
+    'digital',
+    'paperless',
+    'vivatia',
+    'technological',
   ];
   contactForm: FormGroup;
   public isMobileLayout = false;

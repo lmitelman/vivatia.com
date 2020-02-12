@@ -1,7 +1,15 @@
 {
-    "demo": {
-        "title": "Translation demo",
-        "text": "This is a simple demonstration app for ngx-translate"
+    "NAVBAR": {
+        "HOME": "Home",
+        "NOSOTROS": "Nosotros",
+        "SOLUCIONES": "Soluciones",
+        "PRODUCTOS": "Productos",
+        "PARTNERS": "Partners",
+        "CAPACITACIONES": "Capacitaciones",
+        "IDIOMA": "Idioma",
+        "ESPAÑOL": "Español",
+        "INGLES": "Inglés",
+        "PORTUGUES": "Portugués"
     },
     "HOME": {
         "DATOS1": "Años de experiencia",
@@ -37,5 +45,31 @@
         "BENEFICIO3": "Volvemos a las empresas <br> Green Business",
         "BENEFICIO4": "Incrementamos la <br> seguridad",
         "IRAM": "Contamos con la certificación de<br><span class='font-weight-bold'>Gestión de Calidad IRAM RI-9000-6446<br>IQNet Management System."
+    },
+    "PARTNERS": {
+        "DESCRIPCION_HEADER": "Sumáte a la experiencia Vivatia y observá <br> cómo tus ventas crecen",
+        "BOTON": "Sumate como partner",
+        "DESCRIPCION_GPP": "El <span class='font-weight-bold'>Programa de Socios Globales de Vivatia</span> fue pensado con el objetivo de brindar a las empresas interesadas la experiencia y los conocimientos necesarios para que puedan incrementar sus ventas a partir de la comercialización e implementación de los productos y soluciones de software de Vivatia.",
+        "TIPO_PARTNERS": "Podes sumarte como",
+        "REVENDEDOR": "Revendedor",
+        "REVENDEDOR_DESC": "Si querés revender nuestros productos y soluciones de software",
+        "INTEGRADOR": "Integrador",
+        "INTEGRADOR_DESC": "Si tu objetivo es revender nuestros productos con tu valor agregado, desarrollando soluciones",
+        "EDUCADOR": "Educador",
+        "EDUCADOR_DESC": "Si buscas capacitar a otras personas o empresas en el uso de nuestros productos de software",
+        "SOCIO": "Socio tecnologico",
+        "SOCIO_DESC": "Si consideras que tus productos y los nuestros pueden potenciarse juntos",
+        "OEM": "También podes integrar nuestras plataformas como OEM de tus soluciones y de esta manera potenciarlas fácilmente y en forma inmediata.",
+        "POTENCIA": "Potenciá tu <span class='font-weight-bold'>negocio</span> junto con nosotros",
+        "SOLICITUD": "Solicitud",
+        "SOLICITUD_DESC": "Completá con tus datos<br>la información solicitada",
+        "EVALUACION": "Evaluación",
+        "EVALUACION_DESC": "Revisamos tu solicitud<br>para ponernos en contacto",
+        "CAPACITACION": "Capacitación",
+        "CAPACITACION_DESC": "Un equipo de profesionales te dará las herramientas necesarias",
+        "COMERCIALIZACION": "Comercialización",
+        "COMERCIALIZACION_DESC": "Comenzá a hacer<br>crecer tu negocio",
+        "CRECE": "Estás a un paso de ser nuestro partner. <br> Sumate y crecé junto a tu negocio.",
+        "BOTON2": "Quiero ser partner"
     }
 }
