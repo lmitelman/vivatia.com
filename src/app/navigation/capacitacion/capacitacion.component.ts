@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-capacitacion',
@@ -19,9 +20,14 @@ export class CapacitacionComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(
+    private translate: TranslateService
+  ) { }
 
   ngOnInit() {
   }
 
+  currentLanguage() {
+    return this.translate.currentLang;
+  }
 }

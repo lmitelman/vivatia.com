@@ -71,5 +71,56 @@
         "COMERCIALIZACION_DESC": "Start growing <br> your business",
         "CRECE": "You are one step away from being our partner. <br> Join us and grow your business.",
         "BOTON2": "Become a partner"
+    },
+    "CAPACITACIONES": {
+        "DESCRIPCION_HEADER": "Take the training and become <br> a digital transformation expert.",
+        "DESCRIPCION": "Learning, training and certification in our products and software solutions allow you to reduce the times of solution implementation and maximize the use of the functionality <br> provided by the platforms.",
+        "POTENCIAR": "With each training you will be able to empower your company",
+        "POTENCIAR_1": "Book your place",
+        "POTENCIAR_1_DESC": "Complete the <br> requested information",
+        "POTENCIAR_2": "Take the training",
+        "POTENCIAR_2_DESC": "Enhance <br> your knowledge",
+        "POTENCIAR_3": "Empower your company",
+        "POTENCIAR_3_DESC": "Implement what <br> you have learned",
+        "CAPACITACIONES": "We have created different trainings <br> depending on the needs of each client"
+    },
+    "PRODUCTOS": {
+        "CAPTIKA": "CAPTURE SOFTWARE",
+        "THUBAN": "BUSINESS PROCESS MANAGER"
+    },
+    "CAPTIKA": {
+        "DESCRIPCION_HEADER": "Platform that allows the capture, edition and electronic publication of documents that are both on paper and in PDF format, enabling the recognition and the extraction of the data contained.",
+        "CAPTURA": "Capture",
+        "CAPTURA_DESC": "We capture the information in its original format, obtaining it from different inputs.",
+        "RECONOCIMIENTO": "Recognition",
+        "RECONOCIMIENTO_DESC": "Once the information is digitized, we can recognize and extract the data of the documents.",
+        "VALIDACION": "Validation",
+        "VALIDACION_DESC": "You can also set validations with databases and webservices.",
+        "PUBLICACION": "Publication",
+        "PUBLICACION_DESC": "With Captika you will be able to publish to multiple repositories simultaneously.",
+        "SABIAS": "Did you know that you can publish your information on Thuban Software?",
+        "DESCUBRI": "Discover how you can manage your documents."
+    },
+    "THUBAN": {
+        "DESCRIPCION_HEADER": "Designed for the development of solutions to improve the entire business process and document management.",
+        "SEGURIDAD": "Security",
+        "SEGURIDAD_DESC": "Thuban connects to the database using a username and password that is configured in a security file that can be encrypted when you start the application for the first time.",
+        "HISTORIAL": "History",
+        "HISTORIAL_DESC": "Thuban Software has a history document viewer, this is a very useful tool for auditing documents. Each document has an audit module that allows you to see the actions performed on it. records when and by whom a document was created, consulted, edited and what were the modifications made.",
+        "NOTIFICACIONES": "Notifications",
+        "NOTIFICACIONES_DESC": "It also has an automatic email notification module which can be configured at different stages of the workflow and can be the result of a change in the status of a document or an alert to a business step.",
+        "MONITORES": "Dashboards",
+        "MONITORES_DESC": "You will also have tools to track and control the process online.",
+        "GRUPOS": "Groups and permissions",
+        "GRUPOS_DESC": "With Thuban you will be able to create profiles, groups and users at a high level of detail and permission assignment. These will be defined according to the business needs",
+        "SABIAS": "Did you know that you can scan your documents with Captika Software?",
+        "DESCUBRI": "Know how you can extract information from your documents."
+    },
+    "SOLUCIONES_HORIZONTALES": {
+        "HEADER": "Digital transformation solutions",
+        "DESCRIPCION_HEADER": "We design solutions that improve <br> your business process"
+    },
+    "SOLUCIONES": {
+        "DESCRIPCION_HEADER": "Find the best solution for your industry"
     }
 }

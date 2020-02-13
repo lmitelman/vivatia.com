@@ -3,14 +3,14 @@
         <div class="d-flex flex-column text-center">
             <img [src]="captika" class="logo-captika" alt="">
             <h2 class="text-white font-weight-bold">CAPTIKA SOFTWARE</h2>
-            <h5 class="text-white">SOFTWARE DE CAPTURA</h5>
+            <h5 class="text-white">{{ "PRODUCTOS.CAPTIKA" | translate }}</h5>
         </div>
     </div>
     <div class="d-flex align-items-center justify-content-center thuban animated bounceInRight" routerLink="/thuban" (mouseover)="changeImageIcon('thuban', 'in')" (mouseout)="changeImageIcon('thuban', 'out')">
         <div class="d-flex flex-column text-center">
             <img [src]="thuban" class="logo-thuban" alt="">
             <h2 class="text-white font-weight-bold">THUBAN SOFTWARE</h2>
-            <h5 class="text-white">GESTOR DOCUMENTAL</h5>
+            <h5 class="text-white">{{ "PRODUCTOS.THUBAN" | translate }}</h5>
         </div>
     </div>
 </section>

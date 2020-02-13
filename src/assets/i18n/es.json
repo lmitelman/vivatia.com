@@ -71,5 +71,56 @@
         "COMERCIALIZACION_DESC": "Comenzá a hacer<br>crecer tu negocio",
         "CRECE": "Estás a un paso de ser nuestro partner. <br> Sumate y crecé junto a tu negocio.",
         "BOTON2": "Quiero ser partner"
+    },
+    "CAPACITACIONES": {
+        "DESCRIPCION_HEADER": "Tomá tu capacitación hoy y transformate <br> en un experto en transformación digital.",
+        "DESCRIPCION": "El aprendizaje, entrenamiento y certificación en nuestros productos y soluciones de software es muy importante porque te permiten reducir los tiempos de implementación de soluciones y maximizar el uso de la funcionalidad provista por las plataformas.",
+        "POTENCIAR": "Con cada capacitación vas a poder potenciar a tu empesa",
+        "POTENCIAR_1": "Reservá tu lugar",
+        "POTENCIAR_1_DESC": "Completá la <br> información solicitada",
+        "POTENCIAR_2": "Tomá la capacitación",
+        "POTENCIAR_2_DESC": "Vas a potenciar potenciar <br> tus conocimientos",
+        "POTENCIAR_3": "Potenciá tu empresa",
+        "POTENCIAR_3_DESC": "Implementando <br> lo que aprendiste",
+        "CAPACITACIONES": "Hemos creado distintas capacitaciones en <br> función de las necesidades de cada cliente"
+    },
+    "PRODUCTOS": {
+        "CAPTIKA": "SOFTWARE DE CAPTURA",
+        "THUBAN": "GESTOR DOCUMENTAL"
+    },
+    "CAPTIKA": {
+        "DESCRIPCION_HEADER": "Plataforma de digitalización que permite a las personas y organizaciones gestionar la captura de los documentos digitales y físicos.",
+        "CAPTURA": "Captura",
+        "CAPTURA_DESC": "Capturamos la información en su formato original, obteniéndola desde distintos medios.",
+        "RECONOCIMIENTO": "Reconocimiento",
+        "RECONOCIMIENTO_DESC": "Una vez que la información es digitalizada podemos reconocer datos y, gracias a nuestras diversas herramientas, podemos extraer el contenido de los documentos.",
+        "VALIDACION": "Validación",
+        "VALIDACION_DESC": "Podrás realizar también validaciones con bases de datos y webservices.",
+        "PUBLICACION": "Publicación",
+        "PUBLICACION_DESC": "Con Captika vas a poder publicar a multiples repositorios de forma simultanea.",
+        "SABIAS": "¿Sabías que podes publicar tu información en Thuban Software?",
+        "DESCUBRI": "Descubri cómo podes gestionar tus documentos."
+    },
+    "THUBAN": {
+        "DESCRIPCION_HEADER": "Plataforma diseñada para la creación de soluciones donde los documentos y procesos son la clave del negocio.",
+        "SEGURIDAD": "Seguridad",
+        "SEGURIDAD_DESC": "Thuban se conecta a la base de datos mediante un usuario y clave que se configura en un archivo de seguridad. Dicho archivo puede configurarse para que se encripte al iniciar la aplicación por primera vez.",
+        "HISTORIAL": "Historial",
+        "HISTORIAL_DESC": "Una función que tiene Thuban Software que resulta muy útil a la hora de auditar documentos, es el visor de la historia del documento. Cada documento cuenta con un módulo de auditoria que permite ver las acciones realizadas sobre él. El mismo registra cuando y por quien un documento fue creado, consultado, editado y cuáles fueron las modificaciones realizadas.",
+        "NOTIFICACIONES": "Notificaciones",
+        "NOTIFICACIONES_DESC": "Además cuenta con un módulo de envío automático de notificaciones por correo electrónico el cual se puede configurar en distintas etapas del flujo de trabajo y puede ser consecuencia de, por ejemplo, un cambio de estado de un documento o una alerta a una regla de negocio.",
+        "MONITORES": "Monitores",
+        "MONITORES_DESC": "También vas a contar con herramientas para poder monitorear el proceso en línea, efectuar seguimientos y poder actuar en función de la información que dichos monitores indiquen.",
+        "GRUPOS": "Grupos y permisos",
+        "GRUPOS_DESC": "Con Thuban vas a poder crear perfiles, grupos y usuarios a un alto nivel de detalle y asignación de permisos. Estos serán definidos de acuerdo con las necesidades de la solución.",
+        "SABIAS": "¿Sabías que podes digitalizar tus documentos con Captika Software?",
+        "DESCUBRI": "Descubrí cómo podes extraer información de tus documentos."
+    },
+    "SOLUCIONES_HORIZONTALES": {
+        "HEADER": "Soluciones de transformación digital",
+        "DESCRIPCION_HEADER": "Diseñamos soluciones que facilitan <br> los procesos de tu empresa"
+    },
+    "SOLUCIONES": {
+        "DESCRIPCION_HEADER": "Encontrá la solución ideal para tu industria"
     }
 }

@@ -1,81 +1,146 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
-    <div class="d-flex flex-column">
-        <h2 class="font-weight-bold text-dark subtitle animated pulse mb-2">Product learning & <br> certification</h2> 
-        <p>Tomá tu capacitación hoy y transformate <br> en un experto en transformación digital.</p>       
-        <button mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1">Reservá tu lugar</button>
-    </div>
+  <div class="d-flex flex-column">
+    <h2 class="font-weight-bold text-dark subtitle animated pulse mb-2">Product learning & <br> certification</h2>
+    <p [innerHTML]="'CAPACITACIONES.DESCRIPCION_HEADER' | translate"></p>
+    <button mat-raised-button
+      class="mt-2 rounded-pill boton text-white px-3 py-1">{{ "CAPACITACIONES.POTENCIAR_1" | translate }}</button>
+  </div>
 </section>
 
 <div class="d-flex py-4 flex-column text-center align-items-center">
-    <h6 class="text-personalizacion animated fadeInRight">El aprendizaje, entrenamiento y certificación en nuestros productos y soluciones de software es muy importante porque te permiten reducir los tiempos de implementación de soluciones y maximizar el uso de la funcionalidad provista por las plataformas.</h6>
+  <h6 class="text-personalizacion animated fadeInRight" [innerHTML]="'CAPACITACIONES.DESCRIPCION' | translate"></h6>
 </div>
 
 <section class="EncontraTuSolucion py-4">
-    <div class="d-flex flex-column justify-content-center align-items-center">
-        <h4 class="py-4 font-weight-light">Con cada capacitación vas a poder potenciar a tu empesa</h4>
-    </div>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <h4 class="py-4 font-weight-light">{{ "CAPACITACIONES.POTENCIAR" | translate }}</h4>
+  </div>
 
-    <div class="container-capacitacion py-3 letra d-flex justify-content-center">
-        <div class="py-3 px-1 d-flex flex-column align-items-center process">
-            <img class="home-small-logo" src="assets/home-elegi.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Reservá tu lugar</h5>
-            <p class="pt-1 text-center text-dark w-75">Completá la <br> información solicitada</p>
-        </div>
-        <div class="py-3 px-1 d-flex flex-column align-items-center process">
-            <img class="home-small-logo" src="assets/home-implementa.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Tomá la capacitación</h5>
-            <p class="pt-1 text-center text-dark w-75">Vas a potenciar potenciar <br> tus conocimientos</p>
-        </div>
-        <div class="py-3 px-1 d-flex flex-column align-items-center process">
-            <img class="home-small-logo" src="assets/home-transforma.png">
-            <h5 class="font-weight-bold" style="margin-top: 15px;">Potenciá tu empresa</h5>
-            <p class="pt-1 text-center text-dark w-75">Implementando <br> lo que aprendiste</p>
-        </div>
+  <div class="container-capacitacion py-3 letra d-flex justify-content-center">
+    <div class="py-3 px-1 d-flex flex-column align-items-center process">
+      <img class="home-small-logo" src="assets/home-elegi.png">
+      <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "CAPACITACIONES.POTENCIAR_1" | translate }}</h5>
+      <p class="pt-1 text-center text-dark w-75" [innerHTML]="'CAPACITACIONES.POTENCIAR_1_DESC' | translate"></p>
     </div>
+    <div class="py-3 px-1 d-flex flex-column align-items-center process">
+      <img class="home-small-logo" src="assets/home-implementa.png">
+      <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "CAPACITACIONES.POTENCIAR_2" | translate }}</h5>
+      <p class="pt-1 text-center text-dark w-75" [innerHTML]="'CAPACITACIONES.POTENCIAR_2_DESC' | translate"></p>
+    </div>
+    <div class="py-3 px-1 d-flex flex-column align-items-center process">
+      <img class="home-small-logo" src="assets/home-transforma.png">
+      <h5 class="font-weight-bold" style="margin-top: 15px;">{{ "CAPACITACIONES.POTENCIAR_3" | translate }}</h5>
+      <p class="pt-1 text-center text-dark w-75" [innerHTML]="'CAPACITACIONES.POTENCIAR_3_DESC' | translate"></p>
+    </div>
+  </div>
 </section>
 
 <section class="EncontraTuSolucion">
   <div class="d-flex flex-column justify-content-center align-items-center">
-      <h4 class="py-4 font-weight-light">Hemos creado distintas capacitaciones en <br> función de las necesidades de cada cliente</h4>
+    <h4 class="py-4 font-weight-light text-center" [innerHTML]="'CAPACITACIONES.CAPACITACIONES' | translate"></h4>
   </div>
 </section>
 
-<section class="pricing py-3">
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <!-- Producto -->
-        <div class="col-lg-4">
-          <div class="card mb-5 mb-lg-0">
-            <div class="card-body">
-              <h5 class="card-title text-dark font-weight-bold text-uppercase text-center">Producto</h5>
-              <hr>
-              <ul class="fa-ul">
-                <li> <p>Instalaciones de producto.</p> </li>
-                <li> <p>Configuraciones básicas y avanzadas.</p> </li>
-                <li> <p>Creación de una solución de principio a fin.</p> </li>
-              </ul>
-              <a href="#" class="btn btn-block btn-success text-uppercase">Reservar mi lugar</a>
-              <a download="capacitacion-producto" target="_blank" href="/assets/capacitacion-producto.pdf" class="btn btn-block btn-light">Descargar contenido</a>
-            </div>
+<!-- CARDS EN ESPAÑOL -->
+<section class="pricing py-3" *ngIf="currentLanguage() == 'es'">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-dark font-weight-bold text-uppercase text-center">Producto</h5>
+            <hr>
+            <ul class="fa-ul">
+              <li>
+                <p>Instalaciones de producto.</p>
+              </li>
+              <li>
+                <p>Configuraciones básicas y avanzadas.</p>
+              </li>
+              <li>
+                <p>Creación de una solución de principio a fin.</p>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-block btn-success text-uppercase">Reservar mi lugar</a>
+            <a download="capacitacion-producto" target="_blank" href="/assets/capacitacion-producto.pdf"
+              class="btn btn-block btn-light">Descargar contenido</a>
           </div>
         </div>
-        <!-- Comercial -->
-        <div class="col-lg-4">
-          <div class="card mb-5 mb-lg-0">
-            <div class="card-body">
-              <h5 class="card-title text-dark font-weight-bold text-uppercase text-center">Comercial</h5>
-              <hr>
-              <ul class="fa-ul">
-                <li> <p>Conocer acerca del contexto de transformación digital.</p> </li>
-                <li> <p>Demostraciones de soluciones.</p> </li>
-                <li> <p>Beneficios y retornos de inversión.</p> <br> </li>
-              </ul>
-              <a href="#" class="btn btn-block btn-success text-uppercase">Reservar mi lugar</a>
-              <a download="capacitacion-comercial" target="_blank" href="/assets/capacitacion-comercial.pdf" class="btn btn-block btn-light">Descargar contenido</a>
-            </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-dark font-weight-bold text-uppercase text-center">Comercial</h5>
+            <hr>
+            <ul class="fa-ul">
+              <li>
+                <p>Conocer acerca del contexto de transformación digital.</p>
+              </li>
+              <li>
+                <p>Demostraciones de soluciones.</p>
+              </li>
+              <li>
+                <p>Beneficios y retornos de inversión.</p> <br>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-block btn-success text-uppercase">Reservar mi lugar</a>
+            <a download="capacitacion-comercial" target="_blank" href="/assets/capacitacion-comercial.pdf"
+              class="btn btn-block btn-light">Descargar contenido</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- CARDS EN INGLÉS -->
+<section class="pricing py-3" *ngIf="currentLanguage() == 'en'">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-dark font-weight-bold text-uppercase text-center">Products</h5>
+            <hr>
+            <ul class="fa-ul">
+              <li>
+                <p>Product installations.</p>
+              </li>
+              <li>
+                <p>Basic and advanced settings.</p>
+              </li>
+              <li>
+                <p>Creating a complete software solution.</p>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-block btn-success text-uppercase">Book my place</a>
+            <a download="capacitacion-producto" target="_blank" href="/assets/capacitacion-producto.pdf"
+              class="btn btn-block btn-light">Download content</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-dark font-weight-bold text-uppercase text-center">Commercial</h5>
+            <hr>
+            <ul class="fa-ul">
+              <li>
+                <p>Learn about digital transformation.</p>
+              </li>
+              <li>
+                <p>Software solutions demonstrations.</p>
+              </li>
+              <li>
+                <p>Benefits and returns on investment.</p> <br>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-block btn-success text-uppercase">Book my place</a>
+            <a download="capacitacion-comercial" target="_blank" href="/assets/capacitacion-comercial.pdf"
+              class="btn btn-block btn-light">Download content</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
