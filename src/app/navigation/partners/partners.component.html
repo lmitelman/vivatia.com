@@ -1,8 +1,9 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
     <div class="d-flex flex-column">
-        <h2 class="font-weight-bold text-dark subtitle animated pulse mb-1">Global Partner Program</h2> 
-        <p [innerHTML]="'PARTNERS.DESCRIPCION_HEADER' | translate"></p>       
-        <button mat-raised-button class="mt-1 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">{{ "PARTNERS.BOTON" | translate }}</button>
+        <h2 class="font-weight-bold text-dark subtitle animated pulse mb-1">Global Partner Program</h2>
+        <p [innerHTML]="'PARTNERS.DESCRIPCION_HEADER' | translate"></p>
+        <button mat-raised-button class="mt-1 rounded-pill boton text-white px-3 py-1"
+            (click)="openDialog()">{{ "PARTNERS.BOTON" | translate }}</button>
     </div>
 </section>
 
@@ -10,15 +11,33 @@
     <h6 class="text-personalizacion animated fadeInRight" [innerHTML]="'PARTNERS.DESCRIPCION_GPP' | translate"></h6>
 </div>
 
-<section class="bg-main2 text-dark contenedor-soluciones d-flex flex-column justify-content-center align-items-center py-5" style="background-color: white;">
+<section
+    class="bg-main2 text-dark contenedor-soluciones d-flex flex-column justify-content-center align-items-center py-5"
+    style="background-color: white;">
     <h2 class="mb-5 animated font-weight-bold fadeInDown text-center">{{ "PARTNERS.TIPO_PARTNERS" | translate }}</h2>
-    <div class="d-flex mt-4 justify-content-center flex-wrap align-items-start text-center w-100 animated fadeInDown soluciones">
-        <div *ngFor="let data of dataCardsPartners, let i = index" class="mx-1 d-flex flex-column justify-content-center align-items-center solucion">
+
+    <!-- CARDS EN ESPAÑOL -->
+    <div *ngIf="currentLanguage() == 'es'"
+        class="d-flex mt-4 justify-content-center flex-wrap align-items-start text-center w-100 animated fadeInDown soluciones">
+        <div *ngFor="let data of dataCardsPartnersEs, let i = index"
+            class="mx-1 d-flex flex-column justify-content-center align-items-center solucion">
             <img class="mb-2 logo-solucion" [src]=data.icon>
             <h5 class="mb-2">{{data.name}}</h5>
             <p class="text-center w-75">{{data.desc}}</p>
         </div>
     </div>
+
+    <!-- CARDS EN INGLÉS -->
+    <div *ngIf="currentLanguage() == 'en'"
+        class="d-flex mt-4 justify-content-center flex-wrap align-items-start text-center w-100 animated fadeInDown soluciones">
+        <div *ngFor="let data of dataCardsPartnersEn, let i = index"
+            class="mx-1 d-flex flex-column justify-content-center align-items-center solucion">
+            <img class="mb-2 logo-solucion" [src]=data.icon>
+            <h5 class="mb-2">{{data.name}}</h5>
+            <p class="text-center w-75">{{data.desc}}</p>
+        </div>
+    </div>
+
 </section>
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item2 animated fadeInRight">
@@ -59,8 +78,9 @@
     </div>
 </section>
 
-<section class="text-dark sumate d-flex flex-column justify-content-center align-items-center pt-3 pb-5" style="background-color: white;">
+<section class="text-dark sumate d-flex flex-column justify-content-center align-items-center pt-3 pb-5"
+    style="background-color: white;">
     <h4 class="mb-3 animated font-weight-bold fadeInDown text-center" [innerHTML]="'PARTNERS.CRECE' | translate"></h4>
-    <button mat-raised-button class="rounded-pill boton text-white px-3 py-1" (click)="openDialog()">{{ "PARTNERS.BOTON2" | translate }}</button>
+    <button mat-raised-button class="rounded-pill boton text-white px-3 py-1"
+        (click)="openDialog()">{{ "PARTNERS.BOTON2" | translate }}</button>
 </section>
-

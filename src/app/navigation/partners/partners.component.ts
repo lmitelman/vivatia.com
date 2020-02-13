@@ -11,54 +11,65 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class PartnersComponent implements OnInit {
 
-  message: any;  
-  dataCardsPartners: any;
-  
+  dataCardsPartnersEs: any[] = [
+    {
+      name: 'Revendedor',
+      icon: 'assets/revendedor.png',
+      desc: 'Si querés revender nuestros productos y soluciones de software'
+    },
+    {
+      name: 'Integrador',
+      icon: 'assets/integrador.png',
+      desc: 'Si tu objetivo es revender nuestros productos con tu valor agregado, desarrollando soluciones'
+    },
+    {
+      name: 'Educador',
+      icon: 'assets/educador.png',
+      desc: 'Si buscas capacitar a otras personas o empresas en el uso de nuestros productos de software'
+    },
+    {
+      name: 'Socio tecnológico',
+      icon: 'assets/socio.png',
+      desc: 'Si consideras que tus productos y los nuestros pueden potenciarse juntos'
+    },
+  ];
+
+  dataCardsPartnersEn: any[] = [
+    {
+      name: 'Reseller',
+      icon: 'assets/revendedor.png',
+      desc: 'If you want to resell our products and software solutions'
+    },
+    {
+      name: 'Integrator',
+      icon: 'assets/integrador.png',
+      desc: 'If your goal is to resell our products and solutions with your added value'
+    },
+    {
+      name: 'Educator',
+      icon: 'assets/educador.png',
+      desc: 'If you want to train other people or companies in the use of our software products'
+    },
+    {
+      name: 'Technological partner',
+      icon: 'assets/socio.png',
+      desc: 'If you consider that your products can complement ours'
+    },
+  ];
 
   constructor(
     private dialog: MatDialog,
     private translate: TranslateService
-  ) {
-    translate.onLangChange.subscribe(lang=>{
-      console.log(lang);
-      this.translate.use(lang.lang);
-      })
-  }
+  ) { }
 
   ngOnInit() {
-    this.translate.get('PARTNERS').subscribe((res: string) => {
-      this.message = res;
-      this.declare();
-    });
-  }
-
-  declare(){
-    console.log(this.message);
-    this.dataCardsPartners = [
-      {
-        name: this.message['REVENDEDOR'],
-        icon: 'assets/revendedor.png',
-        desc: 'Si querés revender nuestros productos y soluciones de software'
-      },
-      {
-        name: this.message['INTEGRADOR'],
-        icon: 'assets/integrador.png',
-        desc: 'Si tu objetivo es revender nuestros productos con tu valor agregado, desarrollando soluciones'
-      },
-      {
-        name: 'Educador',
-        icon: 'assets/educador.png',
-        desc: 'Si buscas capacitar a otras personas o empresas en el uso de nuestros productos de software'
-      },
-      {
-        name: 'Socio tecnológico',
-        icon: 'assets/socio.png',
-        desc: 'Si consideras que tus productos y los nuestros pueden potenciarse juntos'
-      },
-    ];
   }
 
   openDialog() {
-    this.dialog.open(DialogPartnersComponent , {  height: '470px', width: '600px',});
+    this.dialog.open(DialogPartnersComponent, { height: '470px', width: '600px', });
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 }
