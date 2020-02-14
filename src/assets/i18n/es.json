@@ -122,5 +122,47 @@
     },
     "SOLUCIONES": {
         "DESCRIPCION_HEADER": "Encontrá la solución ideal para tu industria"
+    },
+    "RECURSOS_HUMANOS": {
+        "TITULO": "Recursos humanos",
+        "DESCRIPCION_HEADER": "La efectividad en el uso de las tecnologías de una empresa depende en gran medida de sus recursos humanos. Mediante nuestras soluciones te ofrecemos simplificar los distintos procesos de búsqueda y selección de personal, gestión de licencias y certificados y recibos de sueldo.",
+        "PERSONALIZACION": "¿Como personalizamos tu proceso?",
+        "PERSONALIZACION_DESC": "Como resultado de análisis de la problemática en diferentes empresas, hemos pensando la mejor solución para resolver esto, te lo contamos a continuación.",
+        "CONTRATACIONES": "Contrataciones",
+        "CONTRATACIONES_DESC": "Generamos una solicitud de contratación, pasará por un proceso de aprobación y se realizará una búsqueda para el puesto.",
+        "MAS_INFO": "Más información",
+        "RECIBO DE SUELDO": "Recibo de sueldo",
+        "RECIBO DE SUELDO_DESC": "Identificamos los recibos de sueldos generados desde el sistema de liquidación de haberes. Luego se firman digitalmente tanto por el empleador, como por el empleado y finaliza el proceso el responsable de RRHH.",
+        "SOLUCITUDES": "Solicitudes",
+        "SOLICITUDES_DESC": "Los empleados podrán generar distintas solicitudes digitales que pasarán por un proceso de revisión para ser aprobadas o rechazadas.",
+        "LEGAJOS": "Legajos digitales",
+        "LEGAJOS_DESC": "Contiene todos los documentos asociados al trabajador a lo largo de su vida en la empresa. Los mismos podrán ser consultados por el personal de RRHH.",
+        "DISEÑADA_POR": "Esta solución esta diseñada por <br> <span class='letraThuban'>Thuban Software</span>",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Reducción de costos <br> de procesamiento",
+        "BENEFICIOS_2": "Mayor supervisión <br> y control",
+        "BENEFICIOS_3": "Reducción de errores <br> humanos manuales",
+        "BENEFICIOS_4": "Visibilidad del estado de <br> incorporación de empleados"
+    },
+    "CUENTAS_A_PAGAR": {
+        "TITULO": "Human resources",
+        "DESCRIPCION_HEADER": "The effectiveness in the use of the technologies of a company depends largely on its human resources. Through our solutions we offer you to simplify the searching and hiring, licenses and certificates management and salary receipts.",
+        "PERSONALIZACION": "How do we customize your process?",
+        "PERSONALIZACION_DESC": "As a result of the analysis of the problem in different companies, we have thought about the best solution to solve this, we will tell you next",
+        "DIGITALIZACION": "Hiring",
+        "DIGITALIZACION_DESC": "We generate a hiring request, it will go through an approval process and a search will be carried out for the position.",
+        "MAS_INFO": "More information",
+        "IDENTIFICACION": "Salary receipt",
+        "IDENTIFICACION_DESC": "We identify the salary receipts generated from the salary system. Then they are digitally signed by both the employer and the employee.",
+        "APROBACION": "Requests",
+        "APROBACION_DESC": "Employees may generate different digital requests that will go through a review process to be approved or rejected.",
+        "BUSQUEDA": "Digital files",
+        "BUSQUEDA_DESC": "Contains all the documents associated with the worker throughout his life in the companys so they can be consulted by HR manager.",
+        "DISEÑADA_POR": "Esta solución esta diseñada por <br> <span class='letra4'>Captika Software</span> y <span class='letraThuban'>Thuban Software</span>",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Processing costs <br> reduction",
+        "BENEFICIOS_2": "Greater supervision <br> and control",
+        "BENEFICIOS_3": "Reduction of manual <br> human errors",
+        "BENEFICIOS_4": "Digital management <br> of employee hiring"
     }
 }
