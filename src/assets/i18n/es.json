@@ -199,6 +199,45 @@
         "BENEFICIOS_2": "Flujos de trabajo <br> y firmas digitales",
         "BENEFICIOS_3": "Administración proactiva <br> de la renovación",
         "BENEFICIOS_4": "Búsqueda rápida <br> para auditorías"
+    },
+    "ONBOARDING": {
+        "TITULO": "OnBoarding",
+        "DESCRIPCION_HEADER": "Te brindamos las herramientas de gestión de la información que necesitan las areas de para gestionar mejor el proceso de incorporación de los empleados/clientes y proporcionar una transición lo más fluida posible.Esto permite que el personal realice un seguimiento de todo el proceso de incorporación y supervise las tareas en todos los departamentos.",
+        "PERSONALIZACION": "¿Como personalizamos tu proceso?",
+        "PERSONALIZACION_DESC": "Como resultado de análisis de la problemática en diferentes empresas, hemos pensando la mejor solución para resolver esto, te lo contamos a continuación.",
+        "CARGA": "Carga de datos",
+        "CARGA_DESC": "El cliente solicitara el alta, enviará toda la información necesaria a una casilla de correo y de la misma podremos capturar todos los datos proporcionados por el cliente.",
+        "VERIFICACION": "Verificación de solicitudes",
+        "VERIFICACION_DESC": "Podremos verificar la información proporcionada, completando el control documental.",
+        "APROBACION": "Aprobaciones",
+        "APROBACION_DESC": "Las solicitudes acumularán las aprobación que necesiten para el alta del cliente.",
+        "ALTA": "Alta cliente",
+        "ALTA_DESC": "Al final la jornada, podremos contar con un reporte teniendo toda la información de altas de clientes aprobadas en el día.",
+        "DISEÑADA_POR": "Esta solución esta diseñada por <br> <span class='letraThuban'>Thuban Software</span>",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Reduce errores <br> humanos manuales",
+        "BENEFICIOS_2": "Creación de flujos <br> de trabajo",
+        "BENEFICIOS_3": "Mayor supervisión <br> y control",
+        "BENEFICIOS_4": "Búsqueda accesible <br> a los documentos"
+    },
+    "COMPRAS": {
+        "TITULO": "Compras",
+        "DESCRIPCION_HEADER": "Poder responder rápidamente a las necesidades del sector solicitante permite optimizar los procesos de las organizaciones e incrementar su eficacia, por eso, te ayudamos a abrir nuevas vías de comunicación entre los diferentes sectores participantes del proceso y tener información acerca de donde se encuentras las distintas solicitudes.",
+        "PERSONALIZACION": "¿Como personalizamos tu proceso?",
+        "PERSONALIZACION_DESC": "Como resultado de análisis de la problemática en diferentes empresas, hemos pensando la mejor solución para resolver esto, te lo contamos a continuación.",
+        "CERTIFICACION": "Certificación presupuestaria",
+        "CERTIFICACION_DESC": "Damos de alta una certificación presupuestaria, completando la información y adjuntando el archivo PDF correspondiente.",
+        "EVALUACION": "Evaluación de áreas",
+        "EVALUACION_DESC": "Diferentes áreas podrán evaluar la necesidad de adquisición.",
+        "PRESUPUESTOS": "Presupuestos",
+        "PRESUPUESTOS_DESC": "Una vez aprobado, se solicitarán cotizaciones a diferentes proveedores.",
+        "CONTRATO": "Confección del contrato",
+        "CONTRATO_DESC": "Una vez seleccionado el proveedor más adecuado, se generará un contrato finalizando el proceso.",
+        "DISEÑADA_POR": "Esta solución esta diseñada por <br> <span class='letraThuban'>Thuban Software</span>",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Eliminación de pérdida <br> de información",
+        "BENEFICIOS_2": "Aumento de <br> productividad",
+        "BENEFICIOS_3": "Mayor supervisión <br> y control",
+        "BENEFICIOS_4": "Reducción de tiempos <br> en procesamiento"
     }
-    
 }

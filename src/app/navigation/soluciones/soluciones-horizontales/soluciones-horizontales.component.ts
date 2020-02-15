@@ -81,12 +81,12 @@ export class SolucionesHorizontalesComponent implements OnInit {
       path: '/onboarding'
     },
     {
-      name: 'Accounts receivable',
+      name: 'Purchases',
       image: 'assets/compras.png',
       path: '/compras'
     },
     {
-      name: 'Digital Signature',
+      name: 'Digital signature',
       image: 'assets/firma-digital.png',
       path: '/firma-digital'
     },
