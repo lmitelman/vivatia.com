@@ -1,20 +1,20 @@
 <div class="d-flex header align-items-center pt-5">
     <div class="text-header animated fadeInDown">
-        <h1 class="mb-2">Legajos digitales</h1>
-        <h5 class="w-75 text-white">La gestión del legajo de personal es un punto crítico en una organización. Nuestra solución permite gestionar toda la documentación centralizada en el concepto de Legajo Digital del empleado sin importar el formato o soporte de origen del documento. Incluso te ofrecemos implementar la firma digital como herramienta para darle validez legal a documentos electrónicos que así lo requieren.</h5>
+        <h1 class="mb-2">{{ "LEGAJOS.TITULO" | translate }}</h1>
+        <h5 class="w-75 text-white">{{ "LEGAJOS.DESCRIPCION_HEADER" | translate }}</h5>
     </div>
 </div>
 
 <div class="d-flex py-4 flex-column text-center align-items-center">
-    <h4 class="font-weight-bold mt-4 mb-3 animated fadeInRight">¿Como personalizamos tu proceso?</h4>
-    <h6 class="text-personalizacion animated fadeInRight">Como resultado de análisis de la problemática en diferentes empresas, hemos pensando la mejor solución para resolver esto, te lo contamos a continuación.</h6>
+    <h4 class="font-weight-bold mt-4 mb-3 animated fadeInRight">{{ "LEGAJOS.PERSONALIZACION" | translate }}</h4>
+    <h6 class="text-personalizacion animated fadeInRight">{{ "LEGAJOS.PERSONALIZACION_DESC" | translate }}</h6>
 </div>
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item1 animated fadeInLeft">
     <div class="d-flex flex-column descripcion animated fadeInLeft">
-        <h4 class="font-weight-bold letra5"><span class="green-borderh4">1. Digitalización</span></h4>
+        <h4 class="font-weight-bold letra5"><span class="green-borderh4">1. {{ "LEGAJOS.DIGITALIZACION" | translate }}</span></h4>
         <br>
-        <h6>Identificaremos los diferente documentos pudiendo asociar los datos con los diferentes legajos.</h6>
+        <h6>{{ "LEGAJOS.DIGITALIZACION_DESC" | translate }}</h6>
         <br>
     </div>
     <div>
@@ -24,9 +24,9 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item2 animated fadeInRight">
     <div class="d-flex flex-column descripcion2">
-        <h4 class="font-weight-bold letra6"><span class="blue-borderh4">2. Publicación de imágenes</span></h4>
+        <h4 class="font-weight-bold letra6"><span class="blue-borderh4">2. {{ "LEGAJOS.PUBLICACION" | translate }}</span></h4>
         <br>
-        <h6>Se conformarán legajos, conteniendo toda la documentación de la persona.</h6>
+        <h6>{{ "LEGAJOS.PUBLICACION_DESC" | translate }}</h6>
         <br>
     </div>
     <div>
@@ -36,9 +36,9 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item1 animated fadeInLeft">
     <div class="d-flex flex-column descripcion">
-        <h4 class="font-weight-bold letra6"><span class="blue-borderh4">3. Búsqueda y consulta</span></h4>
+        <h4 class="font-weight-bold letra6"><span class="blue-borderh4">3. {{ "LEGAJOS.BUSQUEDA" | translate }}</span></h4>
         <br>
-        <h6>En cualquier momento podremos realizar búsquedas de legajos, documentos y visualizar los documentos correspondientes.</h6>
+        <h6>{{ "LEGAJOS.BUSQUEDA_DESC" | translate }}</h6>
         <br>
     </div>
     <div>
@@ -46,62 +46,62 @@
     </div>
 </div>
 
-<section class="bg-main3 benefitsDesktop flex-column justify-content-center align-items-center" style="background-color: white">
-    <h2 class="mb-4 font-weight-bold animated fadeInDown">Beneficios</h2>
-    <div class="d-flex mt-4 justify-content-center align-items-start text-center w-75 animated fadeInDown">
-        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
-            <img class="mb-3 small-logo" src="assets/benefit-ld1.png">
-            <h5 class="mb-1">Administración <br> proactiva</h5>
-        </div>
-        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
-            <img class="mb-3 small-logo" src="assets/benefit-ld2.png">
-            <h5 class="mb-1">Reducción de errores <br> humanos manuales</h5>
-        </div>
-        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
-            <img class="mb-3 small-logo" src="assets/benefit-ld3.png">
-            <h5 class="mb-1">Seguridad <br> y confiabilidad</h5>
-        </div>
-        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
-            <img class="mb-3 small-logo" src="assets/benefit-ld4.png">
-            <h5 class="mb-1">Fácil búsqueda <br> y administración</h5>
-        </div>
-    </div>
-</section>
-
 <div class="d-flex justify-content-center align-items-center my-5 diseñadapor">
-    <h4 class="my-2 mx-2 font-weight-bold text-center">Esta solución esta diseñada por <br> <span class="letra4">Captika Software</span> y <span class="letraThuban">Thuban Software</span></h4>
+    <h4 class="my-2 mx-2 font-weight-bold text-center" [innerHTML]="'LEGAJOS.DISEÑADA_POR' | translate"></h4>
     <div class="d-flex">
         <img class="mx-4" routerLink="/captika" src="assets/captika-color.png">
         <img class="mx-4" routerLink="/thuban" src="assets/thuban-color.png">
     </div>
 </div>
 
+<section class="bg-main3 benefitsDesktop flex-column justify-content-center align-items-center" style="background-color: white">
+    <h2 class="mb-4 font-weight-bold animated fadeInDown">{{ "LEGAJOS.BENEFICIOS" | translate }}</h2>
+    <div class="d-flex mt-4 justify-content-center align-items-start text-center w-75 animated fadeInDown">
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-ld1.png">
+            <h5 class="mb-1" [innerHTML]="'LEGAJOS.BENEFICIOS_1' | translate"></h5>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-ld2.png">
+            <h5 class="mb-1" [innerHTML]="'LEGAJOS.BENEFICIOS_2' | translate"></h5>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-ld3.png">
+            <h5 class="mb-1" [innerHTML]="'LEGAJOS.BENEFICIOS_3' | translate"></h5>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-ld4.png">
+            <h5 class="mb-1" [innerHTML]="'LEGAJOS.BENEFICIOS_4' | translate"></h5>
+        </div>
+    </div>
+</section>
+
 <section>
     <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center animated fadeIn" style="background-color: white">
-        <h2 class="my-4 font-weight-bold">Beneficios</h2>
+        <h2 class="my-4 font-weight-bold">{{ "LEGAJOS.BENEFICIOS" | translate }}</h2>
         <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false' [showNavigationIndicators]="false"> 
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-ld1.png">
-                    <h5 class="mb-4">Administración <br> proactiva</h5>
+                    <h5 class="mb-4" [innerHTML]="'LEGAJOS.BENEFICIOS_1' | translate"></h5>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-ld2.png">
-                    <h5 class="mb-4">Reducción de errores <br> humanos manuales</h5>
+                    <h5 class="mb-4" [innerHTML]="'LEGAJOS.BENEFICIOS_2' | translate"></h5>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-ld3.png">
-                    <h5 class="mb-4">Seguridad <br> y confiabilidad</h5>
+                    <h5 class="mb-4" [innerHTML]="'LEGAJOS.BENEFICIOS_3' | translate"></h5>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-ld4.png">
-                    <h5 class="mb-4">Fácil búsqueda <br> y administración</h5>
+                    <h5 class="mb-4" [innerHTML]="'LEGAJOS.BENEFICIOS_4' | translate"></h5>
                 </div>
             </ng-template>
         </ngb-carousel>
