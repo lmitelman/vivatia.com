@@ -1,20 +1,20 @@
 <div class="d-flex header align-items-center pt-5">
     <div class="text-header animated fadeInDown">
-        <h1 class="mb-2">Digitalizacion</h1>
-        <h5 class="w-75 text-white">La digitalización de documentos es algo imprescindible actualmente para cualquier empresa, el verdadero poder de la gestión documental está en procesar y darle utilidad a la información. Ofrecemos un servicio que incluye la captura, el procesamiento y la entrega de la información digitalizada lista para utilizar en el formato que necesiten nuestros clientes. No solo te ayudamos a eliminar el papel, potenciamos tu información.</h5>
+        <h1 class="mb-2">{{ "DIGITALIZACION.TITULO" | translate }}</h1>
+        <h5 class="w-75 text-white">{{ "DIGITALIZACION.DESCRIPCION_HEADER" | translate }}</h5>
     </div>
 </div>
 
 <div class="d-flex py-4 flex-column text-center align-items-center">
-    <h4 class="font-weight-bold mt-4 mb-3 animated fadeInRight">¿Como personalizamos tu proceso?</h4>
-    <h6 class="text-personalizacion animated fadeInRight">Como resultado de análisis de la problemática en diferentes empresas, hemos pensando la mejor solución para resolver esto, te lo contamos a continuación.</h6>
+    <h4 class="font-weight-bold mt-4 mb-3 animated fadeInRight">{{ "DIGITALIZACION.PERSONALIZACION" | translate }}</h4>
+    <h6 class="text-personalizacion animated fadeInRight">{{ "DIGITALIZACION.PERSONALIZACION_DESC" | translate }}</h6>
 </div>
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item1 animated fadeInLeft">
     <div class="d-flex flex-column descripcion animated fadeInLeft">
-        <h4 class="font-weight-bold letra5"><span class="green-borderh4">1. Digitalización</span></h4>
+        <h4 class="font-weight-bold letra5"><span class="green-borderh4">1. {{ "DIGITALIZACION.DIGITALIZACION" | translate }}</span></h4>
         <br>
-        <h6>Las imágenes de los documentos pueden ser capturadas desde un escáner, un directorio de red, Thuban Software, e incluso una casilla de correo.</h6>
+        <h6>{{ "DIGITALIZACION.DIGITALIZACION_DESC" | translate }}</h6>
         <br>
     </div>
     <div>
@@ -24,9 +24,9 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item2 animated fadeInRight">
     <div class="d-flex flex-column descripcion2">
-        <h4 class="font-weight-bold letra5"><span class="green-borderh4">2. Identificación y extracción</span></h4>
+        <h4 class="font-weight-bold letra5"><span class="green-borderh4">2. {{ "DIGITALIZACION.EXTRACCION" | translate }}</span></h4>
         <br>
-        <h6>Se realiza un reconocimiento de datos con tecnología OCR para luego ser indexados al documento.</h6>
+        <h6>{{ "DIGITALIZACION.EXTRACCION_DESC" | translate }}</h6>
         <br>
     </div>
     <div>
@@ -36,9 +36,9 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item1 animated fadeInLeft">
     <div class="d-flex flex-column descripcion">
-        <h4 class="font-weight-bold letra5"><span class="green-borderh4">3. Publicación</span></h4>
+        <h4 class="font-weight-bold letra5"><span class="green-borderh4">3. {{ "DIGITALIZACION.PUBLICACION" | translate }}</span></h4>
         <br>
-        <h6>Finalizaremos el proceso con la publicación de los documentos a cualquier repositorio.</h6>
+        <h6>{{ "DIGITALIZACION.PUBLICACION_DESC" | translate }}</h6>
         <br>
     </div>
     <div>
@@ -46,61 +46,61 @@
     </div>
 </div>
 
-<section class="bg-main3 benefitsDesktop flex-column justify-content-center align-items-center" style="background-color: white">
-    <h2 class="mb-4 font-weight-bold animated fadeInDown">Beneficios</h2>
-    <div class="d-flex mt-4 justify-content-center align-items-start text-center w-75 animated fadeInDown">
-        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
-            <img class="mb-3 small-logo" src="assets/benefit-dig1.png">
-            <h5 class="mb-1">Ahorro en<br>papel</h5>
-        </div>
-        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
-            <img class="mb-3 small-logo" src="assets/benefit-dig2.png">
-            <h5 class="mb-1">Liberación de<br>espacio físico</h5>
-        </div>
-        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
-            <img class="mb-3 small-logo" src="assets/benefit-dig3.png">
-            <h5 class="mb-1">Aumento de<br>productividad</h5>
-        </div>
-        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
-            <img class="mb-3 small-logo" src="assets/benefit-cap2.png">
-            <h5 class="mb-1">Optimización<br>de procesos</h5>
-        </div>
-    </div>
-</section>
-
 <div class="d-flex justify-content-center align-items-center my-5 diseñadapor">
-    <h4 class="my-2 mx-2 font-weight-bold text-center">Esta solución esta diseñada por <br> <span class="letra4">Captika Software</span></h4>
+    <h4 class="my-2 mx-2 font-weight-bold text-center" [innerHTML]="'DIGITALIZACION.DISEÑADA_POR' | translate"></h4>
     <div class="d-flex">
         <img class="mx-4" routerLink="/captika" src="assets/captika-color.png">
     </div>
 </div>
 
+<section class="bg-main3 benefitsDesktop flex-column justify-content-center align-items-center" style="background-color: white">
+    <h2 class="mb-4 font-weight-bold animated fadeInDown">{{ "DIGITALIZACION.BENEFICIOS" | translate }}</h2>
+    <div class="d-flex mt-4 justify-content-center align-items-start text-center w-75 animated fadeInDown">
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-dig1.png">
+            <h5 class="mb-1" [innerHTML]="'DIGITALIZACION.BENEFICIOS_1' | translate"></h5>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-dig2.png">
+            <h5 class="mb-1" [innerHTML]="'DIGITALIZACION.BENEFICIOS_2' | translate"></h5>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-dig3.png">
+            <h5 class="mb-1" [innerHTML]="'DIGITALIZACION.BENEFICIOS_3' | translate"></h5>
+        </div>
+        <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
+            <img class="mb-3 small-logo" src="assets/benefit-cap2.png">
+            <h5 class="mb-1" [innerHTML]="'DIGITALIZACION.BENEFICIOS_4' | translate"></h5>
+        </div>
+    </div>
+</section>
+
 <section>
     <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center animated fadeIn" style="background-color: white">
-        <h2 class="my-4 font-weight-bold">Beneficios</h2>
+        <h2 class="my-4 font-weight-bold">{{ "DIGITALIZACION.BENEFICIOS" | translate }}</h2>
         <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false' [showNavigationIndicators]="false"> 
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-dig1.png">
-                    <h5 class="mb-4">Ahorro en<br>papel</h5>
+                    <h5 class="mb-4" [innerHTML]="'DIGITALIZACION.BENEFICIOS_1' | translate"></h5>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-dig2.png">
-                    <h5 class="mb-4">Liberación de<br>espacio físico</h5>
+                    <h5 class="mb-4" [innerHTML]="'DIGITALIZACION.BENEFICIOS_2' | translate"></h5>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-dig3.png">
-                    <h5 class="mb-4">Aumento de<br>productividad</h5>
+                    <h5 class="mb-4" [innerHTML]="'DIGITALIZACION.BENEFICIOS_3' | translate"></h5>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-cap2.png">
-                    <h5 class="mb-4">Optimización<br>de procesos</h5>
+                    <h5 class="mb-4" [innerHTML]="'DIGITALIZACION.BENEFICIOS_4' | translate"></h5>
                 </div>
             </ng-template>
         </ngb-carousel>

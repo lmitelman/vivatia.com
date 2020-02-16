@@ -239,5 +239,41 @@
         "BENEFICIOS_2": "Aumento de <br> productividad",
         "BENEFICIOS_3": "Mayor supervisión <br> y control",
         "BENEFICIOS_4": "Reducción de tiempos <br> en procesamiento"
+    },
+    "FIRMA_DIGITAL": {
+        "TITULO": "Firma digital",
+        "DESCRIPCION_HEADER": "Podemos utilizar la firma digital en una gran cantidad de procesos, así como en el intercambio que podemos tener con clientes, proveedores, gobierno, entidades financieras, entre otros, procurando optimizar tiempos, reducir costos, brindando un mejor servicio con la seguridad y validez jurídica.",
+        "PERSONALIZACION": "¿Como personalizamos tu proceso?",
+        "PERSONALIZACION_DESC": "Como resultado de análisis de la problemática en diferentes empresas, hemos pensando la mejor solución para resolver esto, te lo contamos a continuación.",
+        "DIGITALIZACION": "Digitalización",
+        "DIGITALIZACION_DESC": "Se solicitará la digitalización de los documentos necesarios para proceder con el proceso.",
+        "FIRMA": "Firma digital",
+        "FIRMA_DESC": "Una vez cargados los datos, los documentos podrán ser firmados digitalmente (certificado digital) o electrónicamente (hológrafa-digital)",
+        "PUBLICACION": "Publicación",
+        "PUBLICACION_DESC": "Finalmente, se publicará el documento firmado a efectos que quede disponible para ser gestionado y consultado, pudiéndose enviar una copia al cliente por medio de un correo electrónico.",
+        "DISEÑADA_POR": "Esta solución esta diseñada por <br> <span class='letraThuban'>Thuban Software</span>",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Seguridad en el <br> intercambio de información",
+        "BENEFICIOS_2": "Validez <br> jurídica",
+        "BENEFICIOS_3": "Asegura <br> la identidad",
+        "BENEFICIOS_4": "Proceso ágil <br> y simple"
+    },
+    "DIGITALIZACION": {
+        "TITULO": "Digitalizacion",
+        "DESCRIPCION_HEADER": "La digitalización de documentos es algo imprescindible actualmente para cualquier empresa, el verdadero poder de la gestión documental está en procesar y darle utilidad a la información. Ofrecemos un servicio que incluye la captura, el procesamiento y la entrega de la información digitalizada lista para utilizar en el formato que necesiten nuestros clientes. No solo te ayudamos a eliminar el papel, potenciamos tu información.",
+        "PERSONALIZACION": "¿Como personalizamos tu proceso?",
+        "PERSONALIZACION_DESC": "Como resultado de análisis de la problemática en diferentes empresas, hemos pensando la mejor solución para resolver esto, te lo contamos a continuación.",
+        "DIGITALIZACION": "Digitalización",
+        "DIGITALIZACION_DESC": "Las imágenes de los documentos pueden ser capturadas desde un escáner, un directorio de red, Thuban Software o incluso una casilla de correo.",
+        "EXTRACCION": "Identificación y extracción",
+        "EXTRACCION_DESC": "Se realiza un reconocimiento de datos con tecnología OCR para luego ser indexados al documento.",
+        "PUBLICACION": "Publicación",
+        "PUBLICACION_DESC": "Finalizaremos el proceso con la publicación de los documentos a cualquier repositorio.",
+        "DISEÑADA_POR": "Esta solución esta diseñada por <br> <span class='letra4'>Captika Software</span>",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Ahorro en <br> papel",
+        "BENEFICIOS_2": "Liberación de <br> espacio físico",
+        "BENEFICIOS_3": "Aumento de <br> productividad",
+        "BENEFICIOS_4": "Optimización <br> de procesos"
     }
 }

@@ -239,5 +239,41 @@
         "BENEFICIOS_2": "Productivity <br> increase ",
         "BENEFICIOS_3": "Greater supervision <br> and control",
         "BENEFICIOS_4": "Reduction of <br> processing time"
+    },
+    "FIRMA_DIGITAL": {
+        "TITULO": "Digital signature",
+        "DESCRIPCION_HEADER": "You can use the digital signature in different processes and in the information exchange with customers, suppliers, government and financial institutions trying to optimize times, reduce costs, providing a better service with security and legal validity.",
+        "PERSONALIZACION": "How do we customize your process?",
+        "PERSONALIZACION_DESC": "As a result of the analysis of the problem in different companies, we have thought about the best solution to solve this, we will tell you next",
+        "DIGITALIZACION": "Digitization",
+        "DIGITALIZACION_DESC": "The necessary documents will be digitized to continue with the process.",
+        "FIRMA": "Digital signature",
+        "FIRMA_DESC": "Once the data has been uploaded, the documents may be signed digitally (digital certificate) or electronically (digital-holograph)",
+        "PUBLICACION": "Publication",
+        "PUBLICACION_DESC": "Finally, the signed documents will available to be searched and consulted, and a copy can be sent to the client through an email.",
+        "DISEÑADA_POR": "This solución is powered by <br> <span class='letra4'>Captika Software</span> and <span class='letraThuban'>Thuban Software</span>",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Secure information <br> exchange",
+        "BENEFICIOS_2": "Legal <br> validity",
+        "BENEFICIOS_3": "Secure <br> identity",
+        "BENEFICIOS_4": "Agile and <br> simple process"
+    },
+    "DIGITALIZACION": {
+        "TITULO": "Digitization",
+        "DESCRIPCION_HEADER": "The document digitalization is essential for any company, the true power of document management is to produce information. We offer a service that includes the capture, processing and delivery of information digitized ready to use in the format that our customers need. We not only help you to eliminate papers, we enhance your information.",
+        "PERSONALIZACION": "How do we customize your process?",
+        "PERSONALIZACION_DESC": "As a result of the analysis of the problem in different companies, we have thought about the best solution to solve this, we will tell you next",
+        "DIGITALIZACION": "Digitization",
+        "DIGITALIZACION_DESC": "Document images can be captured from a scanner, a network directory, Thuban Software or even a mailbox",
+        "EXTRACCION": "Identification and extraction",
+        "EXTRACCION_DESC": "Data recognition with OCR technology is performed and then indexed to the document.",
+        "PUBLICACION": "Publication",
+        "PUBLICACION_DESC": "We will finish the process by publishing the documents to any repository.",
+        "DISEÑADA_POR": "This solución is powered by <br> <span class='letra4'>Captika Software</span>",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Savings <br> on paper",
+        "BENEFICIOS_2": "Physical <br> space liberation",
+        "BENEFICIOS_3": "Productivity <br> increase",
+        "BENEFICIOS_4": "Process <br> optimization"
     }
 }
