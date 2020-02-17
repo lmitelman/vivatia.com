@@ -1,12 +1,12 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
-    <div class="d-flex flex-column align-items-start" *ngIf="currentLanguage() == 'es'">
+    <div class="d-flex flex-column align-items-start w-75" *ngIf="currentLanguage() == 'es'">
         <h2 class="subtitle animated pulse m-0">Viví tu <br> experiencia</h2>
         <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontTextEs" (preStringTyped)="doSmth($event)">
             <h2 [ngClass]="{'font-especial': fontTextEs[positionArrayText] == 'vivatia.'}" class="typing"></h2>
         </ngx-typed-js>
         <button mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Contactanos</button>
     </div>
-    <div class="d-flex flex-column align-items-start" *ngIf="currentLanguage() == 'en'">
+    <div class="d-flex flex-column align-items-start w-75" *ngIf="currentLanguage() == 'en'">
         <h2 class="subtitle animated pulse m-0">Live your <br></h2>
         <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontTextEn" (preStringTyped)="doSmth($event)">
             <h2 [ngClass]="{'font-especial': fontTextEn[positionArrayText] == 'vivatia'}" class="typing"></h2>
