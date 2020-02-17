@@ -1,16 +1,28 @@
 <div class="d-flex header align-items-center pt-5">
     <div class="text-header animated fadeInDown">
-        <h1 class="mb-3">Industria financiera</h1>
-        <h5 class="w-75 text-white">Debido a los sistemas antiguos heredados y los nuevos requisitos de cumplimiento normativo, muchas compañías de servicios financieros deben cambiar. Hay formas de acelerar la transformación digital. Creemos que comienza con la visibilidad de los datos y la captura, extracción y clasificación eficiente de la información que se recibe de clientes, proveedores y socios de negocio.</h5>
+        <h1 class="mb-3">{{ "FINANCIERA.TITULO" | translate }}</h1>
+        <h5 class="w-75 text-white">{{ "FINANCIERA.DESCRIPCION_HEADER" | translate }}</h5>
     </div>
 </div>
 
 <app-personalizacion></app-personalizacion>
 
-<section class="bg-main2 text-white contenedor-soluciones d-flex flex-column justify-content-center align-items-center py-5" style="background-color: #2c773f;">
+<!-- ESP -->
+<section *ngIf="currentLanguage() == 'es'" class="bg-main2 text-white contenedor-soluciones d-flex flex-column justify-content-center align-items-center py-5" style="background-color: #2c773f;">
     <h2 class="mb-5 animated fadeInDown text-center">Creamos soluciones para tu industria</h2>
     <div class="d-flex mt-4 justify-content-center flex-wrap align-items-start text-center w-100 animated fadeInDown soluciones">
-        <div *ngFor="let data of dataCardsBanca, let i = index" class="mx-1 d-flex flex-column justify-content-center align-items-center solucion">
+        <div *ngFor="let data of dataCardsBancaEs, let i = index" class="mx-1 d-flex flex-column justify-content-center align-items-center solucion">
+            <img class="mb-2 logo-solucion" [src]=data.icon>
+            <h5 class="mb-4" [innerHTML]=data.name></h5>
+        </div>
+    </div>
+</section>
+
+<!-- ENG -->
+<section *ngIf="currentLanguage() == 'en'" class="bg-main2 text-white contenedor-soluciones d-flex flex-column justify-content-center align-items-center py-5" style="background-color: #2c773f;">
+    <h2 class="mb-5 animated fadeInDown text-center">We create solutions for your industry</h2>
+    <div class="d-flex mt-4 justify-content-center flex-wrap align-items-start text-center w-100 animated fadeInDown soluciones">
+        <div *ngFor="let data of dataCardsBancaEn, let i = index" class="mx-1 d-flex flex-column justify-content-center align-items-center solucion">
             <img class="mb-2 logo-solucion" [src]=data.icon>
             <h5 class="mb-4" [innerHTML]=data.name></h5>
         </div>
@@ -20,53 +32,53 @@
 <app-cross></app-cross>
 
 <section class="bg-main3 benefitsDesktop flex-column justify-content-center align-items-center py-5" style="background-color: white">
-    <h2 class="mb-5 font-weight-bold animated fadeInDown">Beneficios</h2>
+    <h2 class="mb-5 font-weight-bold animated fadeInDown">{{ "FINANCIERA.BENEFICIOS" | translate }}</h2>
     <div class="d-flex mt-4 justify-content-center align-items-start text-center w-75 animated fadeInDown">
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-3 small-logo" src="assets/benefit-dig1.png">
-            <h5 class="mb-1">Ahorro en<br>papel</h5>
+            <h5 class="mb-1"  [innerHTML]="'FINANCIERA.BENEFICIOS_1' | translate"></h5>
         </div>
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-3 small-logo" src="assets/benefit-cap2.png">
-            <h5 class="mb-1">Optimización<br>de procesos</h5>
+            <h5 class="mb-1" [innerHTML]="'FINANCIERA.BENEFICIOS_2' | translate"></h5>
         </div>
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-3 small-logo" src="assets/benefit-ld4.png">
-            <h5 class="mb-1">Mayor<br>seguridad</h5>
+            <h5 class="mb-1"  [innerHTML]="'FINANCIERA.BENEFICIOS_3' | translate"></h5>
         </div>
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
             <img class="mb-3 small-logo" src="assets/benefit-comp3.png">
-            <h5 class="mb-1">Reducción de tiempos<br>en procesamiento</h5>
+            <h5 class="mb-1"  [innerHTML]="'FINANCIERA.BENEFICIOS_4' | translate"></h5>
         </div>
     </div>
 </section>
 
 <section>
     <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center animated fadeIn" style="background-color: white">
-        <h2 class="my-4 font-weight-bold">Beneficios</h2>
+        <h2 class="my-4 font-weight-bold">{{ "FINANCIERA.BENEFICIOS" | translate }}</h2>
         <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false' [showNavigationIndicators]="false"> 
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-dig1.png">
-                    <h5 class="mb-4">Ahorro en<br>papel</h5>
+                    <h5 class="mb-4"  [innerHTML]="'FINANCIERA.BENEFICIOS_1' | translate"></h5>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-cap2.png">
-                    <h5 class="mb-4">Optimización<br>de procesos</h5>
+                    <h5 class="mb-4"  [innerHTML]="'FINANCIERA.BENEFICIOS_2' | translate"></h5>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-ld4.png">
-                    <h5 class="mb-4">Mayor<br>seguridad</h5>
+                    <h5 class="mb-4"  [innerHTML]="'FINANCIERA.BENEFICIOS_3' | translate"></h5>
                 </div>
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-comp3.png">
-                    <h5 class="mb-4">Reducción de tiempos<br>en procesamiento</h5>
+                    <h5 class="mb-4"  [innerHTML]="'FINANCIERA.BENEFICIOS_4' | translate"></h5>
                 </div>
             </ng-template>
         </ngb-carousel>

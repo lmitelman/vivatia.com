@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { SolucionesModalComponent } from '../../soluciones-modal/soluciones-modal.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-seguros',
@@ -9,7 +10,7 @@ import { SolucionesModalComponent } from '../../soluciones-modal/soluciones-moda
 })
 export class SegurosComponent implements OnInit {
 
-  dataCardsSeguros: any[] = [
+  dataCardsSegurosEs: any[] = [
     {
       name: 'Denuncias de <br> siniestros',
       icon: 'assets/denuncias.png'
@@ -28,9 +29,32 @@ export class SegurosComponent implements OnInit {
     },
   ];
 
-  constructor(private dialog: MatDialog) { }
+  dataCardsSegurosEn: any[] = [
+    {
+      name: 'Sinister <br> claims',
+      icon: 'assets/denuncias.png'
+    },
+    {
+      name: 'Insurance <br> applications',
+      icon: 'assets/solicitudes-de-seguros.png'
+    },
+    {
+      name: 'Budgets and <br> workshops',
+      icon: 'assets/solicitudes-de-apertura.png'
+    },
+    {
+      name: 'Fleet <br> management',
+      icon: 'assets/gestion-de-flotas.png'
+    },
+  ];
+
+  constructor(private dialog: MatDialog, private translate: TranslateService) { }
 
   ngOnInit() {
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
 }

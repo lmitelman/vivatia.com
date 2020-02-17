@@ -3,7 +3,7 @@
     <h2 class="font-weight-bold text-dark subtitle animated pulse mb-2">Product learning & <br> certification</h2>
     <p [innerHTML]="'CAPACITACIONES.DESCRIPCION_HEADER' | translate"></p>
     <button mat-raised-button
-      class="mt-2 rounded-pill boton text-white px-3 py-1">{{ "CAPACITACIONES.POTENCIAR_1" | translate }}</button>
+      class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">{{ "CAPACITACIONES.POTENCIAR_1" | translate }}</button>
   </div>
 </section>
 
@@ -61,8 +61,8 @@
                 <p>Creación de una solución de principio a fin.</p>
               </li>
             </ul>
-            <a href="#" class="btn btn-block btn-success text-uppercase">Reservar mi lugar</a>
-            <a download="capacitacion-producto" target="_blank" href="/assets/capacitacion-producto.pdf"
+            <a class="btn btn-block btn-success text-white text-uppercase" (click)="openDialog()">Reservar mi lugar</a>
+            <a download="capacitacion-producto" target="_blank" href="assets/capacitacion-producto.pdf"
               class="btn btn-block btn-light">Descargar contenido</a>
           </div>
         </div>
@@ -83,8 +83,8 @@
                 <p>Beneficios y retornos de inversión.</p> <br>
               </li>
             </ul>
-            <a href="#" class="btn btn-block btn-success text-uppercase">Reservar mi lugar</a>
-            <a download="capacitacion-comercial" target="_blank" href="/assets/capacitacion-comercial.pdf"
+            <a class="btn btn-block btn-success text-white text-uppercase" (click)="openDialog()">Reservar mi lugar</a>
+            <a download="capacitacion-comercial" target="_blank" href="assets/capacitacion-comercial.pdf"
               class="btn btn-block btn-light">Descargar contenido</a>
           </div>
         </div>
@@ -113,7 +113,7 @@
                 <p>Creating a complete software solution.</p>
               </li>
             </ul>
-            <a href="#" class="btn btn-block btn-success text-uppercase">Book my place</a>
+            <a class="btn btn-block btn-success text-white text-uppercase" (click)="openDialog()">Book my place</a>
             <a download="capacitacion-producto" target="_blank" href="/assets/capacitacion-producto.pdf"
               class="btn btn-block btn-light">Download content</a>
           </div>
@@ -135,7 +135,7 @@
                 <p>Benefits and returns on investment.</p> <br>
               </li>
             </ul>
-            <a href="#" class="btn btn-block btn-success text-uppercase">Book my place</a>
+            <a class="btn btn-block btn-success text-white text-uppercase" (click)="openDialog()">Book my place</a>
             <a download="capacitacion-comercial" target="_blank" href="/assets/capacitacion-comercial.pdf"
               class="btn btn-block btn-light">Download content</a>
           </div>

@@ -275,5 +275,108 @@
         "BENEFICIOS_2": "Liberación de <br> espacio físico",
         "BENEFICIOS_3": "Aumento de <br> productividad",
         "BENEFICIOS_4": "Optimización <br> de procesos"
+    },
+    "FINANCIERA": {
+        "TITULO": "Industria financiera",
+        "DESCRIPCION_HEADER": "Debido a los antiguos sistemas heredados y los nuevos requisitos de cumplimiento normativo, muchas compañías de servicios financieros deben cambiar. Hay formas de acelerar la transformación digital. Creemos que comienza con la visibilidad de los datos y la captura, extracción y clasificación eficiente de la información que se recibe de clientes, proveedores y socios de negocio.",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Ahorro en <br> papel",
+        "BENEFICIOS_2": "Optimización <br> de procesos",
+        "BENEFICIOS_3": "Mayor <br> seguridad",
+        "BENEFICIOS_4": "Reducción de tiempos <br> en procesamiento"
+    },
+    "EDUCACION": {
+        "TITULO": "Educación",
+        "DESCRIPCION_HEADER": "Es el nivel de educación quién define la prosperidad de los países. Sin embargo, la mayoría de las instituciones no han sistematizado sus procesos críticos y mucho menos ha integrado en dichos procesos a los principales protagonistas que son los alumnos y los profesores. Te ofrecemos numerosas soluciones de suma importancia que mejoren la experiencia de estos actores fundamentales en el día a día.",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Disponibilidad <br> inmediata de la <br> información",
+        "BENEFICIOS_2": "Reducción <br> de costos",
+        "BENEFICIOS_3": "Sistematización y <br> automatización de procesos",
+        "BENEFICIOS_4": "Reducción de tiempos <br> en procesamiento",
+        "BENEFICIOS_5": "Mantenimientos <br> en término"
+    },
+    "GOBIERNO": {
+        "TITULO": "Gobierno",
+        "DESCRIPCION_HEADER": "Las entidades gubernamentales necesitan procesos de intercambio de información. Conocé nuestras diferentes soluciones para transformarte y simplificar los procesos de tu organismo mediante la despapelización y la utilización de firma digital.",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Disponibilidad <br> inmediata de la <br> información",
+        "BENEFICIOS_2": "Reducción <br> de costos",
+        "BENEFICIOS_3": "Sistematización y <br> automatización de procesos",
+        "BENEFICIOS_4": "Reducción de tiempos <br> en procesamiento",
+        "BENEFICIOS_5": "Mantenimientos <br> en término"
+    },
+    "MANUFACTURA": {
+        "TITULO": "Manufactura",
+        "DESCRIPCION_HEADER": "La manipulación manual de un creciente volumen de documentación relacionada con los procesos de mantenimiento de planta hace dificultosa las correspondientes gestiones pudiendo generar demoras y hasta pérdidas en la producción que impiden planificar eficiente y correctamente la misma. Por eso te invitamos a transformarte en una fabrica sin papeles.",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Disponibilidad <br> inmediata de la <br> información",
+        "BENEFICIOS_2": "Reducción <br> de costos",
+        "BENEFICIOS_3": "Sistematización y <br> automatización de procesos",
+        "BENEFICIOS_4": "Reducción de tiempos <br> en procesamiento",
+        "BENEFICIOS_5": "Mantenimientos <br> en término"
+    },
+    "RETAIL": {
+        "TITULO": "Retail",
+        "DESCRIPCION_HEADER": "Siendo que el consumidor es el principal protagonista, te ayudamos a que vivan la mejor experiencia al adquirir tus productos. Te acompañamos en el proceso de adaptar e implementar las soluciones tecnológicas más avanzadas en innovación digital, consiguiendo un gran potencial y ventajas competitivas.",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Servicio más <br> ordenado y eficiente",
+        "BENEFICIOS_2": "Historial <br> personalizado",
+        "BENEFICIOS_3": "Regitros disponibles <br> en todo momento",
+        "BENEFICIOS_4": "Sistema más <br> agilizado",
+        "BENEFICIOS_5": "Rápido retorno <br> de inverción"
+    },
+    "SALUD": {
+        "TITULO": "Salud",
+        "DESCRIPCION_HEADER": "Entre los principales problemas que actualmente presenta la atención sanitaria, uno de los servicios esenciales, se incluyen diversos temas asociados con la precariedad institucional de la salud pública. Para poder mejorar la prestación de servicios es preciso dotarse de estructuras modernas orientadas no sólo al ejercicio sanitario propiamente dicho, sino a su administración y gestión.",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Servicio más <br> ordenado y eficiente",
+        "BENEFICIOS_2": "Historial <br> personalizado",
+        "BENEFICIOS_3": "Regitros disponibles <br> en todo momento",
+        "BENEFICIOS_4": "Sistema más <br> agilizado",
+        "BENEFICIOS_5": "Rápido retorno <br> de inverción"
+    },
+    "SEGUROS": {
+        "TITULO": "Seguros",
+        "DESCRIPCION_HEADER": "Procesos en los cuales gran parte de la documentación es emitida por terceros, su reconstrucción puede resultar muy costosa, la compañía puede encontrarse con dificultades para encontrarlos. Proveemos de una solución de administración de documentos que permite concentrar en un único repositorio las imágenes correspondientes a los legajos de los asegurados, posibilitando el envío de documentación a través de cualquier medio de transmisión de datos.",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Ahorro en <br> papel",
+        "BENEFICIOS_2": "Optimización <br> de procesos",
+        "BENEFICIOS_3": "Mayor <br> seguridad",
+        "BENEFICIOS_4": "Reducción de tiempos <br> en procesamiento"
+    },
+    "SERVICIOS": {
+        "TITULO": "Servicios",
+        "DESCRIPCION_HEADER": "En la era de la economía digital, te ayudamos a adoptar nuevas tecnologías innovadoras para mejorar la calidad y el valor agregado de tus servicios, brindando a tus clientes experiencia únicas que te consoliden como su socio y que mejoren significativamente sus resultados.",
+        "BENEFICIOS": "Beneficios",
+        "BENEFICIOS_1": "Servicio más <br> ordenado y eficiente",
+        "BENEFICIOS_2": "Historial <br> personalizado",
+        "BENEFICIOS_3": "Regitros disponibles <br> en todo momento",
+        "BENEFICIOS_4": "Sistema más <br> agilizado",
+        "BENEFICIOS_5": "Rápido retorno <br> de inverción"
+    },
+    "CROSS": {
+        "SOLUCIONES": "Y soluciones de transformación digital"
+    },
+    "SUMATE": {
+        "TEXTO": "Sumate a la experiencia vivatia",
+        "BOTON": "Obtener mi solución"
+    },
+    "FOOTER": {
+        "NOSOTROS": "Nosotros",
+        "SOLUCIONES": "Soluciones",
+        "ENCONTRA": "Encontrá tu <br> solución",
+        "PRODUCTOS": "Productos"
+    },
+    "PERSONALIZACION" : {
+        "TITULO": "¿Como personalizamos tu proceso?",
+        "TEXTO_HEADER": "Entendemos que cada cliente requiere de una atención excepcional y debe ser cuidado en todo momento. Por eso te ayudamos a mejorar tus sistemas de gestión y procesos pudiendo así acompañarte en la transformación digital mediante nuestras experiencias.",
+        "ANALISIS": "Análisis y diseño",
+        "ANALISIS_DESC": "Se efectuará un relevamiento detallado con los recursos necesarios para el desarrollo del proyecto y las interfaces y funciones básicas.",
+        "PROTOTIPO": "Prototipo",
+        "PROTOTIPO_DESC": "Se realiza una validación del diseño con el cliente y una modelización básica de la solución, respondiendo a los requerimientos básicos del usuario.",
+        "FINAL": "Versión final",
+        "FINAL_DESC": "Se termina de estabilizar la solución, corrigiendo y probando cada uno de los bugs que pudieran haberse detectado como consecuencia de la validación del “prototipo en test”.",
+        "IMPLEMENTACION": "Implementación",
+        "IMPLEMENTACION_DESC": "Ponemos en producción la “versión final” obtenida y te potenciamos."
     }
 }

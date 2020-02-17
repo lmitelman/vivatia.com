@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material';
 import { DialogContactComponent } from '../../dialog-contact/dialog-contact.component';
 import { DialogPartnersComponent } from './dialog-partners/dialog-partners.component';
 import { TranslateService } from '@ngx-translate/core';
+import { MatRadioModule } from '@angular/material/radio';
 
 @Component({
   selector: 'app-partners',

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
 import { MatDialog } from '@angular/material';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-cross',
@@ -9,131 +10,96 @@ import { MatDialog } from '@angular/material';
 })
 export class CrossComponent implements OnInit {
 
-  dataCards: any[] = [
+  dataCardsEs: any[] = [
     {
-        name: 'Recursos humanos',
-        problems: [
-          'Fallas de seguridad en el manejo de información',
-          'Grandes costos y pérdida de tiempo en la distribución',
-          'Excesivos volúmenes de papel'
-        ],
-        benefits: [
-          'Creación de legajos digitales de empleados',
-          'Firma masiva de manera digital con validéz legal',
-          'Mayor capacidad de monitoreo y seguimiento'
-        ],
-        image: 'assets/recibo-de-sueldo.png',
-        path: '/recursos-humanos'
+      name: 'Recursos humanos',
+      image: 'assets/recibo-de-sueldo.png',
+      path: '/recursos-humanos'
     },
     {
-        name: 'Cuentas a Pagar',
-        problems: [
-          'Demora gestion manual de los comprobantes de pago',
-          'Generación de cuellos de botella',
-          'Excesivos volúmenes de papel'
-        ],
-        benefits: [
-          'Disponibilidad en múltiples dispositivos',
-          'Alertas por correo',
-          'Creación de legajos digitales de documentación'
-        ],
-        image: 'assets/cuentas-a-pagar.png',
-        path: '/cuentas-a-pagar'
+      name: 'Cuentas a Pagar',
+      image: 'assets/cuentas-a-pagar.png',
+      path: '/cuentas-a-pagar'
     },
     {
-        name: 'Legajos Digitales',
-        problems: [
-          'Desentralización de información',
-          'Pérdida de documentación',
-          'Poco optima búsqueda de documentación'
-        ],
-        benefits: [
-          'Repositorio centralizado',
-          'Búsqueda de información mediante campos índices',
-          'Documentación 100% digital'
-        ],
-        image: 'assets/legajo-digital.png',
-        path: '/legajos-digitales'
+      name: 'Legajos Digitales',
+      image: 'assets/legajo-digital.png',
+      path: '/legajos-digitales'
     },
     {
-        name: 'Contratos',
-        problems: [
-          'Falta de alertas por próximos vencimientos',
-          'Sin seguimiento de ciclo de vida de contratos',
-          'Excesivos volúmenes de papel'
-        ],
-        benefits: [
-          'Seguimiento completo y alertas por vencimiento',
-          'Integración con firma digital y electrónica',
-          'Creación de legajos digitales de documentación'
-        ],
-        image: 'assets/contratos.png',
-        path: '/contratos'
+      name: 'Contratos',
+      image: 'assets/contratos.png',
+      path: '/contratos'
     },
     {
-        name: 'OnBoarding',
-        problems: [
-          'Descentralización de la información ',
-          'Generación de cuellos de botella',
-          'Excesivos volúmenes de papel'
-        ],
-        benefits: [
-          'Reducción de tiempos de procesamiento',
-          'Diferentes perfiles de usuarios',
-          'Personalización completa'
-        ],
-        image: 'assets/onboarding.png',
-        path: '/onboarding'
+      name: 'OnBoarding',
+      image: 'assets/onboarding.png',
+      path: '/onboarding'
     },
     {
       name: 'Compras',
-      problems: [
-        'Descentralización de la información ',
-        'Generación de cuellos de botella',
-        'Excesivos volúmenes de papel'
-      ],
-      benefits: [
-        'Reducción de tiempos de procesamiento',
-        'Diferentes perfiles de usuarios',
-        'Personalización completa'
-      ],
       image: 'assets/compras.png',
       path: '/compras'
     },
     {
       name: 'Firma Digital',
-      problems: [
-        'Descentralización de la información ',
-        'Generación de cuellos de botella',
-        'Excesivos volúmenes de papel'
-      ],
-      benefits: [
-        'Reducción de tiempos de procesamiento',
-        'Diferentes perfiles de usuarios',
-        'Personalización completa'
-      ],
       image: 'assets/firma-digital.png',
       path: '/firma-digital'
     },
     {
       name: 'Digitalización',
-      problems: [
-        'Descentralización de la información ',
-        'Generación de cuellos de botella',
-        'Excesivos volúmenes de papel'
-      ],
-      benefits: [
-        'Reducción de tiempos de procesamiento',
-        'Diferentes perfiles de usuarios',
-        'Personalización completa'
-      ],
       image: 'assets/digitalizacion.png',
       path: '/digitalizacion'
     }
-];
+  ];
+
+  dataCardsEn: any[] = [
+    {
+      name: 'Human resources',
+      image: 'assets/recibo-de-sueldo.png',
+      path: '/recursos-humanos'
+    },
+    {
+      name: 'Accounts payable ',
+      image: 'assets/cuentas-a-pagar.png',
+      path: '/cuentas-a-pagar'
+    },
+    {
+      name: 'Digital files',
+      image: 'assets/legajo-digital.png',
+      path: '/legajos-digitales'
+    },
+    {
+      name: 'Contracts',
+      image: 'assets/contratos.png',
+      path: '/contratos'
+    },
+    {
+      name: 'OnBoarding',
+      image: 'assets/onboarding.png',
+      path: '/onboarding'
+    },
+    {
+      name: 'Purchases',
+      image: 'assets/compras.png',
+      path: '/compras'
+    },
+    {
+      name: 'Digital signature',
+      image: 'assets/firma-digital.png',
+      path: '/firma-digital'
+    },
+    {
+      name: 'Digitization',
+      image: 'assets/digitalizacion.png',
+      path: '/digitalizacion'
+    }
+  ];
+
 
   constructor(
     private dialog: MatDialog,
+    private translate: TranslateService
   ) {}
   
   ngOnInit() {
@@ -141,6 +107,10 @@ export class CrossComponent implements OnInit {
   
   openDialog() {
     this.dialog.open(DialogContactComponent);
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
 }

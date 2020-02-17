@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-retail',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RetailComponent implements OnInit {
 
-  dataCardsBanca: any[] = [
+  dataCardsBancaEs: any[] = [
     {
       name: 'Préstamos',
       icon: 'assets/creditos-hipotecarios.png'
@@ -26,9 +27,32 @@ export class RetailComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  dataCardsBancaEn: any[] = [
+    {
+      name: 'Loans',
+      icon: 'assets/creditos-hipotecarios.png'
+    },
+    {
+      name: 'Branches <br> maintenance',
+      icon: 'assets/solicitudes-de-apertura.png'
+    },
+    {
+      name: 'Card <br> Requests ',
+      icon: 'assets/tarjetas.png'
+    },
+    {
+      name: 'Digital <br> claims',
+      icon: 'assets/solicitudes-multiproceso.png'
+    },
+  ];
+
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
 }

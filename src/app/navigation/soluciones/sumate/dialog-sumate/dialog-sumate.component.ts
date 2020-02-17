@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dialog-sumate',
@@ -17,6 +18,7 @@ export class DialogSumateComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private snackBar: MatSnackBar,
+    private translate: TranslateService  
   ) { }
 
   ngOnInit() {
@@ -48,6 +50,10 @@ export class DialogSumateComponent implements OnInit {
       }, (error) => {
         console.log(error.text);
       });
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
 }

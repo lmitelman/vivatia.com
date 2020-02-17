@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dialog-partners',
@@ -20,9 +21,10 @@ export class DialogPartnersComponent implements OnInit {
   constructor(
     private _formBuilder: FormBuilder,
     private snackBar: MatSnackBar,
+    private translate: TranslateService
   ) { }
 
-    dataCardsPartners: any[] = [
+    dataCardsPartnersEs: any[] = [
     {
       name: 'Revendedor',
       icon: 'assets/revendedor.png',
@@ -42,6 +44,29 @@ export class DialogPartnersComponent implements OnInit {
       name: 'Socio tecnológico',
       icon: 'assets/socio.png',
       desc: 'Si consideras que tus productos y los nuestros pueden potenciarse juntos'
+    },
+  ];
+
+  dataCardsPartnersEn: any[] = [
+    {
+      name: 'Reseller',
+      icon: 'assets/revendedor.png',
+      desc: 'If you want to resell our products and software solutions'
+    },
+    {
+      name: 'Integrator',
+      icon: 'assets/integrador.png',
+      desc: 'If your goal is to resell our products and solutions with your added value'
+    },
+    {
+      name: 'Educator',
+      icon: 'assets/educador.png',
+      desc: 'If you want to train other people or companies in the use of our software products'
+    },
+    {
+      name: 'Technological partner',
+      icon: 'assets/socio.png',
+      desc: 'If you consider that your products can complement ours'
     },
   ];
 
@@ -65,9 +90,8 @@ export class DialogPartnersComponent implements OnInit {
     this.snackBar.open(message, action, { duration: 3000 });
   }
 
-  public sendPartnersEmail(e: Event) {
+  public sendPartnersEmail() {
     let template_params = {
-      // "partner_type": ,
       "partner_type": this.firstFormGroup.get('partner_type').value,
       "from_name": this.thirdFormGroup.get('from_name').value,
       "from_last_name": this.thirdFormGroup.get('from_last_name').value,
@@ -76,13 +100,20 @@ export class DialogPartnersComponent implements OnInit {
       "user_role": this.secondFormGroup.get('user_role').value,
       "user_company": this.secondFormGroup.get('user_company').value
     }
-    // e.preventDefault();
     emailjs.send('default_service', 'partners', template_params, 'user_FtQgtMf0GtAy339a8Np5O')
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
+  }
+
+  submitForm() {
+    console.log('Form submited')
   }
 
 }

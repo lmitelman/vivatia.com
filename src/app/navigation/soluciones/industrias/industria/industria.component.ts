@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-industria',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndustriaComponent implements OnInit {
 
-    dataCardsIndustria: any[] = [
+  dataCardsIndustriaEs: any[] = [
     {
       name: 'Mantenimiento <br> de plantas',
       icon: 'assets/mantenimieno-plantas.png'
@@ -22,9 +23,28 @@ export class IndustriaComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  dataCardsIndustriaEn: any[] = [
+    {
+      name: 'Plant <br> maintenance',
+      icon: 'assets/mantenimieno-plantas.png'
+    },
+    {
+      name: 'Equipment <br> maintenance',
+      icon: 'assets/mantenimiento-equipamiento.png'
+    },
+    {
+      name: 'Staff <br> equipment',
+      icon: 'assets/elementos.png'
+    },
+  ];
+
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
 }

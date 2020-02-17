@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-capacitacion',
@@ -21,10 +23,15 @@ export class CapacitacionComponent implements OnInit {
   ];
 
   constructor(
-    private translate: TranslateService
+    private translate: TranslateService,
+    private dialog: MatDialog,
   ) { }
 
   ngOnInit() {
+  }
+
+  openDialog() {
+    this.dialog.open(DialogContactComponent);
   }
 
   currentLanguage() {

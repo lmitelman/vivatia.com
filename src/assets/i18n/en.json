@@ -26,7 +26,7 @@
         "SOLUCION_IDEAL_3_DESC": "automate your processes <br> with our new technology",
         "SOLUCION_IDEAL_4": "Scale",
         "SOLUCION_IDEAL_4_DESC": "the benefits and replicate <br> them in the entire company",
-        "BUSQUEDA": "Find your solution"
+        "BUSQUEDA": "Search solutions"
     },
     "NOSOTROS": {
         "DESCRIPCION_HEADER": "In a context in which papers took a secondary role in business processes, we help you in the digital transformation journey.",
@@ -44,7 +44,7 @@
         "BENEFICIO2": "We reduce <br> proceses cost",
         "BENEFICIO3": "We turn companies <br> into Green Businesses",
         "BENEFICIO4": "We increase <br> security",
-        "IRAM": "Contamos con la certificación de<br><span class='font-weight-bold'>Gestión de Calidad IRAM RI-9000-6446<br>IQNet Management System."
+        "IRAM": "We have the certification of <br><span class='font-weight-bold'>Gestión de Calidad IRAM RI-9000-6446<br>IQNet Management System."
     },
     "PARTNERS": {
         "DESCRIPCION_HEADER": "Join the Vivatia Experience <br> and watch your sales rise.",
@@ -275,5 +275,108 @@
         "BENEFICIOS_2": "Physical <br> space liberation",
         "BENEFICIOS_3": "Productivity <br> increase",
         "BENEFICIOS_4": "Process <br> optimization"
+    },
+    "FINANCIERA": {
+        "TITULO": "Financial industry",
+        "DESCRIPCION_HEADER": "Due to old systems and new regulatory compliance requirements, many financial services companies must change. There are ways to accelerate the digital transformation. We believe that it begins with data dashboards and efficient capture, extraction and classification of documents from customers, suppliers and business partners.",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Paper <br> savings ",
+        "BENEFICIOS_2": "Process <br> optimization",
+        "BENEFICIOS_3": "Security <br> and reliability",
+        "BENEFICIOS_4": "Processing <br> time reduction"
+    },
+    "EDUCACION": {
+        "TITULO": "Education",
+        "DESCRIPCION_HEADER": "It is the education level that defines the prosperity of the countries. However, most institutions have not systematized their critical processes. We offer you a very important solutions that improve the experience of the students and professors on a daily basis",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Immediate <br> information",
+        "BENEFICIOS_2": "Cost <br> reduction",
+        "BENEFICIOS_3": "Process <br> automation",
+        "BENEFICIOS_4": "Processing <br> time reduction",
+        "BENEFICIOS_5": "Process <br> optimization"
+    },
+    "GOBIERNO": {
+        "TITULO": "Government",
+        "DESCRIPCION_HEADER": "Government entities need information exchange processes. We offer different solutions to transform and simplify your organization processes with tools like digitization and digital signature",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Immediate <br> information",
+        "BENEFICIOS_2": "Cost <br> reduction",
+        "BENEFICIOS_3": "Process <br> automation",
+        "BENEFICIOS_4": "Processing <br> time reduction",
+        "BENEFICIOS_5": "Process <br> optimization"
+    },
+    "MANUFACTURA": {
+        "TITULO": "Manufacturing",
+        "DESCRIPCION_HEADER": "The manual manipulation of a growing volume of documentation related to the plant maintenance processes makes the process difficult and can lead to delays and losses in production efficient. That's why we invite you to transform into a paperless factory.",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Immediate <br> information",
+        "BENEFICIOS_2": "Cost <br> reduction",
+        "BENEFICIOS_3": "Process <br> automation",
+        "BENEFICIOS_4": "Processing <br> time reduction",
+        "BENEFICIOS_5": "Process <br> optimization"
+    },
+    "RETAIL": {
+        "TITULO": "Retail",
+        "DESCRIPCION_HEADER": "Being that the consumer is the main protagonist, we help you to give the best experience when purchasing your products. We guide you in the process of adapting and implementing the most advanced technological solutions in digital innovation, achieving great potential and real competitive advantages.",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Efficient <br> service",
+        "BENEFICIOS_2": "Personalized <br> history",
+        "BENEFICIOS_3": "Dashboards available <br> at all times",
+        "BENEFICIOS_4": "Agile <br> system",
+        "BENEFICIOS_5": "Fast return <br> on investment"
+    },
+    "SALUD": {
+        "TITULO": "Health",
+        "DESCRIPCION_HEADER": "Between the main issues that nowadays health industries present, the main one involves the lack of organization in the public health system. To improve the provision of this services, its necessary for businesses to be based on modern structures oriented not only to its core daily issues but also to its administration and management.  ",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Efficient <br> service",
+        "BENEFICIOS_2": "Personalized <br> history",
+        "BENEFICIOS_3": "Dashboards available <br> at all times",
+        "BENEFICIOS_4": "Agile <br> system",
+        "BENEFICIOS_5": "Fast return <br> on investment"
+    },
+    "SEGUROS": {
+        "TITULO": "Insurance",
+        "DESCRIPCION_HEADER": "An insurance company processes great volume of documentation which mostly is originated by entities outside de company, reconstruction of original documents can be very expensive and difficult to be carried out. We provide a solution of ECM (enterprise content management) that allows to store all the insured files in a single place and makes easy and possible the sending of information.",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Savings <br> on paper",
+        "BENEFICIOS_2": "Physical <br> space liberation",
+        "BENEFICIOS_3": "Productivity <br> increase",
+        "BENEFICIOS_4": "Process <br> optimization"
+    },
+    "SERVICIOS": {
+        "TITULO": "Services",
+        "DESCRIPCION_HEADER": "In the digital economy age, we help you adopt innovative new technologies to improve the quality and added value of your services, by providing your clients with unique experiences that consolidate you as their strategic partner and help them to significantly improve their results.",
+        "BENEFICIOS": "Benefits",
+        "BENEFICIOS_1": "Efficient <br> service",
+        "BENEFICIOS_2": "Personalized <br> history",
+        "BENEFICIOS_3": "Dashboards available <br> at all times",
+        "BENEFICIOS_4": "Agile <br> system",
+        "BENEFICIOS_5": "Fast return <br> on investment"
+    },
+    "CROSS": {
+        "SOLUCIONES": "And digital transformation solutions"
+    },
+    "SUMATE": {
+        "TEXTO": "Join the Vivatia Experience",
+        "BOTON": "Get my solution" 
+    },
+    "FOOTER": {
+        "NOSOTROS": "About us",
+        "SOLUCIONES": "Solutions",
+        "ENCONTRA": "Find your <br> solution",
+        "PRODUCTOS": "Products"
+    },
+    "PERSONALIZACION" : {
+        "TITULO": "How do we customize your process?",
+        "TEXTO_HEADER": "We understand that each client requires personalized and exceptional attention and that must always be taken care. Because of this, we help you improve your management systems and processes, and we accompany you in the digital transformation through our experience.",
+        "ANALISIS": "Analysis and design",
+        "ANALISIS_DESC": "A detailed survey will be carried out with the necessary resources for the development of the project and the basic interfaces and functions.",
+        "PROTOTIPO": "Prototype",
+        "PROTOTIPO_DESC": "A validation of the design is carried out with the client and a basic prototyping of the solution, that responds to the basic requirements of the users.",
+        "FINAL": "Final version ",
+        "FINAL_DESC": "The solution is stabilized by correcting and testing each one of the bugs that could have been detected as a result of the validation of the “prototype under test”.",
+        "IMPLEMENTACION": "Implementation",
+        "IMPLEMENTACION_DESC": "We put into production the “final version” obtained and we empower you."
     }
 }

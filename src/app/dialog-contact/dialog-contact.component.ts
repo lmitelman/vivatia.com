@@ -3,6 +3,7 @@ import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms'
 import { MatSnackBar } from '@angular/material';
 import { AdminService } from '../services/admin.service';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dialog-contact',
@@ -18,7 +19,8 @@ export class DialogContactComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private snackBar: MatSnackBar,
-    private adminService: AdminService    
+    private adminService: AdminService,
+    private translate: TranslateService   
   ) { }
 
   ngOnInit() {
@@ -54,4 +56,7 @@ export class DialogContactComponent implements OnInit {
       });
   }
 
+  currentLanguage() {
+    return this.translate.currentLang;
+  }
 }

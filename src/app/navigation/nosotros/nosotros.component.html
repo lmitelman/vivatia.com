@@ -89,7 +89,7 @@
             </ng-template>
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
-                    <img class="mb-5 small-logo" src="assets/logoGrow.png">
+                    <img class="mb-3 small-logo" src="assets/logoGrow.png">
                     <p class="mb-5" [innerHTML]="'NOSOTROS.BENEFICIO2' | translate"></p>
                 </div>
             </ng-template>
@@ -111,8 +111,7 @@
 
 <section class="certificados d-flex py-5 flex-column justify-content-center align-items-center" style="background-color: white;">
     <div class="d-flex justify-content-around align-items-center">
-        <p class="mx-3">Contamos con la certificación de<br><span class="font-weight-bold">Gestión de Calidad IRAM
-                RI-9000-6446<br>IQNet Management System.</span></p>
+        <p class="mx-3" [innerHTML]="'NOSOTROS.IRAM' | translate"></p>
         <img class="home-small-logo" src="assets/iram-footer.png">
         <img class="home-small-logo" src="assets/iqnet-footer.png">
     </div>

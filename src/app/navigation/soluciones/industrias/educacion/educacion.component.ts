@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { SolucionesModalComponent } from '../../soluciones-modal/soluciones-modal.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-educacion',
@@ -9,7 +10,7 @@ import { SolucionesModalComponent } from '../../soluciones-modal/soluciones-moda
 })
 export class EducacionComponent implements OnInit {
 
-  dataCardsBanca: any[] = [
+  dataCardsBancaEs: any[] = [
     {
       name: 'Legajos de <br> alumnos',
       icon: 'assets/alumnos.png'
@@ -32,9 +33,36 @@ export class EducacionComponent implements OnInit {
     },
   ];
 
-  constructor(private dialog: MatDialog) {}
+  dataCardsBancaEn: any[] = [
+    {
+      name: 'Student <br> files',
+      icon: 'assets/alumnos.png'
+    },
+    {
+      name: 'Teacher <br> files',
+      icon: 'assets/profesores.png'
+    },
+    {
+      name: 'Registrations',
+      icon: 'assets/incripciones.png'
+    },
+    {
+      name: 'Exam <br> management',
+      icon: 'assets/examenes.png'
+    },
+    {
+      name: 'Educational content <br> digitization',
+      icon: 'assets/contenidos.png'
+    },
+  ];
+
+  constructor(private dialog: MatDialog, private translate: TranslateService) {}
 
   ngOnInit() {
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
 }

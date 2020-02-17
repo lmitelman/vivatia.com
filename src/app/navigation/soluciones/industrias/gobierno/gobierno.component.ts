@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-gobierno',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GobiernoComponent implements OnInit {
 
-  dataCardsBanca: any[] = [
+  dataCardsBancaEs: any[] = [
     {
       name: 'Habilitaciones',
       icon: 'assets/habilitaciones.png'
@@ -34,9 +35,40 @@ export class GobiernoComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  dataCardsBancaEn: any[] = [
+    {
+      name: 'Qualifications',
+      icon: 'assets/habilitaciones.png'
+    },
+    {
+      name: 'Consumer <br> advocacy',
+      icon: 'assets/consumidor.png'
+    },
+    {
+      name: 'Complaint <br> management',
+      icon: 'assets/gestion-denuncias.png'
+    },
+    {
+      name: 'Mediations',
+      icon: 'assets/habilitaciones.png'
+    },
+    {
+      name: 'Digital record <br> management  ',
+      icon: 'assets/expedientes.png'
+    },
+    {
+      name: 'General <br> requests',
+      icon: 'assets/turnos.png'
+    },
+  ];
+
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
 }
