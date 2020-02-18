@@ -8,9 +8,28 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class PersonalizacionComponent implements OnInit {
 
-  constructor(private translate: TranslateService ) { }
+  public innerWidth: any;
+  path: string = '';
+  lang: string = ''
+  constructor(
+    private translate: TranslateService
+  ) { }
 
-  ngOnInit() {
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
+  ngOnInit() {
+    this.innerWidth = window.innerWidth
+    this.lang = this.currentLanguage();
+  }
+
+  isMobile(){
+    if (this.innerWidth < 850) {
+      return true
+    }
+    else if (this.innerWidth >= 850) {
+      return false
+    }
+  }
 }

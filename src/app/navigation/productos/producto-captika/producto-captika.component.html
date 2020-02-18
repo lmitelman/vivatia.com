@@ -10,6 +10,19 @@
     </div>
 </div>
 
+<div *ngIf="isMobile() == false" class="d-flex justify-content-center mt-5">
+    <img [src]="'CAPTIKA.SRC_IMG' | translate" class="proceso-captika" alt="">
+</div>
+
+<div *ngIf="isMobile() == true" class="d-flex justify-content-center mt-5">
+    <img [src]="'CAPTIKA.SRC_IMG_MOBILE' | translate" class="proceso-captika" alt="">
+</div>
+
+<div class="d-flex justify-content-end fixed-bottom mb-5 mr-5">
+    <a mat-raised-button class="rounded-pill boton text-white px-3 py-1"
+        href="https://vivatia2020.myshopify.com/collections/frontpage/products/captika-software-professional">{{ "CAPTIKA.COMPRAR" | translate }}</a>
+</div>
+
 <div class="d-flex justify-content-center py-5 align-items-center descripcionItem item1 animated fadeInLeft">
     <div class="d-flex flex-column descripcion">
         <h4 class="font-weight-bold letra4">{{ "CAPTIKA.CAPTURA" | translate }}</h4>
@@ -43,18 +56,20 @@
     </div>
 </div>
 
-<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item1 animated fadeInRight" style="background-color: #7FAA30;">
+<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item1 animated fadeInRight"
+    style="background-color: #7FAA30;">
     <div class="d-flex flex-column descripcion2">
-        <h4 class="font-weight-bold text-white" >{{ "CAPTIKA.PUBLICACION" | translate }}</h4>
+        <h4 class="font-weight-bold text-white">{{ "CAPTIKA.PUBLICACION" | translate }}</h4>
         <br>
         <h6 class="text-white">{{ "CAPTIKA.PUBLICACION_DESC" | translate }}</h6>
     </div>
     <div>
-        <img src="assets/publicacion-captika.png" class="img-captika2" alt="">
+        <img src="assets/publicacion-captika.png" class="img-captika1" alt="">
     </div>
 </div>
 
-<div class="d-flex flex-column text-center justify-content-center align-items-center descripcionItem thuban animated fadeInLeft">
+<div
+    class="d-flex flex-column text-center justify-content-center align-items-center descripcionItem thuban animated fadeInLeft">
     <div class="d-flex flex-column descripcionthuban m-0">
         <h3 class="font-weight-bold">{{ "CAPTIKA.SABIAS" | translate }}</h3>
         <h6 class="m-0">{{ "CAPTIKA.DESCUBRI" | translate }}</h6>
@@ -64,4 +79,3 @@
         <img src="assets/thuban-color.png" class="img-conoce-thuban" routerLink='/thuban' alt="">
     </div>
 </div>
-

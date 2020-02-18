@@ -26,6 +26,12 @@ h4 {
   font-size: 35px;
 }
 
+//PROCESO THUBAN
+.proceso-thuban {
+  max-width: 900px;
+  height: auto;
+}
+
 .descripcion {
   width: 28%; 
   font-family: 'Montserrat';
@@ -83,6 +89,21 @@ h4 {
 .descripcioncaptika {
   width: 38%; 
   font-family: 'Montserrat';
+}
+
+// COMPRAR
+.boton {
+  background-color: #145FA3;
+  cursor: pointer;
+}
+
+.boton {
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background-color: #24b54a;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 426px) {

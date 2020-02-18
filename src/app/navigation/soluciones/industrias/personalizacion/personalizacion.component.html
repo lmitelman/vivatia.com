@@ -4,7 +4,15 @@
     <h6 class="text-personalizacion animated fadeInRight">{{ "PERSONALIZACION.TEXTO_HEADER" | translate }}</h6>
 </div>
 
-<div class="container py-1 animated fadeInRight">
+<div *ngIf="isMobile() == false" class="d-flex justify-content-center mt-5">
+    <img [src]="'PERSONALIZACION.SRC_IMG' | translate" class="proceso" alt="">
+</div>
+
+<div *ngIf="isMobile() == true" class="d-flex justify-content-center mt-5">
+    <img [src]="'PERSONALIZACION.SRC_IMG_MOBILE' | translate" class="proceso" alt="">
+</div>
+
+<!-- <div class="container py-1 animated fadeInRight">
   <div class="row">
       <div class="col-md-12">
           <div class="main-timeline4">
@@ -55,4 +63,4 @@
           </div>
       </div>
   </div>
-</div>
+</div> -->

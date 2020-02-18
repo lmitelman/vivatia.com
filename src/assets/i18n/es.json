@@ -99,7 +99,10 @@
         "PUBLICACION": "Publicación",
         "PUBLICACION_DESC": "Con Captika vas a poder publicar a multiples repositorios de forma simultanea.",
         "SABIAS": "¿Sabías que podes publicar tu información en Thuban Software?",
-        "DESCUBRI": "Descubri cómo podes gestionar tus documentos."
+        "DESCUBRI": "Descubri cómo podes gestionar tus documentos.",
+        "SRC_IMG": "assets/proceso-captika.png",
+        "SRC_IMG_MOBILE": "assets/proceso-captika-mobile.png",
+        "COMPRAR": "¡Comprar!"
     },
     "THUBAN": {
         "DESCRIPCION_HEADER": "Plataforma diseñada para la creación de soluciones donde los documentos y procesos son la clave del negocio.",
@@ -114,7 +117,10 @@
         "GRUPOS": "Grupos y permisos",
         "GRUPOS_DESC": "Con Thuban vas a poder crear perfiles, grupos y usuarios a un alto nivel de detalle y asignación de permisos. Estos serán definidos de acuerdo con las necesidades de la solución.",
         "SABIAS": "¿Sabías que podes digitalizar tus documentos con Captika Software?",
-        "DESCUBRI": "Descubrí cómo podes extraer información de tus documentos."
+        "DESCUBRI": "Descubrí cómo podes extraer información de tus documentos.",
+        "SRC_IMG": "assets/proceso-thuban.png",
+        "SRC_IMG_MOBILE": "assets/proceso-thuban-mobile.png",
+        "COMPRAR": "¡Comprar!"
     },
     "SOLUCIONES_HORIZONTALES": {
         "HEADER": "Soluciones de transformación digital",
@@ -377,6 +383,7 @@
         "FINAL": "Versión final",
         "FINAL_DESC": "Se termina de estabilizar la solución, corrigiendo y probando cada uno de los bugs que pudieran haberse detectado como consecuencia de la validación del “prototipo en test”.",
         "IMPLEMENTACION": "Implementación",
-        "IMPLEMENTACION_DESC": "Ponemos en producción la “versión final” obtenida y te potenciamos."
+        "IMPLEMENTACION_DESC": "Ponemos en producción la “versión final” obtenida y te potenciamos.",
+        "SRC_IMG": "assets/proceso-custom.png"
     }
 }

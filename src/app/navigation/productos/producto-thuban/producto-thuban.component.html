@@ -10,6 +10,19 @@
     </div>
 </div>
 
+<div *ngIf="isMobile() == false" class="d-flex justify-content-center mt-5">
+    <img [src]="'THUBAN.SRC_IMG' | translate" class="proceso-thuban" alt="">
+</div>
+
+<div *ngIf="isMobile() == true" class="d-flex justify-content-center mt-5">
+    <img [src]="'THUBAN.SRC_IMG_MOBILE' | translate" class="proceso-thuban" alt="">
+</div>
+
+<div class="d-flex justify-content-end fixed-bottom mb-5 mr-5">
+    <a mat-raised-button class="rounded-pill boton text-white px-3 py-1"
+        href="https://vivatia2020.myshopify.com/products/thuban-cloud-hasta-10-usuarios">{{ "THUBAN.COMPRAR" | translate }}</a>
+</div>
+
 <div class="d-flex justify-content-center py-5 align-items-center descripcionItem item1 animated fadeInLeft">
     <div class="d-flex flex-column descripcion">
         <h4 class="letra6 font-weight-bold">{{ "THUBAN.SEGURIDAD" | translate }}</h4>
@@ -43,7 +56,8 @@
     </div>
 </div>
 
-<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item2 animated fadeInRight" style="background-color: #00326B;">
+<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item2 animated fadeInRight"
+    style="background-color: #00326B;">
     <div class="d-flex flex-column descripcion2">
         <h4 class="text-white font-weight-bold">{{ "THUBAN.MONITORES" | translate }}</h4>
         <br>
@@ -65,7 +79,8 @@
     </div>
 </div>
 
-<div class="d-flex flex-column text-center justify-content-center align-items-center descripcionItem captika animated fadeInLeft">
+<div
+    class="d-flex flex-column text-center justify-content-center align-items-center descripcionItem captika animated fadeInLeft">
     <div class="d-flex flex-column descripcioncaptika">
         <h3 class="font-weight-bold">{{ "THUBAN.SABIAS" | translate }}</h3>
         <h6 class="m-0">{{ "THUBAN.DESCUBRI" | translate }}</h6>
@@ -75,4 +90,3 @@
         <img src="assets/captika-color.png" class="img-conoce-captika" routerLink='/captika' alt="">
     </div>
 </div>
-

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-producto-captika',
@@ -7,26 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductoCaptikaComponent implements OnInit {
 
-  public play: boolean = false;
+  public innerWidth: any;
+  path: string = '';
+  lang: string = ''
   constructor(
+    private translate: TranslateService
   ) { }
 
-  ngOnInit() {
-    
-    // this.playVideoOnScroll(); 
-    
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
-  // playVideoOnScroll() {
-  //   window.onscroll = function () {
-  //     let dv = document.getElementById('myVideoBox');
-      
-  //     if ((window.scrollY < (dv.offsetTop + dv.offsetHeight)) && ((window.scrollY + window.outerHeight) > dv.offsetTop)) {
-  //       this.play = true;        
-  //   }
-  // }
+  ngOnInit() {
+    this.innerWidth = window.innerWidth
+    this.lang = this.currentLanguage();
+  }
 
-  // }
-
-
+  isMobile(){
+    if (this.innerWidth < 850) {
+      return true
+    }
+    else if (this.innerWidth >= 850) {
+      return false
+    }
+  }
 }

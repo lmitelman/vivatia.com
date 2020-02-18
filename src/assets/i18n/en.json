@@ -99,7 +99,10 @@
         "PUBLICACION": "Publication",
         "PUBLICACION_DESC": "With Captika you will be able to publish to multiple repositories simultaneously.",
         "SABIAS": "Did you know that you can publish your information on Thuban Software?",
-        "DESCUBRI": "Discover how you can manage your documents."
+        "DESCUBRI": "Discover how you can manage your documents.",
+        "SRC_IMG": "assets/proceso-captika-english.png",
+        "SRC_IMG_MOBILE": "assets/proceso-captika-mobile-english.png",
+        "COMPRAR": "Buy now!"
     },
     "THUBAN": {
         "DESCRIPCION_HEADER": "Designed for the development of solutions to improve the entire business process and document management.",
@@ -114,7 +117,10 @@
         "GRUPOS": "Groups and permissions",
         "GRUPOS_DESC": "With Thuban you will be able to create profiles, groups and users at a high level of detail and permission assignment. These will be defined according to the business needs",
         "SABIAS": "Did you know that you can scan your documents with Captika Software?",
-        "DESCUBRI": "Know how you can extract information from your documents."
+        "DESCUBRI": "Know how you can extract information from your documents.",
+        "SRC_IMG": "assets/proceso-thuban-english.png",
+        "SRC_IMG_MOBILE": "assets/proceso-thuban-mobile-english.png",
+        "COMPRAR": "Buy now!"
     },
     "SOLUCIONES_HORIZONTALES": {
         "HEADER": "Digital transformation solutions",
@@ -377,6 +383,7 @@
         "FINAL": "Final version ",
         "FINAL_DESC": "The solution is stabilized by correcting and testing each one of the bugs that could have been detected as a result of the validation of the “prototype under test”.",
         "IMPLEMENTACION": "Implementation",
-        "IMPLEMENTACION_DESC": "We put into production the “final version” obtained and we empower you."
+        "IMPLEMENTACION_DESC": "We put into production the “final version” obtained and we empower you.",
+        "SRC_IMG": "assets/proceso-custom-english.png"
     }
 }
