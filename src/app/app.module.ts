@@ -69,6 +69,7 @@ import { CapacitacionComponent } from './navigation/capacitacion/capacitacion.co
 import { CrossComponent } from './navigation/soluciones/industrias/cross/cross.component';
 import { DialogSumateComponent } from './navigation/soluciones/sumate/dialog-sumate/dialog-sumate.component';
 import { DialogPartnersComponent } from './navigation/partners/dialog-partners/dialog-partners.component';
+import { RecaptchaModule } from 'ng-recaptcha';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -144,6 +145,7 @@ export function createTranslateLoader(http: HttpClient) {
     MatExpansionModule,
     CountoModule,
     NgxTypedJsModule,
+    RecaptchaModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

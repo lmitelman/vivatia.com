@@ -61,7 +61,7 @@ export class BancaComponent implements OnInit {
       icon: 'assets/creditos-hipotecarios.png'
     },
     {
-      name: 'Requests for <br> accounts openings <br> and maintenance',
+      name: 'Requests for <br> account opening <br> and maintenance',
       icon: 'assets/solicitudes-de-apertura.png'
     },
     {

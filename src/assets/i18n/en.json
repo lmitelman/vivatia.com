@@ -23,7 +23,7 @@
         "SOLUCION_IDEAL_2": "Customize",
         "SOLUCION_IDEAL_2_DESC": "in a quick <br> and simple way",
         "SOLUCION_IDEAL_3": "Transform",
-        "SOLUCION_IDEAL_3_DESC": "automate your processes <br> with our new technology",
+        "SOLUCION_IDEAL_3_DESC": "your business process <br> with our new technology",
         "SOLUCION_IDEAL_4": "Scale",
         "SOLUCION_IDEAL_4_DESC": "the benefits and replicate <br> them in the entire company",
         "BUSQUEDA": "Search solutions"
@@ -73,6 +73,7 @@
         "BOTON2": "Become a partner"
     },
     "CAPACITACIONES": {
+        "TITULO": "Product learning <br> & certification",
         "DESCRIPCION_HEADER": "Take the training and become <br> a digital transformation expert.",
         "DESCRIPCION": "Learning, training and certification in our products and software solutions allow you to reduce the times of solution implementation and maximize the use of the functionality <br> provided by the platforms.",
         "POTENCIAR": "With each training you will be able to empower your company",
@@ -156,7 +157,7 @@
         "PERSONALIZACION": "How do we customize your process?",
         "PERSONALIZACION_DESC": "As a result of the analysis of the problem in different companies, we have thought about the best solution to solve this, we will tell you next",
         "DIGITALIZACION": "Digitization",
-        "DIGITALIZACION_DESC": "We capture the of the vouchers from your suppliers from different inputs.",
+        "DIGITALIZACION_DESC": "We capture the vouchers from your suppliers from different inputs.",
         "IDENTIFICACION": "Identification and Extraction",
         "IDENTIFICACION_DESC": "We identify each voucher and extract the necessary data.",
         "APROBACION": "Approvals",

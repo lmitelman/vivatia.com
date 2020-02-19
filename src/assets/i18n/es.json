@@ -73,6 +73,7 @@
         "BOTON2": "Quiero ser partner"
     },
     "CAPACITACIONES": {
+        "TITULO": "Capacitaciones y <br> certificación",
         "DESCRIPCION_HEADER": "Tomá tu capacitación hoy y transformate <br> en un experto en transformación digital.",
         "DESCRIPCION": "El aprendizaje, entrenamiento y certificación en nuestros productos y soluciones de software es muy importante porque te permiten reducir los tiempos de implementación de soluciones y maximizar el uso de la funcionalidad provista por las plataformas.",
         "POTENCIAR": "Con cada capacitación vas a poder potenciar a tu empesa",

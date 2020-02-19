@@ -39,24 +39,31 @@ export class DialogContactComponent implements OnInit {
     this.snackBar.open(message, action, { duration: 3000 });
   }
 
-  public sendContactanosEmail(e: Event) {
-    let template_params = {
-      "reply_to": "",
-      "user_name": "",
-      "to_name": "",
-      "from_name": this.contactForm.get('from_name').value,
-      "message_html": this.contactForm.get('message').value
+  public sendPartnersEmailWithCaptcha() {
+    if (grecaptcha.getResponse() == "") {
+      alert("Captcha error");
+    } else {
+      let template_params = {
+        "reply_to": "",
+        "user_name": "",
+        "to_name": "",
+        "from_name": this.contactForm.get('from_name').value,
+        "message_html": this.contactForm.get('message').value
+      }
+      emailjs.send('gmail', 'template_5K0dpaJj', template_params, 'user_FtQgtMf0GtAy339a8Np5O')
+        .then((result: EmailJSResponseStatus) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
     }
-    e.preventDefault();
-    emailjs.send('gmail', 'template_5K0dpaJj', template_params, 'user_FtQgtMf0GtAy339a8Np5O')
-      .then((result: EmailJSResponseStatus) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
   }
 
   currentLanguage() {
     return this.translate.currentLang;
+  }
+
+  resolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response: ${captchaResponse}`);
   }
 }

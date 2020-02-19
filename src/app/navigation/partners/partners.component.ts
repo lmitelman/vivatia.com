@@ -67,7 +67,7 @@ export class PartnersComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogPartnersComponent, { height: '470px', width: '600px', });
+    this.dialog.open(DialogPartnersComponent, { height: '520px', width: '600px', });
   }
 
   currentLanguage() {

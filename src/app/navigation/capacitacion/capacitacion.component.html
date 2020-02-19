@@ -1,6 +1,6 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
   <div class="d-flex flex-column">
-    <h2 class="font-weight-bold text-dark subtitle animated pulse mb-2">Product learning & <br> certification</h2>
+    <h2 class="font-weight-bold text-dark subtitle animated pulse mb-2" [innerHTML]="'CAPACITACIONES.TITULO' | translate"></h2>
     <p [innerHTML]="'CAPACITACIONES.DESCRIPCION_HEADER' | translate"></p>
     <button mat-raised-button
       class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">{{ "CAPACITACIONES.POTENCIAR_1" | translate }}</button>
