@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 // Plus imports for other components in your app.
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -11,9 +11,9 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $candy-app-primary: mat-palette($mat-green, 800);
-$candy-app-accent:  mat-palette($mat-indigo);
+$candy-app-accent: mat-palette($mat-indigo);
 // The warn palette is optional (defaults to red).
-$candy-app-warn:    mat-palette($mat-red);
+$candy-app-warn: mat-palette($mat-red);
 // Create the theme object (a Sass map containing all of the palettes).
 $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
 // Include theme styles for core and each component used in your app.
@@ -24,12 +24,12 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 html,
 body {
   height: 100%;
-  margin:0;
+  margin: 0;
   // overflow-x: hidden;
 }
 body {
   margin: 0;
-  font-family: 'Montserrat', "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
   font-size: small;
   width: 100%;
 
@@ -53,19 +53,18 @@ body {
   }
 
   .rulerBlue {
-    border: 2px solid #145FA3;
+    border: 2px solid #145fa3;
     margin-left: initial;
-    background-color: #145FA3;
+    background-color: #145fa3;
     width: 4rem;
   }
 
-  .rulerGreen{
-    border: 2px solid #98BF2F;
+  .rulerGreen {
+    border: 2px solid #98bf2f;
     margin-left: initial;
-    background-color: #98BF2F;
+    background-color: #98bf2f;
     width: 4rem;
   }
-
 
   ////////////////////////////////////////////////////// Estilos SideNav
 
@@ -77,30 +76,27 @@ body {
     right: 0;
   }
 
-
   ////////////////////////////////////////////////////// Estilos NavBar
 
   .navItem button:hover {
     background-color: rgba(255, 255, 255, 0.143);
   }
 
-
-  ////////////////////////////////////////////////////// 
+  //////////////////////////////////////////////////////
   .boton {
     background-color: #2c773f;
     cursor: pointer;
   }
 
-  .boton2{
-    background-color: #98BF2F;
-    cursor: pointer;
-  }
-  
-  .boton-blue{
-    background-color: #145FA3;
+  .boton2 {
+    background-color: #98bf2f;
     cursor: pointer;
   }
 
+  .boton-blue {
+    background-color: #145fa3;
+    cursor: pointer;
+  }
 
   .letra {
     color: #2c773f !important;
@@ -111,22 +107,21 @@ body {
   .letra3 {
     color: #808080;
   }
-  .letra4{
-    color: #98BF2F;
+  .letra4 {
+    color: #98bf2f;
   }
   .letra5 {
     color: #194324;
   }
   .letra6 {
-    color:#00326B;
+    color: #00326b;
   }
   .letraThuban {
-    color: #145FA3;
+    color: #145fa3;
   }
-  .blue{
-    color: #145FA3;
+  .blue {
+    color: #145fa3;
   }
-
 
   .home-logo {
     max-width: 20rem;
@@ -140,8 +135,6 @@ body {
   .home-small-logo3 {
     max-height: 1rem;
   }
-
-
 
   .footer {
     background-color: #f0f0f0;
@@ -165,9 +158,9 @@ button:focus {
 }
 textarea {
   resize: none;
-  outline:none;
-  width:90%;
-  max-width:90%;
+  outline: none;
+  width: 90%;
+  max-width: 90%;
 }
 
 ////////////////////////////////////////////////////// Estilos de producto captika y thuban
@@ -178,8 +171,8 @@ textarea {
   flex-direction: row;
 }
 .grid2x2 > div {
-  display: flex; 
-  flex-basis: calc(50% - 40px);  
+  display: flex;
+  flex-basis: calc(50% - 40px);
   justify-content: center;
   flex-direction: column;
 }
@@ -189,9 +182,11 @@ textarea {
   flex-direction: row;
 }
 
-.box { margin: 20px; }
+.box {
+  margin: 20px;
+}
 
-//////////////////////////////////////////////////////  
+//////////////////////////////////////////////////////
 
 @font-face {
   font-family: Montserrat;
@@ -202,24 +197,31 @@ textarea {
   font-family: "Montserrat", sans-serif;
 }
 
-
 ////////////////////////////////////////////////////// Responsive
 
-@media only screen and (min-width: 320px) and (max-width: 479px){ 
-  .title-main {height: auto;}
-  .title-main {width: 80%;}
-  .subtitle {font-size: 90%;}
-  .mkITwk p {display: none;}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .title-main {
+    height: auto;
+  }
+  .title-main {
+    width: 80%;
+  }
+  .subtitle {
+    font-size: 90%;
+  }
+  .mkITwk p {
+    display: none;
+  }
 }
 
-// @media only screen and (min-width: 480px) and (max-width: 767px){ 
+// @media only screen and (min-width: 480px) and (max-width: 767px){
 
 // }
 
-// @media only screen and (min-width: 768px) and (max-width: 991px){ 
+// @media only screen and (min-width: 768px) and (max-width: 991px){
 
 // }
 
-// @media only screen and (min-width: 992px){ 
+// @media only screen and (min-width: 992px){
 
 // }

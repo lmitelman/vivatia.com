@@ -13,7 +13,7 @@ export class MenuComponent implements OnInit {
 
   public isMobileLayout = false;
   isNavbarCollapsed = true;
-  langs: string[] = []; 
+  langs: string[] = [];
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('es');
@@ -32,8 +32,8 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    window.onload = () => this.isMobileLayout = window.innerWidth <= 820; 
-    window.onresize = () => this.isMobileLayout = window.innerWidth <= 820; 
+    window.onload = () => this.isMobileLayout = window.innerWidth <= 820;
+    window.onresize = () => this.isMobileLayout = window.innerWidth <= 820;
   }
 
 }

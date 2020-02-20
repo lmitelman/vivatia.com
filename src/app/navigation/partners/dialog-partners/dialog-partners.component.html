@@ -4,7 +4,7 @@
 </section>
 
 <mat-dialog-content>
-	<mat-horizontal-stepper #stepper *ngIf="currentLanguage() == 'es'">
+	<mat-horizontal-stepper #stepper [linear]="true" *ngIf="currentLanguage() == 'es'">
 		<mat-step [stepControl]="firstFormGroup">
 			<ng-template matStepLabel>Seleccioná</ng-template>
 			<div class="d-flex justify-content-center py-3">
@@ -73,8 +73,8 @@
 	</mat-horizontal-stepper>
 </mat-dialog-content>
 
-<mat-dialog-content *ngIf="currentLanguage() == 'en'">
-	<mat-horizontal-stepper #stepper>
+<mat-dialog-content>
+	<mat-horizontal-stepper #stepper [linear]="true" *ngIf="currentLanguage() == 'en'">
 		<mat-step [stepControl]="firstFormGroup">
 			<ng-template matStepLabel>Select</ng-template>
 			<div class="d-flex justify-content-center py-3">

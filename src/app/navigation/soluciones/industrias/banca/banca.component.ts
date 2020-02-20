@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class BancaComponent implements OnInit {
 
-  constructor(private dialog: MatDialog, private translate: TranslateService) {}
+  constructor(private dialog: MatDialog, private translate: TranslateService) { }
 
   dataCardsBancaEs: any[] = [
     {

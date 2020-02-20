@@ -34,7 +34,7 @@ export class NosotrosComponent implements OnInit {
     })
   }
 
-  openSnackBar() {                  //  openSnackBar(message, action)
+  openSnackBar() {        
     this.snackBar.open('Mail cargado con exito', 'Aceptar', { duration: 1500 });
   }
 
