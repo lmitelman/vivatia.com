@@ -159,14 +159,6 @@ export class DialogPartnersComponent implements OnInit {
     { value: 'government', viewValue: 'Government'},
   ];
 
-  // public checkCaptcha() {
-  //   if (grecaptcha.getResponse() == "") {
-  //     alert("You can't proceed!");
-  //   } else {
-  //     alert("Thank you");
-  //   }
-  // }
-
   currentLanguage() {
     return this.translate.currentLang;
   }

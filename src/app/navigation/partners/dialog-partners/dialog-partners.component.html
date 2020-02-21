@@ -68,7 +68,7 @@
 				siteKey="6LcvY9oUAAAAAI39WTEwXrdXFSm_tTw_79HPdPTF">
 			</re-captcha>
 			<button class="rounded-pill boton text-white py-2 px-4" type="submit" value="Enviar"
-				(click)="sendPartnersEmailWithCaptcha()">Enviar</button>
+				(click)="sendPartnersEmailWithCaptcha()" mat-dialog-close>Enviar</button>
 		</mat-step>
 	</mat-horizontal-stepper>
 </mat-dialog-content>
@@ -139,7 +139,7 @@
 				siteKey="6LcvY9oUAAAAAI39WTEwXrdXFSm_tTw_79HPdPTF">
 			</re-captcha>
 			<button class="rounded-pill boton text-white py-2 px-4" type="submit" value="Enviar"
-				(click)="sendPartnersEmailWithCaptcha()">Send</button>
+				(click)="sendPartnersEmailWithCaptcha()" mat-dialog-close>Send</button>
 		</mat-step>
 	</mat-horizontal-stepper>
 </mat-dialog-content>

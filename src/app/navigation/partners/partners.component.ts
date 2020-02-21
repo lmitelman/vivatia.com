@@ -69,7 +69,7 @@ export class PartnersComponent implements OnInit {
   openDialog() {
     this.dialog.open(DialogPartnersComponent, { height: '520px', width: '600px', });
   }
-
+  
   currentLanguage() {
     return this.translate.currentLang;
   }

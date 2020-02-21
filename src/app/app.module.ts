@@ -34,7 +34,6 @@ import { SolucionesComponent } from './navigation/soluciones/soluciones.componen
 import { DialogContactComponent } from './dialog-contact/dialog-contact.component';
 import { ProductoThubanComponent } from './navigation/productos/producto-thuban/producto-thuban.component';
 import { ProductoCaptikaComponent } from './navigation/productos/producto-captika/producto-captika.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -97,7 +96,6 @@ export function createTranslateLoader(http: HttpClient) {
     DialogContactComponent,
     ProductoThubanComponent,
     ProductoCaptikaComponent,
-    DropdownComponent,
     MenuComponent,
     BancaComponent,
     SolucionesHorizontalesComponent,
