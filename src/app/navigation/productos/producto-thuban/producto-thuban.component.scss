@@ -1,17 +1,17 @@
 * {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 .header-captika {
   padding-top: 6%;
   height: 70%;
   background-position: left;
-  background-image: url("../../../../assets/bg-thuban.png");
+  background-image: url('../../../../assets/bg-thuban.png');
 }
 
 .logo-captika {
-  max-width: 380px;
-  height: 380px;
+    max-width: 380px;
+    height: 380px;
 }
 
 .text-header {
@@ -33,14 +33,13 @@ h4 {
 }
 
 .descripcion {
-  width: 28%;
-  font-family: "Montserrat";
+  width: 28%; 
+  font-family: 'Montserrat';
 }
 
 .item1 {
   margin-top: 30px;
   margin-bottom: 30px;
-  height: 50%;
 }
 
 .img-captika1 {
@@ -50,10 +49,9 @@ h4 {
 }
 
 .item2 {
-  background-color: #f3f3f3;
+  background-color: #F3F3F3; 
   margin-top: 30px;
   margin-bottom: 30px;
-  height: 60%;
 }
 
 .img-captika2 {
@@ -63,15 +61,15 @@ h4 {
 }
 
 .descripcion2 {
-  width: 28%;
-  font-family: "Montserrat";
+  width: 28%; 
+  font-family: 'Montserrat';
   order: 1;
   text-align: end;
 }
 
 // ¿Sabías que podes publicar tu información en Thuban Software?
 
-.img-conoce-captika {
+.img-conoce-captika{
   max-width: 280px;
   height: auto;
   transition: 0.3s;
@@ -85,17 +83,17 @@ h4 {
 
 .captika {
   height: 70%;
-  background-color: #f3f3f3;
+  background-color: #F3F3F3; 
 }
 
 .descripcioncaptika {
-  width: 38%;
-  font-family: "Montserrat";
+  width: 38%; 
+  font-family: 'Montserrat';
 }
 
 // COMPRAR
 .boton {
-  background-color: #145fa3;
+  background-color: #145FA3;
   cursor: pointer;
 }
 
@@ -109,6 +107,7 @@ h4 {
 }
 
 @media only screen and (min-width: 100px) and (max-width: 426px) {
+
   .header-captika {
     flex-direction: column;
     align-items: center;
@@ -153,16 +152,16 @@ h4 {
   }
 
   .item1 {
-    height: 90%;
+    height: 60%;
   }
-
+  
   .item2 {
-    background-color: #f3f3f3;
-    height: 90%;
+    background-color: #F3F3F3; 
+    height: 60%;
   }
-
+  
   .item3 {
-    height: 90%;
+    height: 60%;
   }
 
   h4 {
@@ -176,19 +175,17 @@ h4 {
   }
 
   .img-captika1 {
-    margin-top: 10%;
     max-width: 160px;
     height: auto;
   }
-
+  
   .img-captika2 {
-    margin-top: 10%;
+    margin: 0%;
     max-width: 160px;
-    height: 130px;
+    height: auto;
   }
-
+  
   .img-thuban3 {
-    margin-top: 10%;
     max-width: 275px;
     height: auto;
   }
@@ -205,8 +202,8 @@ h4 {
   }
 
   .descripcioncaptika {
-    width: 100%;
-    font-family: "Montserrat";
+    width: 100%; 
+    font-family: 'Montserrat';
   }
 
   .descripcioncaptika h3 {
@@ -217,3 +214,4 @@ h4 {
     font-size: 12px;
   }
 }
+
