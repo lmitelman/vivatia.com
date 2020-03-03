@@ -228,3 +228,9 @@ h5 {
       box-shadow: 7px 7px 3px grey;
     }
 }
+
+@media only screen and (max-height: 680px) {
+  .bg-home1 {
+    height: 70%;
+  }
+}

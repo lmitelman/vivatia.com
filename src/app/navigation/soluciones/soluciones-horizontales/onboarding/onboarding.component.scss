@@ -274,3 +274,19 @@ h6 {
     margin-bottom: 20px;
   }
 }
+
+@media only screen and (max-height: 650px) {
+
+  .header {
+    height: 75%;
+  }
+
+  .item1 {
+    height: 60%;
+  }
+
+  .item2 {
+    background-color: #f3f3f3;
+    height: 60%;
+  }
+}

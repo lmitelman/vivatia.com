@@ -162,3 +162,9 @@ p {
         font-weight: bold;
     }
 }
+
+@media only screen and (max-height: 650px) {
+    .header {
+      height: 75%;
+    }
+}

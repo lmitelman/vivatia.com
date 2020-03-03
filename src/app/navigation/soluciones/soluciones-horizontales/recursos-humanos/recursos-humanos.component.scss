@@ -159,6 +159,7 @@ h6 {
   }
 }
 
+// iPhone X
 @media only screen and (min-width: 100px) and (max-width: 900px) {
   // HEADER
 
@@ -265,5 +266,22 @@ h6 {
   .img-cap2 {
     max-width: 90px;
     height: auto;
+  }
+}
+
+// iPhone 6
+@media only screen and (max-height: 650px) {
+
+  .header {
+    height: 75%;
+  }
+
+  .item1 {
+    height: 60%;
+  }
+
+  .item2 {
+    background-color: #f3f3f3;
+    height: 60%;
   }
 }

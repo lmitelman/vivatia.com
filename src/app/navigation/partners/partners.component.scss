@@ -258,3 +258,9 @@ p {
         margin: 0px 10px;
     }
 }
+
+@media only screen and (max-height: 650px) {
+    .bg-home1 {
+      height: 55%;
+    }
+}
