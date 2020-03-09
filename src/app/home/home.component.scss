@@ -229,8 +229,17 @@ h5 {
     }
 }
 
+// iPhone 6
 @media only screen and (max-height: 680px) {
   .bg-home1 {
     height: 70%;
   }
 }
+
+// Notebook HP
+@media only screen and (max-height: 675px) and (max-width: 1445px) {
+  .bg-home1 {
+    height: 85%;
+  }
+}
+

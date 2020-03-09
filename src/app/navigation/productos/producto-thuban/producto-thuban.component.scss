@@ -102,8 +102,9 @@ h4 {
 }
 
 .boton:hover {
-  background-color: #24b54a;
+  background-color: #2185e4;
   cursor: pointer;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 426px) {
@@ -111,7 +112,7 @@ h4 {
   .header-captika {
     flex-direction: column;
     align-items: center;
-    height: 60%;
+    height: 65%;
   }
 
   .logo-captika {
@@ -212,6 +213,12 @@ h4 {
 
   .descripcioncaptika h6 {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .header-captika{
+    height: 75%;
   }
 }
 
