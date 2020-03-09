@@ -256,7 +256,7 @@ h4 {
 // iPhone 6
 @media only screen and (max-height: 700px) {
   .header-captika {
-    height: 75%;
+    height: 80%;
   }
 
   .item3 {
@@ -269,6 +269,12 @@ h4 {
 
   .item2 {
     background-color: white;
-    height: 80%;
+    height: 95%;
+  }
+
+  .img-captika2 {
+    max-width: 200px;
+    height: auto;
+    margin: 0px;
   }
 }
