@@ -107,11 +107,11 @@
         "COMPRAR": "Buy now!",
         "CARACTERISTICAS": "Caraterísticas",
         "SPEC1": "Windows",
-        "SPEC1_DESC": "Vas a poder usar Captika en sistemas operativos Windows.",
+        "SPEC1_DESC": "You will be able to use Captika on Windows operating systems.",
         "SPEC2": "TWAIN compatible",
-        "SPEC2_DESC": "Captika Software es un aplicativo de escritorio, compatible con escáners TWAIN.",
-        "SPEC3": "Kioscos de autogestión",
-        "SPEC3_DESC": "Vas a poder crear y diseñar pantallas de autogestión para cualquier proceso."
+        "SPEC2_DESC": "Captika Software is a desktop application, compatible with TWAIN scanners.",
+        "SPEC3": "Self-management station",
+        "SPEC3_DESC": "You will be able to create and design screens to automatice self management processes."
     },
     "THUBAN": {
         "DESCRIPCION_HEADER": "Designed for the development of solutions to improve the entire business process and document management.",
@@ -131,12 +131,12 @@
         "SRC_IMG_MOBILE": "assets/proceso-thuban-mobile-english.png",
         "COMPRAR": "Buy now!",
         "CARACTERISTICAS": "Caraterísticas",
-        "SPEC1": "Multiplataforma",
-        "SPEC1_DESC": "Vas a poder usar Captika en sistemas operativos de Windows y Unix.",
+        "SPEC1": "Multi-platform",
+        "SPEC1_DESC": "You will be able to use Captika in Windows, Linux and MacOS.",
         "SPEC2": "Thuban mobile",
-        "SPEC2_DESC": "Accedé a tus documentos desde cualquier dispositivo móvil.",
-        "SPEC3": "Firma digital",
-        "SPEC3_DESC": "Vas a optimizar tiempos y reducir costos, brindando un mejor servicio con la seguridad y validez jurídica."
+        "SPEC2_DESC": "Access your documents from any mobile device.",
+        "SPEC3": "Digital signature",
+        "SPEC3_DESC": "You will optimize time and reduce costs by providing a better service with the security and legal validity needed."
     },
     "SOLUCIONES_HORIZONTALES": {
         "HEADER": "Digital transformation solutions",
