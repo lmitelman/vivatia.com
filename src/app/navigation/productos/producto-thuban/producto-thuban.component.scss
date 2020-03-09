@@ -229,20 +229,19 @@ h4 {
 
 // iPhone 6
 @media only screen and (max-height: 700px) {
-  .header-captika {
-    height: 75%;
-  }
-
-  .item3 {
-    height: 70%;
-  }
-
-  .item1 {
-    height: 70%;
-  }
-
-  .item2 {
-    background-color: #f3f3f3;
-    height: 75%;
-  }
+	.header-captika {
+	  height: 80%;
+	}
+  
+	.item3 {
+	  height: 70%;
+	}
+  
+	.item1 {
+	  height: 80%;
+	}
+  
+	.item2 {
+	  height: 70%;
+	}
 }
