@@ -104,7 +104,14 @@
         "DESCUBRI": "Discover how you can manage your documents.",
         "SRC_IMG": "assets/proceso-captika-english.png",
         "SRC_IMG_MOBILE": "assets/proceso-captika-mobile-english.png",
-        "COMPRAR": "Buy now!"
+        "COMPRAR": "Buy now!",
+        "CARACTERISTICAS": "Caraterísticas",
+        "SPEC1": "Windows",
+        "SPEC1_DESC": "Vas a poder usar Captika en sistemas operativos Windows.",
+        "SPEC2": "TWAIN compatible",
+        "SPEC2_DESC": "Captika Software es un aplicativo de escritorio, compatible con escáners TWAIN.",
+        "SPEC3": "Kioscos de autogestión",
+        "SPEC3_DESC": "Vas a poder crear y diseñar pantallas de autogestión para cualquier proceso."
     },
     "THUBAN": {
         "DESCRIPCION_HEADER": "Designed for the development of solutions to improve the entire business process and document management.",
@@ -122,7 +129,14 @@
         "DESCUBRI": "Know how you can extract information from your documents.",
         "SRC_IMG": "assets/proceso-thuban-english.png",
         "SRC_IMG_MOBILE": "assets/proceso-thuban-mobile-english.png",
-        "COMPRAR": "Buy now!"
+        "COMPRAR": "Buy now!",
+        "CARACTERISTICAS": "Caraterísticas",
+        "SPEC1": "Multiplataforma",
+        "SPEC1_DESC": "Vas a poder usar Captika en sistemas operativos de Windows y Unix.",
+        "SPEC2": "Thuban mobile",
+        "SPEC2_DESC": "Accedé a tus documentos desde cualquier dispositivo móvil.",
+        "SPEC3": "Firma digital",
+        "SPEC3_DESC": "Vas a optimizar tiempos y reducir costos, brindando un mejor servicio con la seguridad y validez jurídica."
     },
     "SOLUCIONES_HORIZONTALES": {
         "HEADER": "Digital transformation solutions",
