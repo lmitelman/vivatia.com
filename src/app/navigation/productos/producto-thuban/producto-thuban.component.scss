@@ -1,17 +1,17 @@
 * {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .header-captika {
   padding-top: 6%;
   height: 70%;
   background-position: left;
-  background-image: url('../../../../assets/bg-thuban.png');
+  background-image: url("../../../../assets/bg-thuban.png");
 }
 
 .logo-captika {
-    max-width: 380px;
-    height: 380px;
+  max-width: 380px;
+  height: 380px;
 }
 
 .text-header {
@@ -33,8 +33,8 @@ h4 {
 }
 
 .descripcion {
-  width: 28%; 
-  font-family: 'Montserrat';
+  width: 28%;
+  font-family: "Montserrat";
 }
 
 .item1 {
@@ -49,7 +49,7 @@ h4 {
 }
 
 .item2 {
-  background-color: #F3F3F3; 
+  background-color: #f3f3f3;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -61,15 +61,21 @@ h4 {
 }
 
 .descripcion2 {
-  width: 28%; 
-  font-family: 'Montserrat';
+  width: 28%;
+  font-family: "Montserrat";
   order: 1;
   text-align: end;
 }
 
+// CARACTERISTICAS
+.caracteristicas {
+	flex-direction: row;
+	justify-content: center;
+}
+
 // ¿Sabías que podes publicar tu información en Thuban Software?
 
-.img-conoce-captika{
+.img-conoce-captika {
   max-width: 280px;
   height: auto;
   transition: 0.3s;
@@ -83,17 +89,17 @@ h4 {
 
 .captika {
   height: 70%;
-  background-color: #F3F3F3; 
+  background-color: #f3f3f3;
 }
 
 .descripcioncaptika {
-  width: 38%; 
-  font-family: 'Montserrat';
+  width: 38%;
+  font-family: "Montserrat";
 }
 
 // COMPRAR
 .boton {
-  background-color: #145FA3;
+  background-color: #145fa3;
   cursor: pointer;
 }
 
@@ -108,7 +114,6 @@ h4 {
 }
 
 @media only screen and (min-width: 100px) and (max-width: 426px) {
-
   .header-captika {
     flex-direction: column;
     align-items: center;
@@ -155,12 +160,12 @@ h4 {
   .item1 {
     height: 60%;
   }
-  
+
   .item2 {
-    background-color: #F3F3F3; 
+    background-color: #f3f3f3;
     height: 65%;
   }
-  
+
   .item3 {
     height: 60%;
   }
@@ -179,17 +184,23 @@ h4 {
     max-width: 160px;
     height: auto;
   }
-  
+
   .img-captika2 {
     margin: 0%;
     max-width: 160px;
     height: auto;
   }
-  
+
   .img-thuban3 {
     max-width: 275px;
     height: auto;
   }
+
+  // CARACTERISTICAS
+	.caracteristicas {
+		flex-direction: column;
+		align-items: center;
+	}
 
   // ¿Sabías que podes publicar tu información en Thuban Software?
 
@@ -203,8 +214,8 @@ h4 {
   }
 
   .descripcioncaptika {
-    width: 100%; 
-    font-family: 'Montserrat';
+    width: 100%;
+    font-family: "Montserrat";
   }
 
   .descripcioncaptika h3 {
@@ -217,8 +228,7 @@ h4 {
 }
 
 @media only screen and (max-height: 700px) {
-  .header-captika{
+  .header-captika {
     height: 75%;
   }
 }
-
