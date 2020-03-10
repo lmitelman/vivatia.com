@@ -5,25 +5,25 @@
     </button>
     <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item" routerLink="/home">
                 <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/home">{{ "NAVBAR.HOME" | translate }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" routerLink="/nosotros">
                 <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/nosotros">{{ "NAVBAR.NOSOTROS" | translate }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" routerLink="/soluciones">
                 <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/soluciones">{{ "NAVBAR.SOLUCIONES" | translate }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" routerLink="/productos">
                 <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/productos">{{ "NAVBAR.PRODUCTOS" | translate }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" routerLink="/partners">
                 <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/partners">{{ "NAVBAR.PARTNERS" | translate }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" href="https://vivatia2020.myshopify.com/">
                 <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" href="https://vivatia2020.myshopify.com/" target="_blank">{{ "NAVBAR.TIENDA" | translate }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" routerLink="/capacitacion">
                 <a class="nav-link active letra font-weight-bold" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/capacitacion">{{ "NAVBAR.CAPACITACIONES" | translate }}</a>
             </li>
             <li class="nav-item dropdown" ngbDropdown>
