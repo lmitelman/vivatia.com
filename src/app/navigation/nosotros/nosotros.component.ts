@@ -5,6 +5,7 @@ import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms'
 import { AdminService } from '../../services/admin.service';
 import { MatSnackBar } from '@angular/material';
 import { CountoModule }  from 'angular2-counto';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -16,12 +17,14 @@ export class NosotrosComponent implements OnInit {
 
   contactForm: FormGroup;
   public isMobileLayout = false;
+  public innerWidth: any;
 
   constructor(
     private formBuilder: FormBuilder,
     private adminService: AdminService,
     private snackBar: MatSnackBar,
-    private dialog: MatDialog,    
+    private dialog: MatDialog,
+    private translate: TranslateService  
   ) { }
 
   ngOnInit() {
@@ -32,6 +35,19 @@ export class NosotrosComponent implements OnInit {
     this.contactForm = this.formBuilder.group({
       email: ['', [Validators.required]]
     })
+  }
+
+  isMobile(){
+    if (this.innerWidth < 850) {
+      return true
+    }
+    else if (this.innerWidth >= 850) {
+      return false
+    }
+  }
+
+  currentLanguage() {
+    return this.translate.currentLang;
   }
 
   openSnackBar() {        

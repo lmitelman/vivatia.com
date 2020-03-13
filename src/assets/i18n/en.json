@@ -17,7 +17,7 @@
         "DATOS2": "Satisfaction",
         "DATOS3": "Implemented proyects",
         "DATOS4": "Active users",
-        "CONTACTANOS": "Contactanos",
+        "CONTACTANOS": "Contact us",
         "SOLUCION_IDEAL": "Find your <span class='font-weight-bold'>solution</span>",
         "SOLUCION_IDEAL_1": "Choose",
         "SOLUCION_IDEAL_1_DESC": "the ideal solution <br> based on your needs",
@@ -41,11 +41,13 @@
         "NUESTRO_EQUIPO": "Our team",
         "NUESTRO_EQUIPO_DESC": "In Vivatia we are in constant movement, always changing, we are innovators and flexibles. NWe aim to achieve that each one of our clients undergoes a personalized exceptional and unique experience while they get results and enjoy the process. Facing new and exciting challenges we combine our knowledge and passion creating our own experience.",
         "PORQUE_ELEJIRNOS": "Why us?",
+        "CLIENTES_TITULO": "Trust us",
         "BENEFICIO1": "We generate <br> operational costs savings",
-        "BENEFICIO2": "We reduce <br> proceses cost",
-        "BENEFICIO3": "We turn companies <br> into Green Businesses",
-        "BENEFICIO4": "We increase <br> security",
-        "IRAM": "We have the certification of <br><span class='font-weight-bold'>Gestión de Calidad IRAM RI-9000-6446<br>IQNet Management System."
+        "BENEFICIO2": "Increase <br> in productivity",
+        "BENEFICIO3": "We turn companies <br> into Green Business",
+        "BENEFICIO4": "Increase <br> your security",
+        "IRAM": "Certified quality",
+        "IRAM_DESC": "We have a Quality Management System in the processes of design, development, implementation and support of software certified according to the IRAM-ISO 9001: 2015 standard. We operate from Data Centers with security certifications globally recognized as ISO 27,000 , SAS70, among others."
     },
     "PARTNERS": {
         "DESCRIPCION_HEADER": "Join the Vivatia Experience <br> and watch your sales rise.",

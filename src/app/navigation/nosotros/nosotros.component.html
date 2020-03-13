@@ -1,20 +1,15 @@
 <section class="bg-main1 d-flex flex-column align-items-start justify-content-center text-white mt-5">
     <div class="text-header">
-        <h1 class="font-weight-bold animated fadeInDown">Vivatia</h1>
         <h5 class="font-weight-lighter animated fadeInDown">{{ "NOSOTROS.DESCRIPCION_HEADER" | translate }}</h5>
     </div>
 </section>
 
-<div class="d-flex justify-content-center align-items-center descripcionItem item1 h-auto py-5" style="background-color: white;">
-    <div class="d-flex flex-column descripcion animated fadeInRight">
-        <h4 class="font-weight-bold">{{ "NOSOTROS.NUESTRA_HISTORIA" | translate }}</h4>
-        <br>
-        <h6>{{ "NOSOTROS.NUESTRA_HISTORIA_DESC" | translate }}</h6>
-        <br>
-    </div>
-    <div class="animated fadeInRight">
-        <img src="assets/logo-secundario.png" class="img-historia" alt="">
-    </div>
+<div class="d-flex py-2 pt-5 flex-column text-center align-items-center" style="background-color: white;">
+    <h4 class="font-weight-bold animated fadeInRight letra">{{ "NOSOTROS.NUESTRA_HISTORIA" | translate }}</h4>
+</div>
+
+<div *ngIf="!isMobile()" class="d-flex justify-content-center my-5 py-2">
+    <img [src]="'NOSOTROS.HISTORIA_IMG' | translate" style="max-width: 78%; height: auto;">
 </div>
 
 <div class="makingitwork d-flex text-white flex-column align-items-center py-5">
@@ -30,6 +25,46 @@
         </div>
     </div>
 </div>
+
+<div class="d-flex py-2 pt-5 flex-column text-center align-items-center" style="background-color: #F3F3F3">
+    <h4 class="font-weight-bold animated fadeInRight">{{ "NOSOTROS.CLIENTES_TITULO" | translate }}</h4>
+</div>
+
+<!-- CLIENTES WEB -->
+<section class="clientsDesktop">
+    <div class="py-5 d-flex align-items-center align-content-center justify-content-center clients h-100"
+        style="background-color: #F3F3F3">
+        <img class="mr-5 animated zoomIn" src="assets/bbva.png">
+        <img class="mr-5 animated zoomIn" src="assets/xerox.png">
+        <img class="mr-5 animated zoomIn" src="assets/Galeno.png">
+        <img class="mr-5 animated zoomIn" src="assets/Clover.png">
+        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
+    </div>
+</section>
+
+<!-- CLIENTES MOBILE -->
+<section>
+    <div class="clientsMobile pb-1 align-items-center justify-content-center" style="background-color: #F3F3F3">
+        <!-- style="background-color: rgba(34, 38, 42, 0.9)" -->
+        <ngb-carousel [showNavigationArrows]='false' [showNavigationIndicators]='false' [interval]='3000'>
+            <ng-template ngbSlide>
+                <img src="assets/bbva2.png" alt="Random first slide">
+            </ng-template>
+            <ng-template ngbSlide>
+                <img src="assets/Galicia2.png" alt="Random first slide">
+            </ng-template>
+            <ng-template ngbSlide>
+                <img src="assets/havas2.png" alt="Random first slide">
+            </ng-template>
+            <ng-template ngbSlide>
+                <img src="assets/prisma2.png" alt="Random first slide">
+            </ng-template>
+            <ng-template ngbSlide>
+                <img src="assets/Santander2.png" alt="Random first slide">
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</section>
 
 <div class="d-flex justify-content-center align-items-center descripcionItem h-auto py-5" style="background-color: #F3F3F3;">
     <div class="d-flex flex-column descripcion animated fadeInRight">
@@ -109,10 +144,23 @@
     </div>
 </section>
 
-<section class="certificados d-flex py-5 flex-column justify-content-center align-items-center" style="background-color: white;">
-    <div class="d-flex justify-content-around align-items-center">
-        <p class="mx-3" [innerHTML]="'NOSOTROS.IRAM' | translate"></p>
+<div class="d-flex justify-content-center align-items-center descripcionItem h-auto py-5" style="background-color: #F3F3F3;">
+    <div class="d-flex flex-column descripcion animated fadeInRight">
+        <h4 class="font-weight-bold">{{ "NOSOTROS.IRAM" | translate }}</h4>
+        <br>
+        <h6>{{ "NOSOTROS.IRAM_DESC" | translate }}</h6>
+        <br>
+    </div>
+    <div>
         <img class="home-small-logo" src="assets/iram-footer.png">
         <img class="home-small-logo" src="assets/iqnet-footer.png">
     </div>
-</section>
+</div>
+
+<!-- <section class="certificados d-flex py-5 flex-column justify-content-center align-items-center" style="background-color: white;">
+    <div class="d-flex justify-content-around align-items-center">
+        <p class="mr-4" [innerHTML]="'NOSOTROS.IRAM' | translate"></p>
+        <img class="home-small-logo" src="assets/iram-footer.png">
+        <img class="home-small-logo" src="assets/iqnet-footer.png">
+    </div>
+</section> -->
