@@ -11,63 +11,70 @@ import Typed from 'typed.js';
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+	selector: 'app-home',
+	templateUrl: './home.component.html',
+	styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
-  fontTextEs: String[] = [
-    'digital.',
-    'paperless.',
-    'vivatia.',
-    'tecnológica.',
-  ];
-  fontTextEn: String[] = [
-    'digital',
-    'paperless',
-    'vivatia',
-    'technological',
-  ];
-  contactForm: FormGroup;
-  public isMobileLayout = false;
-  typed: any;
-  positionArrayText = 0;
+	fontTextEs: String[] = [
+		'digital.',
+		'paperless.',
+		'vivatia.',
+		'tecnológica.',
+	];
+	fontTextEn: String[] = [
+		'digital',
+		'paperless',
+		'vivatia',
+		'technological',
+	];
 
-  constructor(
-    private formBuilder: FormBuilder,
-    private adminService: AdminService,
-    private snackBar: MatSnackBar,
-    private dialog: MatDialog,
-    private translate: TranslateService
-  ) {}
+	contactForm: FormGroup;
+	typed: any;
+	public innerWidth: any;
+	positionArrayText = 0;
 
+	constructor(
+		private formBuilder: FormBuilder,
+		private adminService: AdminService,
+		private snackBar: MatSnackBar,
+		private dialog: MatDialog,
+		private translate: TranslateService
+	) { }
 
-  ngOnInit() {
-    this.createContactForm();
-  }
+	ngOnInit() {
+		this.createContactForm();
+		this.innerWidth = window.innerWidth
+	}
 
-  private createContactForm() {
-    this.contactForm = this.formBuilder.group({
-      email: ['', [Validators.required]]
-    })
-  }
+	isMobile() {
+		if (this.innerWidth < 850) {
+			return true;
+		}
+	}
 
-  openSnackBar() {                  //  openSnackBar(message, action)
-    this.snackBar.open('Mail cargado con exito', 'Aceptar', { duration: 1500 });
-  }
+	private createContactForm() {
+		this.contactForm = this.formBuilder.group({
+			email: ['', [Validators.required]]
+		})
+	}
 
-  openDialog() {
-    this.dialog.open(DialogContactComponent);
-  }
+	openSnackBar() {                  //  openSnackBar(message, action)
+		this.snackBar.open('Mail cargado con exito', 'Aceptar', { duration: 1500 });
+	}
 
-  doSmth(indexOfString){
-    this.positionArrayText = indexOfString;
-  }
+	openDialog() {
+		this.dialog.open(DialogContactComponent);
+	}
 
-  currentLanguage() {
-    return this.translate.currentLang;
-  }
+	doSmth(indexOfString) {
+		this.positionArrayText = indexOfString;
+	}
+
+	currentLanguage() {
+		return this.translate.currentLang;
+	}
 }
 
 

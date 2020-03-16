@@ -4,7 +4,7 @@
         <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontTextEs" (preStringTyped)="doSmth($event)">
             <h2 [ngClass]="{'font-especial': fontTextEs[positionArrayText] == 'vivatia.'}" class="typing"></h2>
         </ngx-typed-js>
-        <button mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Contactanos</button>
+        <button *ngIf="isMobile() == false" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Contactanos</button>
     </div>
     <div class="d-flex flex-column align-items-start w-75" *ngIf="currentLanguage() == 'en'">
         <h2 class="subtitle animated pulse m-0">Live your <br></h2>
@@ -12,9 +12,18 @@
             <h2 [ngClass]="{'font-especial': fontTextEn[positionArrayText] == 'vivatia'}" class="typing"></h2>
         </ngx-typed-js>
         <h2 class="subtitle animated pulse m-0">experience.</h2>
-        <button mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Contact us</button>
+        <button *ngIf="isMobile() == false" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Contact us</button>
     </div>
+    <div *ngIf="isMobile() == true" style="box-sizing: solid white">
+        <img class="ml-2" src="assets/agus-mobile.png" style="max-width: 95%; height: auto;">
+    </div>
+    <button *ngIf="isMobile() == true && currentLanguage() == 'en'" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1 w-75" (click)="openDialog()">Contact us</button>
+    <button *ngIf="isMobile() == true && currentLanguage() == 'es'" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1 w-75" (click)="openDialog()">Contactanos</button>
 </section>
+
+
+
+
 
 <!-- CLIENTES WEB -->
 <section class="clientsDesktop">
@@ -25,49 +34,24 @@
         <img class="mr-5 animated zoomIn" src="assets/Galeno.png">
         <img class="mr-5 animated zoomIn" src="assets/Clover.png">
         <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
+        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
     </div>
 </section>
 
 <!-- CLIENTES MOBILE -->
-<section>
-    <div class="clientsMobile pb-1 align-items-center justify-content-center" style="background-color: #F3F3F3">
+<section class="d-flex justify-content-center" style="background-color: #F3F3F3">
+    <div class="clientsMobile py-5 align-items-center justify-content-between flex-wrap">
         <!-- style="background-color: rgba(34, 38, 42, 0.9)" -->
-        <ngb-carousel [showNavigationArrows]='false' [showNavigationIndicators]='false' [interval]='3000'>
-            <ng-template ngbSlide>
-                <img src="assets/bbva2.png" alt="Random first slide">
-            </ng-template>
-            <ng-template ngbSlide>
-                <img src="assets/Galicia2.png" alt="Random first slide">
-            </ng-template>
-            <ng-template ngbSlide>
-                <img src="assets/havas2.png" alt="Random first slide">
-            </ng-template>
-            <ng-template ngbSlide>
-                <img src="assets/prisma2.png" alt="Random first slide">
-            </ng-template>
-            <ng-template ngbSlide>
-                <img src="assets/Santander2.png" alt="Random first slide">
-            </ng-template>
-        </ngb-carousel>
+        <img class="" src="assets/bbva.png">
+        <img class="" src="assets/xerox.png">
+        <img class="" src="assets/Galeno.png">
+        <img class="" src="assets/Clover.png">
+        <img class="" src="assets/Groupm.png">
+        <img class="" src="assets/Groupm.png">
     </div>
 </section>
 
-<!-- <section class="text-center d-flex align-items-center justify-content-center border-success stats">
-    <div class="stat animated fadeInDown" style="animation-delay: 0.7s">
-        <h2 class="letra font-weight-bold">+20</h2>
-        <h5 class="text-dark font-weight-light">{{ "HOME.DATOS1" | translate }}</h5>
-    </div>
-    <div class="stat animated fadeInDown" style="animation-delay: 0.9s">
-        <h2 class="letra font-weight-bold">100%</h2>
-        <h5 class="text-dark font-weight-light">{{ "HOME.DATOS2" | translate }}</h5>
-    </div>
-    <div class="stat animated fadeInDown" style="animation-delay: 1.1s">
-        <h2 class="letra font-weight-bold">+2.000</h2>
-        <h5 class="text-dark font-weight-light">{{ "HOME.DATOS3" | translate }}</h5>
-    </div>
-</section> -->
-
-<section class="EncontraTuSolucion py-4" style="background-color: #F3F3F3">
+<section class="EncontraTuSolucion py-4">
     <div class="d-flex flex-column justify-content-center align-items-center">
         <h4 class="py-4 font-weight-light m-0" [innerHTML]="'HOME.SOLUCION_IDEAL' | translate"></h4>
     </div>

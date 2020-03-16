@@ -14,9 +14,7 @@
 }
 
 .bg-home1 {
-  // background-image: url('../../assets/test-home4.png');
   background-image: url('../../assets/home-agus.png');
-  /* Center and scale the image nicely */
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,8 +46,9 @@ p {
 }
 
 .clientsMobile {
-  display: none;
+  display: none !important;
 }
+
 
 .stats {
   height: 40%;
@@ -65,14 +64,6 @@ p {
 
 .EncontraTuSolucion h5 {
   font-size: 20px;
-}
-
-.EncontraTuSolucion {
-  background-image: url('../../assets/trazado.png');
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .process {
@@ -118,13 +109,11 @@ h5 {
     }
 
     .bg-home1 {
-      background-image: url('../../assets/header-mobile.png');
-      /* Center and scale the image nicely */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 50%;
+      background-image: url('../../assets/white.png');
+      background-color: white !important;
+      height: 80%;
       justify-content: center;
+      flex-direction: column !important;
     }
 
     .bg-home1 div {
@@ -140,7 +129,13 @@ h5 {
     }
 
     .clientsMobile {
-      display: flex;
+      display: flex !important;
+      width: 65%;
+    }
+  
+    .clientsMobile img {
+      max-width: 100px;
+      height: auto;
     }
 
     .EncontraTuSolucion h4 {
@@ -230,9 +225,9 @@ h5 {
 }
 
 // iPhone 6
-@media only screen and (max-height: 680px) {
+@media only screen and (max-height: 700px) {
   .bg-home1 {
-    height: 70%;
+    height: 100%;
   }
 }
 

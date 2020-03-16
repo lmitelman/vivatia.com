@@ -134,17 +134,13 @@ h6 {
 }
 
 // CLIENTES
-.clientsDesktop {
-  height: 18%;
-}
-
 .clientsDesktop img {
   max-width: 120px;
   height: auto;
 }
 
 .clientsMobile {
-  display: none;
+  display: none !important;
 }
 
 ////////////////////////// RESPONSIVE //////////////////////
@@ -269,11 +265,17 @@ h6 {
 
   // CLIENTES
   .clientsDesktop {
-    display: none;
+    display: none !important;
   }
 
   .clientsMobile {
-    display: flex;
+    display: flex !important;
+    width: 65%;
+  }
+
+  .clientsMobile img {
+    max-width: 100px;
+    height: auto;
   }
 
   // CERTIFICADOS
