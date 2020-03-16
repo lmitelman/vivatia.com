@@ -395,16 +395,8 @@
     },
     "PERSONALIZACION" : {
         "TITULO": "How do we customize your process?",
-        "TEXTO_HEADER": "We understand that each client requires personalized and exceptional attention and that must always be taken care. Because of this, we help you improve your management systems and processes, and we accompany you in the digital transformation through our experience.",
-        "ANALISIS": "Analysis and design",
-        "ANALISIS_DESC": "A detailed survey will be carried out with the necessary resources for the development of the project and the basic interfaces and functions.",
-        "PROTOTIPO": "Prototype",
-        "PROTOTIPO_DESC": "A validation of the design is carried out with the client and a basic prototyping of the solution, that responds to the basic requirements of the users.",
-        "FINAL": "Final version ",
-        "FINAL_DESC": "The solution is stabilized by correcting and testing each one of the bugs that could have been detected as a result of the validation of the “prototype under test”.",
-        "IMPLEMENTACION": "Implementation",
-        "IMPLEMENTACION_DESC": "We put into production the “final version” obtained and we empower you.",
-        "SRC_IMG": "assets/proceso-custom-english.png"
+        "SRC_IMG": "assets/proceso-custom-english.png",
+        "SRC_IMG_MOBILE": "assets/proceso-custom-mobile-english.png"
     },
     "GENERIC": {
         "SOLICITAR_DEMO": "Ask for a demo"

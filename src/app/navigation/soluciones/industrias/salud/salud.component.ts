@@ -10,6 +10,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class SaludComponent implements OnInit {
 
+  public innerWidth: any;
+
   dataCardsSaludEs: any[] = [
     {
       name: 'Auditoría médica <br> y pagos',
@@ -59,9 +61,16 @@ export class SaludComponent implements OnInit {
   constructor(private dialog: MatDialog, private translate: TranslateService) {}
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth
   }
 
   currentLanguage() {
     return this.translate.currentLang;
   }
+
+  isMobile() {
+		if (this.innerWidth < 850) {
+			return true;
+		}
+	}
 }

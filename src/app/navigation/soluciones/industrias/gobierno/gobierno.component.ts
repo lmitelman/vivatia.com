@@ -8,6 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class GobiernoComponent implements OnInit {
 
+  public innerWidth: any;
+
   dataCardsBancaEs: any[] = [
     {
       name: 'Habilitaciones',
@@ -65,10 +67,17 @@ export class GobiernoComponent implements OnInit {
   constructor(private translate: TranslateService) { }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth
   }
 
   currentLanguage() {
     return this.translate.currentLang;
   }
+
+  isMobile() {
+		if (this.innerWidth < 850) {
+			return true;
+		}
+	}
 
 }

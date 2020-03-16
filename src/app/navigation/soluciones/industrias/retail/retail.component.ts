@@ -8,6 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class RetailComponent implements OnInit {
 
+  public innerWidth: any;
+
   dataCardsBancaEs: any[] = [
     {
       name: 'Préstamos',
@@ -49,10 +51,16 @@ export class RetailComponent implements OnInit {
   constructor(private translate: TranslateService) { }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth
   }
 
   currentLanguage() {
     return this.translate.currentLang;
   }
 
+  isMobile() {
+		if (this.innerWidth < 850) {
+			return true;
+		}
+	}
 }

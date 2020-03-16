@@ -8,6 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class IndustriaComponent implements OnInit {
 
+  public innerWidth: any;
+
   dataCardsIndustriaEs: any[] = [
     {
       name: 'Mantenimiento <br> de plantas',
@@ -41,10 +43,17 @@ export class IndustriaComponent implements OnInit {
   constructor(private translate: TranslateService) { }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth
   }
 
   currentLanguage() {
     return this.translate.currentLang;
   }
+
+  isMobile() {
+		if (this.innerWidth < 850) {
+			return true;
+		}
+	}
 
 }
