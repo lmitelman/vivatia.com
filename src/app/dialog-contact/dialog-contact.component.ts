@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
-import { AdminService } from '../services/admin.service';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -19,7 +18,6 @@ export class DialogContactComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private snackBar: MatSnackBar,
-    private adminService: AdminService,
     private translate: TranslateService   
   ) { }
 

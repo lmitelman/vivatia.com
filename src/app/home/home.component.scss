@@ -18,7 +18,7 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 75%;
+  height: 80%;
   justify-content: start;
 }
 
@@ -230,11 +230,3 @@ h5 {
     height: 100%;
   }
 }
-
-// Notebook HP
-@media only screen and (max-height: 675px) and (max-width: 1445px) {
-  .bg-home1 {
-    height: 85%;
-  }
-}
-

@@ -11,7 +11,6 @@ body {
 
 .bg-main1 {
   background-image: url("../../../assets/nosotros-header.png");
-  /* Center and scale the image nicely */
   background-repeat: no-repeat;
   background-size: cover;
   height: 40%;
@@ -143,6 +142,13 @@ h6 {
   display: none !important;
 }
 
+  // CERTIFICADOS
+
+.certificados {
+  max-width: 200px;
+  height: auto;
+}
+
 ////////////////////////// RESPONSIVE //////////////////////
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .bg-main1 {
@@ -150,7 +156,7 @@ h6 {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    height: 40%;
+    height: 60%;
     padding-left: 0%;
   }
 
@@ -164,9 +170,10 @@ h6 {
   }
 
   h5 {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.5px;
+    text-align: center;
   }
 
   // ¿POR QUE ELEGIRNOS?
@@ -237,12 +244,12 @@ h6 {
   }
 
   .img-equipo {
-    margin: 0%;
+    margin: 20px 0px 0px 0px;
     max-width: 340px;
     height: auto;
   }
 
-  h4 {
+  .makingitwork h4 {
     font-size: 17px;
     text-align: center;
   }
@@ -253,13 +260,20 @@ h6 {
     font-style: italic;
   }
 
+  h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+
   h6 {
-    font-size: 12px;
+    font-size: 17px;
+    margin: 0px 10px 0px 10px;
+    text-align: justify;
   }
 
   .img-paises {
     margin-left: 0%;
-    max-width: 240px;
+    max-width: 95%;
     height: auto;
   }
 
@@ -280,22 +294,15 @@ h6 {
 
   // CERTIFICADOS
 
-  .certificados h2 {
-    font-size: 20px;
+  .certificados {
+    max-width: 50%;
+    height: auto;
   }
 
-  .certificados img {
-    width: 10%;
-    height: 10%;
-  }
-
-  .certificados p {
-    font-size: 10px;
-  }
 }
 
 @media only screen and (max-height: 700px) {
   .bg-main1 {
-    height: 55%;
+    height: 70%;
   }
 }

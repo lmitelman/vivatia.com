@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
 import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms';
-import { AdminService } from '../../services/admin.service';
 import { MatSnackBar } from '@angular/material';
 import { CountoModule }  from 'angular2-counto';
 import { TranslateService } from '@ngx-translate/core';
@@ -16,12 +15,10 @@ import { TranslateService } from '@ngx-translate/core';
 export class NosotrosComponent implements OnInit {
 
   contactForm: FormGroup;
-  public isMobileLayout = false;
   public innerWidth: any;
 
   constructor(
     private formBuilder: FormBuilder,
-    private adminService: AdminService,
     private snackBar: MatSnackBar,
     private dialog: MatDialog,
     private translate: TranslateService  
@@ -29,6 +26,7 @@ export class NosotrosComponent implements OnInit {
 
   ngOnInit() {
     this.createContactForm();    
+    this.innerWidth = window.innerWidth
   }
 
   private createContactForm() {
@@ -37,14 +35,11 @@ export class NosotrosComponent implements OnInit {
     })
   }
 
-  isMobile(){
-    if (this.innerWidth < 850) {
-      return true
-    }
-    else if (this.innerWidth >= 850) {
-      return false
-    }
-  }
+	isMobile() {
+		if (this.innerWidth < 850) {
+			return true;
+		}
+	}
 
   currentLanguage() {
     return this.translate.currentLang;

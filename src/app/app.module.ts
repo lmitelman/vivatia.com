@@ -1,7 +1,6 @@
 //angular stuff
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AdminService } from './services/admin.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
@@ -153,9 +152,7 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     AppRoutingModule
   ],
-  providers: [
-    AdminService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

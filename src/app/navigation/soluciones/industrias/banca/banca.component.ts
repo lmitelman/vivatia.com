@@ -12,6 +12,8 @@ export class BancaComponent implements OnInit {
 
   constructor(private dialog: MatDialog, private translate: TranslateService) { }
 
+  public innerWidth: any;
+
   dataCardsBancaEs: any[] = [
     {
       name: 'Solicitudes de créditos <br> personales, hipotecarios <br> y/o prendarios',
@@ -103,5 +105,12 @@ export class BancaComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth
+  }
+
+  isMobile() {
+    if (this.innerWidth < 850) {
+      return true;
+    }
   }
 }

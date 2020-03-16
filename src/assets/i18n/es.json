@@ -33,6 +33,7 @@
         "DESCRIPCION_HEADER": "En un contexto en el cual los papeles dejan de ser protagonistas en los procesos, te ayudamos a emprender un camino de transformación digital aplicando nuevas tecnologías.",
         "NUESTRA_HISTORIA": "Nuestra historia",
         "HISTORIA_IMG": "assets/historia.png",
+        "HISTORIA_IMG_MOBILE": "assets/historia-mobile-español.png",
         "NUESTRA_HISTORIA_DESC": "Vivatia surge en 1999 con el objetivo de crear soluciones para posibilitar la gestión digital de la información en las organizaciones, de volverlas más eficientes y productivas, y juntos contribuir con el cuidado del medio ambiente, disminuyendo el uso de papel. De esta manera nuestros clientes pueden vivir la experiencia Vivatia, respaldándose en la tecnologia, conocimiento y capacidades de la empresa, mientras los acompañamos en el camino de la transformación digital y mejora continua de sus procesos.",
         "MAKINGITWORK1": "Creamos tecnologías de la información <br> y las aplicamos en tus procesos",
         "MAKINGITWORK2": "y de esta manera, potenciamos a <br> tu empresa y tu negocio día a dia",
@@ -40,7 +41,7 @@
         "DONDE_ESTAMOS_DESC": "Con más de 20 años de experiencia, a través de nuestra extensa red de socios de negocios brindamos soluciones globales para la gestión digital de la información.",
         "PAISES_DONDE_ESTAMOS": "Argentina - España - Estados Unidos - México - Venezuela - Colombia - Ecuador - Perú - Chile - Uruguay",
         "NUESTRO_EQUIPO": "Nuestro equipo",
-        "NUESTRO_EQUIPO_DESC": "En Vivatia nos encontramos siempre cambiando, somos innovadores y flexibles. Nos proponemos conseguir que cada uno de nuestros clientes viva una experiencia personalizada, excepcional y diferente, obteniendo los resultados esperados mientras disfruta del proceso. Enfrentamos desafíos nuevos y emocionantes, mezclando nuestros conocimientos con la pasión por el trabajo, creando nuestra propia experiencia.",
+        "NUESTRO_EQUIPO_DESC": "En Vivatia nos encontramos siempre cambiando, somos innovadores y flexibles. Nos proponemos conseguir que cada uno de nuestros clientes viva una experiencia personalizada, excepcional y diferente, obteniendo los resultados esperados mientras disfruta del proceso.",
         "PORQUE_ELEJIRNOS": "¿Por qué elegirnos?",
         "CLIENTES_TITULO": "Confían en nosotros",
         "BENEFICIO1": "Generamos ahorros <br> operativos",
@@ -404,5 +405,8 @@
         "IMPLEMENTACION": "Implementación",
         "IMPLEMENTACION_DESC": "Ponemos en producción la “versión final” obtenida y te potenciamos.",
         "SRC_IMG": "assets/proceso-custom.png"
+    },
+    "GENERIC": {
+        "SOLICITAR_DEMO": "Solicita tu demo"
     }
 }

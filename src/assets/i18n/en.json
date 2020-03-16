@@ -32,6 +32,8 @@
     "NOSOTROS": {
         "DESCRIPCION_HEADER": "In a context in which papers took a secondary role in business processes, we help you in the digital transformation journey.",
         "NUESTRA_HISTORIA": "Our history",
+        "HISTORIA_IMG": "assets/historia.png",
+        "HISTORIA_IMG_MOBILE": "assets/historia-mobile-español.png",
         "NUESTRA_HISTORIA_DESC": "Vivatia was founded in 1999 with the objective of creating solutions to make digital management possible for organizations, helping them to be more efficient and productive, and making them greener by reducing their use of paper. In this way, our clients can live the “Vivatia experience”, backing up on the technology, knowledge and capabilities we have. We accompany them on the path of digital transformation and continuous improvement of their processes.",
         "MAKINGITWORK1": "We create information technologies <br> and apply them to your process.",
         "MAKINGITWORK2": "In this way, we empower <br> your business day by day.",
@@ -39,7 +41,7 @@
         "DONDE_ESTAMOS_DESC": "With 20 years of experience, through our extensive network of business partners we provide global solutions for digital management of information.",
         "PAISES_DONDE_ESTAMOS": "Argentina - Spain - United States - Mexico - Venezuela - Colombia - Ecuador - Peru - Chile - Uruguay",
         "NUESTRO_EQUIPO": "Our team",
-        "NUESTRO_EQUIPO_DESC": "In Vivatia we are in constant movement, always changing, we are innovators and flexibles. NWe aim to achieve that each one of our clients undergoes a personalized exceptional and unique experience while they get results and enjoy the process. Facing new and exciting challenges we combine our knowledge and passion creating our own experience.",
+        "NUESTRO_EQUIPO_DESC": "In Vivatia we are in constant movement, always changing, we are innovators and flexibles. We aim to achieve that each one of our clients undergoes a personalized exceptional and unique experience while they get results and enjoy the process.",
         "PORQUE_ELEJIRNOS": "Why us?",
         "CLIENTES_TITULO": "Trust us",
         "BENEFICIO1": "We generate <br> operational costs savings",
@@ -403,5 +405,8 @@
         "IMPLEMENTACION": "Implementation",
         "IMPLEMENTACION_DESC": "We put into production the “final version” obtained and we empower you.",
         "SRC_IMG": "assets/proceso-custom-english.png"
+    },
+    "GENERIC": {
+        "SOLICITAR_DEMO": "Ask for a demo"
     }
 }

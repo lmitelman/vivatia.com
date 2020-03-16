@@ -10,6 +10,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class SegurosComponent implements OnInit {
 
+  public innerWidth: any;
+
   dataCardsSegurosEs: any[] = [
     {
       name: 'Denuncias de <br> siniestros',
@@ -51,10 +53,17 @@ export class SegurosComponent implements OnInit {
   constructor(private dialog: MatDialog, private translate: TranslateService) { }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth
   }
 
   currentLanguage() {
     return this.translate.currentLang;
   }
+
+  isMobile() {
+		if (this.innerWidth < 850) {
+			return true;
+		}
+	}
 
 }

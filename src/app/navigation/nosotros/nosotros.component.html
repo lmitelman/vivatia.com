@@ -12,6 +12,10 @@
     <img [src]="'NOSOTROS.HISTORIA_IMG' | translate" style="max-width: 78%; height: auto;">
 </div>
 
+<div *ngIf="isMobile()" class="d-flex justify-content-center my-5 py-2">
+    <img [src]="'NOSOTROS.HISTORIA_IMG_MOBILE' | translate" style="max-width: 78%; height: auto;">
+</div>
+
 <div class="makingitwork d-flex text-white flex-column align-items-center py-5">
     <div class="w-50">
         <div class="d-flex justify-content-start my-1 animated fadeInRight">
@@ -153,15 +157,7 @@
         <br>
     </div>
     <div>
-        <img class="home-small-logo" src="assets/iram-footer.png">
-        <img class="home-small-logo" src="assets/iqnet-footer.png">
+        <img class="home-small-logo certificados" src="assets/iram-footer.png">
+        <img class="home-small-logo certificados" src="assets/iqnet-footer.png">
     </div>
 </div>
-
-<!-- <section class="certificados d-flex py-5 flex-column justify-content-center align-items-center" style="background-color: white;">
-    <div class="d-flex justify-content-around align-items-center">
-        <p class="mr-4" [innerHTML]="'NOSOTROS.IRAM' | translate"></p>
-        <img class="home-small-logo" src="assets/iram-footer.png">
-        <img class="home-small-logo" src="assets/iqnet-footer.png">
-    </div>
-</section> -->

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
 import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms';
-import { AdminService } from '../services/admin.service';
 import { MatSnackBar } from '@angular/material';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -37,7 +36,6 @@ export class HomeComponent implements OnInit {
 
 	constructor(
 		private formBuilder: FormBuilder,
-		private adminService: AdminService,
 		private snackBar: MatSnackBar,
 		private dialog: MatDialog,
 		private translate: TranslateService
