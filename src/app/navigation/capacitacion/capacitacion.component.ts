@@ -10,6 +10,8 @@ import { MatDialog } from '@angular/material';
 })
 export class CapacitacionComponent implements OnInit {
 
+  public innerWidth: any;
+
   itemsCapacitacionProducto: any[] = [
     {
       name: 'Instalaciones de producto.',
@@ -27,8 +29,15 @@ export class CapacitacionComponent implements OnInit {
     private dialog: MatDialog,
   ) { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+		this.innerWidth = window.innerWidth
+	}
+
+	isMobile() {
+		if (this.innerWidth < 850) {
+			return true;
+		}
+	}
 
   openDialog() {
     this.dialog.open(DialogContactComponent);
