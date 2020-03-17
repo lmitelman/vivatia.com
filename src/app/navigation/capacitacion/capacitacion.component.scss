@@ -91,12 +91,13 @@ p {
   }
 
   .bg-home1 {
+    margin-top: 10%;
     background-image: url("../../../assets/white.png");
     background-color: white !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 95%;
+    height: 100%;
     flex-direction: column !important;
     justify-content: center;
   }
@@ -214,6 +215,7 @@ p {
 
 @media only screen and (max-height: 700px) {
   .bg-home1 {
+    margin-top: 10%;
     height: 100%;
   }
 }
