@@ -1,220 +1,234 @@
 .boton {
-  transition: 0.3s;
+    transition: 0.3s;
 }
 
 .boton:hover {
-  background-color: #24b54a;
-  cursor: pointer;
+    background-color: #24b54a;
+    cursor: pointer;
 }
 
 .bg-home1 {
-  margin-top: 5%;
-  margin-bottom: 1%;
-  background-image: url("../../../assets/certificacion.png");
-  /* Center and scale the image nicely */
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60%;
-  justify-content: start;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    background-image: url("../../../assets/certificacion.png");
+    /* Center and scale the image nicely */
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    justify-content: start;
 }
 
 .bg-home1 div {
-  padding-left: 10%;
-  align-items: flex-start;
+    padding-left: 10%;
+    align-items: flex-start;
 }
 
 .bg-home1 h2 {
-  font-size: 48px;
-  font-family: "Montserrat", Helvetica;
+    font-size: 48px;
+    font-family: "Montserrat", Helvetica;
 }
 
 .bg-home1 p {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 //
 
 .text-personalizacion {
-  width: 40%;
-  line-height: 2.4;
+    width: 40%;
+    line-height: 2.4;
 }
 
 // CAPACITACION
 
 .container-capacitacion {
-  align-items: flex-start;
+    align-items: flex-start;
 }
 
 p {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .EncontraTuSolucion h5 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .EncontraTuSolucion {
-  // background-image: url('../../assets/trazado.png');
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.process {
-  width: 22%;
-}
-
-.process img {
-  max-width: 22%;
-  height: auto;
-}
-
-ul {
-  list-style-image: url("../../../assets/bullet.png");
-}
-
-p {
-  margin-bottom: 5px;
-  font-size: 15px;
-}
-
-.btn {
-  cursor: pointer;
-}
-
-@media only screen and (min-width: 100px) and (max-width: 812px) {
-  .title-main {
-    max-width: 50%;
-    height: auto;
-  }
-
-  .bg-home1 {
-    margin-top: 10%;
-    background-image: url("../../../assets/white.png");
-    background-color: white !important;
+    // background-image: url('../../assets/trazado.png');
+    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 85%;
-    flex-direction: column !important;
-    justify-content: center;
-  }
+}
 
-  .bg-home1 div {
-    padding-left: 0%;
-    align-items: center;
-  }
+.process {
+    width: 22%;
+}
 
-  .bg-home1 h2 {
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .bg-home1 p {
-    font-size: 20px;
-    text-align: center;
-    width: 80%;
-  }
-
-  //
-
-  .text-personalizacion {
-    width: 90%;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-
-  h6 {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  // PODES SUMARTE COMO
-
-  .soluciones {
-    flex-direction: row;
-  }
-
-  .solucion {
-    width: 90%;
-    margin-bottom: 3%;
-  }
-
-  p {
-    font-size: 13px;
-    display: block;
-  }
-
-  // OEM
-
-  .descripcionItem {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .descripcion2 {
-    width: 100%;
-    align-items: center;
-    text-align: justify;
-    order: 0;
-  }
-
-  .descripcion2 h6 {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  .item2 {
-    background-color: #f3f3f3;
-    height: 30%;
-  }
-
-  .img-captika2 {
-    max-width: 280px;
+.process img {
+    max-width: 22%;
     height: auto;
-    margin: 0%;
-  }
+}
 
-  // CAPACITACION
+ul {
+    list-style-image: url("../../../assets/bullet.png");
+}
 
-  .container-capacitacion {
-    align-items: center;
-  }
+p {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
 
-  .EncontraTuSolucion h4 {
-    font-size: 25px;
-    text-align: center;
-    margin: 0px 10px;
-  }
+.btn {
+    cursor: pointer;
+}
 
-  .EncontraTuSolucion img {
-    width: 40px;
-    height: 40px;
-  }
+@media only screen and (min-width: 100px) and (max-width: 812px) {
+    .title-main {
+        max-width: 50%;
+        height: auto;
+    }
 
-  .EncontraTuSolucion .letra {
-    flex-direction: column;
-  }
+    .bg-home1 {
+        margin-top: 10%;
+        background-image: url("../../../assets/white.png");
+        background-color: white !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 85%;
+        flex-direction: column !important;
+        justify-content: center;
+    }
 
-  .process {
-    width: 90%;
-    padding: 0%;
-  }
+    .bg-home1 div {
+        padding-left: 0%;
+        align-items: center;
+    }
 
-  .EncontraTuSolucion .letra img {
-    width: 40%;
-    height: 40%;
-  }
+    .bg-home1 h2 {
+        font-size: 40px;
+        text-align: center;
+    }
 
-  .EncontraTuSolucion .letra h5 {
-    font-size: 20px;
-  }
+    .bg-home1 p {
+        font-size: 20px;
+        text-align: center;
+        width: 80%;
+    }
+
+    //
+
+    .text-personalizacion {
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    h6 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    // PODES SUMARTE COMO
+
+    .soluciones {
+        flex-direction: row;
+    }
+
+    .solucion {
+        width: 90%;
+        margin-bottom: 3%;
+    }
+
+    p {
+        font-size: 13px;
+        display: block;
+    }
+
+    // OEM
+
+    .descripcionItem {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .descripcion2 {
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+        order: 0;
+    }
+
+    .descripcion2 h6 {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .item2 {
+        background-color: #f3f3f3;
+        height: 30%;
+    }
+
+    .img-captika2 {
+        max-width: 280px;
+        height: auto;
+        margin: 0%;
+    }
+
+    // CAPACITACION
+
+    .container-capacitacion {
+        align-items: center;
+    }
+
+    .EncontraTuSolucion h4 {
+        font-size: 25px;
+        text-align: center;
+        margin: 0px 10px;
+    }
+
+    .EncontraTuSolucion img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .EncontraTuSolucion .letra {
+        flex-direction: column;
+    }
+
+    .process {
+        width: 90%;
+        padding: 0%;
+    }
+
+    .EncontraTuSolucion .letra img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .EncontraTuSolucion .letra h5 {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-height: 700px) {
-  .bg-home1 {
-    height: 70%;
-  }
+    .bg-home1 {
+        height: 70%;
+    }
+}
+
+// Notebook
+@media only screen and (max-height: 700px) {
+    .bg-home1 {
+        height: 70%;
+    }
+}
+
+// iPhone 6
+@media only screen and (max-height: 700px) and (max-width: 400px) {
+    .bg-home1 {
+        height: 100% !important;
+    }
 }
