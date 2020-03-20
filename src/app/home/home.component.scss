@@ -4,15 +4,6 @@
   color: #2c773f !important;
 }
 
-.boton{
-  transition: 0.3s;
-}
-
-.boton:hover {
-  background-color: #24b54a;
-  cursor: pointer;
-}
-
 .bg-home1 {
   background-image: url('../../assets/home-agus.png');
   background-position: right;
@@ -36,11 +27,11 @@ p {
 }
 
 .clientsDesktop {
-  height: 18%;
+  display: flex;
 }
 
 .clientsDesktop img {
-  max-width: 120px;
+  max-width: 130px;
   height: auto;
 }
 

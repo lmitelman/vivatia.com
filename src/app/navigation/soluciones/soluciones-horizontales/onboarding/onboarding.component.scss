@@ -1,7 +1,7 @@
 // HEADER
 
 h1 {
-  font-size: 80px;
+  font-size: 100px;
   font-weight: bold;
   color: white;
   margin: 0%;
@@ -15,12 +15,6 @@ h1 {
   background-size: cover;
   height: 55%;
   opacity: 1.47;
-}
-
-.text-header {
-  width: 70%;
-  padding-left: 10%;
-  animation-delay: 0.3s;
 }
 
 h5 {
@@ -156,26 +150,12 @@ h6 {
   margin: 0px 10px 0px 10px;
 }
 
-// Notebook
-@media (min-width: 900px) and (max-width: 1920px) {
-  h1 {
-    font-size: 65px;
-  }
-
-  h5 {
-    font-size: 15px;
-    font-weight: lighter;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
-  }
-}
-
 @media only screen and (min-width: 100px) and (max-width: 900px) {
   // HEADER
 
   .header {
     padding-top: 22%;
-    height: 60%;
+    height: 50%;
     opacity: 1.47;
   }
 
@@ -278,7 +258,7 @@ h6 {
 @media only screen and (max-height: 650px) {
 
   .header {
-    height: 75%;
+    height: 60%;
   }
 
   .item1 {

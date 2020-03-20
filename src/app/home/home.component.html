@@ -1,46 +1,60 @@
 <section class="d-flex align-items-center bg-home1 pt-5">
     <div class="d-flex flex-column align-items-start w-75" *ngIf="currentLanguage() == 'es'">
         <h2 class="subtitle animated pulse m-0">Viví tu <br> experiencia</h2>
-        <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontTextEs" (preStringTyped)="doSmth($event)">
+        <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontTextEs"
+            (preStringTyped)="doSmth($event)">
             <h2 [ngClass]="{'font-especial': fontTextEs[positionArrayText] == 'vivatia.'}" class="typing"></h2>
         </ngx-typed-js>
-        <button *ngIf="isMobile() == false" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Contactanos</button>
+        <button *ngIf="!isMobile()" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1"
+            (click)="openDialog()">Contactanos</button>
     </div>
     <div class="d-flex flex-column align-items-start w-75" *ngIf="currentLanguage() == 'en'">
         <h2 class="subtitle animated pulse m-0">Live your <br></h2>
-        <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontTextEn" (preStringTyped)="doSmth($event)">
+        <ngx-typed-js [typeSpeed]="50" [backSpeed]="70" [loop]="true" [strings]="fontTextEn"
+            (preStringTyped)="doSmth($event)">
             <h2 [ngClass]="{'font-especial': fontTextEn[positionArrayText] == 'vivatia'}" class="typing"></h2>
         </ngx-typed-js>
         <h2 class="subtitle animated pulse m-0">experience.</h2>
-        <button *ngIf="isMobile() == false" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1" (click)="openDialog()">Contact us</button>
+        <button *ngIf="!isMobile()" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1"
+            (click)="openDialog()">Contact us</button>
     </div>
     <div *ngIf="isMobile() == true" style="box-sizing: solid white">
         <img class="ml-2" src="assets/agus-mobile.png" style="max-width: 95%; height: auto;">
     </div>
-    <button *ngIf="isMobile() == true && currentLanguage() == 'en'" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1 w-75" (click)="openDialog()">Contact us</button>
-    <button *ngIf="isMobile() == true && currentLanguage() == 'es'" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1 w-75" (click)="openDialog()">Contactanos</button>
+    <button *ngIf="isMobile() == true && currentLanguage() == 'en'" mat-raised-button
+        class="mt-2 rounded-pill boton text-white px-3 py-1 w-75" (click)="openDialog()">Contact us</button>
+    <button *ngIf="isMobile() == true && currentLanguage() == 'es'" mat-raised-button
+        class="mt-2 rounded-pill boton text-white px-3 py-1 w-75" (click)="openDialog()">Contactanos</button>
 </section>
 
-
-
-
-
 <!-- CLIENTES WEB -->
-<section class="clientsDesktop">
-    <div class="py-5 d-flex align-items-center align-content-center justify-content-center clients h-100"
-        style="background-color: #F3F3F3">
-        <img class="mr-5 animated zoomIn" src="assets/bbva.png">
-        <img class="mr-5 animated zoomIn" src="assets/xerox.png">
-        <img class="mr-5 animated zoomIn" src="assets/Galeno.png">
-        <img class="mr-5 animated zoomIn" src="assets/Clover.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
+<section class="clientsDesktop align-items-center flex-column" style="background-color: #F3F3F3">
+    <div class="mt-5 mb-4 d-flex align-items-center align-content-center w-50 justify-content-between clients">
+        <img class="animated zoomIn" [src]="imgBBVA" (mouseover)="imgBBVA = 'assets/clientes/bbva.png'"
+            (mouseout)="imgBBVA = 'assets/clientes/bbva-bn.png'">
+
+            <img class="animated zoomIn" [src]="imgXEROX" (mouseover)="imgXEROX = 'assets/clientes/xerox.png'"
+            (mouseout)="imgXEROX = 'assets/clientes/xerox-bn.png'">
+
+        <img class="animated zoomIn" [src]="imgGALENO" (mouseover)="imgGALENO = 'assets/clientes/galeno.png'"
+            (mouseout)="imgGALENO = 'assets/clientes/galeno-bn.png'">
+
+            <img class="animated zoomIn" [src]="imgCLOVER" (mouseover)="imgCLOVER = 'assets/clientes/clover.png'"
+            (mouseout)="imgCLOVER = 'assets/clientes/clover-bn.png'">
+
+        <img class="animated zoomIn" [src]="imgSANTANDER" (mouseover)="imgSANTANDER = 'assets/clientes/santander.png'"
+            (mouseout)="imgSANTANDER = 'assets/clientes/santander-bn.png'">
+
+        <img class="animated zoomIn" [src]="imgGROUPM" (mouseover)="imgGROUPM = 'assets/clientes/groupm.png'"
+            (mouseout)="imgGROUPM = 'assets/clientes/groupm-bn.png'">
     </div>
+    <p class="text-dark mt-3 mb-4 letra" routerLink="/nosotros" style="cursor: pointer;">
+        {{ "HOME.VER_TODOS" | translate }}</p>
 </section>
 
 <!-- CLIENTES MOBILE -->
-<section class="d-flex justify-content-center" style="background-color: #F3F3F3">
-    <div class="clientsMobile py-5 align-items-center justify-content-between flex-wrap">
+<section class="d-flex align-items-center flex-column" style="background-color: #F3F3F3">
+    <div class="clientsMobile pt-5 pb-2 align-items-center justify-content-between flex-wrap">
         <!-- style="background-color: rgba(34, 38, 42, 0.9)" -->
         <img class="" src="assets/bbva.png">
         <img class="" src="assets/xerox.png">
@@ -48,6 +62,10 @@
         <img class="" src="assets/Clover.png">
         <img class="" src="assets/Groupm.png">
         <img class="" src="assets/Groupm.png">
+    </div>
+    <div class="d-flex justify-content-center mb-3 clientsMobile">
+        <p class="text-dark letra" routerLink="/nosotros" style="cursor: pointer;">{{ "HOME.VER_TODOS" | translate }}
+        </p>
     </div>
 </section>
 

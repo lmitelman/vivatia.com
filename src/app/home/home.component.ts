@@ -16,6 +16,13 @@ import Typed from 'typed.js';
 })
 export class HomeComponent implements OnInit {
 
+	imgBBVA: string = "assets/clientes/bbva-bn.png";
+	imgGROUPM: string = "assets/clientes/groupm-bn.png";
+	imgGALENO: string = "assets/clientes/galeno-bn.png";
+	imgSANTANDER: string = "assets/clientes/santander-bn.png";
+	imgXEROX: string = "assets/clientes/xerox-bn.png";
+	imgCLOVER: string = "assets/clientes/clover-bn.png";
+
 	fontTextEs: String[] = [
 		'digital.',
 		'paperless.',

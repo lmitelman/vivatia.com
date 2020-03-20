@@ -27,13 +27,14 @@
         "SOLUCION_IDEAL_3_DESC": "your business process <br> with our new technology",
         "SOLUCION_IDEAL_4": "Scale",
         "SOLUCION_IDEAL_4_DESC": "the benefits and replicate <br> them in the entire company",
-        "BUSQUEDA": "Search solutions"
+        "BUSQUEDA": "Search solutions",
+        "VER_TODOS": "See all"
     },
     "NOSOTROS": {
         "DESCRIPCION_HEADER": "In a context in which papers took a secondary role in business processes, we help you in the digital transformation journey.",
         "NUESTRA_HISTORIA": "Our history",
-        "HISTORIA_IMG": "assets/historia.png",
-        "HISTORIA_IMG_MOBILE": "assets/historia-mobile-español.png",
+        "HISTORIA_IMG": "assets/historia-english.png",
+        "HISTORIA_IMG_MOBILE": "assets/historia-mobile-english.png",
         "NUESTRA_HISTORIA_DESC": "Vivatia was founded in 1999 with the objective of creating solutions to make digital management possible for organizations, helping them to be more efficient and productive, and making them greener by reducing their use of paper. In this way, our clients can live the “Vivatia experience”, backing up on the technology, knowledge and capabilities we have. We accompany them on the path of digital transformation and continuous improvement of their processes.",
         "MAKINGITWORK1": "We create information technologies <br> and apply them to your process.",
         "MAKINGITWORK2": "In this way, we empower <br> your business day by day.",
@@ -53,7 +54,7 @@
     },
     "PARTNERS": {
         "DESCRIPCION_HEADER": "Join the Vivatia Experience <br> and watch your sales rise.",
-        "BOTON": "Become a partner",
+        "BOTON": "Join us",
         "DESCRIPCION_GPP": "The Vivatia <span class='font-weight-bold'> Global Partner Program </span> was created with the objective of providing businesses who would like to join, the experience and knowledge needed for them to increase their sales, starting from how to sell and as far as installation of the products and software solutions developed by Vivatia.",
         "TIPO_PARTNERS": "You can join as",
         "REVENDEDOR": "",
@@ -399,6 +400,7 @@
         "SRC_IMG_MOBILE": "assets/proceso-custom-mobile-english.png"
     },
     "GENERIC": {
-        "SOLICITAR_DEMO": "Ask for a demo"
+        "SOLICITAR_DEMO": "Ask for a demo",
+        "DESCARGAR_PDF": "Download PDF"
     }
 }

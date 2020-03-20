@@ -1,8 +1,5 @@
-<div class="d-flex header align-items-center pt-5">
-    <div class="text-header animated fadeInDown">
-        <h1 class="mb-2">{{ "CUENTAS_A_PAGAR.TITULO" | translate }}</h1>
-        <h5 class="w-75 text-white">{{ "CUENTAS_A_PAGAR.DESCRIPCION_HEADER" | translate }}</h5>
-    </div>
+<div class="d-flex header align-items-center pt-5 justify-content-center">
+    <h1 class="mb-2 text-center">{{ "CUENTAS_A_PAGAR.TITULO" | translate }}</h1>
 </div>
 
 <div class="d-flex py-4 flex-column text-center align-items-center">
@@ -12,7 +9,8 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item1 animated fadeInLeft">
     <div class="d-flex flex-column descripcion">
-        <h4 class="font-weight-bold letra5"><span class="green-borderh4">1. {{ "CUENTAS_A_PAGAR.DIGITALIZACION" | translate }}</span></h4>
+        <h4 class="font-weight-bold letra5"><span class="green-borderh4">1.
+                {{ "CUENTAS_A_PAGAR.DIGITALIZACION" | translate }}</span></h4>
         <br>
         <h6>{{ "CUENTAS_A_PAGAR.DIGITALIZACION_DESC" | translate }}</h6>
         <br>
@@ -24,7 +22,8 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item2 animated fadeInRight">
     <div class="d-flex flex-column descripcion2">
-        <h4 class="font-weight-bold letra5"><span class="green-borderh4">2. {{ "CUENTAS_A_PAGAR.IDENTIFICACION" | translate }}</span></h4>
+        <h4 class="font-weight-bold letra5"><span class="green-borderh4">2.
+                {{ "CUENTAS_A_PAGAR.IDENTIFICACION" | translate }}</span></h4>
         <br>
         <h6>{{ "CUENTAS_A_PAGAR.IDENTIFICACION_DESC" | translate }}</h6>
         <br>
@@ -36,7 +35,8 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item1 animated fadeInLeft">
     <div class="d-flex flex-column descripcion">
-        <h4 class="font-weight-bold letra6"><span class="blue-borderh4">3. {{ "CUENTAS_A_PAGAR.APROBACION" | translate }}</span></h4>
+        <h4 class="font-weight-bold letra6"><span class="blue-borderh4">3.
+                {{ "CUENTAS_A_PAGAR.APROBACION" | translate }}</span></h4>
         <br>
         <h6>{{ "CUENTAS_A_PAGAR.APROBACION_DESC" | translate }}</h6>
         <br>
@@ -48,7 +48,8 @@
 
 <div class="d-flex justify-content-center align-items-center descripcionItem item2 animated fadeInRight">
     <div class="d-flex flex-column descripcion2">
-        <h4 class="font-weight-bold letra6"><span class="blue-borderh4">4. {{ "CUENTAS_A_PAGAR.BUSQUEDA" | translate }}</span></h4>
+        <h4 class="font-weight-bold letra6"><span class="blue-borderh4">4.
+                {{ "CUENTAS_A_PAGAR.BUSQUEDA" | translate }}</span></h4>
         <br>
         <h6>{{ "CUENTAS_A_PAGAR.BUSQUEDA_DESC" | translate }}</h6>
         <br>
@@ -58,15 +59,25 @@
     </div>
 </div>
 
+<a download="Cuentas a pagar" href="assets/cuentas-a-pagar.pdf">
+    <div class="d-flex justify-content-center mb-3">
+        <button mat-raised-button class="mt-2 boton text-white px-3 py-1">
+            {{ "GENERIC.DESCARGAR_PDF" | translate }}
+            <i class="fas fa-download"></i>
+        </button>
+    </div>
+</a>
+
 <div class="d-flex justify-content-center align-items-center my-5 diseñadapor">
     <h4 class="my-2 mx-2 font-weight-bold text-center" [innerHTML]="'CUENTAS_A_PAGAR.DISEÑADA_POR' | translate"></h4>
     <div class="d-flex">
-        <img class="mx-4" routerLink="/captika" src="assets/captika-color.png">
-        <img class="mx-4" routerLink="/thuban" src="assets/thuban-color.png">
+        <img class="mx-3" routerLink="/captika" src="assets/captika-color.png">
+        <img class="mx-3" routerLink="/thuban" src="assets/thuban-color.png">
     </div>
 </div>
 
-<section class="bg-main3 benefitsDesktop flex-column justify-content-center align-items-center" style="background-color: white">
+<section class="bg-main3 benefitsDesktop flex-column justify-content-center align-items-center"
+    style="background-color: white">
     <h2 class="mb-4 font-weight-bold animated fadeInDown">{{ "CUENTAS_A_PAGAR.BENEFICIOS" | translate }}</h2>
     <div class="d-flex mt-4 justify-content-center align-items-start text-center w-75 animated fadeInDown">
         <div class="mx-1 d-flex flex-column justify-content-center align-items-center benefit">
@@ -89,9 +100,10 @@
 </section>
 
 <section>
-    <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center animated fadeIn" style="background-color: white">
+    <div class="benefitsMobile pb-1 flex-column align-items-center justify-content-center text-center animated fadeIn"
+        style="background-color: white">
         <h2 class="my-4 font-weight-bold">{{ "CUENTAS_A_PAGAR.BENEFICIOS" | translate }}</h2>
-        <ngb-carousel [interval] = '3000' [showNavigationArrows] = 'false' [showNavigationIndicators]="false"> 
+        <ngb-carousel [interval]='3000' [showNavigationArrows]='false' [showNavigationIndicators]="false">
             <ng-template ngbSlide>
                 <div class="mx-5 d-flex flex-column justify-content-center align-items-center">
                     <img class="mb-3 small-logo" src="assets/benefit-cap1.png">

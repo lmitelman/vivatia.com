@@ -1,4 +1,4 @@
-<section class="d-flex flex-row productos">
+<section class="d-flex flex-row productos" *ngIf="!isMobile()">
     <div class="d-flex align-items-center justify-content-center captika animated bounceInLeft" routerLink="/captika" (mouseover)="changeImageIcon('captika', 'in')" (mouseout)="changeImageIcon('captika', 'out')">
         <div class="d-flex flex-column text-center">
             <img [src]="captika" class="logo-captika" alt="">
@@ -9,6 +9,23 @@
     <div class="d-flex align-items-center justify-content-center thuban animated bounceInRight" routerLink="/thuban" (mouseover)="changeImageIcon('thuban', 'in')" (mouseout)="changeImageIcon('thuban', 'out')">
         <div class="d-flex flex-column text-center">
             <img [src]="thuban" class="logo-thuban" alt="">
+            <h2 class="text-white font-weight-bold">THUBAN SOFTWARE</h2>
+            <h5 class="text-white">{{ "PRODUCTOS.THUBAN" | translate }}</h5>
+        </div>
+    </div>
+</section>
+
+<section class="d-flex flex-column productos" *ngIf="isMobile()" style="margin-top: 20%;">
+    <div class="d-flex align-items-center justify-content-center captika animated bounceInLeft h-50 w-100 py-5" routerLink="/captika">
+        <div class="d-flex flex-column align-items-center text-center">
+            <img src="assets/captika-color.png" class="logo-captika" alt="">
+            <h2 class="text-white font-weight-bold">CAPTIKA SOFTWARE</h2>
+            <h5 class="text-white">{{ "PRODUCTOS.CAPTIKA" | translate }}</h5>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center thuban animated bounceInRight h-50 w-100 py-5" routerLink="/thuban">
+        <div class="d-flex flex-column align-items-center text-center">
+            <img src="assets/thuban-color.png" class="logo-thuban" alt="">
             <h2 class="text-white font-weight-bold">THUBAN SOFTWARE</h2>
             <h5 class="text-white">{{ "PRODUCTOS.THUBAN" | translate }}</h5>
         </div>

@@ -9,10 +9,18 @@ export class ProductosComponent implements OnInit {
 
 	captika: String = 'assets/captika-bw.png';
 	thuban: String = 'assets/thuban-bw.png';
+	public innerWidth: any;
 
 	constructor() { }
 
 	ngOnInit() {
+		this.innerWidth = window.innerWidth
+	}
+
+	isMobile() {
+		if (this.innerWidth < 850) {
+			return true;
+		}
 	}
 
 	changeImageIcon(type, mode) {

@@ -133,8 +133,8 @@ h6 {
 }
 
 // CLIENTES
-.clientsDesktop img {
-  max-width: 120px;
+.clients img {
+  width: 100px;
   height: auto;
 }
 
@@ -262,6 +262,7 @@ h6 {
 
   h4 {
     font-size: 22px;
+    margin: 0px !important;
     text-align: center;
   }
 

@@ -1,6 +1,6 @@
 .bg-home1 {
     margin-top: 5%;
-    background-image: url('../../../assets/gpp.png');
+    background-image: url("../../../assets/gpp.png");
     /* Center and scale the image nicely */
     background-position: right;
     background-repeat: no-repeat;
@@ -8,22 +8,23 @@
     height: 55%;
     justify-content: start;
 }
-  
+
 .bg-home1 div {
     padding-left: 10%;
     align-items: flex-start;
 }
-  
+
 .bg-home1 h2 {
-    font-size: 48px; 
-    font-family: 'Montserrat', Helvetica;
+    font-size: 48px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 900;
 }
-  
+
 .bg-home1 p {
     font-size: 25px;
 }
 
-// 
+//
 
 .text-personalizacion {
     width: 50%;
@@ -59,10 +60,10 @@
 // OEM
 
 .item2 {
-    background-color: #F3F3F3; 
+    background-color: #f3f3f3;
     height: 40%;
 }
-  
+
 .img-captika2 {
     max-width: 400px;
     height: auto;
@@ -75,8 +76,8 @@
 }
 
 .descripcion2 {
-    width: 30%; 
-    font-family: 'Montserrat';
+    width: 30%;
+    font-family: "Montserrat";
     order: 1;
 }
 
@@ -93,10 +94,8 @@ p {
 .EncontraTuSolucion h5 {
     font-size: 20px;
 }
-  
+
 .EncontraTuSolucion {
-    // background-image: url('../../assets/trazado.png');
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,32 +112,28 @@ p {
 
 // SUMATE
 
-.boton{
+.boton {
     transition: 0.3s;
 }
-  
+
 .boton:hover {
     background-color: #24b54a;
     cursor: pointer;
 }
 
-
-
 @media only screen and (min-width: 100px) and (max-width: 812px) {
-
     .title-main {
-      max-width: 50%;
-      height: auto;
+        max-width: 50%;
+        height: auto;
     }
 
     .bg-home1 {
-      background-image: url('../../../assets/header-mobile.png');
-      /* Center and scale the image nicely */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 40%;
-      justify-content: center;
+        background-image: url("../../../assets/mobile-partners.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60%;
+        justify-content: center;
     }
 
     .bg-home1 div {
@@ -146,14 +141,17 @@ p {
         align-items: center;
     }
 
-    .bg-home1 h2{
-      font-size: 35px;
-      text-align: center;
+    .bg-home1 h2 {
+        font-size: 40px;
+        text-align: center;
+        color: white !important;
     }
 
     .bg-home1 p {
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
+        width: 80%;
+        color: white !important;
     }
 
     //
@@ -205,7 +203,7 @@ p {
     }
 
     .item2 {
-        background-color: #F3F3F3; 
+        background-color: #f3f3f3;
         height: 30%;
     }
 
@@ -227,10 +225,10 @@ p {
         margin: 0px 10px;
     }
 
-    .EncontraTuSolucion img{
+    .EncontraTuSolucion img {
         width: 40px;
         height: 40px;
-    } 
+    }
 
     .EncontraTuSolucion .letra {
         flex-direction: column;
@@ -261,6 +259,6 @@ p {
 
 @media only screen and (max-height: 650px) {
     .bg-home1 {
-      height: 55%;
+        height: 55%;
     }
 }

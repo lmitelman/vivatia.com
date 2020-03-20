@@ -29,20 +29,19 @@ img {
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .productos {
-        height: 70%;
-        flex-direction: column;
-        margin-top: 20px;
+        height: 85%;
+        cursor: pointer;
+        flex-direction: row;
     }
 
     .thuban {
-        background-color: #DBDBDB;
+        background-color: #00326B;
         width: 50%;
     }
     
     .captika {
-        background-color: #DBDBDB;
+        background-color: #7FAA30;
         width: 50%;
-        justify-content: center;
     }
 
     img {
@@ -51,10 +50,17 @@ img {
     }
 
     h2 {
-        font-size: 10px;
+        font-size: 20px;
     }
 
     h5 {
-        font-size: 10px;
+        font-size: 15px;
     }
 }
+
+// iPhone 6
+@media only screen and (max-height: 700px) {
+    .productos {
+        height: 100%;
+    }
+  }

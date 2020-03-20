@@ -9,11 +9,11 @@
 </div>
 
 <div *ngIf="!isMobile()" class="d-flex justify-content-center my-5 py-2">
-    <img [src]="'NOSOTROS.HISTORIA_IMG' | translate" style="max-width: 78%; height: auto;">
+    <img [src]="'NOSOTROS.HISTORIA_IMG' | translate" style="max-width: 70%; height: auto;">
 </div>
 
 <div *ngIf="isMobile()" class="d-flex justify-content-center my-5 py-2">
-    <img [src]="'NOSOTROS.HISTORIA_IMG_MOBILE' | translate" style="max-width: 78%; height: auto;">
+    <img [src]="'NOSOTROS.HISTORIA_IMG_MOBILE' | translate" style="max-width: 70%; height: auto;">
 </div>
 
 <div class="makingitwork d-flex text-white flex-column align-items-center py-5">
@@ -31,24 +31,46 @@
 </div>
 
 <div class="d-flex py-2 pt-5 flex-column text-center align-items-center" style="background-color: #F3F3F3">
-    <h4 class="font-weight-bold animated fadeInRight">{{ "NOSOTROS.CLIENTES_TITULO" | translate }}</h4>
+    <h4 class="font-weight-bold animated fadeInRight mr-5">{{ "NOSOTROS.CLIENTES_TITULO" | translate }}</h4>
 </div>
 
 <!-- CLIENTES WEB -->
 <section class="clientsDesktop d-flex justify-content-center" style="background-color: #F3F3F3">
-    <div class="py-5 d-flex align-items-center justify-content-center w-50 flex-wrap">
-        <img class="mr-5 animated zoomIn" src="assets/bbva.png">
-        <img class="mr-5 animated zoomIn" src="assets/xerox.png">
-        <img class="mr-5 animated zoomIn" src="assets/Galeno.png">
-        <img class="mr-5 animated zoomIn" src="assets/Clover.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
-        <img class="mr-5 animated zoomIn" src="assets/Groupm.png">
+    <div class="py-4 d-flex align-items-center justify-content-center w-75 flex-wrap clients">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/bbva-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/galeno-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/provida-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/groupm-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/asociart-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/ayasa-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/prisma-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/ford-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/supervielle-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/securitas-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/santander-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/telecom-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/itau-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/cordial-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/galicia-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/avon-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/comafi-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/goldfields-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/internacional-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/maxus-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/gire-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/patagonia-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/nacion-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/havas-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/mediacom-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/belgrano-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/credicoop-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/volkswagen-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/xerox-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/clover-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/comandato-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/eulen-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/mercantil-bn.png">
+        <img class="mr-5 py-4 animated zoomIn" src="assets/clientes/mindshare-bn.png">
     </div>
 </section>
 
@@ -56,18 +78,40 @@
 <section class="d-flex justify-content-center" style="background-color: #F3F3F3">
     <div class="clientsMobile pb-1 align-items-center justify-content-between flex-wrap">
         <!-- style="background-color: rgba(34, 38, 42, 0.9)" -->
-        <img class="" src="assets/bbva.png">
-        <img class="" src="assets/xerox.png">
-        <img class="" src="assets/Galeno.png">
-        <img class="" src="assets/Clover.png">
-        <img class="" src="assets/Groupm.png">
-        <img class="" src="assets/Groupm.png">
-        <img class="" src="assets/Groupm.png">
-        <img class="" src="assets/Groupm.png">
-        <img class="" src="assets/Groupm.png">
-        <img class="" src="assets/Groupm.png">
-        <img class="" src="assets/Groupm.png">
-        <img class="" src="assets/Groupm.png">
+        <img class="my-4" src="assets/clientes/bbva-bn.png">
+        <img class="my-4" src="assets/clientes/galeno-bn.png">
+        <img class="my-4" src="assets/clientes/provida-bn.png">
+        <img class="my-4" src="assets/clientes/groupm-bn.png">
+        <img class="my-4" src="assets/clientes/asociart-bn.png">
+        <img class="my-4" src="assets/clientes/ayasa-bn.png">
+        <img class="my-4" src="assets/clientes/prisma-bn.png">
+        <img class="my-4" src="assets/clientes/ford-bn.png">
+        <img class="my-4" src="assets/clientes/supervielle-bn.png">
+        <img class="my-4" src="assets/clientes/securitas-bn.png">
+        <img class="my-4" src="assets/clientes/santander-bn.png">
+        <img class="my-4" src="assets/clientes/telecom-bn.png">
+        <img class="my-4" src="assets/clientes/itau-bn.png">
+        <img class="my-4" src="assets/clientes/cordial-bn.png">
+        <img class="my-4" src="assets/clientes/galicia-bn.png">
+        <img class="my-4" src="assets/clientes/avon-bn.png">
+        <img class="my-4" src="assets/clientes/comafi-bn.png">
+        <img class="my-4" src="assets/clientes/goldfields-bn.png">
+        <img class="my-4" src="assets/clientes/internacional-bn.png">
+        <img class="my-4" src="assets/clientes/maxus-bn.png">
+        <img class="my-4" src="assets/clientes/gire-bn.png">
+        <img class="my-4" src="assets/clientes/patagonia-bn.png">
+        <img class="my-4" src="assets/clientes/nacion-bn.png">
+        <img class="my-4" src="assets/clientes/havas-bn.png">
+        <img class="my-4" src="assets/clientes/mediacom-bn.png">
+        <img class="my-4" src="assets/clientes/belgrano-bn.png">
+        <img class="my-4" src="assets/clientes/credicoop-bn.png">
+        <img class="my-4" src="assets/clientes/volkswagen-bn.png">
+        <img class="my-4" src="assets/clientes/xerox-bn.png">
+        <img class="my-4" src="assets/clientes/clover-bn.png">
+        <img class="my-4" src="assets/clientes/comandato-bn.png">
+        <img class="my-4" src="assets/clientes/eulen-bn.png">
+        <img class="my-4" src="assets/clientes/mercantil-bn.png">
+        <img class="my-4" src="assets/clientes/mindshare-bn.png">
     </div>
 </section>
 
