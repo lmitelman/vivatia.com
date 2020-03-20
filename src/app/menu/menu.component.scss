@@ -67,3 +67,9 @@ ul li ul li {
         margin-left: 0%;
     }
 }
+
+@media only screen and (min-width: 100px) and (max-width: 812px) {
+    .logo-navbar {
+        margin: 0px !important;
+    }
+}

@@ -3,12 +3,14 @@
 		<h2 class="font-weight-bold text-dark subtitle animated pulse mb-2"
 			[innerHTML]="'CAPACITACIONES.TITULO' | translate"></h2>
 		<p *ngIf="!isMobile()" [innerHTML]="'CAPACITACIONES.DESCRIPCION_HEADER' | translate"></p>
-		<button mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1"
+		<button *ngIf="!isMobile()" mat-raised-button class="mt-2 rounded-pill boton text-white px-3 py-1"
 			(click)="openDialog()">{{ "CAPACITACIONES.POTENCIAR_1" | translate }}</button>
 	</div>
 	<div *ngIf="isMobile() == true" style="box-sizing: solid white">
         <img class="ml-3 mt-3" src="assets/capacitacion-mobile.png" style="max-width: 95%; height: auto;">
-    </div>
+	</div>
+	<button *ngIf="isMobile()" mat-raised-button class="mt-3 rounded-pill boton text-white px-3 py-1"
+	(click)="openDialog()">{{ "CAPACITACIONES.POTENCIAR_1" | translate }}</button>
 </section>
 
 <div class="d-flex py-4 flex-column text-center align-items-center">
@@ -64,6 +66,7 @@
 							<li>
 								<p>Creación de una solución de principio a fin.</p>
 							</li>
+							<br>
 						</ul>
 						<a class="btn btn-block btn-success text-white text-uppercase" (click)="openDialog()">Más información</a>
 						<a download="capacitacion-producto" target="_blank" href="assets/capacitacion-producto.pdf"

@@ -257,8 +257,12 @@ p {
     }
 }
 
-@media only screen and (max-height: 650px) {
+// iPhone 6
+@media only screen and (max-height: 700px) {
     .bg-home1 {
-        height: 55%;
+        height: 80%;
+    }
+    .item2 {
+        height: auto;
     }
 }

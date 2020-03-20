@@ -8,12 +8,12 @@
     <h4 class="font-weight-bold animated fadeInRight letra">{{ "NOSOTROS.NUESTRA_HISTORIA" | translate }}</h4>
 </div>
 
-<div *ngIf="!isMobile()" class="d-flex justify-content-center my-5 py-2">
-    <img [src]="'NOSOTROS.HISTORIA_IMG' | translate" style="max-width: 70%; height: auto;">
+<div *ngIf="!isMobile()" class="d-flex justify-content-center my-5 py-2 nuestraHistoria">
+    <img [src]="'NOSOTROS.HISTORIA_IMG' | translate" style="width: 70%; height: auto;">
 </div>
 
-<div *ngIf="isMobile()" class="d-flex justify-content-center my-5 py-2">
-    <img [src]="'NOSOTROS.HISTORIA_IMG_MOBILE' | translate" style="max-width: 70%; height: auto;">
+<div *ngIf="isMobile()" class="d-flex justify-content-center my-5 py-2 nuestraHistoria">
+    <img [src]="'NOSOTROS.HISTORIA_IMG_MOBILE' | translate" style="width: 70%; height: auto;">
 </div>
 
 <div class="makingitwork d-flex text-white flex-column align-items-center py-5">
