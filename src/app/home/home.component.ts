@@ -3,10 +3,9 @@ import { MatDialog } from '@angular/material';
 import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
 import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule, TranslateService } from '@ngx-translate/core'
 import Typed from 'typed.js';
+import { DialogCoronavirusComponent } from '../dialog-coronavirus/dialog-coronavirus.component';
 
 
 @Component({
@@ -51,6 +50,7 @@ export class HomeComponent implements OnInit {
 	ngOnInit() {
 		this.createContactForm();
 		this.innerWidth = window.innerWidth
+		this.openCoronavirus();
 	}
 
 	isMobile() {
@@ -71,6 +71,15 @@ export class HomeComponent implements OnInit {
 
 	openDialog() {
 		this.dialog.open(DialogContactComponent);
+	}
+
+	openCoronavirus(){
+		if (this.isMobile() == true) {
+			this.dialog.open(DialogCoronavirusComponent, {  height: 'auto', width: '400px',});
+		} else {
+			this.dialog.open(DialogCoronavirusComponent, {  height: 'auto', width: '900px',});
+		}
+		
 	}
 
 	doSmth(indexOfString) {
