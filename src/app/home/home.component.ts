@@ -62,10 +62,6 @@ export class HomeComponent implements OnInit {
 		})
 	}
 
-	openSnackBar() {                  
-		this.snackBar.open('Mail cargado con exito', 'Aceptar', { duration: 1500 });
-	}
-
 	openDialog() {
 		this.dialog.open(DialogContactComponent);
 	}

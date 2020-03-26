@@ -1,10 +1,10 @@
 p {
-    font-size: 17px;
+    font-size: 15px;
     margin: 0px;
 }
 
 img {
-    max-width: 40%;
+    max-width: 32%;
     height: auto;
 }
 
@@ -30,4 +30,17 @@ img {
         width: 100% !important;
         margin: 10px 0px 10px 0px;
     }
+}
+
+@media only screen and (max-height: 650px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    img {
+        max-width: 28%;
+        height: auto;
+    }
+
 }

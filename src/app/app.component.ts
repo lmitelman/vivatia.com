@@ -36,12 +36,12 @@ export class AppComponent implements OnInit {
 		});
 	}
 
-	useLanguage(lang: string) {
-		this.translate.use(lang);
-	}
-
 	ngOnInit() {
 		this.openCoronavirus();
+	}
+
+	useLanguage(lang: string) {
+		this.translate.use(lang);
 	}
 
 	openCoronavirus() {
