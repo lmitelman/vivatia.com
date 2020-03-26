@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.component';
-import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
-import { TranslateModule, TranslateService } from '@ngx-translate/core'
-import Typed from 'typed.js';
-import { DialogCoronavirusComponent } from '../dialog-coronavirus/dialog-coronavirus.component';
+import { TranslateService } from '@ngx-translate/core'
 
 
 @Component({
@@ -50,7 +48,6 @@ export class HomeComponent implements OnInit {
 	ngOnInit() {
 		this.createContactForm();
 		this.innerWidth = window.innerWidth
-		this.openCoronavirus();
 	}
 
 	isMobile() {
@@ -65,21 +62,12 @@ export class HomeComponent implements OnInit {
 		})
 	}
 
-	openSnackBar() {                  //  openSnackBar(message, action)
+	openSnackBar() {                  
 		this.snackBar.open('Mail cargado con exito', 'Aceptar', { duration: 1500 });
 	}
 
 	openDialog() {
 		this.dialog.open(DialogContactComponent);
-	}
-
-	openCoronavirus(){
-		if (this.isMobile() == true) {
-			this.dialog.open(DialogCoronavirusComponent, {  height: 'auto', width: '400px',});
-		} else {
-			this.dialog.open(DialogCoronavirusComponent, {  height: 'auto', width: '900px',});
-		}
-		
 	}
 
 	doSmth(indexOfString) {

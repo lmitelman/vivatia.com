@@ -5,6 +5,7 @@ import { DialogContactComponent } from 'src/app/dialog-contact/dialog-contact.co
 import { TranslateService } from '@ngx-translate/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter} from 'rxjs/operators'
+import { DialogCoronavirusComponent } from './dialog-coronavirus/dialog-coronavirus.component';
 
 declare var gtag;
 
@@ -40,9 +41,10 @@ export class AppComponent implements OnInit {
 	}
 
 	ngOnInit() {
+		this.openCoronavirus();
 	}
 
-	openDialog() {
-		this.dialog.open(DialogContactComponent);
+	openCoronavirus() {
+		this.dialog.open(DialogCoronavirusComponent);
 	}
 }
