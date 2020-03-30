@@ -1,124 +1,64 @@
-<div class="header-captika d-flex justify-content-center animated fadeInDown">
+<div class="header-captika d-flex justify-content-center bg-primary">
     <div class="d-flex flex-column justify-content-center">
-        <img src="assets/product-thuban.png" class="logo-captika" alt="">
+        <!-- <img src="assets/product-thuban.png" class="logo-captika" alt=""> -->
     </div>
     <div class="d-flex flex-column justify-content-center text-header">
         <h2 class="text-white font-weight-bold">THUBAN SOFTWARE</h2>
         <h5 class="text-white font-weight-lighter">{{ "PRODUCTOS.THUBAN" | translate }}</h5>
         <br>
         <h5 class="text-white font-weight-lighter">{{ "THUBAN.DESCRIPCION_HEADER" | translate }}</h5>
-        <div class="d-flex mt-2">
-            <a mat-raised-button class="rounded-pill px-3 py-1 boton text-white" target="_blank"
-                href="http://www.thubanwiki.vivatia.com/index.php?title=P%C3%A1gina_principal">Thuban Wiki</a>
+    </div>
+</div>
+
+
+<div class="d-flex flex-column text-center align-items-center pt-5 bg-blue">
+    <h3 class="font-weight-bold pb-2 text-white">Explotá tu información</h3>
+    <p class="sectionDescription w-50 text-white">Vas a contar con datos actualizados de tus procesos, que te ayudarán a tomar las mejores decisiones.</p>
+</div>
+<div class="sectionItemsContainer d-flex bg-blue py-5">
+    <div class="card text-center border-0 bg-blue" style="width: 15rem; height: auto">
+        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <img src="assets/th-monitores.png" alt="" style="width: 5rem; height: auto;">
+            <h5 class="card-title mt-4 text-white">Tableros de control</h5>
+        </div>
+    </div>
+    <div class="card text-center border-0 bg-blue" style="width: 15rem; height: auto;">
+        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <img src="assets/th-reportes.png" alt="" style="width: 5rem; height: auto;">
+            <h5 class="card-title mt-4 text-white">Reportes</h5>
+        </div>
+    </div>
+    <div class="card text-center border-0 bg-blue" style="width: 15rem; height: auto;">
+        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <img src="assets/th-alertas.png" alt="" style="width: 5rem; height: auto;">
+            <h5 class="card-title mt-4 text-white">Alertas</h5>
         </div>
     </div>
 </div>
 
-<div *ngIf="isMobile() == false" class="d-flex justify-content-center mt-5">
-    <img [src]="'THUBAN.SRC_IMG' | translate" class="proceso-thuban" alt="">
+<div class="d-flex flex-column text-center align-items-center pt-5 mt-2">
+    <h3 class="font-weight-bold mb-2">¿Por que elegir Thuban Software?</h3>
 </div>
-
-<div *ngIf="isMobile() == true" class="d-flex justify-content-center mt-5">
-    <img [src]="'THUBAN.SRC_IMG_MOBILE' | translate" class="proceso-thuban" alt="">
-</div>
-
-<div class="d-flex justify-content-end fixed-bottom mb-5 mr-5">
-    <a mat-raised-button class="rounded-pill boton text-white px-3 py-1" target="_blank"
-        href="https://vivatia2020.myshopify.com/products/thuban-cloud-hasta-10-usuarios">{{ "THUBAN.COMPRAR" | translate }}</a>
-</div>
-
-<div
-    class="d-flex justify-content-center flex-nowrap py-5 align-items-center descripcionItem item1 animated fadeInLeft">
-    <div class="d-flex flex-column descripcion">
-        <h4 class="letra6 font-weight-bold">{{ "THUBAN.SEGURIDAD" | translate }}</h4>
-        <br>
-        <h6>{{ "THUBAN.SEGURIDAD_DESC" | translate }}</h6>
-    </div>
-    <div>
-        <img src="assets/rrhh-seguridad.png" class="img-captika1" alt="">
-    </div>
-</div>
-
-<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item2 animated fadeInRight">
-    <div class="d-flex flex-column descripcion2">
-        <h4 class="letra6 font-weight-bold">{{ "THUBAN.HISTORIAL" | translate }}</h4>
-        <br>
-        <h6>{{ "THUBAN.HISTORIAL_DESC" | translate }}</h6>
-    </div>
-    <div>
-        <img src="assets/rrhh-historial.png" class="img-captika2" alt="">
-    </div>
-</div>
-
-<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item1 animated fadeInLeft">
-    <div class="d-flex flex-column descripcion">
-        <h4 class="letra6 font-weight-bold">{{ "THUBAN.NOTIFICACIONES" | translate }}</h4>
-        <br>
-        <h6>{{ "THUBAN.NOTIFICACIONES_DESC" | translate }}</h6>
-    </div>
-    <div>
-        <img src="assets/rrhh-notificaciones.png" class="img-captika1" alt="">
-    </div>
-</div>
-
-<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item2 animated fadeInRight"
-    style="background-color: #00326B;">
-    <div class="d-flex flex-column descripcion2">
-        <h4 class="text-white font-weight-bold">{{ "THUBAN.MONITORES" | translate }}</h4>
-        <br>
-        <h6 class="text-white">{{ "THUBAN.MONITORES_DESC" | translate }}</h6>
-    </div>
-    <div>
-        <img src="assets/monitores.png" class="img-captika2" alt="">
-    </div>
-</div>
-
-<div class="d-flex justify-content-center py-4 align-items-center descripcionItem item1 animated fadeInLeft">
-    <div class="d-flex flex-column descripcion">
-        <h4 class="letra6 font-weight-bold">{{ "THUBAN.GRUPOS" | translate }}</h4>
-        <br>
-        <h6>{{ "THUBAN.GRUPOS_DESC" | translate }}</h6>
-    </div>
-    <div>
-        <img src="assets/grupos.png" class="img-captika1" alt="">
-    </div>
-</div>
-
-<div class="d-flex py-4 flex-column text-center align-items-center">
-    <h5 class="font-weight-bold mt-5 mb-2 animated fadeInRight">{{ "THUBAN.CARACTERISTICAS" | translate }}</h5>
-</div>
-<div class="container d-flex caracteristicas mb-5">
-    <div class="card text-center" style="width: 20rem; height: 20rem;">
-        <div class="card-body">
-            <img class="" src="assets/th-specs1.png" alt="" style="width: 180px; height: 180px;">
-            <h5 class="card-title font-weight-bold">{{ "THUBAN.SPEC1" | translate }}</h5>
-            <p class="card-text">{{ "THUBAN.SPEC1_DESC" | translate }}</p> 
+<div class="sectionItemsContainer d-flex py-5 mb-2">
+    <div class="card text-center border-0" style="width: 25rem; height: auto">
+        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <img src="assets/th-conecta.png" alt="" style="width: 10rem; height: auto;">
+            <h5 class="card-title mt-4 font-weight-bold font-blue">Centralizá tu información</h5>
+            <p class="card-text">Conectá Thuban con tus sistemas, en el momento e instancia que necesites y mantenete comunicado.</p>
         </div>
     </div>
-    <div class="card text-center" style="width: 20rem; height: 20rem;">
-        <div class="card-body">
-            <img class="" src="assets/th-specs2.png" alt="" style="width: 180px; height: 180px;">
-            <h5 class="card-title font-weight-bold">{{ "THUBAN.SPEC2" | translate }}</h5>
-            <p class="card-text">{{ "THUBAN.SPEC2_DESC" | translate }}</p> 
+    <div class="card text-center border-0" style="width: 25rem; height: auto;">
+        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <img src="assets/th-sistemas.png" alt="" style="width: 14rem; height: auto;">
+            <h5 class="card-title mt-4 font-weight-bold font-blue">Accedé desde dónde quieras</h5>
+            <p class="card-text">Vas a poder usar Thuban en sistemas operativos de Windows©, Linux, MacOs y Android.</p>
         </div>
     </div>
-    <div class="card text-center" style="width: 20rem; height: 20rem;">
-        <div class="card-body">
-            <img class="" src="assets/th-specs3.png" alt="" style="width: 180px; height: 180px;">
-            <h5 class="card-title font-weight-bold">{{ "THUBAN.SPEC3" | translate }}</h5>
-            <p class="card-text">{{ "THUBAN.SPEC3_DESC" | translate }}</p> 
+    <div class="card text-center border-0" style="width: 25rem; height: auto;">
+        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+            <img src="assets/th-implementa.png" alt="" style="width: 10rem; height: auto;">
+            <h5 class="card-title mt-4 font-weight-bold font-blue">Implementá donde necesites</h5>
+            <p class="card-text">Con nuestros productos obtendrás resultados y beneficios que podrás escalar en todas las áreas de tu negocio.</p>
         </div>
-    </div>
-</div>
-
-<div
-    class="d-flex flex-column text-center justify-content-center align-items-center descripcionItem captika animated fadeInLeft">
-    <div class="d-flex flex-column descripcioncaptika">
-        <h3 class="font-weight-bold">{{ "THUBAN.SABIAS" | translate }}</h3>
-        <h6 class="m-0">{{ "THUBAN.DESCUBRI" | translate }}</h6>
-        <br>
-    </div>
-    <div>
-        <img src="assets/captika-color.png" class="img-conoce-captika" routerLink='/captika' alt="">
     </div>
 </div>

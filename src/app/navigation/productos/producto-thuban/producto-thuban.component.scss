@@ -1,247 +1,36 @@
-* {
-  font-family: "Montserrat";
-}
-
-.header-captika {
-  padding-top: 6%;
-  height: 70%;
-  background-position: left;
-  background-image: url("../../../../assets/bg-thuban.png");
-}
-
-.logo-captika {
-  max-width: 380px;
-  height: 380px;
-}
-
-.text-header {
-  width: 26%;
-}
-
-h6 {
-  line-height: 1.8;
-}
-
-h4 {
-  font-size: 35px;
-}
-
-//PROCESO THUBAN
-.proceso-thuban {
-  max-width: 900px;
-  height: auto;
-}
-
-.descripcion {
-  width: 28%;
-  font-family: "Montserrat";
-}
-
-.item1 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.img-captika1 {
-  max-width: 250px;
-  height: auto;
-  margin: 0px 10px;
-}
-
-.item2 {
-  background-color: #f3f3f3;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.img-captika2 {
-  max-width: 250px;
-  height: auto;
-  margin: 0px 10px;
-}
-
-.descripcion2 {
-  width: 28%;
-  font-family: "Montserrat";
-  order: 1;
-  text-align: end;
-}
-
-// CARACTERISTICAS
-.caracteristicas {
+.sectionItemsContainer {
 	flex-direction: row;
 	justify-content: center;
 }
 
-// ¿Sabías que podes publicar tu información en Thuban Software?
-
-.img-conoce-captika {
-  max-width: 280px;
-  height: auto;
-  transition: 0.3s;
+.sectionDescription {
+	font-size: 23px;
+	margin: 0px;
+	width: 40% !important;
 }
 
-.img-conoce-captika:hover {
-  max-width: 300px;
-  height: auto;
-  cursor: pointer;
+.bg-blue {
+	background-color: #002F6D;
 }
 
-.captika {
-  height: 70%;
-  background-color: #f3f3f3;
+.font-blue {
+	color: #002F6D;
 }
 
-.descripcioncaptika {
-  width: 38%;
-  font-family: "Montserrat";
+p {
+	font-size: 17px;
+	line-height: 1.6 !important;
 }
 
-// COMPRAR
-.boton {
-  background-color: #145fa3;
-  cursor: pointer;
-}
-
-.boton {
-  transition: 0.3s;
-}
-
-.boton:hover {
-  background-color: #2185e4;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 100px) and (max-width: 426px) {
-  .header-captika {
-    flex-direction: column;
-    align-items: center;
-    height: 65%;
-  }
-
-  .logo-captika {
-    max-width: 150px;
-    height: 150px;
-  }
-
-  .text-header {
-    width: 100%;
-    align-items: center;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  h5 {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .descripcionItem {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .descripcion {
-    width: 100%;
-    align-items: center;
-    text-align: justify;
-  }
-
-  .descripcion2 {
-    width: 100%;
-    align-items: center;
-    text-align: justify;
-    order: 0;
-  }
-
-  .item1 {
-    height: 60%;
-  }
-
-  .item2 {
-    background-color: #f3f3f3;
-    height: 65%;
-  }
-
-  .item3 {
-    height: 60%;
-  }
-
-  h4 {
-    font-size: 17px;
-    text-align: center;
-  }
-
-  h6 {
-    font-size: 14px;
-    // margin: 0px 10px 0px 10px;
-  }
-
-  .img-captika1 {
-    max-width: 160px;
-    height: auto;
-  }
-
-  .img-captika2 {
-    margin: 0%;
-    max-width: 160px;
-    height: auto;
-  }
-
-  .img-thuban3 {
-    max-width: 275px;
-    height: auto;
-  }
-
-  // CARACTERISTICAS
-	.caracteristicas {
+@media only screen and (min-width: 100px) and (max-width: 900px) {
+	.sectionItemsContainer {
 		flex-direction: column;
 		align-items: center;
 	}
 
-  // ¿Sabías que podes publicar tu información en Thuban Software?
-
-  .img-conoce-captika {
-    max-width: 150px;
-    height: auto;
-  }
-
-  .captika {
-    height: 50%;
-  }
-
-  .descripcioncaptika {
-    width: 100%;
-    font-family: "Montserrat";
-  }
-
-  .descripcioncaptika h3 {
-    font-size: 20px;
-  }
-
-  .descripcioncaptika h6 {
-    font-size: 12px;
-  }
-}
-
-// iPhone 6
-@media only screen and (max-height: 700px) {
-	.header-captika {
-	  height: 80%;
-	}
-  
-	.item3 {
-	  height: 70%;
-	}
-  
-	.item1 {
-	  height: 80%;
-	}
-  
-	.item2 {
-	  height: 80%;
+	.sectionDescription {
+		font-size: 15px;
+		width: 90% !important;
+		line-height: 1.6 !important;
 	}
 }
