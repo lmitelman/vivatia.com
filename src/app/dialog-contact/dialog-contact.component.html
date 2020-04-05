@@ -21,7 +21,7 @@
             <re-captcha (resolved)="resolved($event)" class="g-recaptcha" siteKey="6LcvY9oUAAAAAI39WTEwXrdXFSm_tTw_79HPdPTF"></re-captcha>
         </div>
         <div class="mb-4 d-flex justify-content-center">
-            <input class="rounded-pill boton text-white py-2 px-4" type="submit" value="Enviar">
+            <button mat-button mat mat-dialog-close class="rounded-pill boton text-white py-2 px-4" (click)=sendPartnersEmailWithCaptcha()>Enviar</button>
         </div>
     </form>
 </mat-dialog-content>
@@ -44,7 +44,7 @@
             <re-captcha (resolved)="resolved($event)" class="g-recaptcha" siteKey="6LcvY9oUAAAAAI39WTEwXrdXFSm_tTw_79HPdPTF"></re-captcha>
         </div>
         <div class="mb-4 d-flex justify-content-center">
-            <input class="rounded-pill boton text-white py-2 px-4" type="submit" value="Send">
+            <button mat-button mat mat-dialog-close class="rounded-pill boton text-white py-2 px-4" (click)=sendPartnersEmailWithCaptcha()>Send</button>
         </div>
     </form>
 </mat-dialog-content>

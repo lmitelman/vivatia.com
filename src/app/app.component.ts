@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		// this.openCoronavirus();
+		this.openCoronavirus();
 	}
 
 	useLanguage(lang: string) {

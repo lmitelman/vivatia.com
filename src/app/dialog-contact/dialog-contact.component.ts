@@ -39,7 +39,7 @@ export class DialogContactComponent implements OnInit {
 			let template_params = {
 				"reply_to": "",
 				"user_name": "",
-				"to_name": "",
+				"user_email": this.contactForm.get('user_email').value,
 				"from_name": this.contactForm.get('from_name').value,
 				"message_html": this.contactForm.get('message').value
 			}
