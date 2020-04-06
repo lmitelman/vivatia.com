@@ -1,296 +1,124 @@
-<div class="header-captika d-flex justify-content-center bg-primary">
+<div class="header-captika d-flex justify-content-center animated fadeInDown">
     <div class="d-flex flex-column justify-content-center">
-        <!-- <img src="assets/product-thuban.png" class="logo-captika" alt=""> -->
+        <img src="assets/product-thuban.png" class="logo-captika" alt="">
     </div>
     <div class="d-flex flex-column justify-content-center text-header">
         <h2 class="text-white font-weight-bold">THUBAN SOFTWARE</h2>
         <h5 class="text-white font-weight-lighter">{{ "PRODUCTOS.THUBAN" | translate }}</h5>
         <br>
         <h5 class="text-white font-weight-lighter">{{ "THUBAN.DESCRIPCION_HEADER" | translate }}</h5>
-    </div>
-</div>
-
-<div class="sectionItemsContainer d-flex justify-content-center margin-bottom-extra margin-top-extra">
-    <div class="d-flex flex-column w35-header align-items-start">
-        <h3 class="font-weight-bold pb-2 font-blue text-left">Capturá lo que necesitás</h3>
-        <p class="sectionDescription w-100 text-left">Crea el flujo que mejor se adapte a tu proceso, con todas las variables y condiciones.</p>
-    </div>
-    <div class="itemsCapture d-flex">
-        <div class="card text-center border-0" style="width: 10rem; height: auto">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/th-captika.png" alt="" style="width: 10rem; height: auto;">
-                <h5 class="card-title font-weight-bold font-blue">Captika</h5>
-            </div>
-        </div>
-        <div class="card text-center border-0" style="width: 10rem; height: auto;">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/th-captika.png" alt="" style="width: 10rem; height: auto;">
-                <h5 class="card-title font-weight-bold font-blue">Correo</h5>
-            </div>
-        </div>
-        <div class="card text-center border-0" style="width: 10rem; height: auto;">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/th-captika.png" alt="" style="width: 10rem; height: auto;">
-                <h5 class="card-title font-weight-bold font-blue">Directorio</h5>
-            </div>
-        </div>
-        <div class="card text-center border-0" style="width: 10rem; height: auto;">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/th-captika.png" alt="" style="width: 10rem; height: auto;">
-                <h5 class="card-title font-weight-bold font-blue">FTP/sFTP</h5>
-            </div>
+        <div class="d-flex mt-2">
+            <a mat-raised-button class="rounded-pill px-3 py-1 boton text-white" target="_blank"
+                href="http://www.thubanwiki.vivatia.com/index.php?title=P%C3%A1gina_principal">Thuban Wiki</a>
         </div>
     </div>
 </div>
 
-<div class="sectionItemsContainer d-flex bg-blue py-3">
-    <div class="sectionItemsHeader d-flex flex-column align-items-start justify-content-center bg-blue mr-5">
-        <h3 class="font-weight-bold pb-2 text-white">Encontrá lo que estás buscando</h3>
-        <p class="sectionDescription text-white w-100">Almacenaremos tu contenido de forma inteligente para que puedas:</p>
+<div *ngIf="isMobile() == false" class="d-flex justify-content-center mt-5">
+    <img [src]="'THUBAN.SRC_IMG' | translate" class="proceso-thuban" alt="">
+</div>
+
+<div *ngIf="isMobile() == true" class="d-flex justify-content-center mt-5">
+    <img [src]="'THUBAN.SRC_IMG_MOBILE' | translate" class="proceso-thuban" alt="">
+</div>
+
+<div class="d-flex justify-content-end fixed-bottom mb-5 mr-5">
+    <a mat-raised-button class="rounded-pill boton text-white px-3 py-1" target="_blank"
+        href="https://vivatia2020.myshopify.com/products/thuban-cloud-hasta-10-usuarios">{{ "THUBAN.COMPRAR" | translate }}</a>
+</div>
+
+<div
+    class="d-flex justify-content-center flex-nowrap py-5 align-items-center descripcionItem item1 animated fadeInLeft">
+    <div class="d-flex flex-column descripcion">
+        <h4 class="letra6 font-weight-bold">{{ "THUBAN.SEGURIDAD" | translate }}</h4>
+        <br>
+        <h6>{{ "THUBAN.SEGURIDAD_DESC" | translate }}</h6>
     </div>
-    <div class="d-flex flex-column">
-        <div class="card text-center border-0 bg-blue sectionItem" style="width: 25rem; height: auto">
-            <div class="card-body d-flex align-items-center justify-content-center">
-                <img src="assets/th-buscar.png" alt="" style="width: 7rem; height: auto;">
-                <h5 class="ml-2 mb-0 card-title text-white text-left">Buscar y consultar documentos</h5>
-            </div>
-        </div>
-        <div class="card text-center border-0 bg-blue sectionItem" style="width: 25rem; height: auto;">
-            <div class="card-body d-flex align-items-center justify-content-center">
-                <img src="assets/th-grupos.png" alt="" style="width: 7rem; height: auto;">
-                <h5 class="ml-2 mb-0 card-title text-white text-left">Tener acceso controlado por grupos</h5>
-            </div>
-        </div>
-        <div class="card text-center border-0 bg-blue sectionItem" style="width: 25rem; height: auto;">
-            <div class="card-body d-flex align-items-center justify-content-center">
-                <img src="assets/th-compartir.png" alt="" style="width: 7rem; height: auto;">
-                <h5 class="ml-2 mb-0 card-title text-white text-left">Compartir cuando lo necesites</h5>
-            </div>
-        </div>
+    <div>
+        <img src="assets/rrhh-seguridad.png" class="img-captika1" alt="">
     </div>
 </div>
 
-<div class="d-flex flex-column text-center align-items-center padding-top-extra">
-    <h3 class="font-weight-bold pb-2 font-blue">Transformá tu forma de trabajo</h3>
-    <p class="sectionDescription">Podrás crear el flujo que mejor se adapte a tu proceso, con todas las variables y condiciones que necesites.</p>
-</div>
-<div class="sectionItemsContainer d-flex pt-4 padding-bottom-extra">
-    <div class="card text-center border-0 mx-4" style="width: 22rem; height: 20rem">
-        <div class="card-body d-flex flex-column align-items-center"
-            style="background-image: url(assets/th-bandejas.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
-            <h5 class="card-title text-white cardsBackgroundTitle">Bandejas de trabajo</h5>
-            <p class="card-text text-white cardsBackgroundText">Podrás agrupar documentos de acuerdo al estado que tengan.</p>
-        </div>
+<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item2 animated fadeInRight">
+    <div class="d-flex flex-column descripcion2">
+        <h4 class="letra6 font-weight-bold">{{ "THUBAN.HISTORIAL" | translate }}</h4>
+        <br>
+        <h6>{{ "THUBAN.HISTORIAL_DESC" | translate }}</h6>
     </div>
-    <div class="card text-center border-0 mx-4" style="width: 22rem; height: 20rem">
-        <div class="card-body d-flex flex-column align-items-center"
-            style="background-image: url(assets/th-workflow2.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
-            <h5 class="card-title text-white cardsBackgroundTitle">Workflow variable</h5>
-            <p class="card-text text-white cardsBackgroundText">Diseñá circuitos de trabajo y configuralos como necesites.</p>
-        </div>
-    </div>
-    <div class="card text-center border-0 mx-4" style="width: 22rem; height: 20rem">
-        <div class="card-body d-flex flex-column align-items-center"
-            style="background-image: url(assets/th-sla2.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
-            <h5 class="card-title text-white cardsBackgroundTitle">SLA por tareas</h5>
-            <p class="card-text text-white cardsBackgroundText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
-        </div>
+    <div>
+        <img src="assets/rrhh-historial.png" class="img-captika2" alt="">
     </div>
 </div>
 
-<div class="sectionItemsContainer d-flex py-3">
-    <div class="sectionItemsHeader d-flex flex-column align-items-start justify-content-center">
-        <h3 class="font-weight-bold pb-2 font-blue">Explotá tu información</h3>
-        <p class="sectionDescription w-75">Contá con datos actualizados de tus procesos para tomar las mejores decisiones.</p>
+<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item1 animated fadeInLeft">
+    <div class="d-flex flex-column descripcion">
+        <h4 class="letra6 font-weight-bold">{{ "THUBAN.NOTIFICACIONES" | translate }}</h4>
+        <br>
+        <h6>{{ "THUBAN.NOTIFICACIONES_DESC" | translate }}</h6>
     </div>
-    <div class="d-flex flex-column">
-        <div class="card text-center border-0 sectionItem" style="width: 25rem; height: auto">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/th-buscar.png" alt="" style="width: 7rem; height: auto;">
-                <h5 class="ml-2 mb-0 card-title text-left">Buscar y consultar documentos</h5>
-                <p class="card-text cardsBackgroundText">Creá legajos agrupando la documentación de un mismo usuario o cliente.</p>
-            </div>
-        </div>
-        <div class="card text-center border-0 sectionItem" style="width: 25rem; height: auto;">
-            <div class="card-body d-flex align-items-center justify-content-center">
-                <img src="assets/th-grupos.png" alt="" style="width: 7rem; height: auto;">
-                <h5 class="ml-2 mb-0 card-title text-left">Tener acceso controlado por grupos</h5>
-                <p class="card-text cardsBackgroundText">Creá legajos agrupando la documentación de un mismo usuario o cliente.</p>
-            </div>
-        </div>
-        <div class="card text-center border-0 sectionItem" style="width: 25rem; height: auto;">
-            <div class="card-body d-flex align-items-center justify-content-center">
-                <img src="assets/th-compartir.png" alt="" style="width: 7rem; height: auto;">
-                <h5 class="ml-2 mb-0 card-title text-left">Compartir cuando lo necesites</h5>
-                <p class="card-text cardsBackgroundText">Creá legajos agrupando la documentación de un mismo usuario o cliente.</p>
-            </div>
-        </div>
+    <div>
+        <img src="assets/rrhh-notificaciones.png" class="img-captika1" alt="">
     </div>
 </div>
 
-<div class="d-flex flex-column text-center align-items-center padding-top-extra">
-    <h3 class="font-weight-bold pb-2 font-blue">Módulos que simplifican tu trabajo</h3>
-    <p class="sectionDescription w-50">Además, Thuban cuenta con funcionalidades para mejorar tu experiencia.</p>
-</div>
-<div class="sectionItemsContainer d-flex pt-4 padding-bottom-extra">
-    <div class="card text-center border-0 mx-4" style="width: 22rem; height: 20rem">
-        <div class="card-body d-flex flex-column align-items-center"
-            style="background-image: url(assets/th-mobile.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
-            <h5 class="card-title text-white cardsBackgroundTitle">Acceso mobile</h5>
-            <p class="card-text text-white cardsBackgroundText">Visualizá tus documentos en todo momento y lugar.</p>
-        </div>
+<div class="d-flex justify-content-center py-5 align-items-center descripcionItem item2 animated fadeInRight"
+    style="background-color: #00326B;">
+    <div class="d-flex flex-column descripcion2">
+        <h4 class="text-white font-weight-bold">{{ "THUBAN.MONITORES" | translate }}</h4>
+        <br>
+        <h6 class="text-white">{{ "THUBAN.MONITORES_DESC" | translate }}</h6>
     </div>
-    <div class="card text-center border-0 mx-4" style="width: 22rem; height: 20rem">
-        <div class="card-body d-flex flex-column align-items-center"
-            style="background-image: url(assets/th-firma2.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
-            <h5 class="card-title text-white cardsBackgroundTitle">Firma digital</h5>
-            <p class="card-text text-white cardsBackgroundText">Reducí tiempos y costos firman digitalmente teniendo seguridad y validéz jurídica.</p>
-        </div>
-    </div>
-    <div class="card text-center border-0 mx-4" style="width: 22rem; height: 20rem">
-        <div class="card-body d-flex flex-column align-items-center"
-            style="background-image: url(assets/th-legajos.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
-            <h5 class="card-title text-white cardsBackgroundTitle">Legajos digitales</h5>
-            <p class="card-text text-white cardsBackgroundText">Creá legajos agrupando la documentación de un mismo usuario o cliente.</p>
-        </div>
+    <div>
+        <img src="assets/monitores.png" class="img-captika2" alt="">
     </div>
 </div>
 
-<div class="sectionItemsContainer d-flex bg-blue">
-    <div class="card card-Instalation text-center border-0 bg-blue w-50 padding-bottom-extra padding-top-extra"
-        style="width: 20rem; height: auto; background-color: #005FA7;">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <h3 class="card-title mt-4 text-white font-weight-bold">On Premise</h3>
-            <h5 class="card-text text-white mb-5">Ideal para empresas corporativas</h5>
-            <img src="assets/th-onpremise.png" alt="" style="width: 15rem; height: auto;">
-        </div>
+<div class="d-flex justify-content-center py-4 align-items-center descripcionItem item1 animated fadeInLeft">
+    <div class="d-flex flex-column descripcion">
+        <h4 class="letra6 font-weight-bold">{{ "THUBAN.GRUPOS" | translate }}</h4>
+        <br>
+        <h6>{{ "THUBAN.GRUPOS_DESC" | translate }}</h6>
     </div>
-    <div class="card card-Instalation text-center border-0 bg-blue w-50 padding-bottom-extra padding-top-extra"
-        style="width: 20rem; height: auto;">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <h3 class="card-title mt-4 text-white mt-4 font-weight-bold">Cloud</h3>
-            <h5 class="card-text text-white mb-5">Ideal para tu Pyme o Startup</h5>
-            <img src="assets/th-cloud.png" alt="" style="width: 10rem; height: auto;">
-        </div>
+    <div>
+        <img src="assets/grupos.png" class="img-captika1" alt="">
     </div>
 </div>
 
-<div class="d-flex flex-column text-center align-items-center margin-top-extra">
-    <h3 class="font-weight-bold mb-2 font-blue">¿Por que elegir Thuban Software?</h3>
+<div class="d-flex py-4 flex-column text-center align-items-center">
+    <h5 class="font-weight-bold mt-5 mb-2 animated fadeInRight">{{ "THUBAN.CARACTERISTICAS" | translate }}</h5>
 </div>
-<div class="sectionItemsContainer d-flex pt-5 margin-bottom-extra">
-    <div class="card text-center border-0 mx-3" style="width: 25rem; height: auto">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/th-conecta.png" alt="" style="width: 10rem; height: auto;">
-            <h5 class="card-title mt-4 font-weight-bold font-blue">Centralizá tu información</h5>
-            <p class="card-text">Conectá Thuban con tus sistemas, en el momento e instancia que necesites y mantenete
-                comunicado.</p>
+<div class="container d-flex caracteristicas mb-5">
+    <div class="card text-center" style="width: 20rem; height: 20rem;">
+        <div class="card-body">
+            <img class="" src="assets/th-specs1.png" alt="" style="width: 180px; height: 180px;">
+            <h5 class="card-title font-weight-bold">{{ "THUBAN.SPEC1" | translate }}</h5>
+            <p class="card-text">{{ "THUBAN.SPEC1_DESC" | translate }}</p> 
         </div>
     </div>
-    <div class="card text-center border-0 mx-3" style="width: 25rem; height: auto;">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/th-sistemas.png" alt="" style="width: 14rem; height: auto;">
-            <h5 class="card-title mt-4 font-weight-bold font-blue">Accedé desde dónde quieras</h5>
-            <p class="card-text">Vas a poder usar Thuban en sistemas operativos de Windows©, Linux, MacOS y Android.</p>
+    <div class="card text-center" style="width: 20rem; height: 20rem;">
+        <div class="card-body">
+            <img class="" src="assets/th-specs2.png" alt="" style="width: 180px; height: 180px;">
+            <h5 class="card-title font-weight-bold">{{ "THUBAN.SPEC2" | translate }}</h5>
+            <p class="card-text">{{ "THUBAN.SPEC2_DESC" | translate }}</p> 
         </div>
     </div>
-    <div class="card text-center border-0 mx-3" style="width: 25rem; height: auto;">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/th-implementa.png" alt="" style="width: 10rem; height: auto;">
-            <h5 class="card-title mt-4 font-weight-bold font-blue">Implementá donde necesites</h5>
-            <p class="card-text">Con nuestros productos obtendrás resultados y beneficios que podrás escalar en todas
-                las áreas de tu negocio.</p>
+    <div class="card text-center" style="width: 20rem; height: 20rem;">
+        <div class="card-body">
+            <img class="" src="assets/th-specs3.png" alt="" style="width: 180px; height: 180px;">
+            <h5 class="card-title font-weight-bold">{{ "THUBAN.SPEC3" | translate }}</h5>
+            <p class="card-text">{{ "THUBAN.SPEC3_DESC" | translate }}</p> 
         </div>
     </div>
 </div>
 
 <div
-    class="d-flex flex-column text-center justify-content-center align-items-center descripcionItem thuban animated fadeInLeft">
-    <div class="d-flex flex-column descripcionthuban m-0">
+    class="d-flex flex-column text-center justify-content-center align-items-center descripcionItem captika animated fadeInLeft">
+    <div class="d-flex flex-column descripcioncaptika">
         <h3 class="font-weight-bold">{{ "THUBAN.SABIAS" | translate }}</h3>
         <h6 class="m-0">{{ "THUBAN.DESCUBRI" | translate }}</h6>
         <br>
     </div>
     <div>
-        <img src="assets/captika-color.png" class="img-conoce-thuban" routerLink='/thuban' alt="">
+        <img src="assets/captika-color.png" class="img-conoce-captika" routerLink='/captika' alt="">
     </div>
 </div>
-
-<!-- <div class="d-flex flex-column text-center align-items-center bg-blue padding-top-extra">
-    <h3 class="font-weight-bold pb-2 text-white">Encontrá lo que estás buscando</h3>
-    <p class="sectionDescription text-white">Almacenaremos tu contenido de forma inteligente para que puedas:</p>
-</div>
-<div class="sectionItemsContainer d-flex bg-blue pt-5 padding-bottom-extra">
-    <div class="card text-center border-0 bg-blue" style="width: 20rem; height: auto">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/th-buscar.png" alt="" style="width: 8rem; height: auto;">
-            <h5 class="card-title text-white">Buscar y consultar <br> documentos</h5>
-        </div>
-    </div>
-    <div class="card text-center border-0 bg-blue" style="width: 20rem; height: auto;">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/th-grupos.png" alt="" style="width: 8rem; height: auto;">
-            <h5 class="card-title text-white">Tener acceso controlado <br> por grupos</h5>
-        </div>
-    </div>
-    <div class="card text-center border-0 bg-blue" style="width: 20rem; height: auto;">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/th-compartir.png" alt="" style="width: 8rem; height: auto;">
-            <h5 class="card-title text-white">Compartir cuando <br> lo necesites</h5>
-        </div>
-    </div>
-</div> -->
-
-<!-- <div class="sectionItemsContainerType2 d-flex justify-content-center margin-bottom-extra margin-top-extra">
-    <div class="sectionItemsContainer d-flex orden1">
-        <div class="card text-center border-0" style="width: 20rem; height: auto">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/th-bandejas.png" alt="" style="width: 6rem; height: auto;">
-                <h5 class="card-title mt-4 font-weight-bold font-blue">Bandejas</h5>
-                <p>Podrás agrupar documentos de acuerdo al estado que tengan.</p>
-            </div>
-        </div>
-        <div class="card text-center border-0" style="width: 15rem; height: auto;">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/th-sla.png" alt="" style="width: 3.5rem; height: auto;">
-                <h5 class="card-title mt-4 font-weight-bold font-blue">SLA</h5>
-            </div>
-        </div>
-        <div class="card text-center border-0" style="width: 12rem; height: auto;">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                <img src="assets/th-workflow.png" alt="" style="width: 3rem; height: auto;">
-                <h5 class="card-title mt-4 font-weight-bold font-blue">Workflow</h5>
-            </div>
-        </div>
-    </div>
-    <div class="d-flex flex-column w35-header align-items-end orden2">
-        <h3 class="font-weight-bold pb-2 font-blue text-right">Transformá tu forma de trabajo</h3>
-        <p class="sectionDescriptionType2 text-right" style="width: 90%;">Crea el flujo que mejor se adapte a tu proceso, con todas las variables y condiciones.</p>
-    </div>
-</div> -->
-
-<!-- <div class="d-flex flex-column text-center align-items-center bg-blue padding-top-extra">
-    <h3 class="font-weight-bold pb-2 text-white">Explotá tu información</h3>
-    <p class="sectionDescription w-50 text-white">Vas a contar con datos actualizados de tus procesos, que te ayudarán a
-        tomar las mejores decisiones.</p>
-</div>
-<div class="sectionItemsContainer d-flex bg-blue pt-5 padding-bottom-extra">
-    <div class="card text-center border-0 bg-blue" style="width: 15rem; height: auto">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/th-monitores.png" alt="" style="width: 5rem; height: auto;">
-            <h5 class="card-title mt-4 text-white">Tableros de control</h5>
-        </div>
-    </div>
-    <div class="card text-center border-0 bg-blue" style="width: 15rem; height: auto;">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/th-reportes.png" alt="" style="width: 5rem; height: auto;">
-            <h5 class="card-title mt-4 text-white">Reportes</h5>
-        </div>
-    </div>
-    <div class="card text-center border-0 bg-blue" style="width: 15rem; height: auto;">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/th-alertas.png" alt="" style="width: 5rem; height: auto;">
-            <h5 class="card-title mt-4 text-white">Alertas</h5>
-        </div>
-    </div>
-</div> -->
