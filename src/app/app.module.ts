@@ -69,6 +69,7 @@ import { DialogSumateComponent } from './navigation/soluciones/sumate/dialog-sum
 import { DialogPartnersComponent } from './navigation/partners/dialog-partners/dialog-partners.component';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { DialogCoronavirusComponent } from './dialog-coronavirus/dialog-coronavirus.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 
 // See the Moment.js docs for the meaning of these formats:
@@ -124,6 +125,7 @@ export function createTranslateLoader(http: HttpClient) {
     DialogSumateComponent,
     DialogPartnersComponent,
     DialogCoronavirusComponent,
+    ThanksComponent,
   ],
   entryComponents: [DialogContactComponent, SolucionesModalComponent, DialogSumateComponent, DialogPartnersComponent, DialogCoronavirusComponent],
   imports: [

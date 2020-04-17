@@ -34,6 +34,7 @@ import { DigitalizacionComponent } from './navigation/soluciones/soluciones-hori
 import { RetailComponent } from './navigation/soluciones/industrias/retail/retail.component';
 import { ServiciosComponent } from './navigation/soluciones/industrias/servicios/servicios.component';
 import { CapacitacionComponent } from './navigation/capacitacion/capacitacion.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -60,6 +61,7 @@ const routes: Routes = [
   {path: 'retail', component: RetailComponent},
   {path: 'servicios', component: ServiciosComponent},
   {path: 'capacitacion', component: CapacitacionComponent},
+  {path: 'gracias', component: ThanksComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

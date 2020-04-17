@@ -3,6 +3,7 @@ import { FormGroup, Validators, FormBuilder, FormControl } from '@angular/forms'
 import { MatSnackBar } from '@angular/material';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
 	selector: 'app-dialog-contact',
@@ -16,8 +17,8 @@ export class DialogContactComponent implements OnInit {
 
 	constructor(
 		private formBuilder: FormBuilder,
-		private snackBar: MatSnackBar,
-		private translate: TranslateService
+		private translate: TranslateService,
+		private router: Router
 	) { }
 
 	ngOnInit() {
@@ -49,6 +50,7 @@ export class DialogContactComponent implements OnInit {
 				}, (error) => {
 					console.log(error.text);
 				});
+			this.router.navigateByUrl("/gracias");
 		}
 	}
 
